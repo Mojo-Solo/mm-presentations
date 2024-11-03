@@ -1,0 +1,12 @@
+digraph "resources/views/backend/site_super_admin/tenant_domain/site_emails/schedules"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_e61f413acd41e847aaa36bd73967b214 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="site_emails", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_e61f413acd41e847aaa36bd73967b214.html",tooltip=""]
+  dir_0234d5dfa8005aa70904529beff23076 [label="schedules", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_0234d5dfa8005aa70904529beff23076.html",tooltip=""];
+  }
+}

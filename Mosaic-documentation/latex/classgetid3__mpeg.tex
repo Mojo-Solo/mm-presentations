@@ -1,0 +1,253 @@
+\doxysection{getid3\+\_\+mpeg Class Reference}
+\hypertarget{classgetid3__mpeg}{}\label{classgetid3__mpeg}\index{getid3\_mpeg@{getid3\_mpeg}}
+
+
+Inheritance diagram for getid3\+\_\+mpeg\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+mpeg\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__mpeg_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__mpeg_af456ce66c2f1ffbcea751b77a3dfe827}{system\+Non\+Overhead\+Percentage}} (\$Video\+Bitrate, \$Audio\+Bitrate)
+\item 
+static \mbox{\hyperlink{classgetid3__mpeg_a0f8638f5c710ea1ece9e3304501e0458}{video\+Framerate\+Lookup}} (\$rawframerate)
+\item 
+static \mbox{\hyperlink{classgetid3__mpeg_a0738962f72fb1f0f021c440800b4e805}{video\+Aspect\+Ratio\+Lookup}} (\$rawaspectratio, \$mpeg\+\_\+version=1, \$width=0, \$height=0)
+\item 
+static \mbox{\hyperlink{classgetid3__mpeg_a3213d94911454e55a58fe01ac2fdf66f}{video\+Aspect\+Ratio\+Text\+Lookup}} (\$rawaspectratio, \$mpeg\+\_\+version=1)
+\item 
+static \mbox{\hyperlink{classgetid3__mpeg_adb2b024449ef70929bab2d20a5e0a192}{video\+Format\+Text\+Lookup}} (\$video\+\_\+format)
+\item 
+static \mbox{\hyperlink{classgetid3__mpeg_aa1245f5a146205ec4697dcf415eac7e7}{scalable\+Mode\+Text\+Lookup}} (\$scalable\+\_\+mode)
+\item 
+static \mbox{\hyperlink{classgetid3__mpeg_ab46c3143cda78c4707ed13b2a7d58abf}{picture\+Structure\+Text\+Lookup}} (\$picture\+\_\+structure)
+\item 
+static \mbox{\hyperlink{classgetid3__mpeg_ae63fe5571af7c557a99deb30e5a5014b}{chroma\+Format\+Text\+Lookup}} (\$chroma\+\_\+format)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__mpeg_aa44d9b66b16e226ea9d42a89f73ebe7d}\label{classgetid3__mpeg_aa44d9b66b16e226ea9d42a89f73ebe7d} 
+const {\bfseries START\+\_\+\+CODE\+\_\+\+BASE} = "{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01"{}
+\item 
+\Hypertarget{classgetid3__mpeg_a4b394a955a3a173873c14e04ed68ce3c}\label{classgetid3__mpeg_a4b394a955a3a173873c14e04ed68ce3c} 
+const {\bfseries VIDEO\+\_\+\+PICTURE\+\_\+\+START} = "{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01\textbackslash{}x00"{}
+\item 
+\Hypertarget{classgetid3__mpeg_a7d2c268eeb2116c38fe9fce11d48a6ad}\label{classgetid3__mpeg_a7d2c268eeb2116c38fe9fce11d48a6ad} 
+const {\bfseries VIDEO\+\_\+\+USER\+\_\+\+DATA\+\_\+\+START} = "{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01\textbackslash{}x\+B2"{}
+\item 
+\Hypertarget{classgetid3__mpeg_a8a716816c4418c6d54306f69af370f9a}\label{classgetid3__mpeg_a8a716816c4418c6d54306f69af370f9a} 
+const {\bfseries VIDEO\+\_\+\+SEQUENCE\+\_\+\+HEADER} = "{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01\textbackslash{}x\+B3"{}
+\item 
+\Hypertarget{classgetid3__mpeg_a92de0445634ba5cc5ccc28a4938ed391}\label{classgetid3__mpeg_a92de0445634ba5cc5ccc28a4938ed391} 
+const {\bfseries VIDEO\+\_\+\+SEQUENCE\+\_\+\+ERROR} = "{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01\textbackslash{}x\+B4"{}
+\item 
+\Hypertarget{classgetid3__mpeg_afc7b5ca6165de94ce4e185ec8f6365d0}\label{classgetid3__mpeg_afc7b5ca6165de94ce4e185ec8f6365d0} 
+const {\bfseries VIDEO\+\_\+\+EXTENSION\+\_\+\+START} = "{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01\textbackslash{}x\+B5"{}
+\item 
+\Hypertarget{classgetid3__mpeg_afc4d46a7ea10a56974f4a03b0aee837b}\label{classgetid3__mpeg_afc4d46a7ea10a56974f4a03b0aee837b} 
+const {\bfseries VIDEO\+\_\+\+SEQUENCE\+\_\+\+END} = "{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01\textbackslash{}x\+B7"{}
+\item 
+\Hypertarget{classgetid3__mpeg_a8d90aee6ba1aceccaf7b48c8657d85f4}\label{classgetid3__mpeg_a8d90aee6ba1aceccaf7b48c8657d85f4} 
+const {\bfseries VIDEO\+\_\+\+GROUP\+\_\+\+START} = "{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01\textbackslash{}x\+B8"{}
+\item 
+\Hypertarget{classgetid3__mpeg_a227762380f180ecb22f4b8399f0f2dcd}\label{classgetid3__mpeg_a227762380f180ecb22f4b8399f0f2dcd} 
+const {\bfseries AUDIO\+\_\+\+START} = "{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01\textbackslash{}x\+C0"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__mpeg_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_mpeg@{getid3\_mpeg}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_mpeg@{getid3\_mpeg}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__mpeg_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__mpeg_ae63fe5571af7c557a99deb30e5a5014b}\index{getid3\_mpeg@{getid3\_mpeg}!chromaFormatTextLookup@{chromaFormatTextLookup}}
+\index{chromaFormatTextLookup@{chromaFormatTextLookup}!getid3\_mpeg@{getid3\_mpeg}}
+\doxysubsubsection{\texorpdfstring{chromaFormatTextLookup()}{chromaFormatTextLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mpeg_ae63fe5571af7c557a99deb30e5a5014b} 
+static chroma\+Format\+Text\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$chroma\+\_\+format}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$chroma\+\_\+format} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mpeg_ab46c3143cda78c4707ed13b2a7d58abf}\index{getid3\_mpeg@{getid3\_mpeg}!pictureStructureTextLookup@{pictureStructureTextLookup}}
+\index{pictureStructureTextLookup@{pictureStructureTextLookup}!getid3\_mpeg@{getid3\_mpeg}}
+\doxysubsubsection{\texorpdfstring{pictureStructureTextLookup()}{pictureStructureTextLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mpeg_ab46c3143cda78c4707ed13b2a7d58abf} 
+static picture\+Structure\+Text\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$picture\+\_\+structure}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$picture\+\_\+structure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mpeg_aa1245f5a146205ec4697dcf415eac7e7}\index{getid3\_mpeg@{getid3\_mpeg}!scalableModeTextLookup@{scalableModeTextLookup}}
+\index{scalableModeTextLookup@{scalableModeTextLookup}!getid3\_mpeg@{getid3\_mpeg}}
+\doxysubsubsection{\texorpdfstring{scalableModeTextLookup()}{scalableModeTextLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mpeg_aa1245f5a146205ec4697dcf415eac7e7} 
+static scalable\+Mode\+Text\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$scalable\+\_\+mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$scalable\+\_\+mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mpeg_af456ce66c2f1ffbcea751b77a3dfe827}\index{getid3\_mpeg@{getid3\_mpeg}!systemNonOverheadPercentage@{systemNonOverheadPercentage}}
+\index{systemNonOverheadPercentage@{systemNonOverheadPercentage}!getid3\_mpeg@{getid3\_mpeg}}
+\doxysubsubsection{\texorpdfstring{systemNonOverheadPercentage()}{systemNonOverheadPercentage()}}
+{\footnotesize\ttfamily \label{classgetid3__mpeg_af456ce66c2f1ffbcea751b77a3dfe827} 
+static system\+Non\+Overhead\+Percentage (\begin{DoxyParamCaption}\item[{}]{\$\+Video\+Bitrate}{, }\item[{}]{\$\+Audio\+Bitrate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$\+Video\+Bitrate} & \\
+\hline
+int & {\em \$\+Audio\+Bitrate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mpeg_a0738962f72fb1f0f021c440800b4e805}\index{getid3\_mpeg@{getid3\_mpeg}!videoAspectRatioLookup@{videoAspectRatioLookup}}
+\index{videoAspectRatioLookup@{videoAspectRatioLookup}!getid3\_mpeg@{getid3\_mpeg}}
+\doxysubsubsection{\texorpdfstring{videoAspectRatioLookup()}{videoAspectRatioLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mpeg_a0738962f72fb1f0f021c440800b4e805} 
+static video\+Aspect\+Ratio\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$rawaspectratio}{, }\item[{}]{\$mpeg\+\_\+version}{ = {\ttfamily 1}, }\item[{}]{\$width}{ = {\ttfamily 0}, }\item[{}]{\$height}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rawaspectratio} & \\
+\hline
+int & {\em \$mpeg\+\_\+version} & \\
+\hline
+int & {\em \$width} & \\
+\hline
+int & {\em \$height} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mpeg_a3213d94911454e55a58fe01ac2fdf66f}\index{getid3\_mpeg@{getid3\_mpeg}!videoAspectRatioTextLookup@{videoAspectRatioTextLookup}}
+\index{videoAspectRatioTextLookup@{videoAspectRatioTextLookup}!getid3\_mpeg@{getid3\_mpeg}}
+\doxysubsubsection{\texorpdfstring{videoAspectRatioTextLookup()}{videoAspectRatioTextLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mpeg_a3213d94911454e55a58fe01ac2fdf66f} 
+static video\+Aspect\+Ratio\+Text\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$rawaspectratio}{, }\item[{}]{\$mpeg\+\_\+version}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rawaspectratio} & \\
+\hline
+int & {\em \$mpeg\+\_\+version} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mpeg_adb2b024449ef70929bab2d20a5e0a192}\index{getid3\_mpeg@{getid3\_mpeg}!videoFormatTextLookup@{videoFormatTextLookup}}
+\index{videoFormatTextLookup@{videoFormatTextLookup}!getid3\_mpeg@{getid3\_mpeg}}
+\doxysubsubsection{\texorpdfstring{videoFormatTextLookup()}{videoFormatTextLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mpeg_adb2b024449ef70929bab2d20a5e0a192} 
+static video\+Format\+Text\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$video\+\_\+format}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$video\+\_\+format} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mpeg_a0f8638f5c710ea1ece9e3304501e0458}\index{getid3\_mpeg@{getid3\_mpeg}!videoFramerateLookup@{videoFramerateLookup}}
+\index{videoFramerateLookup@{videoFramerateLookup}!getid3\_mpeg@{getid3\_mpeg}}
+\doxysubsubsection{\texorpdfstring{videoFramerateLookup()}{videoFramerateLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mpeg_a0f8638f5c710ea1ece9e3304501e0458} 
+static video\+Framerate\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$rawframerate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rawframerate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+audio-\/video.\+mpeg.\+php\end{DoxyCompactItemize}

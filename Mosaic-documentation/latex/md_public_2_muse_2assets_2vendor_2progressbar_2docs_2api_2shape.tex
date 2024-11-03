@@ -1,0 +1,223 @@
+\chapter{shape}
+\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape}{}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape}\index{shape@{shape}}
+!!! note \begin{DoxyVerb}Line, Circle and SemiCircle all point to the same
+documentation which is named Shape. You should
+replace it(Shape) with Line, Circle or SemiCircle.
+
+**Example:** if documentation states `Shape.animate()`, replace it with
+`Circle.animate()`, simple. Shape is the base object for all
+progress bars.
+\end{DoxyVerb}
+ \hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md178}{}\doxysection{\texorpdfstring{new Shape(container, \mbox{[}{\itshape options}\mbox{]})}{new Shape(container, \mbox{[}{\itshape options}\mbox{]})}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md178}
+Line, Circle or Semi\+Circle shaped progress bar. Appends SVG to container.
+
+{\bfseries{Example}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ progressBar\ =\ new\ ProgressBar.Circle('\#container',\ \{}
+\DoxyCodeLine{\ \ \ \ strokeWidth:\ 2}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+With Line shape, you can control the width of the line by specifying e.\+g. {\ttfamily height\+: 5px} with CSS.
+
+{\bfseries{Parameters}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily container} Element where SVG is added. Query string or element.
+
+For example `'\#container\textquotesingle{}{\ttfamily or}document.\+get\+Element\+By\+Id(\textquotesingle{}\#container\textquotesingle{})\`{}
+\item {\ttfamily options} Options for path drawing.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ //\ Stroke\ color.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ '\#555'}
+\DoxyCodeLine{\ \ \ \ color:\ '\#3a3a3a',}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Width\ of\ the\ stroke.}
+\DoxyCodeLine{\ \ \ \ //\ Unit\ is\ percentage\ of\ SVG\ canvas'\ size.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 1.0}
+\DoxyCodeLine{\ \ \ \ //\ NOTE:\ In\ Line\ shape,\ you\ should\ control}
+\DoxyCodeLine{\ \ \ \ //\ the\ stroke\ width\ by\ setting\ container's\ height.}
+\DoxyCodeLine{\ \ \ \ //\ WARNING:\ IE\ doesn't\ support\ values\ over\ 6,\ see\ this\ bug:}
+\DoxyCodeLine{\ \ \ \ //\ \ \ \ \ \ \ \ \ \ https://github.com/kimmobrunfeldt/progressbar.js/issues/79}
+\DoxyCodeLine{\ \ \ \ strokeWidth:\ 2.1,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ If\ trail\ options\ are\ not\ defined,\ trail\ won't\ be\ drawn}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Color\ for\ lighter\ trail\ stroke}
+\DoxyCodeLine{\ \ \ \ //\ underneath\ the\ actual\ progress\ path.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ '\#eee'}
+\DoxyCodeLine{\ \ \ \ trailColor:\ '\#f4f4f4',}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Width\ of\ the\ trail\ stroke.\ Trail\ is\ always\ centered\ relative\ to}
+\DoxyCodeLine{\ \ \ \ //\ actual\ progress\ path.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ same\ as\ strokeWidth}
+\DoxyCodeLine{\ \ \ \ trailWidth:\ 0.8,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Inline\ CSS\ styles\ for\ the\ created\ SVG\ element}
+\DoxyCodeLine{\ \ \ \ //\ Set\ null\ to\ disable\ all\ default\ styles.}
+\DoxyCodeLine{\ \ \ \ //\ You\ can\ disable\ individual\ defaults\ by\ setting\ them\ to\ \`{}null`}
+\DoxyCodeLine{\ \ \ \ //\ If\ you\ specify\ anything\ in\ this\ object,\ none\ of\ the\ default\ styles}
+\DoxyCodeLine{\ \ \ \ //\ apply}
+\DoxyCodeLine{\ \ \ \ svgStyle:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ display:\ 'block',}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Important:\ make\ sure\ that\ your\ container\ has\ same}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ aspect\ ratio\ as\ the\ SVG\ canvas.\ See\ SVG\ canvas\ sizes\ above.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ width:\ '100\%'}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Text\ options.\ Text\ element\ is\ a\ <p>\ element\ appended\ to\ container}
+\DoxyCodeLine{\ \ \ \ //\ You\ can\ add\ CSS\ rules\ for\ the\ text\ element\ with\ the\ className}
+\DoxyCodeLine{\ \ \ \ //\ NOTE:\ When\ text\ is\ set,\ 'position:\ relative'\ will\ be\ set\ to\ the}
+\DoxyCodeLine{\ \ \ \ //\ container\ for\ centering.\ You\ can\ also\ prevent\ all\ default\ inline}
+\DoxyCodeLine{\ \ \ \ //\ styles\ with\ 'text.style:\ null'}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ null}
+\DoxyCodeLine{\ \ \ \ text:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Initial\ value\ for\ text.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Default:\ null}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ value:\ 'Text',}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Class\ name\ for\ text\ element.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Default:\ 'progressbar-\/text'}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ className:\ 'progressbar\_\_label',}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Inline\ CSS\ styles\ for\ the\ text\ element.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ If\ you\ want\ to\ modify\ all\ CSS\ your\ self,\ set\ null\ to\ disable}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ all\ default\ styles.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ If\ the\ style\ option\ contains\ values,\ container\ is\ automatically}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ set\ to\ position:\ relative.\ You\ can\ disable\ behavior\ this\ with}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ autoStyleContainer:\ false}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ If\ you\ specify\ anything\ in\ this\ object,\ none\ of\ the\ default\ styles}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ apply}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Default:\ object\ speficied\ below}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ style:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ //\ Text\ color.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ //\ Default:\ same\ as\ stroke\ color\ (options.color)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ color:\ '\#f00',}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ position:\ 'absolute',}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ left:\ '50\%',}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ top:\ '50\%',}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ padding:\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ margin:\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ //\ You\ can\ specify\ styles\ which\ will\ be\ browser\ prefixed}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ transform:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ prefix:\ true,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ value:\ 'translate(-\/50\%,\ -\/50\%)'}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Only\ effective\ if\ the\ text.style\ is\ not\ null}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ By\ default\ position:\ relative\ is\ applied\ to\ container\ if\ text}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ is\ set.\ Setting\ this\ to\ false\ disables\ that\ feature.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ autoStyleContainer:\ true,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Only\ effective\ if\ the\ shape\ is\ SemiCircle.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ If\ true,\ baseline\ for\ text\ is\ aligned\ with\ bottom\ of}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ the\ SVG\ canvas.\ If\ false,\ bottom\ line\ of\ SVG\ canvas}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ is\ in\ the\ center\ of\ text.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Default:\ true}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ alignToBottom:\ true}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Fill\ color\ for\ the\ shape.\ If\ null,\ no\ fill.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ null}
+\DoxyCodeLine{\ \ \ \ fill:\ 'rgba(0,\ 0,\ 0,\ 0.5)',}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Duration\ for\ animation\ in\ milliseconds}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 800}
+\DoxyCodeLine{\ \ \ \ duration:\ 1200,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Delay\ for\ animation\ in\ milliseconds}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 0}
+\DoxyCodeLine{\ \ \ \ delay:\ 100,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Easing\ for\ animation.\ See\ \#easing\ section.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 'linear'}
+\DoxyCodeLine{\ \ \ \ easing:\ 'easeOut',}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ See\ \#custom-\/animations\ section}
+\DoxyCodeLine{\ \ \ \ //\ Built-\/in\ shape\ passes\ reference\ to\ itself\ and\ a\ custom\ attachment}
+\DoxyCodeLine{\ \ \ \ //\ object\ to\ step\ function}
+\DoxyCodeLine{\ \ \ \ from:\ \{\ color:\ '\#eee'\ \},}
+\DoxyCodeLine{\ \ \ \ to:\ \{\ color:\ '\#000'\ \},}
+\DoxyCodeLine{\ \ \ \ step:\ function(state,\ circle,\ attachment)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ circle.path.setAttribute('stroke',\ state.color);}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ If\ true,\ some\ useful\ console.warn\ calls\ will\ be\ done\ if\ it\ seems}
+\DoxyCodeLine{\ \ \ \ //\ that\ progressbar\ is\ used\ incorrectly}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ false}
+\DoxyCodeLine{\ \ \ \ warnings:\ false}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md179}{}\doxysubsection{\texorpdfstring{.svg}{.svg}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md179}
+Reference to \href{https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg}{\texttt{ SVG}} element where progress bar is drawn.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md180}{}\doxysubsection{\texorpdfstring{.path}{.path}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md180}
+Reference to \href{https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path}{\texttt{ SVG path}} which presents the actual progress bar.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md181}{}\doxysubsection{\texorpdfstring{.trail}{.trail}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md181}
+Reference to \href{https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path}{\texttt{ SVG path}} which presents the trail of the progress bar. Returns {\ttfamily null} if trail is not defined.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md182}{}\doxysubsection{\texorpdfstring{\{text\} .text}{\{text\} .text}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md182}
+Reference to \href{https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p}{\texttt{ p element}} which presents the text label for progress bar. Returns {\ttfamily null} if text is not defined.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md183}{}\doxysubsection{\texorpdfstring{.animate(progress, \mbox{[}{\itshape options}\mbox{]}, \mbox{[}{\itshape cb}\mbox{]})}{.animate(progress, \mbox{[}{\itshape options}\mbox{]}, \mbox{[}{\itshape cb}\mbox{]})}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md183}
+Animates drawing of a shape.
+
+{\bfseries{Example}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{progressBar.animate(0.3,\ \{}
+\DoxyCodeLine{\ \ \ \ duration:\ 800}
+\DoxyCodeLine{\},\ function()\ \{}
+\DoxyCodeLine{\ \ \ \ console.log('Animation\ has\ finished');}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+{\bfseries{Parameters}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily progress} progress from 0 to 1.
+\item {\ttfamily options} Animation options. These options override the defaults given in initialization.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ //\ Duration\ for\ animation\ in\ milliseconds}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 800}
+\DoxyCodeLine{\ \ \ \ duration:\ 1200,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Delay\ for\ animation\ in\ milliseconds}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 0}
+\DoxyCodeLine{\ \ \ \ delay:\ 100,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Easing\ for\ animation.\ See\ \#easing\ section.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 'linear'}
+\DoxyCodeLine{\ \ \ \ easing:\ 'easeInOut',}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ See\ \#custom-\/animations\ section}
+\DoxyCodeLine{\ \ \ \ //\ Built-\/in\ shape\ passes\ reference\ to\ itself\ and\ a\ custom\ attachment}
+\DoxyCodeLine{\ \ \ \ //\ object\ to\ step\ function}
+\DoxyCodeLine{\ \ \ \ from:\ \{\ color:\ '\#eee'\ \},}
+\DoxyCodeLine{\ \ \ \ to:\ \{\ color:\ '\#000'\ \},}
+\DoxyCodeLine{\ \ \ \ step:\ function(state,\ circle,\ attachment)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ circle.path.setAttribute('stroke',\ state.color);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\item {\ttfamily cb} Callback function which is called after animation ends.
+\end{DoxyItemize}\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md184}{}\doxysubsection{\texorpdfstring{.set(progress)}{.set(progress)}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md184}
+Sets progress instantly without animation. Clears all animations for path.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md185}{}\doxysubsection{\texorpdfstring{.stop()}{.stop()}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md185}
+Stops animation to its current position.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md186}{}\doxysubsection{\texorpdfstring{.value()}{.value()}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md186}
+Returns current shown progress from 0 to 1. This value changes when animation is running.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md187}{}\doxysubsection{\texorpdfstring{.set\+Text(text)}{.set\+Text(text)}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md187}
+Sets text to given a string. If you need to dynamically modify the text element, see .text attribute.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md188}{}\doxysubsection{\texorpdfstring{.destroy()}{.destroy()}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2shape_autotoc_md188}
+Removes SVG element from container and removes all references to DOM elements. Destroying is irreversible. 

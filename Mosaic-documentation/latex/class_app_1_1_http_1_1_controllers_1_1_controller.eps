@@ -1,0 +1,465 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 2969.432373
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.168382 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 68 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text 'arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col 'arg1' to 'arg2' of row 'arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(Controller) cw
+(BaseController) cw
+(LangChainApiController) cw
+(FileManagerController) cw
+(LoginController) cw
+(HomeController) cw
+(OpenAIController) cw
+(DashboardController) cw
+(SSAContentTopicController) cw
+(SSAGlobalBrandController) cw
+(SSAGlobalContainerController) cw
+(SSAGlobalDesingHuddleClassMap) cw
+(SSAGlobalGalleryController) cw
+(SSAGlobalPageComponentController) cw
+(SSAGlobalPagesController) cw
+(SSAGlobalSnippetsController) cw
+(SSAGlobalTagsController) cw
+(SSAPromptController) cw
+(SSAShortUrlController) cw
+(SSAVariableController) cw
+(SiteController) cw
+(SiteSubTopicContentController) cw
+(UserProfileController) cw
+(SiteAnalyticsController) cw
+(SiteCampaignController) cw
+(SiteCoursesController) cw
+(SiteEmailController) cw
+(SiteEmailTemplateController) cw
+(SiteExtrasController) cw
+(SiteFormQuestionAnswerController) cw
+(SiteFormQuestionController) cw
+(SiteFormsController) cw
+(SiteGalleryController) cw
+(SiteGroupsController) cw
+(SiteMajorGroupController) cw
+(MeetingEventController) cw
+(SiteMeetingTimeSlotController) cw
+(SitePageComponentController) cw
+(SitePagesController) cw
+(SiteRolesController) cw
+(SiteSettingController) cw
+(SiteSmsController) cw
+(SiteSmsFlowController) cw
+(SiteSnippetController) cw
+(SiteUiGridController) cw
+(SiteUsersController) cw
+(SiteVariableController) cw
+(TwoFactorAuthController) cw
+(GenericPasswordController) cw
+(TwoFactorAuthController) cw
+(ConfirmPasswordController) cw
+(ForgotPasswordController) cw
+(LoginController) cw
+(RegisterController) cw
+(ResetPasswordController) cw
+(VerificationController) cw
+(VerificationCustomController) cw
+(DashboardController) cw
+(PageController) cw
+(UserProfileController) cw
+(HomeController) cw
+(PageRequestFormController) cw
+(LoginController) cw
+(DashboardController) cw
+(MainPageController) cw
+(MainPagesController) cw
+(UserController) cw
+(WebhookController) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (Controller) 0.000000 66.000000 box
+ (BaseController) 0.000000 67.000000 box
+ (LangChainApiController) 1.000000 65.000000 box
+ (FileManagerController) 1.000000 64.000000 box
+ (LoginController) 1.000000 63.000000 box
+ (HomeController) 1.000000 62.000000 box
+ (OpenAIController) 1.000000 61.000000 box
+ (DashboardController) 1.000000 60.000000 box
+ (SSAContentTopicController) 1.000000 59.000000 box
+ (SSAGlobalBrandController) 1.000000 58.000000 box
+ (SSAGlobalContainerController) 1.000000 57.000000 box
+ (SSAGlobalDesingHuddleClassMap) 1.000000 56.000000 box
+ (SSAGlobalGalleryController) 1.000000 55.000000 box
+ (SSAGlobalPageComponentController) 1.000000 54.000000 box
+ (SSAGlobalPagesController) 1.000000 53.000000 box
+ (SSAGlobalSnippetsController) 1.000000 52.000000 box
+ (SSAGlobalTagsController) 1.000000 51.000000 box
+ (SSAPromptController) 1.000000 50.000000 box
+ (SSAShortUrlController) 1.000000 49.000000 box
+ (SSAVariableController) 1.000000 48.000000 box
+ (SiteController) 1.000000 47.000000 box
+ (SiteSubTopicContentController) 1.000000 46.000000 box
+ (UserProfileController) 1.000000 45.000000 box
+ (SiteAnalyticsController) 1.000000 44.000000 box
+ (SiteCampaignController) 1.000000 43.000000 box
+ (SiteCoursesController) 1.000000 42.000000 box
+ (SiteEmailController) 1.000000 41.000000 box
+ (SiteEmailTemplateController) 1.000000 40.000000 box
+ (SiteExtrasController) 1.000000 39.000000 box
+ (SiteFormQuestionAnswerController) 1.000000 38.000000 box
+ (SiteFormQuestionController) 1.000000 37.000000 box
+ (SiteFormsController) 1.000000 36.000000 box
+ (SiteGalleryController) 1.000000 35.000000 box
+ (SiteGroupsController) 1.000000 34.000000 box
+ (SiteMajorGroupController) 1.000000 33.000000 box
+ (MeetingEventController) 1.000000 32.000000 box
+ (SiteMeetingTimeSlotController) 1.000000 31.000000 box
+ (SitePageComponentController) 1.000000 30.000000 box
+ (SitePagesController) 1.000000 29.000000 box
+ (SiteRolesController) 1.000000 28.000000 box
+ (SiteSettingController) 1.000000 27.000000 box
+ (SiteSmsController) 1.000000 26.000000 box
+ (SiteSmsFlowController) 1.000000 25.000000 box
+ (SiteSnippetController) 1.000000 24.000000 box
+ (SiteUiGridController) 1.000000 23.000000 box
+ (SiteUsersController) 1.000000 22.000000 box
+ (SiteVariableController) 1.000000 21.000000 box
+ (TwoFactorAuthController) 1.000000 20.000000 box
+ (GenericPasswordController) 1.000000 19.000000 box
+ (TwoFactorAuthController) 1.000000 18.000000 box
+ (ConfirmPasswordController) 1.000000 17.000000 box
+ (ForgotPasswordController) 1.000000 16.000000 box
+ (LoginController) 1.000000 15.000000 box
+ (RegisterController) 1.000000 14.000000 box
+ (ResetPasswordController) 1.000000 13.000000 box
+ (VerificationController) 1.000000 12.000000 box
+ (VerificationCustomController) 1.000000 11.000000 box
+ (DashboardController) 1.000000 10.000000 box
+ (PageController) 1.000000 9.000000 box
+ (UserProfileController) 1.000000 8.000000 box
+ (HomeController) 1.000000 7.000000 box
+ (PageRequestFormController) 1.000000 6.000000 box
+ (LoginController) 1.000000 5.000000 box
+ (DashboardController) 1.000000 4.000000 box
+ (MainPageController) 1.000000 3.000000 box
+ (MainPagesController) 1.000000 2.000000 box
+ (UserController) 1.000000 1.000000 box
+ (WebhookController) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+0 0.000000 66.000000 out
+solid
+1 0.000000 67.000000 in
+solid
+1 0.000000 65.250000 out
+solid
+0 0.000000 65.500000 hedge
+solid
+0 0.000000 64.500000 hedge
+solid
+0 0.000000 63.500000 hedge
+solid
+0 0.000000 62.500000 hedge
+solid
+0 0.000000 61.500000 hedge
+solid
+0 0.000000 60.500000 hedge
+solid
+0 0.000000 59.500000 hedge
+solid
+0 0.000000 58.500000 hedge
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 66.000000 0.500000 vedge

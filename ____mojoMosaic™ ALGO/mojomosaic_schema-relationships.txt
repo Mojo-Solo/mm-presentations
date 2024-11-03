@@ -1,0 +1,897 @@
+Database Schema Overview: The MySQL database schema consists of
+multiple tables designed to manage a comprehensive content management
+system (CMS). Each table serves a distinct purpose within the CMS,
+ensuring the efficient handling of users, content, site settings,
+security, and communication flows. Below is a high-level overview of
+the key tables and their primary functions:I have reviewed the
+complete SQL schema provided in your file and included all the tables,
+ensuring 100% accuracy. Here is a detailed description of how the
+tables work together, including their fields and relationships:
+Key Tables and Their Roles
+admins
+Purpose: Stores administrator details.
+Fields: id, name, email, password, role, phone, two_factor_code,
+two_factor_expires_at, is_twofactor, pinecone_index, pinecone_host,
+design_huddle_access_token, design_huddle_refresh_token,
+design_huddle_expires_in, design_huddle_obtained_at,
+unique_hash_token, unique_hash_token_obtained_at, remember_token,
+created_at, updated_at.
+Relationships: No direct foreign key relationships specified.
+agents
+Purpose: Contains details of agents.
+Fields: AgentID, Name, Email, Role.
+Relationships: Referenced by agent_tools and agent_workflows.
+agent_tools
+Purpose: Manages the relationship between agents and tools.
+Fields: id, agent_id, tool_id.
+Relationships:
+Foreign Key: agent_id references agents(AgentID).
+Foreign Key: tool_id references tools(id).
+agent_workflows
+Purpose: Manages the relationship between agents and workflows.
+Fields: id, agent_id, workflow_id.
+Relationships:
+Foreign Key: agent_id references agents(AgentID).
+Foreign Key: workflow_id references workflows(id).
+analysis_results
+Purpose: Stores results of analyses.
+Fields: result_id, client_id, analysis_type, result_details,
+generated_date.
+Relationships:
+Foreign Key: client_id references clients(client_id).
+athletes
+Purpose: Contains details of athletes.
+Fields: id, name, email, date_of_birth, created_at, updated_at.
+Relationships: Referenced by blockchain_records, engagement, iot_data,
+neural_interface_data, performance_metrics.
+authenticators
+Purpose: Manages authentication credentials.
+Fields: id, user_id, credential_id, public_key, created_at,
+ 
+updated_at.
+Relationships:
+Foreign Key: user_id references users(id).
+blockchain_records
+Purpose: Stores blockchain records related to athletes.
+Fields: id, athlete_id, record_type, data, created_at.
+Relationships:
+Foreign Key: athlete_id references athletes(id).
+clients
+Purpose: Contains client details.
+Fields: client_id, first_name, last_name, email, phone_number,
+registration_date, status.
+Relationships: Referenced by analysis_results, client_documents,
+client_history, client_messages.
+client_documents
+Purpose: Stores client-related documents.
+Fields: document_id, client_id, document_type, document_path,
+upload_date.
+Relationships:
+Foreign Key: client_id references clients(client_id).
+client_history
+Purpose: Logs client interaction history.
+Fields: history_id, client_id, event_type, event_date, details.
+Relationships:
+Foreign Key: client_id references clients(client_id).
+client_messages
+Purpose: Manages messages to and from clients.
+Fields: message_id, client_id, message_direction, message_content,
+message_date.
+Relationships:
+Foreign Key: client_id references clients(client_id).
+conversations
+Purpose: Stores user conversations.
+Fields: id, user_id, agent_id, started_at, ended_at.
+Relationships:
+Foreign Key: user_id references users(id).
+Foreign Key: agent_id references agents(AgentID).
+conversation_tools
+Purpose: Links conversations with tools.
+Fields: id, conversation_id, tool_id.
+Relationships:
+Foreign Key: conversation_id references conversations(id).
+Foreign Key: tool_id references tools(id).
+CoreObjective
+ 
+Purpose: Manages core objectives.
+Fields: ObjectiveID, Description, TargetCompletionDate.
+Relationships: Referenced by KeyPillars.
+dao_governance
+Purpose: Stores DAO governance proposals and votes.
+Fields: id, proposal_id, proposal_type, votes, created_at.
+Relationships: No direct foreign key relationships specified.
+datacollectionforms
+Purpose: Contains data collection forms.
+Fields: id, name, fields, created_at, updated_at.
+Relationships: No direct foreign key relationships specified.
+engagement
+Purpose: Stores athlete engagement data.
+Fields: id, athlete_id, activity_type, duration, recorded_at.
+Relationships:
+Foreign Key: athlete_id references athletes(id).
+experiences
+Purpose: Contains details of various experiences.
+Fields: id, name, description, created_at, updated_at.
+Relationships: Referenced by experience_prompts, experience_tools,
+experience_versions.
+experience_prompts
+Purpose: Stores prompts related to experiences.
+Fields: id, experience_id, prompt.
+Relationships:
+Foreign Key: experience_id references experiences(id).
+experience_tools
+Purpose: Manages the relationship between experiences and tools.
+Fields: id, experience_id, tool_id.
+Relationships:
+Foreign Key: experience_id references experiences(id).
+Foreign Key: tool_id references tools(id).
+experience_versions
+Purpose: Tracks different versions of experiences.
+Fields: id, experience_id, version, description, created_at.
+Relationships:
+Foreign Key: experience_id references experiences(id).
+failed_jobs
+Purpose: Logs details of failed background jobs.
+Fields: id, connection, queue, payload, exception, failed_at.
+Relationships: No direct foreign key relationships specified.
+favourites
+ 
+ Purpose: Manages user favorites.
+Fields: id, user_id, favouriteable_id, favouriteable_type, created_at,
+updated_at.
+Relationships:
+Foreign Key: user_id references users(id).
+forms
+Purpose: Manages forms.
+Fields: form_id, form_name, form_description, creation_date.
+Relationships: Referenced by form_questions.
+form_questions
+Purpose: Contains details of form questions.
+Fields: question_id, form_id, question_text, question_type, options.
+Relationships:
+Foreign Key: form_id references forms(form_id).
+formquestionanswers
+Purpose: Stores user responses to form questions.
+Fields: id, user_id, site_id, question_id, question_title, answer_id,
+answer_title, answer_type, answer_data, answer_value, created_at,
+updated_at.
+Relationships:
+Foreign Key: user_id references users(id).
+Foreign Key: site_id references sites(id).
+Foreign Key: question_id references form_questions(question_id).
+FoundationalComponents
+Purpose: Manages foundational components.
+Fields: ComponentID, PillarID, Name, Description.
+Relationships:
+Foreign Key: PillarID references KeyPillars(PillarID).
+interactions
+- Purpose: Logs interactions within projects.
+Fields: interaction_id, project_id, interaction_type, timestamp.
+Relationships:
+Foreign Key: project_id references projects(project_id).
+interaction_data
+Purpose: Stores interaction data.
+Fields: data_id, interaction_id, interaction_data.
+Relationships:
+Foreign Key: interaction_id references interactions(interaction_id).
+iot_data
+Purpose: Stores IoT data related to athletes.
+Fields: id, athlete_id, device_id, data_type, value, recorded_at.
+
+Relationships:
+Foreign Key: athlete_id references athletes(id).
+iteration_logs
+Purpose: Logs iteration data for processes.
+Fields: id, iteration_type, description, logged_at.
+Relationships: No direct foreign key relationships specified.
+jobs
+Purpose: Manages background jobs.
+Fields: id, queue, payload, attempts, reserved_at, available_at,
+created_at.
+Relationships: No direct foreign key relationships specified.
+KeyPillars
+Purpose: Manages key pillars related to core objectives.
+Fields: PillarID, ObjectiveID, Name, Description.
+Relationships:
+Foreign Key: ObjectiveID references CoreObjective(ObjectiveID).
+menu_sites
+Purpose: Manages site menus.
+Fields: id, created_at, updated_at.
+Relationships: No direct foreign key relationships specified.
+migrations
+Purpose: Tracks database migrations.
+Fields: id, migration, batch.
+Relationships: No direct foreign key relationships specified.
+neuralinterfacedata
+Purpose: Stores neural interface data related to athletes.
+Fields: id, athlete_id, data_type, value, recorded_at.
+Relationships:
+Foreign Key: athlete_id references athletes(id).
+password_resets
+Purpose: Stores password reset tokens.
+Fields: email, token, created_at.
+Relationships: No direct foreign key relationships specified.
+performance_metrics
+Purpose: Stores performance metrics for athletes.
+Fields: id, athlete_id, metric_type, value, recorded_at.
+Relationships:
+Foreign Key: athlete_id references athletes(id).
+permissions
+Purpose: Manages site access permissions.
+Fields: id, site_id, name, created_at, updated_at.
+ 
+Relationships:
+Foreign Key: site_id references sites(id).
+projects
+Purpose: Contains details of projects.
+Fields: project_id, project_name, project_description, created_at,
+updated_at.
+Relationships: Referenced by interactions.
+roles
+Purpose: Manages user roles within the site.
+Fields: id, site_id, role_name, permissions.
+Relationships:
+Foreign Key: site_id references sites(id).
+role_users
+Purpose: Links users to roles within sites.
+Fields: id, user_id, role_id, site_id.
+Relationships:
+Foreign Key: user_id references users(id).
+Foreign Key: role_id references roles(id).
+Foreign Key: site_id references sites(id).
+sent_emails
+Purpose: Logs emails sent from the system.
+Fields: id, domain, hash, headers, sender, recipient, subject,
+content, opens, clicks.
+Relationships: No direct foreign key relationships specified.
+sentemailsurl_clicked
+Purpose: Tracks clicks on URLs in sent emails.
+Fields: id, sent_email_id, url, hash, clicks.
+Relationships:
+Foreign Key: sent_email_id references sent_emails(id).
+shorturlvisits
+Purpose: Tracks visits to short URLs.
+Fields: id, short_url_id, ip_address, operating_system, browser,
+referrer_url, visited_at.
+Relationships:
+Foreign Key: short_url_id references short_urls(id).
+short_urls
+Purpose: Manages short URLs.
+Fields: id, site_super_admin, destination_url, url_key,
+default_short_url, single_use, track_visits.
+Relationships: No direct foreign key relationships specified.
+siteactionschedules
+Purpose: Manages scheduled actions for sites.
+ 
+Fields: id, site_id, action_type, payload, job_class, delivered,
+send_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+siteanalyticsclicks
+Purpose: Tracks clicks on a site.
+Fields: id, site_id, user_id, content, tagName, ip, url, referrer,
+userAgent, clickTime.
+Relationships:
+Foreign Key: site_id references sites(id).
+Foreign Key: user_id references users(id).
+siteanalyticssessions
+Purpose: Tracks user sessions on a site.
+Fields: id, site_id, user_id, duration, ip, userAgent, domain,
+sessionStart, sessionEnd.
+Relationships:
+Foreign Key: site_id references sites(id).
+Foreign Key: user_id references users(id).
+sitecampaignsnippets
+Purpose: Manages snippets for campaigns.
+Fields: id, site_id, campaign_id, snippet_hash, title, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+Foreign Key: campaign_id references site_campaigns(id).
+site_campaigns
+Purpose: Manages campaigns within sites.
+Fields: id, site_id, topic_id, sub_topic_id, status, title,
+output_type, campaign_tone, generated_content.
+Relationships:
+Foreign Key: site_id references sites(id).
+sitecourselesson_snippets
+Purpose: Manages snippets specific to course lessons.
+Fields: id, site_id, lesson_id, order, type, content, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+Foreign Key: lesson_id references site_course_lessons(id).
+sitecourselessons
+Purpose: Represents individual lessons within a course.
+Fields: id, site_id, title, status, linked_subtopic, vo_settings,
+languages, generated_content, created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+ 
+sitecoursemodulemp3scripts
+Purpose: Manages MP3 scripts for course modules.
+Fields: id, site_id, site_course_lesson_id, is_default, language,
+mp3_script_content, mp3_paths, created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+Foreign Key: site_course_lesson_id references site_course_lessons(id).
+sitecoursemodules
+Purpose: Manages modules within courses.
+Fields: id, site_id, module_hash, lessons, generated_content,
+vo_settings, languages, linked_subtopic, status, title, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+site_courses
+Purpose: Manages courses offered on the site.
+**
+Fields**: id, site_id, course_hash, title, status, layout, modules,
+music_path, toggle_arrows, volume, created_at, updated_at. -
+*Relationships*: - Foreign Key: site_id references sites(id).
+siteemailtemplates
+Purpose: Manages email templates for sites.
+Fields: id, site_id, identifier, subject, template_type, content,
+created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+siteformquestions
+Purpose: Manages questions for forms on sites.
+Fields: id, site_id, form_id, question_title, question_image,
+message_summary_type, message_summary, order, question_type,
+question_condition, color, created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+Foreign Key: form_id references site_forms(id).
+site_forms
+Purpose: Manages forms on the site.
+Fields: id, site_id, form_hash, name, template, created_by, edited_by,
+published_at, status, privacy, form_type, expiration_date,
+conditions_enable, language, ada_compliant, weighted_questions,
+show_answers_when, anonymous_quiz, default_homepage,
+default_component_header, default_component_footer, is_special,
+is_approval_required, snippet_page_name, created_at, updated_at.
+Relationships:
+ 
+Foreign Key: site_id references sites(id).
+site_galleries
+Purpose: Manages galleries on the site.
+Fields: id, site_id, original_name, media, ext, parent_id, language,
+translation_status, created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+sitegridslot_templates
+Purpose: Manages slot templates for UI grid layouts.
+Fields: id, slot_template_hash, site_id, slot_id, slot_title,
+created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+sitegroupusers
+Purpose: Links users to groups on a site.
+Fields: id, group_id, user_id, site_id, created_at, updated_at.
+Relationships:
+Foreign Key: group_id references site_groups(id).
+Foreign Key: user_id references users(id).
+Foreign Key: site_id references sites(id).
+site_groups
+Purpose: Manages groups within a site.
+Fields: id, site_id, name, identifier, short_code, is_major_group,
+group_type, sub_groups, created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+sitemeetingevents
+Purpose: Manages scheduling and details of meetings or events.
+Fields: id, site_id, meeting_type, title, facilitator_type,
+facilitator, participant_type, participant, landing_page, courses,
+subject, registration_type, snippet, email_body, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+sitemeetingtimeslotusers
+Purpose: Links users to time slots for meetings or events.
+Fields: id, site_id, meeting_id, slot_id, user_id, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+Foreign Key: meeting_id references site_meeting_events(id).
+Foreign Key: slot_id references site_meeting_time_slots(id).
+Foreign Key: user_id references users(id).
+sitemeetingtime_slots
+ 
+ Purpose: Manages available time slots for meetings or events.
+Fields: id, site_id, meeting_id, time, date, allowed_person,
+follow_up_email, follow_up_email_subject, follow_up_email_attachment,
+created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+Foreign Key: meeting_id references site_meeting_events(id).
+sitemeetingtranscripts
+Purpose: Manages transcripts for meetings or events.
+Fields: id, site_id, meeting_id, message, timestamp, tag, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+Foreign Key: meeting_id references site_meeting_events(id).
+siteorderforms
+Purpose: Manages order forms.
+Fields: id, site_id, site_super_admin, dynamic_fields, api_response,
+status, created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+sitepagecomponents
+Purpose: Manages components of a site, like headers and footers.
+Fields: id, site_id, title, forked_from, content, type, css_template,
+is_live, created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+sitepagetemplates
+Purpose: Manages page templates of a site.
+Fields: id, site_id, is_homepage, page_hash, slug, title, page_title,
+page_description, page_keywords, css_template, status,
+linked_subtopic, generated_content, content, group_shortcodes,
+history, created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+site_settings
+Purpose: Stores various configurable settings for each site.
+Fields: id, site_id, setting_key, setting_value, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+sitesmsflows
+Purpose: Manages SMS flows for communication.
+Fields: id, site_id, to, from, execution_sid, created_at, updated_at.
+
+Relationships:
+Foreign Key: site_id references sites(id).
+sitesmsflow_lists
+Purpose: Manages SMS flow lists for communication.
+Fields: id, site_id, flow_sid, flow_name, created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+site_snippets
+Purpose: Manages reusable content snippets for site design.
+Fields: id, site_id, snippet_hash, title, shortcode, content, history,
+css_template, created_at, updated_at.
+Relationships:
+Foreign Key: site_id references sites(id).
+siteuigridsubslots
+Purpose: Manages sub slots for UI grid layouts.
+Fields: id, site_id, grid_id, sub_slot_title, sub_slot_icon, type,
+model_id, group_short_code, created_at, updated_at, order.
+Relationships:
+Foreign Key: site_id references sites(id).
+Foreign Key: grid_id references ui_grid_layouts(id).
+site_users
+Purpose: Links users to specific sites.
+Fields: id, user_id, site_id, created_at, updated_at.
+Relationships:
+Foreign Key: user_id references users(id).
+Foreign Key: site_id references sites(id).
+site_variables
+Purpose: Manages custom variables for sites.
+Fields: id, site_id, syntax, value, `created
+at,updatedat.
+    - **Relationships**:
+      - Foreign Key:site_idreferencessites(id)`.
+sites
+Purpose: Represents different sites or domains managed within the
+system.
+Fields: id, domain, name, site_super_admin, logo, favicon, contact,
+analytics_script, analytics_view, custom_css, languages, brand_id,
+css_template, site_style, is_active, is_private, login_register,
+user_account_verification_required, generic_password, login_type,
+allowed_domain, pwa_enable, grid_popup_height, grid_popup_width,
+created_at, updated_at.
+Relationships: Referenced by multiple tables as a key entity.
+snippet_packages
+ 
+ Purpose: Manages packages of reusable snippets.
+Fields: id, snippet_hash, title, content, css_template, created_at,
+updated_at.
+Relationships: No direct foreign key relationships specified.
+ssabrandsettings
+Purpose: Manages brand-specific settings.
+Fields: id, brand_id, key, value.
+Relationships:
+Foreign Key: brand_id references ssa_global_brands(id).
+ssadesignhuddle_classes
+Purpose: Manages design classes for global brands.
+Fields: id, site_super_admin, template_title, template_id,
+template_classes.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalsubtopicbig_data
+Purpose: Manages big data for global subtopics.
+Fields: id, topic_id, index, content, summary.
+Relationships:
+Foreign Key: topic_id references ssa_global_content_topics(id).
+ssaglobalbrands
+Purpose: Manages global brands.
+Fields: id, site_super_admin, title, first_time, brand_hash,
+created_at, updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalcontainers
+Purpose: Manages global design containers.
+Fields: id, site_super_admin, title, css_template, hash, content,
+created_at, updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalcontainer_collections
+Purpose: Manages global container collections.
+Fields: id, site_super_admin, title, css_template, hash, content,
+created_at, updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalcontent_topics
+Purpose: Manages global content topics.
+Fields: id, site_super_admin, title, description, raw_content,
+parent_id, created_at, updated_at.
+
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalcourses
+Purpose: Manages global courses.
+Fields: id, site_super_admin, course_hash, title, status, layout,
+modules, music_path, toggle_arrows, volume, created_at, updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalexperiences
+Purpose: Stores global experiences.
+Fields: id, created_at, updated_at.
+Relationships: No direct foreign key relationships specified.
+ssaglobalgalleries
+Purpose: Manages global image/media galleries.
+Fields: id, site_super_admin, original_name, media, ext, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalmastersnippetlibraries
+Purpose: Manages master snippet libraries.
+Fields: id, site_super_admin, title, css_template, snippet_hash,
+description, json_description, history, content, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalmeeting_types
+Purpose: Manages global meeting types.
+Fields: id, site_super_admin, name, description, email_subject,
+email_body, created_at, updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalpages
+Purpose: Manages global pages across multiple sites.
+Fields: id, site_super_admin, forked_from, status, css_template,
+page_hash, title, page_title, page_description, page_keywords,
+linked_subtopic, generated_content, slug, content, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalsnippets
+Purpose: Manages global snippets used across multiple sites.
+Fields: id, site_super_admin, forked_from, shortcode, snippet_hash,
+title, content, history, css_template, created_at, updated_at.
+ 
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssaglobalsubtopiccontents
+Purpose: Manages sub-topic contents globally.
+Fields: id, topic_id, content_type, text, created_at, updated_at.
+Relationships:
+Foreign Key: topic_id references ssa_global_content_topics(id).
+ssaglobalvariables
+Purpose: Manages global variables for use across sites.
+Fields: id, site_super_admin, syntax, value, type, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssagptprompts
+Purpose: Stores GPT (Generative Pre-trained Transformer) prompts for
+AI interactions.
+Fields: id, site_super_admin, actor_name, actor_prompt, created_at,
+updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssa_packages
+Purpose: Manages packages for site administration.
+Fields: id, package_type, package_id, site_super_admin.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ssapineconenamespaces
+Purpose: Manages Pinecone namespaces.
+Fields: id, site_super_admin, name, description, pinecone_index,
+pinecone_host, created_at, updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+taggables
+Purpose: Manages the polymorphic relationship for tagging
+functionality.
+Fields: tag_id, taggable_type, taggable_id.
+Relationships:
+Foreign Key: tag_id references tags(id).
+tags
+Purpose: Manages tags used for categorization.
+Fields: id, site_super_admin, name, slug, type, order_column,
+group_type, sub_groups, created_at, updated_at.
+Relationships:
+Foreign Key: site_super_admin references admins(id).
+ 
+template_packages
+Purpose: Manages template packages.
+Fields: id, title, image, content, created_at, updated_at.
+Relationships: No direct foreign key relationships specified.
+tools
+Purpose: Contains details of various tools.
+Fields: id, name, description, code.
+Relationships: Referenced by multiple tables as a key entity.
+uigridlayouts
+Purpose: Manages grid layouts for UI design.
+Fields: id, site_id, template_name, slot_title, slot_icon, slot_color,
+slot_popup_content_type, `slotpopupcontent
+,position,type,popupnavtoggle,popuptoggle,groupshortcode,modelid,creat
+edat,updatedat.
+    - **Relationships**:
+      - Foreign Key:siteidreferencessites(id)`.
+UserPersonaDevelopmentAgent
+Purpose: Manages user persona development agents.
+Fields: AgentID, ComponentID, TaskName, Description, Status.
+Relationships:
+Foreign Key: ComponentID references
+FoundationalComponents(ComponentID).
+users
+Purpose: Manages user information.
+Fields: id, name, mname, lname, email, employeeid, email_verified_at,
+password, role, phone, sms_consent, user_language, twofactor_code,
+twofactor_expires_at, is_twofactor, remember_token, created_at,
+updated_at, deleted_at, site_id, ssa_id.
+Relationships: Referenced by multiple tables as a key entity.
+vimeo_videos
+Purpose: Manages Vimeo videos.
+Fields: id, video_name, video_path, video_url, description,
+created_at, updated_at.
+Relationships: No direct foreign key relationships specified.
+vrarsessions
+Purpose: Manages VR/AR sessions.
+Fields: id, athlete_id, session_type, feedback, recorded_at.
+Relationships:
+Foreign Key: athlete_id references athletes(id).
+workflows
+Purpose: Manages workflows.
+ 
+Fields: id, name, description.
+Relationships: Referenced by agent_workflows.
+Neural Network Structure and Table Relationships
+The schema is designed to manage a complex system where various
+entities interact in a hierarchical and relational manner. Each table
+serves a specific purpose, ensuring data integrity and seamless
+integration across different functionalities. The key relationships
+between tables, especially those involving agents, tools, clients,
+experiences, and users, form the backbone of the system, enabling it
+to function as a cohesive unit.
+Agents and Tools: agent_tools links agents to the tools they use,
+allowing for the management of agent-specific toolsets.
+Agents and Workflows: agent_workflows links agents to their workflows,
+facilitating the organization and tracking of agent activities.
+Clients: Multiple tables like client_documents, client_history, and
+client_messages manage various aspects of client interactions and
+data, all linked back to the clients table.
+Conversations and Tools: conversation_tools links conversations to the
+tools used within those conversations, ensuring that all relevant
+tools are accessible during interactions.
+Experiences: Tables like experience_prompts, experience_tools, and
+experience_versions manage the details, tools, and versions of
+experiences, all linked back to the experiences table.
+Forms: form_questions and form_question_answers manage the questions
+and responses within forms, linked to the forms table.
+Users: Tables like role_users, site_users, and favourites manage user
+roles, site-specific data, and user preferences, all linked back to
+the users table.
+This schema provides a robust framework for managing a wide range of
+functionalities, from user management and authentication to content
+management, site settings, and communication flows. Each table is
+designed to handle specific aspects of the system, ensuring efficient
+and secure operations.
+This schema provides a robust framework for managing a wide range of
+functionalities, from user management and authentication to content
+management, site settings, and communication flows. Each table is
+designed to handle specific aspects of the system, ensuring efficient
+and secure operations."""
+NOTE: This list represents primary keys and relationships between
+tables. It does not include all fields for each table. The algorithm
+has access to complete schema information, including all fields,
+through its database connection and initialization process. This list
+serves as a quick reference for understanding table relationships and
+should be used in conjunction with the full schema when detailed field
+information is required.
+FULL DETAILED ALGORITHM RELATIONSHIPS OF ALL 109 TABLES
+ 
+ admins: { id: PrimaryKey(INT) }
+agents: { AgentID: PrimaryKey(INT) }
+agenttools: { id: PrimaryKey(INT), agentid: ForeignKey(agents,
+AgentID), tool_id: ForeignKey(tools, id) }
+agentworkflows: { id: PrimaryKey(INT), agentid: ForeignKey(agents,
+AgentID), workflow_id: ForeignKey(workflows, id) }
+analysisresults: { resultid: PrimaryKey(INT), clientid:
+ForeignKey(clients, clientid) }
+athletes: { id: PrimaryKey(INT) }
+authenticators: { id: PrimaryKey(INT), user_id: ForeignKey(users,
+id) }
+blockchainrecords: { id: PrimaryKey(INT), athleteid:
+ForeignKey(athletes, id) }
+clients: { client_id: PrimaryKey(INT) }
+clientdocuments: { documentid: PrimaryKey(INT), clientid:
+ForeignKey(clients, clientid) }
+clienthistory: { historyid: PrimaryKey(INT), clientid:
+ForeignKey(clients, clientid) }
+clientmessages: { messageid: PrimaryKey(INT), clientid:
+ForeignKey(clients, clientid) }
+conversations: { id: PrimaryKey(INT), userid: ForeignKey(users, id),
+agentid: ForeignKey(agents, AgentID) }
+conversationtools: { id: PrimaryKey(INT), conversationid:
+ForeignKey(conversations, id), tool_id: ForeignKey(tools, id) }
+CoreObjective: { ObjectiveID: PrimaryKey(INT) }
+dao_governance: { id: PrimaryKey(INT) }
+datacollectionforms: { id: PrimaryKey(INT) }
+engagement: { id: PrimaryKey(INT), athlete_id: ForeignKey(athletes,
+id) }
+experiences: { id: PrimaryKey(INT) }
+experienceprompts: { id: PrimaryKey(INT), experienceid:
+ForeignKey(experiences, id) }
+experiencetools: { id: PrimaryKey(INT), experienceid:
+ForeignKey(experiences, id), tool_id: ForeignKey(tools, id) }
+experienceversions: { id: PrimaryKey(INT), experienceid:
+ForeignKey(experiences, id) }
+failed_jobs: { id: PrimaryKey(INT) }
+favourites: { id: PrimaryKey(INT), user_id: ForeignKey(users, id) }
+forms: { form_id: PrimaryKey(INT) }
+formquestions: { questionid: PrimaryKey(INT), formid:
+ForeignKey(forms, formid) }
+formquestionanswers: { id: PrimaryKey(INT), userid: ForeignKey(users,
+id), siteid: ForeignKey(sites, id), questionid:
+ForeignKey(formquestions, question_id) }
+FoundationalComponents: { ComponentID: PrimaryKey(INT), PillarID:
+ForeignKey(KeyPillars, PillarID) }
+interactions: { interactionid: PrimaryKey(INT), projectid:
+ForeignKey(projects, project_id) }
+interactiondata: { dataid: PrimaryKey(INT), interactionid:
+
+ForeignKey(interactions, interactionid) }
+iotdata: { id: PrimaryKey(INT), athleteid: ForeignKey(athletes, id) }
+iteration_logs: { id: PrimaryKey(INT) }
+jobs: { id: PrimaryKey(INT) }
+KeyPillars: { PillarID: PrimaryKey(INT), ObjectiveID:
+ForeignKey(CoreObjective, ObjectiveID) }
+menu_sites: { id: PrimaryKey(INT) }
+migrations: { id: PrimaryKey(INT) }
+neuralinterfacedata: { id: PrimaryKey(INT), athlete_id:
+ForeignKey(athletes, id) }
+password_resets: { email: VARCHAR }
+performancemetrics: { id: PrimaryKey(INT), athleteid:
+ForeignKey(athletes, id) }
+permissions: { id: PrimaryKey(INT), site_id: ForeignKey(sites, id) }
+projects: { project_id: PrimaryKey(INT) }
+roles: { id: PrimaryKey(INT), site_id: ForeignKey(sites, id) }
+roleusers: { id: PrimaryKey(INT), userid: ForeignKey(users, id),
+roleid: ForeignKey(roles, id), siteid: ForeignKey(sites, id) }
+sent_emails: { id: PrimaryKey(INT) }
+sentemailsurlclicked: { id: PrimaryKey(INT), sentemailid:
+ForeignKey(sentemails, id) }
+shorturlvisits: { id: PrimaryKey(INT), shorturlid:
+ForeignKey(short_urls, id) }
+short_urls: { id: PrimaryKey(INT) }
+siteactionschedules: { id: PrimaryKey(INT), site_id: ForeignKey(sites,
+id) }
+siteanalyticsclicks: { id: PrimaryKey(INT), siteid: ForeignKey(sites,
+id), userid: ForeignKey(users, id) }
+siteanalyticssessions: { id: PrimaryKey(INT), siteid:
+ForeignKey(sites, id), userid: ForeignKey(users, id) }
+sitecampaignsnippets: { id: PrimaryKey(INT), siteid: ForeignKey(sites,
+id), campaignid: ForeignKey(site_campaigns, id) }
+sitecampaigns: { id: PrimaryKey(INT), siteid: ForeignKey(sites, id) }
+sitecourselessonsnippets: { id: PrimaryKey(INT), siteid:
+ForeignKey(sites, id), lessonid: ForeignKey(sitecourse_lessons, id) }
+sitecourselessons: { id: PrimaryKey(INT), site_id: ForeignKey(sites,
+id) }
+sitecoursemodulemp3scripts: { id: PrimaryKey(INT), siteid:
+ForeignKey(sites, id), sitecourselessonid:
+ForeignKey(sitecourselessons, id) }
+sitecoursemodules: { id: PrimaryKey(INT), site_id: ForeignKey(sites,
+id) }
+sitecourses: { id: PrimaryKey(INT), siteid: ForeignKey(sites, id) }
+siteemailtemplates: { id: PrimaryKey(INT), site_id: ForeignKey(sites,
+id) }
+siteformquestions: { id: PrimaryKey(INT), siteid: ForeignKey(sites,
+id), formid: ForeignKey(site_forms, id) }
+siteforms: { id: PrimaryKey(INT), siteid: ForeignKey(sites, id) }
+sitegalleries: { id: PrimaryKey(INT), siteid: ForeignKey(sites, id) }
+sitegridslottemplates: { id: PrimaryKey(INT), siteid:
+ 
+ForeignKey(sites, id) }
+sitegroupusers: { id: PrimaryKey(INT), groupid: ForeignKey(sitegroups,
+id), userid: ForeignKey(users, id), siteid: ForeignKey(sites, id) }
+sitegroups: { id: PrimaryKey(INT), siteid: ForeignKey(sites, id) }
+sitemeetingevents: { id: PrimaryKey(INT), site_id: ForeignKey(sites,
+id) }
+sitemeetingtimeslotusers: { id: PrimaryKey(INT), siteid:
+ForeignKey(sites, id), meetingid: ForeignKey(sitemeetingevents, id),
+slotid: ForeignKey(sitemeetingtimeslots, id), user_id:
+ForeignKey(users, id) }
+sitemeetingtimeslots: { id: PrimaryKey(INT), siteid: ForeignKey(sites,
+id), meetingid: ForeignKey(sitemeeting_events, id) }
+sitemeetingtranscripts: { id: PrimaryKey(INT), siteid:
+ForeignKey(sites, id), meetingid: ForeignKey(sitemeetingevents, id) }
+siteorderforms: { id: PrimaryKey(INT), site_id: ForeignKey(sites,
+id) }
+sitepagecomponents: { id: PrimaryKey(INT), site_id: ForeignKey(sites,
+id) }
+sitepagetemplates: { id: PrimaryKey(INT), site_id: ForeignKey(sites,
+id) }
+sitesettings: { id: PrimaryKey(INT), siteid: ForeignKey(sites, id) }
+sitesmsflows: { id: PrimaryKey(INT), site_id: ForeignKey(sites, id) }
+sitesmsflowlists: { id: PrimaryKey(INT), siteid: ForeignKey(sites,
+id) }
+sitesnippets: { id: PrimaryKey(INT), siteid: ForeignKey(sites, id) }
+siteuigridsubslots: { id: PrimaryKey(INT), siteid: ForeignKey(sites,
+id), gridid: ForeignKey(uigridlayouts, id) }
+siteusers: { id: PrimaryKey(INT), userid: ForeignKey(users, id),
+site_id: ForeignKey(sites, id) }
+sitevariables: { id: PrimaryKey(INT), siteid: ForeignKey(sites, id) }
+sites: { id: PrimaryKey(INT) }
+snippet_packages: { id: PrimaryKey(INT) }
+ssabrandsettings: { id: PrimaryKey(INT), brandid:
+ForeignKey(ssaglobal_brands, id) }
+ssadesignhuddleclasses: { id: PrimaryKey(INT), sitesuper_admin:
+ForeignKey(admins, id) }
+ssaglobalsubtopicbigdata: { id: PrimaryKey(INT), topicid:
+ForeignKey(ssaglobalcontent_topics, id) }
+ssaglobalbrands: { id: PrimaryKey(INT), sitesuperadmin:
+ForeignKey(admins, id) }
+ssaglobalcontainers: { id: PrimaryKey(INT), sitesuperadmin:
+ForeignKey(admins, id) }
+ssaglobalcontainercollections: { id: PrimaryKey(INT), sitesuper_admin:
+ForeignKey(admins, id) }
+ssaglobalcontenttopics: { id: PrimaryKey(INT), sitesuper_admin:
+ForeignKey(admins, id) }
+ssaglobalcourses: { id: PrimaryKey(INT), sitesuperadmin:
+ForeignKey(admins, id) }
+ssaglobalexperiences: { id: PrimaryKey(INT) }
+ssaglobalgalleries: { id: PrimaryKey(INT), sitesuperadmin:
+ 
+ForeignKey(admins, id) }
+ssaglobalmastersnippetlibraries: { id: PrimaryKey(INT),
+sitesuperadmin: ForeignKey(admins, id) }
+ssaglobalmeetingtypes: { id: PrimaryKey(INT), sitesuper_admin:
+ForeignKey(admins, id) }
+ssaglobalpages: { id: PrimaryKey(INT), sitesuperadmin:
+ForeignKey(admins, id) }
+ssaglobalsnippets: { id: PrimaryKey(INT), sitesuperadmin:
+ForeignKey(admins, id) }
+ssaglobalsubtopiccontents: { id: PrimaryKey(INT), topicid:
+ForeignKey(ssaglobalcontenttopics, id) }
+ssaglobalvariables: { id: PrimaryKey(INT), sitesuperadmin:
+ForeignKey(admins, id) }
+ssagptprompts: { id: PrimaryKey(INT), sitesuperadmin:
+ForeignKey(admins, id) }
+ssapackages: { id: PrimaryKey(INT), sitesuper_admin:
+ForeignKey(admins, id) }
+ssapineconenamespaces: { id: PrimaryKey(INT), sitesuperadmin:
+ForeignKey(admins, id) }
+taggables: { tagid: ForeignKey(tags, id), taggableid: INT,
+taggable_type: VARCHAR }
+tags: { id: PrimaryKey(INT), sitesuperadmin: ForeignKey(admins, id) }
+template_packages: { id: PrimaryKey(INT) }
+tools: { id: PrimaryKey(INT) }
+uigridlayouts: { id: PrimaryKey(INT), site_id: ForeignKey(sites, id) }
+UserPersonaDevelopmentAgent: { AgentID: PrimaryKey(INT), ComponentID:
+ForeignKey(FoundationalComponents, ComponentID) }
+users: { id: PrimaryKey(INT) }
+vimeo_videos: { id: PrimaryKey(INT) }
+vrarsessions: { id: PrimaryKey(INT), athlete_id: ForeignKey(athletes,
+id) }
+workflows: { id: PrimaryKey(INT) }
+This list provides a comprehensive overview of the relationships
+between all 109 tables in the database. It focuses on primary keys and
+foreign key relationships, which are crucial for understanding the
+structure and connections within the database. For detailed field
+information, refer to the full schema documentation.
+ 

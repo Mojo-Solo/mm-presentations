@@ -1,0 +1,96 @@
+\doxysection{Kernel Class Reference}
+\hypertarget{class_app_1_1_http_1_1_kernel}{}\label{class_app_1_1_http_1_1_kernel}\index{Kernel@{Kernel}}
+Inheritance diagram for Kernel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_app_1_1_http_1_1_kernel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_kernel_a36a993ea76b635c84749f6e5e6562344}{\$middleware}}
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_kernel_a000642ef1cfc62ea5e829d8a3b17431a}{\$middleware\+Groups}}
+\item 
+\Hypertarget{class_app_1_1_http_1_1_kernel_ae5bf89bfdb0e63f0e05f25a03d805148}\label{class_app_1_1_http_1_1_kernel_ae5bf89bfdb0e63f0e05f25a03d805148} 
+{\bfseries \$route\+Middleware}
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_kernel_a646ac979aa6a9b827dd0872b8c3adfc0}{\$middleware\+Priority}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_app_1_1_http_1_1_kernel_a36a993ea76b635c84749f6e5e6562344}\index{Kernel@{Kernel}!\$middleware@{\$middleware}}
+\index{\$middleware@{\$middleware}!Kernel@{Kernel}}
+\doxysubsubsection{\texorpdfstring{\$middleware}{\$middleware}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_kernel_a36a993ea76b635c84749f6e5e6562344} 
+\$middleware\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)App\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)TrustProxies::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)App\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)CheckForMaintenanceMode::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Foundation\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)ValidatePostSize::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)App\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)TrimStrings::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Foundation\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)ConvertEmptyStringsToNull::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)App\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)Cors\(\backslash\)OptionsCors::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_app_1_1_http_1_1_kernel_a000642ef1cfc62ea5e829d8a3b17431a}\index{Kernel@{Kernel}!\$middlewareGroups@{\$middlewareGroups}}
+\index{\$middlewareGroups@{\$middlewareGroups}!Kernel@{Kernel}}
+\doxysubsubsection{\texorpdfstring{\$middlewareGroups}{\$middlewareGroups}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_kernel_a000642ef1cfc62ea5e829d8a3b17431a} 
+\$middleware\+Groups\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'web'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)App\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)EncryptCookies::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Cookie\(\backslash\)Middleware\(\backslash\)AddQueuedCookiesToResponse::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Session\(\backslash\)Middleware\(\backslash\)StartSession::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)View\(\backslash\)Middleware\(\backslash\)ShareErrorsFromSession::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)App\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)VerifyCsrfToken::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Routing\(\backslash\)Middleware\(\backslash\)SubstituteBindings::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'tenant'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)App\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)MainDomain\(\backslash\)Tenant\(\backslash\)IsSubdomainOwner::class}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'api'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'throttle:60,1'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Routing\(\backslash\)Middleware\(\backslash\)SubstituteBindings::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)App\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)Cors\(\backslash\)HandleCors::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_app_1_1_http_1_1_kernel_a646ac979aa6a9b827dd0872b8c3adfc0}\index{Kernel@{Kernel}!\$middlewarePriority@{\$middlewarePriority}}
+\index{\$middlewarePriority@{\$middlewarePriority}!Kernel@{Kernel}}
+\doxysubsubsection{\texorpdfstring{\$middlewarePriority}{\$middlewarePriority}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_kernel_a646ac979aa6a9b827dd0872b8c3adfc0} 
+\$middleware\+Priority\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Session\(\backslash\)Middleware\(\backslash\)StartSession::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)View\(\backslash\)Middleware\(\backslash\)ShareErrorsFromSession::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)App\(\backslash\)Http\(\backslash\)Middleware\(\backslash\)Authenticate::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Routing\(\backslash\)Middleware\(\backslash\)ThrottleRequests::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Session\(\backslash\)Middleware\(\backslash\)AuthenticateSession::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Routing\(\backslash\)Middleware\(\backslash\)SubstituteBindings::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Auth\(\backslash\)Middleware\(\backslash\)Authorize::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Http/Kernel.\+php\end{DoxyCompactItemize}

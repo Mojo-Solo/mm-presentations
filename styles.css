@@ -1,0 +1,438 @@
+/* Base Dark Mode Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff;
+    background-color: #111111;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Swiper Container */
+.swiper {
+    width: 100%;
+    height: 100vh;
+    background: #111111;
+}
+
+/* Center Content Layout */
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-slide.sliding-up {
+    transform: translateY(-100vh);
+}
+
+/* Centered Title Style for ALL slides */
+.centered-title {
+    font-size: 15vw;
+    font-weight: 900;
+    text-transform: lowercase;
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    opacity: 0.9;
+    text-align: center;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Content Container */
+.content-container {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #1a1a1a;
+    padding: 80px;
+    box-sizing: border-box;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content-container.active {
+    transform: translateY(-100%);
+}
+
+/* Enhanced Typography for Sub-Slides */
+.content-section {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 6vw;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.section-subtitle {
+    font-size: 3.5vw;
+    font-weight: 700;
+    margin: 40px 0 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.section-text {
+    font-size: 2.2vw;
+    line-height: 1.4;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Enhanced Bullet Points */
+.bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.bullet-list li {
+    font-size: 2.2vw;
+    margin: 25px 0;
+    padding-left: 40px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.bullet-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Enhanced Strong Text */
+strong {
+    color: #ffffff;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+strong::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+}
+
+/* Navigation Buttons */
+.navigation-container {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    gap: 20px;
+    z-index: 1000;
+}
+
+/* Horizontal Navigation Arrows */
+.nav-button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.nav-button::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-left: 0;
+    border-top: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-left::before {
+    transform: rotate(135deg);
+    margin-left: 5px;
+}
+
+.nav-right::before {
+    transform: rotate(-45deg);
+    margin-right: 5px;
+}
+
+/* Centered Down Arrow */
+.nav-down {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.nav-down::before {
+    transform: rotate(45deg);
+    margin-top: -5px;
+}
+
+.nav-button:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-button:hover::before {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+/* Bullet Lists */
+.bullet-list {
+    list-style: none;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.bullet-list li {
+    position: relative;
+    padding-left: 30px;
+    margin: 20px 0;
+    font-size: 2vw;
+}
+
+.bullet-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+/* Emphasis */
+strong {
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+}
+
+strong::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Progress Indicator */
+.progress-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s forwards;
+}
+
+/* Fix Logo Position */
+.logo-watermark {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    opacity: 0.15;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.logo-watermark:hover {
+    opacity: 0.3;
+}
+
+/* Active states for slide up effect */
+.sliding-up {
+    transform: translateY(-100vh);
+}
+
+.sliding-up .centered-title {
+    transform: translate(-50%, -150vh);
+    opacity: 0;
+}
+
+.sliding-up .content-container {
+    transform: translateY(-100vh);
+}
+
+/* Recording Interface */
+.recorder-container {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.record-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.2);
+    border: 2px solid rgba(255, 0, 0, 0.6);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.record-button.recording {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); background: rgba(255, 0, 0, 0.2); }
+    50% { transform: scale(1.1); background: rgba(255, 0, 0, 0.4); }
+    100% { transform: scale(1); background: rgba(255, 0, 0, 0.2); }
+}
+
+/* Fractal Timeline */
+.fractal-timeline {
+    position: fixed;
+    left: 30px;
+    right: 30px;
+    bottom: 100px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    z-index: 2000;
+    overflow: visible;
+}
+
+/* Fractal Marker Base Style */
+.fractal-marker {
+    position: absolute;
+    bottom: 100%;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateY(0);
+    transition: background 0.3s ease;
+}
+
+/* Marker Sizes Based on Fractal Sequence */
+.fractal-marker.scale-1 {
+    height: 10px;
+}
+
+.fractal-marker.scale-3 {
+    height: 15px;
+}
+
+.fractal-marker.scale-9 {
+    height: 20px;
+}
+
+.fractal-marker.scale-27 {
+    height: 25px;
+}
+
+.fractal-marker.scale-81 {
+    height: 30px;
+}
+
+.fractal-marker.scale-243 {
+    height: 35px;
+}
+
+/* Marker Hover Effect */
+.fractal-marker:hover {
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+/* Tooltip for Markers */
+.marker-tooltip {
+    position: absolute;
+    bottom: 110%;
+    background: #222;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 1.2vw;
+    opacity: 0;
+    white-space: nowrap;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.fractal-marker:hover .marker-tooltip {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Equilibrium Marker Style */
+.equilibrium-marker {
+    position: absolute;
+    bottom: 100%;
+    width: 4px;
+    height: 40px;
+    background: #FFD700; /* Gold color to stand out */
+    transform: translateY(0);
+    border-radius: 2px;
+    z-index: 2010;
+}
+
+.equilibrium-marker::after {
+    content: '√5 Equilibrium';
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: #FFD700;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 1.2vw;
+    white-space: nowrap;
+}

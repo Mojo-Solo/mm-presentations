@@ -1,0 +1,40 @@
+\chapter{Contributing to AOS}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g}{}\label{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g}\index{Contributing to AOS@{Contributing to AOS}}
+\label{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md15}%
+\Hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md15}%
+ \hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md16}{}\doxysection{\texorpdfstring{Bugs}{Bugs}}\label{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md16}
+Found a bug? Have a problem with AOS? Please check past issues, maybe someone already had that problem. If you don\textquotesingle{}t find similar issue create new, but remember to add accurate informations so that I can dig into it straight away. If it\textquotesingle{}s possible add Code\+Pen example that presents called issue.\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md17}{}\doxysection{\texorpdfstring{Development process}{Development process}}\label{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md17}
+AOS is built using webpack.\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md18}{}\doxysubsection{\texorpdfstring{Setup}{Setup}}\label{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md18}
+
+\begin{DoxyItemize}
+\item Install all dependencies\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ install}
+
+\end{DoxyCode}
+
+\item Run dev server\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ run\ dev}
+
+\end{DoxyCode}
+
+
+This will run local webpack-\/dev-\/server and build AOS automatically.
+\item Open browser and head to\+: \href{http://localhost:8080/webpack-dev-server/}{\texttt{ http\+://localhost\+:8080/webpack-\/dev-\/server/}} Server loads content from {\ttfamily demo} folder.
+\end{DoxyItemize}
+
+Now you are ready to play with AOS. Browser should reload automatically as you change code in {\ttfamily src} folder.\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md19}{}\doxysubsection{\texorpdfstring{Testing}{Testing}}\label{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md19}
+Before you create Pull Request make sure all tests are passing.
+
+In order to do so run\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ test}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md20}{}\doxysubsection{\texorpdfstring{Commiting changes}{Commiting changes}}\label{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md20}
+If all tests are passing then you\textquotesingle{}re good to go. Commit your changes, but remember to {\bfseries{not commit {\ttfamily dist} folder}}. Create well described Pull Request with as many informations as possible and wait for my answer \+:) I\textquotesingle{}d be happy to make a code review and put some thougths. 

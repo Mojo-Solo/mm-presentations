@@ -1,0 +1,4 @@
+var class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_forgot_password_controller =
+[
+    [ "showLinkRequestForm", "class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_forgot_password_controller.html#afc5cb38e50c937ba0a6fecf1342c4255", null ]
+];

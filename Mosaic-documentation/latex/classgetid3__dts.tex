@@ -1,0 +1,227 @@
+\doxysection{getid3\+\_\+dts Class Reference}
+\hypertarget{classgetid3__dts}{}\label{classgetid3__dts}\index{getid3\_dts@{getid3\_dts}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+
+
+Inheritance diagram for getid3\+\_\+dts\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+dts\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__dts_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__dts_a9e78bb7ff20056a4bb423c6e765df409}{bitrate\+Lookup}} (\$index)
+\item 
+static \mbox{\hyperlink{classgetid3__dts_a586d0f79ca996fcadb0237ba74e1ac9b}{sample\+Rate\+Lookup}} (\$index)
+\item 
+static \mbox{\hyperlink{classgetid3__dts_aaae3feb1aa0a74e499b6db2d8d40fd9b}{bit\+Per\+Sample\+Lookup}} (\$index)
+\item 
+static \mbox{\hyperlink{classgetid3__dts_a14240d4b643fddb6151157428cc3cd53}{num\+Channels\+Lookup}} (\$index)
+\item 
+static \mbox{\hyperlink{classgetid3__dts_a5b4596b7ae71c08b21663c9627ade8bc}{channel\+Arrangement\+Lookup}} (\$index)
+\item 
+static \mbox{\hyperlink{classgetid3__dts_aa82567eeab42472581c6e0a58068e8a4}{dialog\+Normalization}} (\$index, \$version)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classgetid3__dts_ada3d6928bfb3a7a6d298fbeb27500f5d}{syncword}} = "{}\textbackslash{}x7\+F\textbackslash{}x\+FE\textbackslash{}x80\textbackslash{}x01"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__dts_a3e4aa0ef4525b3326bfdab792ccefc76}{\$syncwords}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+@tutorial \href{http://wiki.multimedia.cx/index.php?title=DTS}{\texttt{ http\+://wiki.\+multimedia.\+cx/index.\+php?title=\+DTS}} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__dts_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_dts@{getid3\_dts}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_dts@{getid3\_dts}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__dts_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__dts_aaae3feb1aa0a74e499b6db2d8d40fd9b}\index{getid3\_dts@{getid3\_dts}!bitPerSampleLookup@{bitPerSampleLookup}}
+\index{bitPerSampleLookup@{bitPerSampleLookup}!getid3\_dts@{getid3\_dts}}
+\doxysubsubsection{\texorpdfstring{bitPerSampleLookup()}{bitPerSampleLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__dts_aaae3feb1aa0a74e499b6db2d8d40fd9b} 
+static bit\+Per\+Sample\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__dts_a9e78bb7ff20056a4bb423c6e765df409}\index{getid3\_dts@{getid3\_dts}!bitrateLookup@{bitrateLookup}}
+\index{bitrateLookup@{bitrateLookup}!getid3\_dts@{getid3\_dts}}
+\doxysubsubsection{\texorpdfstring{bitrateLookup()}{bitrateLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__dts_a9e78bb7ff20056a4bb423c6e765df409} 
+static bitrate\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__dts_a5b4596b7ae71c08b21663c9627ade8bc}\index{getid3\_dts@{getid3\_dts}!channelArrangementLookup@{channelArrangementLookup}}
+\index{channelArrangementLookup@{channelArrangementLookup}!getid3\_dts@{getid3\_dts}}
+\doxysubsubsection{\texorpdfstring{channelArrangementLookup()}{channelArrangementLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__dts_a5b4596b7ae71c08b21663c9627ade8bc} 
+static channel\+Arrangement\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__dts_aa82567eeab42472581c6e0a58068e8a4}\index{getid3\_dts@{getid3\_dts}!dialogNormalization@{dialogNormalization}}
+\index{dialogNormalization@{dialogNormalization}!getid3\_dts@{getid3\_dts}}
+\doxysubsubsection{\texorpdfstring{dialogNormalization()}{dialogNormalization()}}
+{\footnotesize\ttfamily \label{classgetid3__dts_aa82567eeab42472581c6e0a58068e8a4} 
+static dialog\+Normalization (\begin{DoxyParamCaption}\item[{}]{\$index}{, }\item[{}]{\$version}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$index} & \\
+\hline
+int & {\em \$version} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__dts_a14240d4b643fddb6151157428cc3cd53}\index{getid3\_dts@{getid3\_dts}!numChannelsLookup@{numChannelsLookup}}
+\index{numChannelsLookup@{numChannelsLookup}!getid3\_dts@{getid3\_dts}}
+\doxysubsubsection{\texorpdfstring{numChannelsLookup()}{numChannelsLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__dts_a14240d4b643fddb6151157428cc3cd53} 
+static num\+Channels\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__dts_a586d0f79ca996fcadb0237ba74e1ac9b}\index{getid3\_dts@{getid3\_dts}!sampleRateLookup@{sampleRateLookup}}
+\index{sampleRateLookup@{sampleRateLookup}!getid3\_dts@{getid3\_dts}}
+\doxysubsubsection{\texorpdfstring{sampleRateLookup()}{sampleRateLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__dts_a586d0f79ca996fcadb0237ba74e1ac9b} 
+static sample\+Rate\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classgetid3__dts_a3e4aa0ef4525b3326bfdab792ccefc76}\index{getid3\_dts@{getid3\_dts}!\$syncwords@{\$syncwords}}
+\index{\$syncwords@{\$syncwords}!getid3\_dts@{getid3\_dts}}
+\doxysubsubsection{\texorpdfstring{\$syncwords}{\$syncwords}}
+{\footnotesize\ttfamily \label{classgetid3__dts_a3e4aa0ef4525b3326bfdab792ccefc76} 
+\$syncwords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{"{}\(\backslash\)x7F\(\backslash\)xFE\(\backslash\)x80\(\backslash\)x01"{}},\ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{"{}\(\backslash\)xFE\(\backslash\)x7F\(\backslash\)x01\(\backslash\)x80"{}},\ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{"{}\(\backslash\)x1F\(\backslash\)xFF\(\backslash\)xE8\(\backslash\)x00"{}},\ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{"{}\(\backslash\)xFF\(\backslash\)x1F\(\backslash\)x00\(\backslash\)xE8"{}})}
+
+\end{DoxyCode}
+Possible syncwords indicating bitstream encoding. \Hypertarget{classgetid3__dts_ada3d6928bfb3a7a6d298fbeb27500f5d}\index{getid3\_dts@{getid3\_dts}!syncword@{syncword}}
+\index{syncword@{syncword}!getid3\_dts@{getid3\_dts}}
+\doxysubsubsection{\texorpdfstring{syncword}{syncword}}
+{\footnotesize\ttfamily \label{classgetid3__dts_ada3d6928bfb3a7a6d298fbeb27500f5d} 
+const syncword = "{}\textbackslash{}x7\+F\textbackslash{}x\+FE\textbackslash{}x80\textbackslash{}x01"{}}
+
+Default DTS syncword used in native .cpt or .dts formats. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+audio.\+dts.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\chapter{Get started}
+\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index}{}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index}\index{Get started@{Get started}}
+\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md200}%
+\Hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md200}%
+ {\itshape Progress\+Bar.\+js} is lightweight, MIT licensed and supports all major browsers including {\bfseries{IE11+}} when using a polyfill. See complete examples in full examples section.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md201}{}\doxysubsection{\texorpdfstring{IE 11 compatibility}{IE 11 compatibility}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md201}
+You can include ES6 polyfills by adding to your index.\+html\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<script\ crossorigin="{}anonymous"{}\ src="{}https://polyfill.io/v3/polyfill.min.js?features=es6"{}></script>}
+
+\end{DoxyCode}
+
+
+See \href{https://github.com/jeremyckahn/shifty\#ie-compatibility}{\texttt{ https\+://github.\+com/jeremyckahn/shifty\#ie-\/compatibility}} and \href{https://polyfill.io/v3/url-builder/}{\texttt{ https\+://polyfill.\+io/v3/url-\/builder/}}.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md202}{}\doxysubsubsection{\texorpdfstring{\{install\} Installing}{\{install\} Installing}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md202}
+
+\begin{DoxyItemize}
+\item Using bower {\ttfamily bower install progressbar.\+js}
+\item Using npm {\ttfamily npm install progressbar.\+js}
+\item Including \href{https://github.com/kimmobrunfeldt/progressbar.js/blob/master/dist/progressbar.js}{\texttt{ {\itshape dist/progressbar.\+js}}} or \href{https://github.com/kimmobrunfeldt/progressbar.js/blob/master/dist/progressbar.min.js}{\texttt{ dist/progressbar.\+min.\+js}} from latest tag to your project.
+\end{DoxyItemize}\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md203}{}\doxysubsubsection{\texorpdfstring{Loading module}{Loading module}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md203}
+Common\+JS
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ ProgressBar\ =\ require('progressbar.js')}
+\DoxyCodeLine{const\ line\ =\ new\ ProgressBar.Line('\#container');}
+
+\end{DoxyCode}
+
+
+AMD
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require.config(\{}
+\DoxyCodeLine{\ \ \ \ paths:\ \{'progressbar':\ '../bower\_components/progressbar.js/dist/progressbar'\}}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{define(['progressbar'],\ function(ProgressBar)\ \{}
+\DoxyCodeLine{\ \ \ \ var\ line\ =\ new\ ProgressBar.Line('\#container');}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+Global variable
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ If\ you\ aren't\ using\ any\ module\ loader,\ progressbar.js\ exposes}
+\DoxyCodeLine{//\ global\ variable:\ window.ProgressBar}
+\DoxyCodeLine{var\ line\ =\ new\ ProgressBar.Line('\#container');}
+
+\end{DoxyCode}
+
+
+Files in {\ttfamily dist/} folder are UMD modules built with Browserify\textquotesingle{}s {\ttfamily -\/-\/standalone} switch. Read more about \href{http://www.forbeslindesay.co.uk/post/46324645400/standalone-browserify-builds}{\texttt{ standalone Browserify builds}}.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md204}{}\doxysection{\texorpdfstring{How it works}{How it works}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md204}
+Progress bars are just regular SVG paths. Read \href{http://jakearchibald.com/2013/animated-line-drawing-svg/}{\texttt{ Jake Archibald\textquotesingle{}s blog post}} to see how the path drawing works under the hood.
+
+{\itshape Progress\+Bar.\+js} uses \href{https://jeremyckahn.github.io/shifty/}{\texttt{ shifty}} tweening library to animate path drawing. So in other words, animation is done with Java\+Script using \href{https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame}{\texttt{ request\+Animation\+Frame}}. Animating with JS gives more control over the animation and is supported across major browsers. For example IE \href{https://connect.microsoft.com/IE/feedbackdetail/view/920928/ie-11-css-transition-property-not-working-for-svg-elements}{\texttt{ does not support}} animating SVG properties with CSS transitions.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md205}{}\doxysubsection{\texorpdfstring{\{migrations\} Migration guide}{\{migrations\} Migration guide}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md205}
+To upgrade from version x to y\+:
+
+
+\begin{DoxyItemize}
+\item Go to \href{https://github.com/kimmobrunfeldt/progressbar.js/releases}{\texttt{ releases page}}
+\item Find the version x you are using
+\item Browse through release notes from x to y. API breaking releases are marked with {\ttfamily \#breaking}.
+\item Fix your current code to use new API
+\end{DoxyItemize}
+
+{\itshape If you find this very tedious, please open a new issue.}\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md206}{}\doxysubsection{\texorpdfstring{\{full-\/examples\} Full examples}{\{full-\/examples\} Full examples}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md206}
+
+\begin{DoxyItemize}
+\item \href{http://kimmobrunfeldt.github.io/progressbar.js/examples/minimal/}{\texttt{ {\bfseries{Minimal}}}} \href{https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/minimal}{\texttt{ {\itshape see code}}}
+\item \href{http://kimmobrunfeldt.github.io/progressbar.js/examples/upload/}{\texttt{ {\bfseries{File upload}}}} \href{https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/upload}{\texttt{ {\itshape see code}}}
+\item \href{http://kimmobrunfeldt.github.io/progressbar.js/examples/telegram/}{\texttt{ {\bfseries{Telegram}}}} \href{https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/telegram}{\texttt{ {\itshape see code}}}
+\item \href{http://kimmobrunfeldt.github.io/progressbar.js/examples/password-strength/}{\texttt{ {\bfseries{Password strength}}}} \href{https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/password-strength}{\texttt{ {\itshape see code}}}
+\end{DoxyItemize}\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md207}{}\doxysection{\texorpdfstring{Contributing}{Contributing}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2index_autotoc_md207}
+See \href{contributing/}{\texttt{ documentation for contributors}}. 

@@ -1,0 +1,914 @@
+\doxysection{getid3\+\_\+tag\+\_\+nikon\+\_\+nctg Class Reference}
+\hypertarget{classgetid3__tag__nikon__nctg}{}\label{classgetid3__tag__nikon__nctg}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_a1702f733975c1a9be31fce6c39e32db9}\label{classgetid3__tag__nikon__nctg_a1702f733975c1a9be31fce6c39e32db9} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_a96ae34d18cdf2495595b27fdda1c15e9}\label{classgetid3__tag__nikon__nctg_a96ae34d18cdf2495595b27fdda1c15e9} 
+const {\bfseries EXIF\+\_\+\+TYPE\+\_\+\+UINT8} = 0x0001
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_a1bb39c895e07717a4f6868ed41ee1b09}\label{classgetid3__tag__nikon__nctg_a1bb39c895e07717a4f6868ed41ee1b09} 
+const {\bfseries EXIF\+\_\+\+TYPE\+\_\+\+CHAR} = 0x0002
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_aec2cf20af7cd588b8e42f171f7d0380a}\label{classgetid3__tag__nikon__nctg_aec2cf20af7cd588b8e42f171f7d0380a} 
+const {\bfseries EXIF\+\_\+\+TYPE\+\_\+\+UINT16} = 0x0003
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_a685dacbb03946f5b4657b793f139221a}\label{classgetid3__tag__nikon__nctg_a685dacbb03946f5b4657b793f139221a} 
+const {\bfseries EXIF\+\_\+\+TYPE\+\_\+\+UINT32} = 0x0004
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_a4eae049df892320be726de7d377f8238}\label{classgetid3__tag__nikon__nctg_a4eae049df892320be726de7d377f8238} 
+const {\bfseries EXIF\+\_\+\+TYPE\+\_\+\+URATIONAL} = 0x0005
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_a28d9aa2f1fa8dfd738960ccf2299498c}\label{classgetid3__tag__nikon__nctg_a28d9aa2f1fa8dfd738960ccf2299498c} 
+const {\bfseries EXIF\+\_\+\+TYPE\+\_\+\+INT8} = 0x0006
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_aaa851103f258347c1eb241995ff0b89d}\label{classgetid3__tag__nikon__nctg_aaa851103f258347c1eb241995ff0b89d} 
+const {\bfseries EXIF\+\_\+\+TYPE\+\_\+\+RAW} = 0x0007
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_a09596576c1fdfeaac09c00c48b42f805}\label{classgetid3__tag__nikon__nctg_a09596576c1fdfeaac09c00c48b42f805} 
+const {\bfseries EXIF\+\_\+\+TYPE\+\_\+\+INT16} = 0x0008
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_a6f0117ed60b36eb7d0e36eef2973b48e}\label{classgetid3__tag__nikon__nctg_a6f0117ed60b36eb7d0e36eef2973b48e} 
+const {\bfseries EXIF\+\_\+\+TYPE\+\_\+\+INT32} = 0x0009
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_ac11c592944f2dbeb772454cbc61db477}\label{classgetid3__tag__nikon__nctg_ac11c592944f2dbeb772454cbc61db477} 
+const {\bfseries EXIF\+\_\+\+TYPE\+\_\+\+RATIONAL} = 0x000A
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__tag__nikon__nctg_a37d63efc5ef3ed241edbe15bee02f6e4}{print\+PC}} (\$value, \$normal\+Name=\textquotesingle{}Normal\textquotesingle{}, \$format=\textquotesingle{}\%+d\textquotesingle{}, \$div=1)
+\item 
+\mbox{\hyperlink{classgetid3__tag__nikon__nctg_a186f8d84622c9aec52b187b43f7dc019}{print\+Fraction}} (\$value)
+\item 
+\mbox{\hyperlink{classgetid3__tag__nikon__nctg_a5862546334b4d55b773c388c59013f86}{flash\+Firmware\+Lookup}} (\$first\+Byte, \$second\+Byte)
+\item 
+\mbox{\hyperlink{classgetid3__tag__nikon__nctg_ac73f089d83b23ee3ffc56a3fd0ff8e44}{external\+Flash\+Flags\+Lookup}} (\$flags)
+\item 
+\mbox{\hyperlink{classgetid3__tag__nikon__nctg_a622649f5ae9468ca137be5299a5c2528}{decrypt\+Lens\+Info}} ( \$data, \$serial\+Number=null, \$shutter\+Count=null, \$decrypt\+Start=0)
+\item 
+\mbox{\hyperlink{classgetid3__tag__nikon__nctg_ae0cdec93f148c431fde6cd0818def75f}{decrypt}} (\$data, \$serial\+Number, \$count, \$start=0, \$length=null)
+\item 
+\mbox{\hyperlink{classgetid3__tag__nikon__nctg_ae147a2233701a1dbac8a7a6442d145a4}{serial\+Key}} (\$serial\+Number, \$model=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_aa7bdf7e66fd5f2abfe477650625ef28d}{\$exif\+Type\+Sizes}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_aadd633e44964fd115ab890f0b59d050b}{\$exposure\+Programs}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_abb09601681a0a289f1543e99323dd1be}{\$metering\+Modes}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a665b0b1ab3c2e668fe0a71ab8a414eda}{\$crop\+Hi\+Speeds}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a02668706fb13173147eb15609223dec7}{\$color\+Spaces}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a838a7998ba5502e41d6815046c6c73be}{\$vibration\+Reductions}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a3538d90bda8d0185a6979671883e0f11}{\$\+VRModes}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a57cea36b26a5b3e309d050da9c5f4a87}{\$active\+DLightnings}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_aa4fb9a326f778a3869f10acc66d3dd28}{\$picture\+Control\+Data\+Adjusts}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a373fdd2a468e28e3b0a109b5ee48563b}{\$picture\+Control\+Data\+Filter\+Effects}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_ad1d9c6aba964383ee70eaa8c9cfe0a6d}{\$picture\+Control\+Data\+Toning\+Effects}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a3bba563856403713813836c142f3a3f7}{\$iso\+Info\+Expansions}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a2b20f399371c0faddb3eb45d3117a3f3}{\$iso\+Info\+Expansions2}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a8c1477c7b2621db343449724944ba85c}{\$vignette\+Controls}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a2b80a5e468283aed62a0c0eb8e888f37}{\$flash\+Modes}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a842e1e40e7e1f56d508e7408913283fb}{\$flash\+Info\+Sources}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a5af203eb350023b62cb01cbda73c37bb}{\$flash\+Info\+External\+Flash\+Firmwares}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_ab825e128746a88623054de08165eee5c}{\$flash\+Info\+External\+Flash\+Flags}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a0e3ef65d6d5ecdceeb1a326764649539}{\$flash\+Info\+External\+Flash\+Statuses}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_af651f628e4ea81353010a91ea35fe2b7}{\$flash\+Info\+External\+Flash\+Ready\+States}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_aea7eb04a22973532fdc00fd8f757025a}{\$flash\+Info\+GNDistances}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_af20609a65b022f2cf53513776d95ce5c}{\$flash\+Info\+Control\+Modes}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a89d76cdd2a65497705303ce2917657cc}{\$flash\+Info\+Color\+Filters}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a4426b7dc3ecaf231a32d0c44462c0202}{\$high\+ISONoise\+Reductions}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_ac61a608d0513e9d7f37068fdc14ccfca}{\$\+AFInfo2\+Contrast\+Detect\+AFChoices}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_ab05a5f6e8d87954abc6f8471f5eb8c8d}{\$\+AFInfo2\+AFArea\+Modes\+Without\+Contrast\+Detect\+AF}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a7cc443ddb38940681b36009535f86954}{\$\+AFInfo2\+AFArea\+Modes\+With\+Contrast\+Detect\+AF}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a5f39f0b65f642548b479e97777377da7}{\$\+AFInfo2\+Phase\+Detect\+AFChoices}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a10cd0868d6d759ddfa664c5b6eb0f6d6}{\$\+Nikkor\+ZLens\+IDS}}
+\item 
+static \mbox{\hyperlink{classgetid3__tag__nikon__nctg_a1d63603ee7f7f8946fbb73de5e545bc0}{\$nikon\+Text\+Encodings}}
+\item 
+\Hypertarget{classgetid3__tag__nikon__nctg_ad7bf318242b7bf24061977fb23750612}\label{classgetid3__tag__nikon__nctg_ad7bf318242b7bf24061977fb23750612} 
+static {\bfseries \$decode\+Tables}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+Module for analyzing Nikon NCTG metadata in MOV files
+
+\begin{DoxyAuthor}{Author}
+Pavel Starosek \href{mailto:starosekpd@gmail.com}{\texttt{ starosekpd@gmail.\+com}} 
+
+Phil Harvey \href{mailto:philharvey66@gmail.com}{\texttt{ philharvey66@gmail.\+com}}
+\end{DoxyAuthor}
+\doxylink{}{\href{https://github.com/exiftool/exiftool/blob/master/lib/Image/ExifTool/Nikon.pm}{\texttt{ https\+://github.\+com/exiftool/exiftool/blob/master/lib/\+Image/\+Exif\+Tool/\+Nikon.\+pm}}  \href{https://leo-van-stee.github.io/}{\texttt{ https\+://leo-\/van-\/stee.\+github.\+io/}} }
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__tag__nikon__nctg_ae0cdec93f148c431fde6cd0818def75f}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_ae0cdec93f148c431fde6cd0818def75f} 
+decrypt (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$serial\+Number}{, }\item[{}]{\$count}{, }\item[{}]{\$start}{ = {\ttfamily 0}, }\item[{}]{\$length}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Decrypt Nikon data block
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+int & {\em \$serial\+Number} & \\
+\hline
+int & {\em \$count} & \\
+\hline
+int & {\em \$start} & \\
+\hline
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__tag__nikon__nctg_a622649f5ae9468ca137be5299a5c2528}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!decryptLensInfo@{decryptLensInfo}}
+\index{decryptLensInfo@{decryptLensInfo}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{decryptLensInfo()}{decryptLensInfo()}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a622649f5ae9468ca137be5299a5c2528} 
+decrypt\+Lens\+Info (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$serial\+Number}{ = {\ttfamily null}, }\item[{}]{\$shutter\+Count}{ = {\ttfamily null}, }\item[{}]{\$decrypt\+Start}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+mixed | null & {\em \$serial\+Number} & \\
+\hline
+mixed | null & {\em \$shutter\+Count} & \\
+\hline
+int & {\em \$decrypt\+Start} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__tag__nikon__nctg_ac73f089d83b23ee3ffc56a3fd0ff8e44}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!externalFlashFlagsLookup@{externalFlashFlagsLookup}}
+\index{externalFlashFlagsLookup@{externalFlashFlagsLookup}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{externalFlashFlagsLookup()}{externalFlashFlagsLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_ac73f089d83b23ee3ffc56a3fd0ff8e44} 
+external\+Flash\+Flags\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$flags}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__tag__nikon__nctg_a5862546334b4d55b773c388c59013f86}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!flashFirmwareLookup@{flashFirmwareLookup}}
+\index{flashFirmwareLookup@{flashFirmwareLookup}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{flashFirmwareLookup()}{flashFirmwareLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a5862546334b4d55b773c388c59013f86} 
+flash\+Firmware\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$first\+Byte}{, }\item[{}]{\$second\+Byte}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$first\+Byte} & \\
+\hline
+int & {\em \$second\+Byte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__tag__nikon__nctg_a186f8d84622c9aec52b187b43f7dc019}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!printFraction@{printFraction}}
+\index{printFraction@{printFraction}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{printFraction()}{printFraction()}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a186f8d84622c9aec52b187b43f7dc019} 
+print\+Fraction (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__tag__nikon__nctg_a37d63efc5ef3ed241edbe15bee02f6e4}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!printPC@{printPC}}
+\index{printPC@{printPC}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{printPC()}{printPC()}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a37d63efc5ef3ed241edbe15bee02f6e4} 
+print\+PC (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$normal\+Name}{ = {\ttfamily \textquotesingle{}Normal\textquotesingle{}}, }\item[{}]{\$format}{ = {\ttfamily \textquotesingle{}\%+d\textquotesingle{}}, }\item[{}]{\$div}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$value} & 0x80 subtracted \\
+\hline
+string & {\em \$normal\+Name} & \textquotesingle{}Normal\textquotesingle{} (0 value) string \\
+\hline
+string | null & {\em \$format} & format string for numbers (default \textquotesingle{}\%+d\textquotesingle{}), 3) v2 divisor \\
+\hline
+int | null & {\em \$div} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__tag__nikon__nctg_ae147a2233701a1dbac8a7a6442d145a4}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!serialKey@{serialKey}}
+\index{serialKey@{serialKey}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{serialKey()}{serialKey()}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_ae147a2233701a1dbac8a7a6442d145a4} 
+serial\+Key (\begin{DoxyParamCaption}\item[{}]{\$serial\+Number}{, }\item[{}]{\$model}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get serial number for use as a decryption key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$serial\+Number} & \\
+\hline
+string | null & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classgetid3__tag__nikon__nctg_a57cea36b26a5b3e309d050da9c5f4a87}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$activeDLightnings@{\$activeDLightnings}}
+\index{\$activeDLightnings@{\$activeDLightnings}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$activeDLightnings}{\$activeDLightnings}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a57cea36b26a5b3e309d050da9c5f4a87} 
+\$active\+DLightnings\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ \ =>\ \textcolor{stringliteral}{'Off'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ \ =>\ \textcolor{stringliteral}{'Low'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ \ =>\ \textcolor{stringliteral}{'Normal'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 5\ \ =>\ \textcolor{stringliteral}{'High'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 7\ \ =>\ \textcolor{stringliteral}{'Extra\ High'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 8\ \ =>\ \textcolor{stringliteral}{'Extra\ High\ 1'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 9\ \ =>\ \textcolor{stringliteral}{'Extra\ High\ 2'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 10\ =>\ \textcolor{stringliteral}{'Extra\ High\ 3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 11\ =>\ \textcolor{stringliteral}{'Extra\ High\ 4'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 65535\ =>\ \textcolor{stringliteral}{'Auto'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a7cc443ddb38940681b36009535f86954}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$AFInfo2AFAreaModesWithContrastDetectAF@{\$AFInfo2AFAreaModesWithContrastDetectAF}}
+\index{\$AFInfo2AFAreaModesWithContrastDetectAF@{\$AFInfo2AFAreaModesWithContrastDetectAF}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$AFInfo2AFAreaModesWithContrastDetectAF}{\$AFInfo2AFAreaModesWithContrastDetectAF}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a7cc443ddb38940681b36009535f86954} 
+\$AFInfo2\+AFArea\+Modes\+With\+Contrast\+Detect\+AF\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Contrast-\/detect'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'Contrast-\/detect\ (normal\ area)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Contrast-\/detect\ (wide\ area)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'Contrast-\/detect\ (face\ priority)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ =>\ \textcolor{stringliteral}{'Contrast-\/detect\ (subject\ tracking)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 128\ =>\ \textcolor{stringliteral}{'Single'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 129\ =>\ \textcolor{stringliteral}{'Auto\ (41\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 130\ =>\ \textcolor{stringliteral}{'Subject\ Tracking\ (41\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 131\ =>\ \textcolor{stringliteral}{'Face\ Priority\ (41\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 192\ =>\ \textcolor{stringliteral}{'Pinpoint'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 193\ =>\ \textcolor{stringliteral}{'Single'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 194\ =>\ \textcolor{stringliteral}{'Dynamic'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 195\ =>\ \textcolor{stringliteral}{'Wide\ (S)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 196\ =>\ \textcolor{stringliteral}{'Wide\ (L)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 197\ =>\ \textcolor{stringliteral}{'Auto'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 198\ =>\ \textcolor{stringliteral}{'Auto\ (People)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 199\ =>\ \textcolor{stringliteral}{'Auto\ (Animal)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 200\ =>\ \textcolor{stringliteral}{'Normal-\/area\ AF'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 201\ =>\ \textcolor{stringliteral}{'Wide-\/area\ AF'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 202\ =>\ \textcolor{stringliteral}{'Face-\/priority\ AF'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 203\ =>\ \textcolor{stringliteral}{'Subject-\/tracking\ AF'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_ab05a5f6e8d87954abc6f8471f5eb8c8d}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$AFInfo2AFAreaModesWithoutContrastDetectAF@{\$AFInfo2AFAreaModesWithoutContrastDetectAF}}
+\index{\$AFInfo2AFAreaModesWithoutContrastDetectAF@{\$AFInfo2AFAreaModesWithoutContrastDetectAF}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$AFInfo2AFAreaModesWithoutContrastDetectAF}{\$AFInfo2AFAreaModesWithoutContrastDetectAF}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_ab05a5f6e8d87954abc6f8471f5eb8c8d} 
+\$AFInfo2\+AFArea\+Modes\+Without\+Contrast\+Detect\+AF\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Single\ Area'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'Dynamic\ Area'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (closest\ subject)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'Group\ Dynamic'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (9\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 5\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (21\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 6\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (51\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 7\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (51\ points,\ 3D-\/tracking)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 8\ =>\ \textcolor{stringliteral}{'Auto-\/area'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 9\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (3D-\/tracking)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 10\ =>\ \textcolor{stringliteral}{'Single\ Area\ (wide)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 11\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (wide)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 12\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (wide,\ 3D-\/tracking)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 13\ =>\ \textcolor{stringliteral}{'Group\ Area'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 14\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (25\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 15\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (72\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 16\ =>\ \textcolor{stringliteral}{'Group\ Area\ (HL)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 17\ =>\ \textcolor{stringliteral}{'Group\ Area\ (VL)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 18\ =>\ \textcolor{stringliteral}{'Dynamic\ Area\ (49\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 128\ =>\ \textcolor{stringliteral}{'Single'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 129\ =>\ \textcolor{stringliteral}{'Auto\ (41\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 130\ =>\ \textcolor{stringliteral}{'Subject\ Tracking\ (41\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 131\ =>\ \textcolor{stringliteral}{'Face\ Priority\ (41\ points)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 192\ =>\ \textcolor{stringliteral}{'Pinpoint'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 193\ =>\ \textcolor{stringliteral}{'Single'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 195\ =>\ \textcolor{stringliteral}{'Wide\ (S)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 196\ =>\ \textcolor{stringliteral}{'Wide\ (L)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 197\ =>\ \textcolor{stringliteral}{'Auto'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_ac61a608d0513e9d7f37068fdc14ccfca}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$AFInfo2ContrastDetectAFChoices@{\$AFInfo2ContrastDetectAFChoices}}
+\index{\$AFInfo2ContrastDetectAFChoices@{\$AFInfo2ContrastDetectAFChoices}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$AFInfo2ContrastDetectAFChoices}{\$AFInfo2ContrastDetectAFChoices}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_ac61a608d0513e9d7f37068fdc14ccfca} 
+\$AFInfo2\+Contrast\+Detect\+AFChoices\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Off'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'On'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'On\ (2)'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a5f39f0b65f642548b479e97777377da7}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$AFInfo2PhaseDetectAFChoices@{\$AFInfo2PhaseDetectAFChoices}}
+\index{\$AFInfo2PhaseDetectAFChoices@{\$AFInfo2PhaseDetectAFChoices}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$AFInfo2PhaseDetectAFChoices}{\$AFInfo2PhaseDetectAFChoices}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a5f39f0b65f642548b479e97777377da7} 
+\$AFInfo2\+Phase\+Detect\+AFChoices\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Off'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'On\ (51-\/point)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'On\ (11-\/point)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'On\ (39-\/point)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ =>\ \textcolor{stringliteral}{'On\ (73-\/point)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 5\ =>\ \textcolor{stringliteral}{'On\ (5)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 6\ =>\ \textcolor{stringliteral}{'On\ (105-\/point)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 7\ =>\ \textcolor{stringliteral}{'On\ (153-\/point)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 8\ =>\ \textcolor{stringliteral}{'On\ (81-\/point)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 9\ =>\ \textcolor{stringliteral}{'On\ (105-\/point)'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a02668706fb13173147eb15609223dec7}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$colorSpaces@{\$colorSpaces}}
+\index{\$colorSpaces@{\$colorSpaces}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$colorSpaces}{\$colorSpaces}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a02668706fb13173147eb15609223dec7} 
+\$color\+Spaces\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'sRGB'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Adobe\ RGB'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a665b0b1ab3c2e668fe0a71ab8a414eda}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$cropHiSpeeds@{\$cropHiSpeeds}}
+\index{\$cropHiSpeeds@{\$cropHiSpeeds}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$cropHiSpeeds}{\$cropHiSpeeds}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a665b0b1ab3c2e668fe0a71ab8a414eda} 
+\$crop\+Hi\+Speeds\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ \ =>\ \textcolor{stringliteral}{'Off'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ \ =>\ \textcolor{stringliteral}{'1.3x\ Crop'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ \ =>\ \textcolor{stringliteral}{'DX\ Crop'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ \ =>\ \textcolor{stringliteral}{'5:4\ Crop'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ \ =>\ \textcolor{stringliteral}{'3:2\ Crop'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 6\ \ =>\ \textcolor{stringliteral}{'16:9\ Crop'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 8\ \ =>\ \textcolor{stringliteral}{'2.7x\ Crop'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 9\ \ =>\ \textcolor{stringliteral}{'DX\ Movie\ Crop'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 10\ =>\ \textcolor{stringliteral}{'1.3x\ Movie\ Crop'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 11\ =>\ \textcolor{stringliteral}{'FX\ Uncropped'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 12\ =>\ \textcolor{stringliteral}{'DX\ Uncropped'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 15\ =>\ \textcolor{stringliteral}{'1.5x\ Movie\ Crop'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 17\ =>\ \textcolor{stringliteral}{'1:1\ Crop'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_aa7bdf7e66fd5f2abfe477650625ef28d}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$exifTypeSizes@{\$exifTypeSizes}}
+\index{\$exifTypeSizes@{\$exifTypeSizes}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$exifTypeSizes}{\$exifTypeSizes}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_aa7bdf7e66fd5f2abfe477650625ef28d} 
+\$exif\+Type\+Sizes\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::EXIF\_TYPE\_UINT8\ =>\ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::EXIF\_TYPE\_CHAR\ =>\ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::EXIF\_TYPE\_UINT16\ =>\ 2,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::EXIF\_TYPE\_UINT32\ =>\ 4,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::EXIF\_TYPE\_URATIONAL\ =>\ 8,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::EXIF\_TYPE\_INT8\ =>\ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::EXIF\_TYPE\_RAW\ =>\ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::EXIF\_TYPE\_INT16\ =>\ 2,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::EXIF\_TYPE\_INT32\ =>\ 4,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::EXIF\_TYPE\_RATIONAL\ =>\ 8,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_aadd633e44964fd115ab890f0b59d050b}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$exposurePrograms@{\$exposurePrograms}}
+\index{\$exposurePrograms@{\$exposurePrograms}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$exposurePrograms}{\$exposurePrograms}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_aadd633e44964fd115ab890f0b59d050b} 
+\$exposure\+Programs\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Not\ Defined'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'Manual'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Program\ AE'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'Aperture-\/priority\ AE'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ =>\ \textcolor{stringliteral}{'Shutter\ speed\ priority\ AE'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 5\ =>\ \textcolor{stringliteral}{'Creative\ (Slow\ speed)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 6\ =>\ \textcolor{stringliteral}{'Action\ (High\ speed)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 7\ =>\ \textcolor{stringliteral}{'Portrait'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 8\ =>\ \textcolor{stringliteral}{'Landscape'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a89d76cdd2a65497705303ce2917657cc}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$flashInfoColorFilters@{\$flashInfoColorFilters}}
+\index{\$flashInfoColorFilters@{\$flashInfoColorFilters}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$flashInfoColorFilters}{\$flashInfoColorFilters}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a89d76cdd2a65497705303ce2917657cc} 
+\$flash\+Info\+Color\+Filters\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'None'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'FL-\/GL1\ or\ SZ-\/2FL\ Fluorescent'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'FL-\/GL2'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 9\ =>\ \textcolor{stringliteral}{'TN-\/A1\ or\ SZ-\/2TN\ Incandescent'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 10\ =>\ \textcolor{stringliteral}{'TN-\/A2'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 65\ =>\ \textcolor{stringliteral}{'Red'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 66\ =>\ \textcolor{stringliteral}{'Blue'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 67\ =>\ \textcolor{stringliteral}{'Yellow'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 68\ =>\ \textcolor{stringliteral}{'Amber'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_af20609a65b022f2cf53513776d95ce5c}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$flashInfoControlModes@{\$flashInfoControlModes}}
+\index{\$flashInfoControlModes@{\$flashInfoControlModes}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$flashInfoControlModes}{\$flashInfoControlModes}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_af20609a65b022f2cf53513776d95ce5c} 
+\$flash\+Info\+Control\+Modes\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x00\ =>\ \textcolor{stringliteral}{'Off'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x01\ =>\ \textcolor{stringliteral}{'iTTL-\/BL'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x02\ =>\ \textcolor{stringliteral}{'iTTL'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x03\ =>\ \textcolor{stringliteral}{'Auto\ Aperture'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x04\ =>\ \textcolor{stringliteral}{'Automatic'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x05\ =>\ \textcolor{stringliteral}{'GN\ (distance\ priority)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x06\ =>\ \textcolor{stringliteral}{'Manual'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x07\ =>\ \textcolor{stringliteral}{'Repeating\ Flash'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a5af203eb350023b62cb01cbda73c37bb}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$flashInfoExternalFlashFirmwares@{\$flashInfoExternalFlashFirmwares}}
+\index{\$flashInfoExternalFlashFirmwares@{\$flashInfoExternalFlashFirmwares}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$flashInfoExternalFlashFirmwares}{\$flashInfoExternalFlashFirmwares}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a5af203eb350023b62cb01cbda73c37bb} 
+\$flash\+Info\+External\+Flash\+Firmwares\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'0\ 0'}\ =>\ \textcolor{stringliteral}{'n/a'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'1\ 1'}\ =>\ \textcolor{stringliteral}{'1.01\ (SB-\/800\ or\ Metz\ 58\ AF-\/1)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'1\ 3'}\ =>\ \textcolor{stringliteral}{'1.03\ (SB-\/800)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'2\ 1'}\ =>\ \textcolor{stringliteral}{'2.01\ (SB-\/800)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'2\ 4'}\ =>\ \textcolor{stringliteral}{'2.04\ (SB-\/600)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'2\ 5'}\ =>\ \textcolor{stringliteral}{'2.05\ (SB-\/600)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'3\ 1'}\ =>\ \textcolor{stringliteral}{'3.01\ (SU-\/800\ Remote\ Commander)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'4\ 1'}\ =>\ \textcolor{stringliteral}{'4.01\ (SB-\/400)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'4\ 2'}\ =>\ \textcolor{stringliteral}{'4.02\ (SB-\/400)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'4\ 4'}\ =>\ \textcolor{stringliteral}{'4.04\ (SB-\/400)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'5\ 1'}\ =>\ \textcolor{stringliteral}{'5.01\ (SB-\/900)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'5\ 2'}\ =>\ \textcolor{stringliteral}{'5.02\ (SB-\/900)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'6\ 1'}\ =>\ \textcolor{stringliteral}{'6.01\ (SB-\/700)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'7\ 1'}\ =>\ \textcolor{stringliteral}{'7.01\ (SB-\/910)'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_ab825e128746a88623054de08165eee5c}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$flashInfoExternalFlashFlags@{\$flashInfoExternalFlashFlags}}
+\index{\$flashInfoExternalFlashFlags@{\$flashInfoExternalFlashFlags}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$flashInfoExternalFlashFlags}{\$flashInfoExternalFlashFlags}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_ab825e128746a88623054de08165eee5c} 
+\$flash\+Info\+External\+Flash\+Flags\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Fired'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Bounce\ Flash'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ =>\ \textcolor{stringliteral}{'Wide\ Flash\ Adapter'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 5\ =>\ \textcolor{stringliteral}{'Dome\ Diffuser'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_af651f628e4ea81353010a91ea35fe2b7}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$flashInfoExternalFlashReadyStates@{\$flashInfoExternalFlashReadyStates}}
+\index{\$flashInfoExternalFlashReadyStates@{\$flashInfoExternalFlashReadyStates}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$flashInfoExternalFlashReadyStates}{\$flashInfoExternalFlashReadyStates}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_af651f628e4ea81353010a91ea35fe2b7} 
+\$flash\+Info\+External\+Flash\+Ready\+States\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'n/a'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'Ready'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 6\ =>\ \textcolor{stringliteral}{'Not\ Ready'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a0e3ef65d6d5ecdceeb1a326764649539}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$flashInfoExternalFlashStatuses@{\$flashInfoExternalFlashStatuses}}
+\index{\$flashInfoExternalFlashStatuses@{\$flashInfoExternalFlashStatuses}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$flashInfoExternalFlashStatuses}{\$flashInfoExternalFlashStatuses}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a0e3ef65d6d5ecdceeb1a326764649539} 
+\$flash\+Info\+External\+Flash\+Statuses\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Flash\ Not\ Attached'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'Flash\ Attached'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_aea7eb04a22973532fdc00fd8f757025a}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$flashInfoGNDistances@{\$flashInfoGNDistances}}
+\index{\$flashInfoGNDistances@{\$flashInfoGNDistances}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$flashInfoGNDistances}{\$flashInfoGNDistances}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_aea7eb04a22973532fdc00fd8f757025a} 
+\$flash\+Info\+GNDistances\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ 0,\ \ \ \ \ \ \ \ 19\ =>\ \textcolor{stringliteral}{'2.8\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'0.1\ m'},\ \ 20\ =>\ \textcolor{stringliteral}{'3.2\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'0.2\ m'},\ \ 21\ =>\ \textcolor{stringliteral}{'3.6\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'0.3\ m'},\ \ 22\ =>\ \textcolor{stringliteral}{'4.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ =>\ \textcolor{stringliteral}{'0.4\ m'},\ \ 23\ =>\ \textcolor{stringliteral}{'4.5\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 5\ =>\ \textcolor{stringliteral}{'0.5\ m'},\ \ 24\ =>\ \textcolor{stringliteral}{'5.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 6\ =>\ \textcolor{stringliteral}{'0.6\ m'},\ \ 25\ =>\ \textcolor{stringliteral}{'5.6\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 7\ =>\ \textcolor{stringliteral}{'0.7\ m'},\ \ 26\ =>\ \textcolor{stringliteral}{'6.3\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 8\ =>\ \textcolor{stringliteral}{'0.8\ m'},\ \ 27\ =>\ \textcolor{stringliteral}{'7.1\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 9\ =>\ \textcolor{stringliteral}{'0.9\ m'},\ \ 28\ =>\ \textcolor{stringliteral}{'8.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 10\ =>\ \textcolor{stringliteral}{'1.0\ m'},\ \ 29\ =>\ \textcolor{stringliteral}{'9.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 11\ =>\ \textcolor{stringliteral}{'1.1\ m'},\ \ 30\ =>\ \textcolor{stringliteral}{'10.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 12\ =>\ \textcolor{stringliteral}{'1.3\ m'},\ \ 31\ =>\ \textcolor{stringliteral}{'11.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 13\ =>\ \textcolor{stringliteral}{'1.4\ m'},\ \ 32\ =>\ \textcolor{stringliteral}{'13.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 14\ =>\ \textcolor{stringliteral}{'1.6\ m'},\ \ 33\ =>\ \textcolor{stringliteral}{'14.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 15\ =>\ \textcolor{stringliteral}{'1.8\ m'},\ \ 34\ =>\ \textcolor{stringliteral}{'16.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 16\ =>\ \textcolor{stringliteral}{'2.0\ m'},\ \ 35\ =>\ \textcolor{stringliteral}{'18.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 17\ =>\ \textcolor{stringliteral}{'2.2\ m'},\ \ 36\ =>\ \textcolor{stringliteral}{'20.0\ m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 18\ =>\ \textcolor{stringliteral}{'2.5\ m'},\ \ 255\ =>\ \textcolor{stringliteral}{'n/a'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a842e1e40e7e1f56d508e7408913283fb}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$flashInfoSources@{\$flashInfoSources}}
+\index{\$flashInfoSources@{\$flashInfoSources}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$flashInfoSources}{\$flashInfoSources}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a842e1e40e7e1f56d508e7408913283fb} 
+\$flash\+Info\+Sources\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'None'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'External'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Internal'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a2b80a5e468283aed62a0c0eb8e888f37}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$flashModes@{\$flashModes}}
+\index{\$flashModes@{\$flashModes}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$flashModes}{\$flashModes}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a2b80a5e468283aed62a0c0eb8e888f37} 
+\$flash\+Modes\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Did\ Not\ Fire'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'Fired,\ Manual'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'Not\ Ready'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 7\ =>\ \textcolor{stringliteral}{'Fired,\ External'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 8\ =>\ \textcolor{stringliteral}{'Fired,\ Commander\ Mode'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 9\ =>\ \textcolor{stringliteral}{'Fired,\ TTL\ Mode'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 18\ =>\ \textcolor{stringliteral}{'LED\ Light'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a4426b7dc3ecaf231a32d0c44462c0202}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$highISONoiseReductions@{\$highISONoiseReductions}}
+\index{\$highISONoiseReductions@{\$highISONoiseReductions}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$highISONoiseReductions}{\$highISONoiseReductions}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a4426b7dc3ecaf231a32d0c44462c0202} 
+\$high\+ISONoise\+Reductions\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Off'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'Minimal'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Low'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'Medium\ Low'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ =>\ \textcolor{stringliteral}{'Normal'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 5\ =>\ \textcolor{stringliteral}{'Medium\ High'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 6\ =>\ \textcolor{stringliteral}{'High'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a3bba563856403713813836c142f3a3f7}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$isoInfoExpansions@{\$isoInfoExpansions}}
+\index{\$isoInfoExpansions@{\$isoInfoExpansions}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$isoInfoExpansions}{\$isoInfoExpansions}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a3bba563856403713813836c142f3a3f7} 
+\$iso\+Info\+Expansions\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0000\ =>\ \textcolor{stringliteral}{'Off'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0101\ =>\ \textcolor{stringliteral}{'Hi\ 0.3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0102\ =>\ \textcolor{stringliteral}{'Hi\ 0.5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0103\ =>\ \textcolor{stringliteral}{'Hi\ 0.7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0104\ =>\ \textcolor{stringliteral}{'Hi\ 1.0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0105\ =>\ \textcolor{stringliteral}{'Hi\ 1.3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0106\ =>\ \textcolor{stringliteral}{'Hi\ 1.5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0107\ =>\ \textcolor{stringliteral}{'Hi\ 1.7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0108\ =>\ \textcolor{stringliteral}{'Hi\ 2.0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0109\ =>\ \textcolor{stringliteral}{'Hi\ 2.3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x010a\ =>\ \textcolor{stringliteral}{'Hi\ 2.5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x010b\ =>\ \textcolor{stringliteral}{'Hi\ 2.7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x010c\ =>\ \textcolor{stringliteral}{'Hi\ 3.0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x010d\ =>\ \textcolor{stringliteral}{'Hi\ 3.3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x010e\ =>\ \textcolor{stringliteral}{'Hi\ 3.5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x010f\ =>\ \textcolor{stringliteral}{'Hi\ 3.7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0110\ =>\ \textcolor{stringliteral}{'Hi\ 4.0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0111\ =>\ \textcolor{stringliteral}{'Hi\ 4.3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0112\ =>\ \textcolor{stringliteral}{'Hi\ 4.5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0113\ =>\ \textcolor{stringliteral}{'Hi\ 4.7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0114\ =>\ \textcolor{stringliteral}{'Hi\ 5.0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0201\ =>\ \textcolor{stringliteral}{'Lo\ 0.3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0202\ =>\ \textcolor{stringliteral}{'Lo\ 0.5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0203\ =>\ \textcolor{stringliteral}{'Lo\ 0.7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0204\ =>\ \textcolor{stringliteral}{'Lo\ 1.0'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a2b20f399371c0faddb3eb45d3117a3f3}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$isoInfoExpansions2@{\$isoInfoExpansions2}}
+\index{\$isoInfoExpansions2@{\$isoInfoExpansions2}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$isoInfoExpansions2}{\$isoInfoExpansions2}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a2b20f399371c0faddb3eb45d3117a3f3} 
+\$iso\+Info\+Expansions2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0000\ =>\ \textcolor{stringliteral}{'Off'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0101\ =>\ \textcolor{stringliteral}{'Hi\ 0.3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0102\ =>\ \textcolor{stringliteral}{'Hi\ 0.5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0103\ =>\ \textcolor{stringliteral}{'Hi\ 0.7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0104\ =>\ \textcolor{stringliteral}{'Hi\ 1.0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0105\ =>\ \textcolor{stringliteral}{'Hi\ 1.3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0106\ =>\ \textcolor{stringliteral}{'Hi\ 1.5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0107\ =>\ \textcolor{stringliteral}{'Hi\ 1.7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0108\ =>\ \textcolor{stringliteral}{'Hi\ 2.0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0201\ =>\ \textcolor{stringliteral}{'Lo\ 0.3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0202\ =>\ \textcolor{stringliteral}{'Lo\ 0.5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0203\ =>\ \textcolor{stringliteral}{'Lo\ 0.7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x0204\ =>\ \textcolor{stringliteral}{'Lo\ 1.0'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_abb09601681a0a289f1543e99323dd1be}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$meteringModes@{\$meteringModes}}
+\index{\$meteringModes@{\$meteringModes}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$meteringModes}{\$meteringModes}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_abb09601681a0a289f1543e99323dd1be} 
+\$metering\+Modes\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Unknown'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'Average'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Center-\/weighted\ average'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'Spot'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ =>\ \textcolor{stringliteral}{'Multi-\/spot'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 5\ =>\ \textcolor{stringliteral}{'Multi-\/segment'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 6\ =>\ \textcolor{stringliteral}{'Partial'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 255\ =>\ \textcolor{stringliteral}{'Other'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a10cd0868d6d759ddfa664c5b6eb0f6d6}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$NikkorZLensIDS@{\$NikkorZLensIDS}}
+\index{\$NikkorZLensIDS@{\$NikkorZLensIDS}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$NikkorZLensIDS}{\$NikkorZLensIDS}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a10cd0868d6d759ddfa664c5b6eb0f6d6} 
+\$Nikkor\+ZLens\+IDS\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 24-\/70mm\ f/4\ S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 14-\/30mm\ f/4\ S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 35mm\ f/1.8\ S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 8\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 58mm\ f/0.95\ S\ Noct'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 9\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 50mm\ f/1.8\ S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 11\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ DX\ 16-\/50mm\ f/3.5-\/6.3\ VR'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 12\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ DX\ 50-\/250mm\ f/4.5-\/6.3\ VR'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 13\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 24-\/70mm\ f/2.8\ S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 14\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 85mm\ f/1.8\ S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 15\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 24mm\ f/1.8\ S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 16\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 70-\/200mm\ f/2.8\ VR\ S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 17\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 20mm\ f/1.8\ S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 18\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 24-\/200mm\ f/4-\/6.3\ VR'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 21\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 50mm\ f/1.2\ S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 22\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 24-\/50mm\ f/4-\/6.3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 23\ =>\ \textcolor{stringliteral}{'Nikkor\ Z\ 14-\/24mm\ f/2.8\ S'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a1d63603ee7f7f8946fbb73de5e545bc0}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$nikonTextEncodings@{\$nikonTextEncodings}}
+\index{\$nikonTextEncodings@{\$nikonTextEncodings}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$nikonTextEncodings}{\$nikonTextEncodings}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a1d63603ee7f7f8946fbb73de5e545bc0} 
+\$nikon\+Text\+Encodings\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'UTF-\/8'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'UTF-\/16'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_aa4fb9a326f778a3869f10acc66d3dd28}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$pictureControlDataAdjusts@{\$pictureControlDataAdjusts}}
+\index{\$pictureControlDataAdjusts@{\$pictureControlDataAdjusts}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$pictureControlDataAdjusts}{\$pictureControlDataAdjusts}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_aa4fb9a326f778a3869f10acc66d3dd28} 
+\$picture\+Control\+Data\+Adjusts\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'default'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'quick'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'full'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a373fdd2a468e28e3b0a109b5ee48563b}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$pictureControlDataFilterEffects@{\$pictureControlDataFilterEffects}}
+\index{\$pictureControlDataFilterEffects@{\$pictureControlDataFilterEffects}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$pictureControlDataFilterEffects}{\$pictureControlDataFilterEffects}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a373fdd2a468e28e3b0a109b5ee48563b} 
+\$picture\+Control\+Data\+Filter\+Effects\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x80\ =>\ \textcolor{stringliteral}{'off'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x81\ =>\ \textcolor{stringliteral}{'yellow'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x82\ =>\ \textcolor{stringliteral}{'orange'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x83\ =>\ \textcolor{stringliteral}{'red'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x84\ =>\ \textcolor{stringliteral}{'green'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0xff\ =>\ \textcolor{stringliteral}{'n/a'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_ad1d9c6aba964383ee70eaa8c9cfe0a6d}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$pictureControlDataToningEffects@{\$pictureControlDataToningEffects}}
+\index{\$pictureControlDataToningEffects@{\$pictureControlDataToningEffects}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$pictureControlDataToningEffects}{\$pictureControlDataToningEffects}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_ad1d9c6aba964383ee70eaa8c9cfe0a6d} 
+\$picture\+Control\+Data\+Toning\+Effects\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x80\ =>\ \textcolor{stringliteral}{'b\&w'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x81\ =>\ \textcolor{stringliteral}{'sepia'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x82\ =>\ \textcolor{stringliteral}{'cyanotype'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x83\ =>\ \textcolor{stringliteral}{'red'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x84\ =>\ \textcolor{stringliteral}{'yellow'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x85\ =>\ \textcolor{stringliteral}{'green'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x86\ =>\ \textcolor{stringliteral}{'blue-\/green'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x87\ =>\ \textcolor{stringliteral}{'blue'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x88\ =>\ \textcolor{stringliteral}{'purple-\/blue'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0x89\ =>\ \textcolor{stringliteral}{'red-\/purple'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0xff\ =>\ \textcolor{stringliteral}{'n/a'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a838a7998ba5502e41d6815046c6c73be}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$vibrationReductions@{\$vibrationReductions}}
+\index{\$vibrationReductions@{\$vibrationReductions}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$vibrationReductions}{\$vibrationReductions}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a838a7998ba5502e41d6815046c6c73be} 
+\$vibration\+Reductions\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'On'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Off'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a8c1477c7b2621db343449724944ba85c}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$vignetteControls@{\$vignetteControls}}
+\index{\$vignetteControls@{\$vignetteControls}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$vignetteControls}{\$vignetteControls}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a8c1477c7b2621db343449724944ba85c} 
+\$vignette\+Controls\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Off'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'Low'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'Normal'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 5\ =>\ \textcolor{stringliteral}{'High'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgetid3__tag__nikon__nctg_a3538d90bda8d0185a6979671883e0f11}\index{getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}!\$VRModes@{\$VRModes}}
+\index{\$VRModes@{\$VRModes}!getid3\_tag\_nikon\_nctg@{getid3\_tag\_nikon\_nctg}}
+\doxysubsubsection{\texorpdfstring{\$VRModes}{\$VRModes}}
+{\footnotesize\ttfamily \label{classgetid3__tag__nikon__nctg_a3538d90bda8d0185a6979671883e0f11} 
+\$VRModes\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0\ =>\ \textcolor{stringliteral}{'Normal'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'On\ (1)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'Active'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'Sport'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+tag.\+nikon-\/nctg.\+php\end{DoxyCompactItemize}

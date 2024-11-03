@@ -1,0 +1,73 @@
+\chapter{general}
+\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2general}{}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2general}\index{general@{general}}
+Functions use node-\/style callback convention. Callback function is always the last given parameter.
+
+Shapes have different SVG canvas sizes\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Shape   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Canvas size    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Shape   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Canvas size    }\\\cline{1-2}
+\endhead
+Circle   &{\ttfamily 100x100}    \\\cline{1-2}
+Semi\+Circle   &{\ttfamily 100x50}    \\\cline{1-2}
+Line   &{\ttfamily 100x\{opts.\+stroke\+Width\}}   \\\cline{1-2}
+\end{longtabu}
+
+
+All shapes are fitted exactly to their canvases.
+
+{\bfseries{Important\+:}} make sure that your container has same aspect ratio as the SVG canvas. For example\+: if you are using Semi\+Circle, set e.\+g.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#container\ \{}
+\DoxyCodeLine{\ \ \ \ width:\ 300px;}
+\DoxyCodeLine{\ \ \ \ height:\ 150px;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2general_autotoc_md166}{}\doxysubsection{\texorpdfstring{HTML structure}{HTML structure}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2general_autotoc_md166}
+As an example, we\textquotesingle{}ll use these options\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ circle\ =\ new\ ProgressBar.Circle('\#example-\/percent-\/container',\ \{}
+\DoxyCodeLine{\ \ \ \ color:\ '\#FCB03C',}
+\DoxyCodeLine{\ \ \ \ strokeWidth:\ 3,}
+\DoxyCodeLine{\ \ \ \ trailWidth:\ 1,}
+\DoxyCodeLine{\ \ \ \ text:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ value:\ '0'}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+They would produce the following HTML.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<!-\/-\/\ If\ text\ is\ set,\ position:\ relative\ will\ be\ applied\ for\ the\ container\ -\/-\/>}
+\DoxyCodeLine{<div\ id="{}container"{}\ style="{}position:\ relative;"{}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ <!-\/-\/\ The\ actual\ progress\ bar\ SVG\ -\/-\/>}
+\DoxyCodeLine{\ \ \ \ <svg\ viewBox="{}0\ 0\ 100\ 100"{}>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <!-\/-\/\ Trail\ path\ -\/-\/>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <path\ d="{}M\ 50,50\ m\ 0,-\/48.5\ a\ 48.5,48.5\ 0\ 1\ 1\ 0,97\ a\ 48.5,48.5\ 0\ 1\ 1\ 0,-\/97"{}\ stroke="{}\#eee"{}\ stroke-\/width="{}1"{}\ fill-\/opacity="{}0"{}></path>}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <!-\/-\/\ Actual\ progress\ bar\ path\ -\/-\/>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <path\ d="{}M\ 50,50\ m\ 0,-\/48.5\ a\ 48.5,48.5\ 0\ 1\ 1\ 0,97\ a\ 48.5,48.5\ 0\ 1\ 1\ 0,-\/97"{}\ stroke="{}\#FCB03C"{}\ stroke-\/width="{}3"{}\ fill-\/opacity="{}0"{}\ style="{}stroke-\/dasharray:\ 304.844360351563px,\ 304.844360351563px;\ stroke-\/dashoffset:\ 304.844360351563px;"{}></path>}
+\DoxyCodeLine{\ \ \ \ </svg>}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ <!-\/-\/\ Text\ element\ created\ when\ text\ option\ is\ set\ -\/-\/>}
+\DoxyCodeLine{\ \ \ \ <p\ class="{}progressbar-\/text"{}\ style="{}position:\ absolute;\ top:\ 50\%;\ left:\ 50\%;\ padding:\ 0px;\ margin:\ 0px;\ -\/webkit-\/transform:\ translate(-\/50\%,\ -\/50\%);\ transform:\ translate(-\/50\%,\ -\/50\%);\ color:\ rgb(252,\ 176,\ 60);"{}>0</p>}
+\DoxyCodeLine{</div>}
+
+\end{DoxyCode}
+ 

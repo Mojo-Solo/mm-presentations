@@ -1,0 +1,134 @@
+\doxysection{Site\+Gallery\+Repository Class Reference}
+\hypertarget{class_app_1_1_repositories_1_1_site_gallery_repository}{}\label{class_app_1_1_repositories_1_1_site_gallery_repository}\index{SiteGalleryRepository@{SiteGalleryRepository}}
+
+
+Inheritance diagram for Site\+Gallery\+Repository\+:
+% FIG 0
+
+
+Collaboration diagram for Site\+Gallery\+Repository\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_gallery_repository_af9d14e4ae6227970ad603987781573ca}{all}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_gallery_repository_a4c880060364f6efd5036e639124edd00}{store}} (\$request, \$manager)
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_gallery_repository_a4f40ed0099a74e5e1dda5248c0dc1f0d}{delete}} (\$gallery, \$request, \$manager)
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_gallery_repository_a050e23666b65608c92c863d4c51dfb74}{upload\+File\+From\+Editor}} (\$request, \$manager)
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_gallery_repository_a78f4805c12f9e1fa7e53974ed3b5a825}{tag\+Me}} (\$request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_repositories_1_1_site_gallery_repository_af9d14e4ae6227970ad603987781573ca}\index{SiteGalleryRepository@{SiteGalleryRepository}!all@{all}}
+\index{all@{all}!SiteGalleryRepository@{SiteGalleryRepository}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_gallery_repository_af9d14e4ae6227970ad603987781573ca} 
+all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Fetch all Media of tenant
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_gallery_interface_af9d14e4ae6227970ad603987781573ca}{Site\+Gallery\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_gallery_repository_a4f40ed0099a74e5e1dda5248c0dc1f0d}\index{SiteGalleryRepository@{SiteGalleryRepository}!delete@{delete}}
+\index{delete@{delete}!SiteGalleryRepository@{SiteGalleryRepository}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_gallery_repository_a4f40ed0099a74e5e1dda5248c0dc1f0d} 
+delete (\begin{DoxyParamCaption}\item[{}]{\$gallery}{, }\item[{}]{\$request}{, }\item[{}]{\$manager}{}\end{DoxyParamCaption})}
+
+Delete the media from DB
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$gallery} & \\
+\hline
+object & {\em \$request} & \\
+\hline
+object & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_gallery_interface_a4f40ed0099a74e5e1dda5248c0dc1f0d}{Site\+Gallery\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_gallery_repository_a4c880060364f6efd5036e639124edd00}\index{SiteGalleryRepository@{SiteGalleryRepository}!store@{store}}
+\index{store@{store}!SiteGalleryRepository@{SiteGalleryRepository}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_gallery_repository_a4c880060364f6efd5036e639124edd00} 
+store (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{}]{\$manager}{}\end{DoxyParamCaption})}
+
+Store the media in DB
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$request} & \\
+\hline
+object & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_gallery_interface_a4c880060364f6efd5036e639124edd00}{Site\+Gallery\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_gallery_repository_a78f4805c12f9e1fa7e53974ed3b5a825}\index{SiteGalleryRepository@{SiteGalleryRepository}!tagMe@{tagMe}}
+\index{tagMe@{tagMe}!SiteGalleryRepository@{SiteGalleryRepository}}
+\doxysubsubsection{\texorpdfstring{tagMe()}{tagMe()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_gallery_repository_a78f4805c12f9e1fa7e53974ed3b5a825} 
+tag\+Me (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})}
+
+Tag the Snippet
+
+
+\begin{DoxyParams}[1]{Parameters}
+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_gallery_interface_a78f4805c12f9e1fa7e53974ed3b5a825}{Site\+Gallery\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_gallery_repository_a050e23666b65608c92c863d4c51dfb74}\index{SiteGalleryRepository@{SiteGalleryRepository}!uploadFileFromEditor@{uploadFileFromEditor}}
+\index{uploadFileFromEditor@{uploadFileFromEditor}!SiteGalleryRepository@{SiteGalleryRepository}}
+\doxysubsubsection{\texorpdfstring{uploadFileFromEditor()}{uploadFileFromEditor()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_gallery_repository_a050e23666b65608c92c863d4c51dfb74} 
+upload\+File\+From\+Editor (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{}]{\$manager}{}\end{DoxyParamCaption})}
+
+Upload Files from editor on SSA/\+Tenant
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$request} & \\
+\hline
+object & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_gallery_interface_a050e23666b65608c92c863d4c51dfb74}{Site\+Gallery\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Repositories/Site\+Gallery\+Repository.\+php\end{DoxyCompactItemize}

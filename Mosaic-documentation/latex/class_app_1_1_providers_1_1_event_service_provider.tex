@@ -1,0 +1,67 @@
+\doxysection{Event\+Service\+Provider Class Reference}
+\hypertarget{class_app_1_1_providers_1_1_event_service_provider}{}\label{class_app_1_1_providers_1_1_event_service_provider}\index{EventServiceProvider@{EventServiceProvider}}
+
+
+Inheritance diagram for Event\+Service\+Provider\+:
+% FIG 0
+
+
+Collaboration diagram for Event\+Service\+Provider\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_providers_1_1_event_service_provider_a8814ea4b5beba763c570b4818980814e}{boot}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_providers_1_1_event_service_provider_abdfd4689e0597f0b6c63b970c101e810}{\$listen}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_providers_1_1_event_service_provider_a8814ea4b5beba763c570b4818980814e}\index{EventServiceProvider@{EventServiceProvider}!boot@{boot}}
+\index{boot@{boot}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{boot()}{boot()}}
+{\footnotesize\ttfamily \label{class_app_1_1_providers_1_1_event_service_provider_a8814ea4b5beba763c570b4818980814e} 
+boot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register any events for your application.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_app_1_1_providers_1_1_event_service_provider_abdfd4689e0597f0b6c63b970c101e810}\index{EventServiceProvider@{EventServiceProvider}!\$listen@{\$listen}}
+\index{\$listen@{\$listen}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$listen}{\$listen}}
+{\footnotesize\ttfamily \label{class_app_1_1_providers_1_1_event_service_provider_abdfd4689e0597f0b6c63b970c101e810} 
+\$listen\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Registered::class\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ SendEmailVerificationNotification::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ SiteRegistered::class\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ NewSiteRegisteredListener::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ SpecialFormSubmitted::class\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ HandleSpecialFormSubmission::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)SocialiteProviders\(\backslash\)Manager\(\backslash\)SocialiteWasCalled::class\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'SocialiteProviders\(\backslash\)\(\backslash\)Okta\(\backslash\)\(\backslash\)OktaExtendSocialite@handle'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Providers/Event\+Service\+Provider.\+php\end{DoxyCompactItemize}

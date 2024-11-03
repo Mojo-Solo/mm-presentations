@@ -1,0 +1,213 @@
+\doxysection{getid3\+\_\+iso Class Reference}
+\hypertarget{classgetid3__iso}{}\label{classgetid3__iso}\index{getid3\_iso@{getid3\_iso}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+
+
+Inheritance diagram for getid3\+\_\+iso\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+iso\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__iso_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\item 
+\mbox{\hyperlink{classgetid3__iso_a75453a42366d422fdc372850ca737e6c}{Parse\+Primary\+Volume\+Descriptor}} (\&\$ISOheader)
+\item 
+\mbox{\hyperlink{classgetid3__iso_a47cad7b0f4171b51c462583915aad6e5}{Parse\+Supplementary\+Volume\+Descriptor}} (\&\$ISOheader)
+\item 
+\mbox{\hyperlink{classgetid3__iso_a0aada85d527f1227f84e77c504c97d78}{Parse\+Path\+Table}} ()
+\item 
+\mbox{\hyperlink{classgetid3__iso_a457dfa31cfd2f14900c0184eb0221ca7}{Parse\+Directory\+Record}} (\$directorydata)
+\item 
+\mbox{\hyperlink{classgetid3__iso_a3d81009ea190cb14517a74f931cdd63d}{ISOstrip\+Filename\+Version}} (\$ISOfilename)
+\item 
+\mbox{\hyperlink{classgetid3__iso_a45e368e9a7373611fc0b67038faf7d84}{ISOtime\+Text2\+UNIXtime}} (\$ISOtime)
+\item 
+\mbox{\hyperlink{classgetid3__iso_aca533b7d19c3fb21adf9fa99d8c9839a}{ISOtime2\+UNIXtime}} (\$ISOtime)
+\item 
+\mbox{\hyperlink{classgetid3__iso_a074f2451e317bc47e33dc39effe8a49f}{Twos\+Compliment2\+Decimal}} (\$Binary\+Value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__iso_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_iso@{getid3\_iso}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_iso@{getid3\_iso}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__iso_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__iso_a3d81009ea190cb14517a74f931cdd63d}\index{getid3\_iso@{getid3\_iso}!ISOstripFilenameVersion@{ISOstripFilenameVersion}}
+\index{ISOstripFilenameVersion@{ISOstripFilenameVersion}!getid3\_iso@{getid3\_iso}}
+\doxysubsubsection{\texorpdfstring{ISOstripFilenameVersion()}{ISOstripFilenameVersion()}}
+{\footnotesize\ttfamily \label{classgetid3__iso_a3d81009ea190cb14517a74f931cdd63d} 
+ISOstrip\+Filename\+Version (\begin{DoxyParamCaption}\item[{}]{\$\+ISOfilename}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+ISOfilename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__iso_aca533b7d19c3fb21adf9fa99d8c9839a}\index{getid3\_iso@{getid3\_iso}!ISOtime2UNIXtime@{ISOtime2UNIXtime}}
+\index{ISOtime2UNIXtime@{ISOtime2UNIXtime}!getid3\_iso@{getid3\_iso}}
+\doxysubsubsection{\texorpdfstring{ISOtime2UNIXtime()}{ISOtime2UNIXtime()}}
+{\footnotesize\ttfamily \label{classgetid3__iso_aca533b7d19c3fb21adf9fa99d8c9839a} 
+ISOtime2\+UNIXtime (\begin{DoxyParamCaption}\item[{}]{\$\+ISOtime}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+ISOtime} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__iso_a45e368e9a7373611fc0b67038faf7d84}\index{getid3\_iso@{getid3\_iso}!ISOtimeText2UNIXtime@{ISOtimeText2UNIXtime}}
+\index{ISOtimeText2UNIXtime@{ISOtimeText2UNIXtime}!getid3\_iso@{getid3\_iso}}
+\doxysubsubsection{\texorpdfstring{ISOtimeText2UNIXtime()}{ISOtimeText2UNIXtime()}}
+{\footnotesize\ttfamily \label{classgetid3__iso_a45e368e9a7373611fc0b67038faf7d84} 
+ISOtime\+Text2\+UNIXtime (\begin{DoxyParamCaption}\item[{}]{\$\+ISOtime}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+ISOtime} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__iso_a457dfa31cfd2f14900c0184eb0221ca7}\index{getid3\_iso@{getid3\_iso}!ParseDirectoryRecord@{ParseDirectoryRecord}}
+\index{ParseDirectoryRecord@{ParseDirectoryRecord}!getid3\_iso@{getid3\_iso}}
+\doxysubsubsection{\texorpdfstring{ParseDirectoryRecord()}{ParseDirectoryRecord()}}
+{\footnotesize\ttfamily \label{classgetid3__iso_a457dfa31cfd2f14900c0184eb0221ca7} 
+Parse\+Directory\+Record (\begin{DoxyParamCaption}\item[{}]{\$directorydata}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$directorydata} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__iso_a0aada85d527f1227f84e77c504c97d78}\index{getid3\_iso@{getid3\_iso}!ParsePathTable@{ParsePathTable}}
+\index{ParsePathTable@{ParsePathTable}!getid3\_iso@{getid3\_iso}}
+\doxysubsubsection{\texorpdfstring{ParsePathTable()}{ParsePathTable()}}
+{\footnotesize\ttfamily \label{classgetid3__iso_a0aada85d527f1227f84e77c504c97d78} 
+Parse\+Path\+Table (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__iso_a75453a42366d422fdc372850ca737e6c}\index{getid3\_iso@{getid3\_iso}!ParsePrimaryVolumeDescriptor@{ParsePrimaryVolumeDescriptor}}
+\index{ParsePrimaryVolumeDescriptor@{ParsePrimaryVolumeDescriptor}!getid3\_iso@{getid3\_iso}}
+\doxysubsubsection{\texorpdfstring{ParsePrimaryVolumeDescriptor()}{ParsePrimaryVolumeDescriptor()}}
+{\footnotesize\ttfamily \label{classgetid3__iso_a75453a42366d422fdc372850ca737e6c} 
+Parse\+Primary\+Volume\+Descriptor (\begin{DoxyParamCaption}\item[{\&}]{\$\+ISOheader}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+ISOheader} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__iso_a47cad7b0f4171b51c462583915aad6e5}\index{getid3\_iso@{getid3\_iso}!ParseSupplementaryVolumeDescriptor@{ParseSupplementaryVolumeDescriptor}}
+\index{ParseSupplementaryVolumeDescriptor@{ParseSupplementaryVolumeDescriptor}!getid3\_iso@{getid3\_iso}}
+\doxysubsubsection{\texorpdfstring{ParseSupplementaryVolumeDescriptor()}{ParseSupplementaryVolumeDescriptor()}}
+{\footnotesize\ttfamily \label{classgetid3__iso_a47cad7b0f4171b51c462583915aad6e5} 
+Parse\+Supplementary\+Volume\+Descriptor (\begin{DoxyParamCaption}\item[{\&}]{\$\+ISOheader}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+ISOheader} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__iso_a074f2451e317bc47e33dc39effe8a49f}\index{getid3\_iso@{getid3\_iso}!TwosCompliment2Decimal@{TwosCompliment2Decimal}}
+\index{TwosCompliment2Decimal@{TwosCompliment2Decimal}!getid3\_iso@{getid3\_iso}}
+\doxysubsubsection{\texorpdfstring{TwosCompliment2Decimal()}{TwosCompliment2Decimal()}}
+{\footnotesize\ttfamily \label{classgetid3__iso_a074f2451e317bc47e33dc39effe8a49f} 
+Twos\+Compliment2\+Decimal (\begin{DoxyParamCaption}\item[{}]{\$\+Binary\+Value}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$\+Binary\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+misc.\+iso.\+php\end{DoxyCompactItemize}

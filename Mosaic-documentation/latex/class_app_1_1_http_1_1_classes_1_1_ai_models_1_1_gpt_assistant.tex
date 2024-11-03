@@ -1,0 +1,61 @@
+\doxysection{Gpt\+Assistant Class Reference}
+\hypertarget{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant}{}\label{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant}\index{GptAssistant@{GptAssistant}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a2311d4563a87153e0e0bbe406293c464}\label{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a2311d4563a87153e0e0bbe406293c464} 
+{\bfseries \+\_\+\+\_\+construct} (string \$api\+Key)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a96137303de56fd6563624052713e0858}{create\+Thread}} (\$messages)
+\item 
+\Hypertarget{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a5d0f07215375400b4cf54f88f0950f01}\label{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a5d0f07215375400b4cf54f88f0950f01} 
+{\bfseries add\+Message} (\$thread\+Id, \$role=\textquotesingle{}User\textquotesingle{}, \$message=\textquotesingle{}Hello\textquotesingle{})
+\item 
+\Hypertarget{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a0eb543249e01e370330d9114b77650bc}\label{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a0eb543249e01e370330d9114b77650bc} 
+{\bfseries retrieve\+Messages} (\$thread\+Id)
+\item 
+\Hypertarget{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a8e125d5c7145e1a0c14ff65b0aad0253}\label{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a8e125d5c7145e1a0c14ff65b0aad0253} 
+{\bfseries run\+Thread} (\$thread\+Id, \$assistant\+ID)
+\item 
+\Hypertarget{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_ad05a22953f9348c9bc8a77832916a691}\label{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_ad05a22953f9348c9bc8a77832916a691} 
+{\bfseries thread\+Status} (\$thread\+Id, \$run\+ID)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_acf17788084df5a3d3415f4d9e346471d}\label{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_acf17788084df5a3d3415f4d9e346471d} 
+{\bfseries headers} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a084e3db37d1b117a3cc7212cf2eed533}\label{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a084e3db37d1b117a3cc7212cf2eed533} 
+{\bfseries \$api\+Key}
+\item 
+\Hypertarget{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a108fc758586ad470628474f0727a2931}\label{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a108fc758586ad470628474f0727a2931} 
+{\bfseries \$api\+Url} = \textquotesingle{}https\+://api.\+openai.\+com/v1/threads\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a96137303de56fd6563624052713e0858}\index{GptAssistant@{GptAssistant}!createThread@{createThread}}
+\index{createThread@{createThread}!GptAssistant@{GptAssistant}}
+\doxysubsubsection{\texorpdfstring{createThread()}{createThread()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_assistant_a96137303de56fd6563624052713e0858} 
+create\+Thread (\begin{DoxyParamCaption}\item[{}]{\$messages}{}\end{DoxyParamCaption})}
+
+Create a new thread
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}array\mbox{]}} & \$messages = \mbox{[}\mbox{[}\textquotesingle{}role\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}user\textquotesingle{}, \textquotesingle{}content\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}Hello\textquotesingle{}\mbox{]}\mbox{]} EXPECTED RESPONSE\+: \{"{}id"{}\+: "{}thread\+\_\+4\+AXo\+UJ77e\+BLps\+Gpc\+Mn\+O30180"{},"{}object"{}\+: "{}thread"{}, "{}created\+\_\+at"{}\+: 1699514560, "{}metadata"{}\+: \{\} \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Http/\+Classes/\+Ai\+Models/Gpt\+Assistant.\+php\end{DoxyCompactItemize}

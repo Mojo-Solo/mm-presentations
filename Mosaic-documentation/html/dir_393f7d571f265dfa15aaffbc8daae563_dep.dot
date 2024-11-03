@@ -1,0 +1,17 @@
+digraph "resources/views/backend/site_super_admin/tenant_domain/site_forms/form_questions"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_be7cd90b2cc22ace9cb7832932d4e36b {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="site_forms", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_be7cd90b2cc22ace9cb7832932d4e36b.html",tooltip=""]
+  subgraph clusterdir_393f7d571f265dfa15aaffbc8daae563 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_393f7d571f265dfa15aaffbc8daae563.html",tooltip=""]
+    dir_393f7d571f265dfa15aaffbc8daae563 [shape=plaintext, label="form_questions"];
+  dir_3289acf306f9b40464ef3b6660c8b2ec [label="modals", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_3289acf306f9b40464ef3b6660c8b2ec.html",tooltip=""];
+  dir_5192213d56d4a70b0fbe6bc57857ce0b [label="question_answers", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_5192213d56d4a70b0fbe6bc57857ce0b.html",tooltip=""];
+  }
+  }
+}

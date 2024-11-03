@@ -1,0 +1,191 @@
+\doxysection{getid3\+\_\+writetags Class Reference}
+\hypertarget{classgetid3__writetags}{}\label{classgetid3__writetags}\index{getid3\_writetags@{getid3\_writetags}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__writetags_a5d72159075f7c7df87bc38afcfc028e9}{Write\+Tags}} ()
+\item 
+\mbox{\hyperlink{classgetid3__writetags_a32d97c3753d791554b4e532cc1d201fb}{Delete\+Tags}} (\$Tag\+Formats\+To\+Delete)
+\item 
+\mbox{\hyperlink{classgetid3__writetags_a0b65525221d95f7ece2e4c31a60a78e8}{Merge\+Existing\+Tag\+Data}} (\$Tag\+Format, \&\$tag\+\_\+data)
+\item 
+\mbox{\hyperlink{classgetid3__writetags_a6be5af8ad06bfb76c8a1d1abb92f1eb5}{Format\+Data\+For\+APE}} ()
+\item 
+\mbox{\hyperlink{classgetid3__writetags_a5dd537e1f4bcefe731df4d8af39173ab}{Format\+Data\+For\+ID3v1}} ()
+\item 
+\mbox{\hyperlink{classgetid3__writetags_a4b018401009f38f98891fa6b150dc66b}{Format\+Data\+For\+ID3v2}} (\$id3v2\+\_\+majorversion)
+\item 
+\mbox{\hyperlink{classgetid3__writetags_aec0b70f541d5a01d9d3dee581abcdfab}{Format\+Data\+For\+Vorbis\+Comment}} ()
+\item 
+\mbox{\hyperlink{classgetid3__writetags_a3991784021f34357c0b7dfa0c8620c5b}{Format\+Data\+For\+Meta\+FLAC}} ()
+\item 
+\mbox{\hyperlink{classgetid3__writetags_a4914784ed9e414479809282b7e5234ed}{Format\+Data\+For\+Real}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__writetags_a0722441477f957078ee2437054556cbc}\label{classgetid3__writetags_a0722441477f957078ee2437054556cbc} 
+{\bfseries \$filename}
+\item 
+\Hypertarget{classgetid3__writetags_aa7e47b75b3a2a0aa61acf9c46a9de9c5}\label{classgetid3__writetags_aa7e47b75b3a2a0aa61acf9c46a9de9c5} 
+{\bfseries \$tagformats} = array()
+\item 
+\Hypertarget{classgetid3__writetags_aaea5ece1c35ea97e2f3c04a4431096c6}\label{classgetid3__writetags_aaea5ece1c35ea97e2f3c04a4431096c6} 
+{\bfseries \$tag\+\_\+data} = array(array())
+\item 
+\Hypertarget{classgetid3__writetags_a289ba9e4418d997fae65606ca5a13a34}\label{classgetid3__writetags_a289ba9e4418d997fae65606ca5a13a34} 
+{\bfseries \$tag\+\_\+encoding} = \textquotesingle{}ISO-\/8859-\/1\textquotesingle{}
+\item 
+\Hypertarget{classgetid3__writetags_a4ee5667f1f4b35d8c4ee17f52c81f9c6}\label{classgetid3__writetags_a4ee5667f1f4b35d8c4ee17f52c81f9c6} 
+{\bfseries \$overwrite\+\_\+tags} = true
+\item 
+\Hypertarget{classgetid3__writetags_aa396f8a4422f2ab2fb773247c5699147}\label{classgetid3__writetags_aa396f8a4422f2ab2fb773247c5699147} 
+{\bfseries \$remove\+\_\+other\+\_\+tags} = false
+\item 
+\Hypertarget{classgetid3__writetags_a0c8775e324fdf44955a5f96a141e2f39}\label{classgetid3__writetags_a0c8775e324fdf44955a5f96a141e2f39} 
+{\bfseries \$id3v2\+\_\+tag\+\_\+language} = \textquotesingle{}eng\textquotesingle{}
+\item 
+\Hypertarget{classgetid3__writetags_a10a7401f3e47beb75d54753349fd63cd}\label{classgetid3__writetags_a10a7401f3e47beb75d54753349fd63cd} 
+{\bfseries \$id3v2\+\_\+paddedlength} = 4096
+\item 
+\Hypertarget{classgetid3__writetags_a46209434b2ef1d7554dc5135de969432}\label{classgetid3__writetags_a46209434b2ef1d7554dc5135de969432} 
+{\bfseries \$warnings} = array()
+\item 
+\Hypertarget{classgetid3__writetags_ab24faf4aa647cdcee494fc48524ad4ff}\label{classgetid3__writetags_ab24faf4aa647cdcee494fc48524ad4ff} 
+{\bfseries \$errors} = array()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+// NOTES\+:
+
+You should pass data here with standard field names as follows\+:
+\begin{DoxyItemize}
+\item TITLE
+\item ARTIST
+\item ALBUM
+\item TRACKNUMBER
+\item COMMENT
+\item GENRE
+\item YEAR
+\item ATTACHED\+\_\+\+PICTURE (ID3v2 only) The APEv2 Tag Items Keys definition says "{}\+TRACK"{} is correct but foobar2000 uses "{}\+TRACKNUMBER"{} instead Pass data here as "{}\+TRACKNUMBER"{} for compatability with all formats
+\end{DoxyItemize}
+
+\doxylink{}{http\+://www.\+personal.\+uni-\/jena.\+de/\texorpdfstring{$\sim$}{\string~}pfk/mpp/sv8/apekey.\+html}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__writetags_a32d97c3753d791554b4e532cc1d201fb}\index{getid3\_writetags@{getid3\_writetags}!DeleteTags@{DeleteTags}}
+\index{DeleteTags@{DeleteTags}!getid3\_writetags@{getid3\_writetags}}
+\doxysubsubsection{\texorpdfstring{DeleteTags()}{DeleteTags()}}
+{\footnotesize\ttfamily \label{classgetid3__writetags_a32d97c3753d791554b4e532cc1d201fb} 
+Delete\+Tags (\begin{DoxyParamCaption}\item[{}]{\$\+Tag\+Formats\+To\+Delete}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$\+Tag\+Formats\+To\+Delete} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__writetags_a6be5af8ad06bfb76c8a1d1abb92f1eb5}\index{getid3\_writetags@{getid3\_writetags}!FormatDataForAPE@{FormatDataForAPE}}
+\index{FormatDataForAPE@{FormatDataForAPE}!getid3\_writetags@{getid3\_writetags}}
+\doxysubsubsection{\texorpdfstring{FormatDataForAPE()}{FormatDataForAPE()}}
+{\footnotesize\ttfamily \label{classgetid3__writetags_a6be5af8ad06bfb76c8a1d1abb92f1eb5} 
+Format\+Data\+For\+APE (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__writetags_a5dd537e1f4bcefe731df4d8af39173ab}\index{getid3\_writetags@{getid3\_writetags}!FormatDataForID3v1@{FormatDataForID3v1}}
+\index{FormatDataForID3v1@{FormatDataForID3v1}!getid3\_writetags@{getid3\_writetags}}
+\doxysubsubsection{\texorpdfstring{FormatDataForID3v1()}{FormatDataForID3v1()}}
+{\footnotesize\ttfamily \label{classgetid3__writetags_a5dd537e1f4bcefe731df4d8af39173ab} 
+Format\+Data\+For\+ID3v1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__writetags_a4b018401009f38f98891fa6b150dc66b}\index{getid3\_writetags@{getid3\_writetags}!FormatDataForID3v2@{FormatDataForID3v2}}
+\index{FormatDataForID3v2@{FormatDataForID3v2}!getid3\_writetags@{getid3\_writetags}}
+\doxysubsubsection{\texorpdfstring{FormatDataForID3v2()}{FormatDataForID3v2()}}
+{\footnotesize\ttfamily \label{classgetid3__writetags_a4b018401009f38f98891fa6b150dc66b} 
+Format\+Data\+For\+ID3v2 (\begin{DoxyParamCaption}\item[{}]{\$id3v2\+\_\+majorversion}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id3v2\+\_\+majorversion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\$\+ID3v2\+\_\+tag\+\_\+data\+\_\+converted \&\&\Hypertarget{classgetid3__writetags_a3991784021f34357c0b7dfa0c8620c5b}\index{getid3\_writetags@{getid3\_writetags}!FormatDataForMetaFLAC@{FormatDataForMetaFLAC}}
+\index{FormatDataForMetaFLAC@{FormatDataForMetaFLAC}!getid3\_writetags@{getid3\_writetags}}
+\doxysubsubsection{\texorpdfstring{FormatDataForMetaFLAC()}{FormatDataForMetaFLAC()}}
+{\footnotesize\ttfamily \label{classgetid3__writetags_a3991784021f34357c0b7dfa0c8620c5b} 
+Format\+Data\+For\+Meta\+FLAC (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__writetags_a4914784ed9e414479809282b7e5234ed}\index{getid3\_writetags@{getid3\_writetags}!FormatDataForReal@{FormatDataForReal}}
+\index{FormatDataForReal@{FormatDataForReal}!getid3\_writetags@{getid3\_writetags}}
+\doxysubsubsection{\texorpdfstring{FormatDataForReal()}{FormatDataForReal()}}
+{\footnotesize\ttfamily \label{classgetid3__writetags_a4914784ed9e414479809282b7e5234ed} 
+Format\+Data\+For\+Real (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__writetags_aec0b70f541d5a01d9d3dee581abcdfab}\index{getid3\_writetags@{getid3\_writetags}!FormatDataForVorbisComment@{FormatDataForVorbisComment}}
+\index{FormatDataForVorbisComment@{FormatDataForVorbisComment}!getid3\_writetags@{getid3\_writetags}}
+\doxysubsubsection{\texorpdfstring{FormatDataForVorbisComment()}{FormatDataForVorbisComment()}}
+{\footnotesize\ttfamily \label{classgetid3__writetags_aec0b70f541d5a01d9d3dee581abcdfab} 
+Format\+Data\+For\+Vorbis\+Comment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__writetags_a0b65525221d95f7ece2e4c31a60a78e8}\index{getid3\_writetags@{getid3\_writetags}!MergeExistingTagData@{MergeExistingTagData}}
+\index{MergeExistingTagData@{MergeExistingTagData}!getid3\_writetags@{getid3\_writetags}}
+\doxysubsubsection{\texorpdfstring{MergeExistingTagData()}{MergeExistingTagData()}}
+{\footnotesize\ttfamily \label{classgetid3__writetags_a0b65525221d95f7ece2e4c31a60a78e8} 
+Merge\+Existing\+Tag\+Data (\begin{DoxyParamCaption}\item[{}]{\$\+Tag\+Format}{, }\item[{\&}]{\$tag\+\_\+data}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+Tag\+Format} & \\
+\hline
+array & {\em \$tag\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classgetid3__writetags_a5d72159075f7c7df87bc38afcfc028e9}\index{getid3\_writetags@{getid3\_writetags}!WriteTags@{WriteTags}}
+\index{WriteTags@{WriteTags}!getid3\_writetags@{getid3\_writetags}}
+\doxysubsubsection{\texorpdfstring{WriteTags()}{WriteTags()}}
+{\footnotesize\ttfamily \label{classgetid3__writetags_a5d72159075f7c7df87bc38afcfc028e9} 
+Write\+Tags (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/write.\+php\end{DoxyCompactItemize}

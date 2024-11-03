@@ -1,0 +1,23 @@
+digraph "resources/views"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_0fc3f8f3ef96ce2d45d66d6e29832317 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="resources", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_0fc3f8f3ef96ce2d45d66d6e29832317.html",tooltip=""]
+  subgraph clusterdir_5794a73405254976eadeaaaebebc79b6 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_5794a73405254976eadeaaaebebc79b6.html",tooltip=""]
+    dir_5794a73405254976eadeaaaebebc79b6 [shape=plaintext, label="views"];
+  dir_48f752ed06fe2ec4f169a5606dccb442 [label="backend", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_48f752ed06fe2ec4f169a5606dccb442.html",tooltip=""];
+  dir_be6a89e5e182cfde9ba0d4ece1bed536 [label="components", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_be6a89e5e182cfde9ba0d4ece1bed536.html",tooltip=""];
+  dir_ecf2abb32177069fb3e181f6680a2e9e [label="domains", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_ecf2abb32177069fb3e181f6680a2e9e.html",tooltip=""];
+  dir_d374602e6331187ed833905a77a9d944 [label="errors", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_d374602e6331187ed833905a77a9d944.html",tooltip=""];
+  dir_d9c5d8e614e99c6f8e356cd41c3637db [label="frontend", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_d9c5d8e614e99c6f8e356cd41c3637db.html",tooltip=""];
+  dir_39cd65392a1bc1b3b6c086384d41c7bf [label="livewire", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_39cd65392a1bc1b3b6c086384d41c7bf.html",tooltip=""];
+  dir_e72b7650ca81efdd399db5773b1ee6cd [label="mail", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_e72b7650ca81efdd399db5773b1ee6cd.html",tooltip=""];
+  dir_4346cca4d17b037bb58ef1ad9c13c3bc [label="vendor", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_4346cca4d17b037bb58ef1ad9c13c3bc.html",tooltip=""];
+  }
+  }
+}

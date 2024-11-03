@@ -1,0 +1,17 @@
+---
+name: huYman + AI Symbiosis
+description: Simplify everything to the symbiosis of mojoPi = huYman + AI
+equation: mojoPi = huYman + AI
+objective: Reduce huYman suffering to {variable} Your best version
+components:
+  mojoPi:
+    - speech_queries
+    - real-time_processing
+  huYman:
+    - reduced_suffering  
+    - best_version
+  AI:    
+    - agent_executors
+    - listening_context
+    - team_processing
+---

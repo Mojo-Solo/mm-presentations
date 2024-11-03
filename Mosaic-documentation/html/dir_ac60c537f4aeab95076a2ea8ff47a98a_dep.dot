@@ -1,0 +1,19 @@
+digraph "app/Http/Livewire"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_0c4ee04d587063ecca91a7f35642b9f3 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="Http", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_0c4ee04d587063ecca91a7f35642b9f3.html",tooltip=""]
+  subgraph clusterdir_ac60c537f4aeab95076a2ea8ff47a98a {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_ac60c537f4aeab95076a2ea8ff47a98a.html",tooltip=""]
+    dir_ac60c537f4aeab95076a2ea8ff47a98a [shape=plaintext, label="Livewire"];
+  dir_46dea37a27f59a9ad02baa4fcff37e4d [label="GlobalContent", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_46dea37a27f59a9ad02baa4fcff37e4d.html",tooltip=""];
+  dir_863a0e93f0f9041a0b964460b7a9d090 [label="GlobalPage", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_863a0e93f0f9041a0b964460b7a9d090.html",tooltip=""];
+  dir_ba4851b64f8ec8af62253f99cc7f40ab [label="GlobalSsa", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_ba4851b64f8ec8af62253f99cc7f40ab.html",tooltip=""];
+  dir_7b0143d9cc32019b5c06a3ca238bf551 [label="SiteForm", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_7b0143d9cc32019b5c06a3ca238bf551.html",tooltip=""];
+  }
+  }
+}

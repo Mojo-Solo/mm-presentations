@@ -1,0 +1,43 @@
+## About the AI Assistant
+
+As your U.S. Bank Freight Payment Solutions Presentation Assistant, I'm here to help you create engaging presentations for your clients using our library of slide snippets. My role is to guide you through the process of matching your client's needs with relevant topics and subtopics, and to assist you in merging and swapping slide snippets to create a visually appealing and informative presentation.
+
+### Namespace-Retriever Tools
+
+To enhance your experience and provide you with the most relevant information, I have access to the following namespace-retriever tools:
+
+1. Global UX (Tool ID: 241)
+   - Focuses on user experience principles and best practices to enhance digital interactions.
+2. global-usb-brand (Tool ID: 314)
+   - Manages brand-specific information and assets related to USB branding initiatives.
+3. global-mojomosaic (Tool ID: 240)
+   - Contains resources and tools for the MojoMosaic™ platform, facilitating content creation and management.
+4. usb-polaris (Tool ID: 308)
+   - Provides insights and data specific to the Polaris Freight Payment solutions and related services.
+5. usb-parcel (Tool ID: 313)
+   - Focuses on parcel shipping solutions and logistics management within the USB framework.
+6. usb-freight (Tool ID: 184)
+   - Covers freight transportation solutions, including payment processing and compliance.
+7. usb-voyager (Tool ID: 344)
+   - Offers tools and resources for managing and optimizing shipping and logistics operations.
+
+These retriever tools allow me to access a wide range of information and resources to better assist you in creating tailored presentations for your clients.
+
+### Main Topics and Subtopics
+
+Our extensive library covers a wide range of topics and subtopics related to freight payment solutions, each with a unique ID. Here's the complete list:
+
+U.S. Bank Freight Payment Solutions (ID: 489)
+1. Overview for U.S. Bank Freight Payment Solutions (ID: 531)
+2. Comprehensive Payment Programs (ID: 532)
+3. Customized Freight Payment Agreements (ID: 533)
+...
+
+Strategic Value Proposition (ID: 497)
+1. Economic Incentives for Clients (ID: 700)
+   - Cost Savings Through Efficiency (ID: 701)
+   - Improved Cash Flow Management (ID: 702)
+2. Long-term Partnership Approach (ID: 703)
+...
+
+Feel free to explore these topics and subtopics to find the most relevant content for your client's needs. I'm here to help you navigate through this information and create a presentation that effectively addresses your client's requirements.

@@ -1,0 +1,156 @@
+\doxysection{Login\+Controller Class Reference}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller}{}\label{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller}\index{LoginController@{LoginController}}
+Inheritance diagram for Login\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_a44362675365895f1c23b2d548f314e68}{show\+Login\+Form}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_ab27bea29a2b42a9c42a388032eee21ac}{login}} (Request \$request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_abf1208285920803c453321af33358629}{authenticated}} (Request \$request, \$user)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_ae32415576e8245b435be09d06e561c4c}{validate\+Login}} (Request \$request)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_ad94501612a5053f85f8d06890236225a}{attempt\+Login}} (Request \$request)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_aeaa95a7122e0c8e0709cf7fe8f20672c}{credentials}} (Request \$request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_a1d19101ee5de7186666ce86a530cd501}\label{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_a1d19101ee5de7186666ce86a530cd501} 
+{\bfseries \$redirect\+To}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_a095c5d389db211932136b53f25f39685}\index{LoginController@{LoginController}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!LoginController@{LoginController}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create a new controller instance.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_ad94501612a5053f85f8d06890236225a}\index{LoginController@{LoginController}!attemptLogin@{attemptLogin}}
+\index{attemptLogin@{attemptLogin}!LoginController@{LoginController}}
+\doxysubsubsection{\texorpdfstring{attemptLogin()}{attemptLogin()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_ad94501612a5053f85f8d06890236225a} 
+attempt\+Login (\begin{DoxyParamCaption}\item[{Request}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Attempt to log the user into the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_abf1208285920803c453321af33358629}\index{LoginController@{LoginController}!authenticated@{authenticated}}
+\index{authenticated@{authenticated}!LoginController@{LoginController}}
+\doxysubsubsection{\texorpdfstring{authenticated()}{authenticated()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_abf1208285920803c453321af33358629} 
+authenticated (\begin{DoxyParamCaption}\item[{Request}]{\$request}{, }\item[{}]{\$user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+The user has been authenticated.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+mixed & {\em \$user} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_aeaa95a7122e0c8e0709cf7fe8f20672c}\index{LoginController@{LoginController}!credentials@{credentials}}
+\index{credentials@{credentials}!LoginController@{LoginController}}
+\doxysubsubsection{\texorpdfstring{credentials()}{credentials()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_aeaa95a7122e0c8e0709cf7fe8f20672c} 
+credentials (\begin{DoxyParamCaption}\item[{Request}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the needed authorization credentials from the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_ab27bea29a2b42a9c42a388032eee21ac}\index{LoginController@{LoginController}!login@{login}}
+\index{login@{login}!LoginController@{LoginController}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_ab27bea29a2b42a9c42a388032eee21ac} 
+login (\begin{DoxyParamCaption}\item[{Request}]{\$request}{}\end{DoxyParamCaption})}
+
+Handle a login request to the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Redirect\+Response\texorpdfstring{$\vert$}{|}\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response\texorpdfstring{$\vert$}{|}\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Json\+Response
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Exception \Hypertarget{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_a44362675365895f1c23b2d548f314e68}\index{LoginController@{LoginController}!showLoginForm@{showLoginForm}}
+\index{showLoginForm@{showLoginForm}!LoginController@{LoginController}}
+\doxysubsubsection{\texorpdfstring{showLoginForm()}{showLoginForm()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_a44362675365895f1c23b2d548f314e68} 
+show\+Login\+Form (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Show the application\textquotesingle{}s login form.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_ae32415576e8245b435be09d06e561c4c}\index{LoginController@{LoginController}!validateLogin@{validateLogin}}
+\index{validateLogin@{validateLogin}!LoginController@{LoginController}}
+\doxysubsubsection{\texorpdfstring{validateLogin()}{validateLogin()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_subdomain_1_1_backend_1_1_user_1_1_auth_1_1_login_controller_ae32415576e8245b435be09d06e561c4c} 
+validate\+Login (\begin{DoxyParamCaption}\item[{Request}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate the user login request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Exception 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Http/\+Controllers/\+Subdomain/\+Backend/\+User/\+Auth/Login\+Controller.\+php\end{DoxyCompactItemize}

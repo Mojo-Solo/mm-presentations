@@ -1,0 +1,172 @@
+\doxysection{Site\+Campaign\+Controller Class Reference}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller}{}\label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller}\index{SiteCampaignController@{SiteCampaignController}}
+Inheritance diagram for Site\+Campaign\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a149eb92716c1084a935e04a8d95f7347}{index}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a435e7d7525d4bcd0ed5e34a469f3adf6}{create}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a9ef485163104597c12185b53cdacf638}{store}} (Request \$request)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a790e03132d2e1bd29e2c3f0986319a55}{show}} (Site\+Campaign \$site\+Campaign)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a7796dc5265b4525536251081f9f90f49}{edit}} (Site\+Campaign \$site\+Campaign)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_ab75bee24eda00d21e6f86d3e58215f2f}{update}} (Request \$request, Site\+Campaign \$site\+Campaign)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_adc9d05668c9521c870241f5d6241c8f1}{destroy}} (\$site\+Campaign)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_ab25435c52b63ed818cd52ea85f43c98e}{snippets\+Index}} (\$campaign\+ID)
+\item 
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a4987283e22758d0b083c59d46bb1dabe}\label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a4987283e22758d0b083c59d46bb1dabe} 
+{\bfseries show\+Template\+Preview} (\$templatehash, \$campaign\+ID)
+\item 
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_aa33e235d5aad04555976accfb9f31c64}\label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_aa33e235d5aad04555976accfb9f31c64} 
+{\bfseries populate\+Content} (\mbox{\hyperlink{class_app_1_1_http_1_1_classes_1_1_ai_models_1_1_gpt_service}{Gpt\+Service}} \$gpt\+Service, \$campaign\+ID)
+\item 
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a1247933f5da0dbada6dbc9137abd4720}\label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a1247933f5da0dbada6dbc9137abd4720} 
+{\bfseries live\+Preview} (Request \$request, \$Site\+Snippet, \$campaign\+ID)
+\item 
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a167eb574e2d55ab21a53fac05d5046b9}\label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a167eb574e2d55ab21a53fac05d5046b9} 
+{\bfseries ai\+Content\+Update} (\$campaign\+ID)
+\item 
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_ac1e90a9fd4f8f034a02bc9d0d3c1055a}\label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_ac1e90a9fd4f8f034a02bc9d0d3c1055a} 
+{\bfseries ai\+Content\+Store} (Request \$request, \$campaign\+ID)
+\item 
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_abf229f7eb02f875da54ed62cb79f2e8d}\label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_abf229f7eb02f875da54ed62cb79f2e8d} 
+{\bfseries export\+Snippet} (Request \$request, \$Site\+Snippet)
+\item 
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a84500fcf7225a3b515e2749f2ff46e17}\label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a84500fcf7225a3b515e2749f2ff46e17} 
+{\bfseries delete\+Snippet} (Request \$request, \$Site\+Snippet, \$campaign\+ID)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a66ea25d44eb4cece77b49e511f2b5d02}\label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a66ea25d44eb4cece77b49e511f2b5d02} 
+{\bfseries \$view\+Path} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a435e7d7525d4bcd0ed5e34a469f3adf6}\index{SiteCampaignController@{SiteCampaignController}!create@{create}}
+\index{create@{create}!SiteCampaignController@{SiteCampaignController}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a435e7d7525d4bcd0ed5e34a469f3adf6} 
+create (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Show the form for creating a new resource.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_adc9d05668c9521c870241f5d6241c8f1}\index{SiteCampaignController@{SiteCampaignController}!destroy@{destroy}}
+\index{destroy@{destroy}!SiteCampaignController@{SiteCampaignController}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_adc9d05668c9521c870241f5d6241c8f1} 
+destroy (\begin{DoxyParamCaption}\item[{}]{\$site\+Campaign}{}\end{DoxyParamCaption})}
+
+Remove the specified resource from storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+App\textbackslash{}\+Models\textbackslash{}\+Site\+Campaign & {\em \$site\+Campaign} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a7796dc5265b4525536251081f9f90f49}\index{SiteCampaignController@{SiteCampaignController}!edit@{edit}}
+\index{edit@{edit}!SiteCampaignController@{SiteCampaignController}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a7796dc5265b4525536251081f9f90f49} 
+edit (\begin{DoxyParamCaption}\item[{Site\+Campaign}]{\$site\+Campaign}{}\end{DoxyParamCaption})}
+
+Show the form for editing the specified resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+App\textbackslash{}\+Models\textbackslash{}\+Site\+Campaign & {\em \$site\+Campaign} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a149eb92716c1084a935e04a8d95f7347}\index{SiteCampaignController@{SiteCampaignController}!index@{index}}
+\index{index@{index}!SiteCampaignController@{SiteCampaignController}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a149eb92716c1084a935e04a8d95f7347} 
+index (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Display a listing of the resource.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a790e03132d2e1bd29e2c3f0986319a55}\index{SiteCampaignController@{SiteCampaignController}!show@{show}}
+\index{show@{show}!SiteCampaignController@{SiteCampaignController}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a790e03132d2e1bd29e2c3f0986319a55} 
+show (\begin{DoxyParamCaption}\item[{Site\+Campaign}]{\$site\+Campaign}{}\end{DoxyParamCaption})}
+
+Display the specified resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+App\textbackslash{}\+Models\textbackslash{}\+Site\+Campaign & {\em \$site\+Campaign} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_ab25435c52b63ed818cd52ea85f43c98e}\index{SiteCampaignController@{SiteCampaignController}!snippetsIndex@{snippetsIndex}}
+\index{snippetsIndex@{snippetsIndex}!SiteCampaignController@{SiteCampaignController}}
+\doxysubsubsection{\texorpdfstring{snippetsIndex()}{snippetsIndex()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_ab25435c52b63ed818cd52ea85f43c98e} 
+snippets\+Index (\begin{DoxyParamCaption}\item[{}]{\$campaign\+ID}{}\end{DoxyParamCaption})}
+
+Site Campaign Snippets \Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a9ef485163104597c12185b53cdacf638}\index{SiteCampaignController@{SiteCampaignController}!store@{store}}
+\index{store@{store}!SiteCampaignController@{SiteCampaignController}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_a9ef485163104597c12185b53cdacf638} 
+store (\begin{DoxyParamCaption}\item[{Request}]{\$request}{}\end{DoxyParamCaption})}
+
+Store a newly created resource in storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_ab75bee24eda00d21e6f86d3e58215f2f}\index{SiteCampaignController@{SiteCampaignController}!update@{update}}
+\index{update@{update}!SiteCampaignController@{SiteCampaignController}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_site_super_admin_1_1_tenant_1_1_site_campaign_controller_ab75bee24eda00d21e6f86d3e58215f2f} 
+update (\begin{DoxyParamCaption}\item[{Request}]{\$request}{, }\item[{Site\+Campaign}]{\$site\+Campaign}{}\end{DoxyParamCaption})}
+
+Update the specified resource in storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+App\textbackslash{}\+Models\textbackslash{}\+Site\+Campaign & {\em \$site\+Campaign} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Http/\+Controllers/\+Site\+Super\+Admin/\+Tenant/Site\+Campaign\+Controller.\+php\end{DoxyCompactItemize}

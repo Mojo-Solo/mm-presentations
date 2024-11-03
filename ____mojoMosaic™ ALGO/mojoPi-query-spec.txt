@@ -1,0 +1,12 @@
+---
+name: mojoPi Query
+description: Runs queries on speech data within 3-5 seconds of it being written to the database
+execution_time: 3-5 seconds
+triggers:
+  - speech_data_written_to_db
+parameters:
+  - speech_data
+  - database_connection
+outputs:
+  - query_results
+---

@@ -1,0 +1,12 @@
+digraph "database/migrations"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_f32c53f2c0f0ccaeb11076e30674d5f4 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="database", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_f32c53f2c0f0ccaeb11076e30674d5f4.html",tooltip=""]
+  dir_60ac0e461401d42a1487e6744db0f9b7 [label="migrations", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_60ac0e461401d42a1487e6744db0f9b7.html",tooltip=""];
+  }
+}

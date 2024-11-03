@@ -1,0 +1,282 @@
+\doxysection{getid3\+\_\+riff Class Reference}
+\hypertarget{classgetid3__riff}{}\label{classgetid3__riff}\index{getid3\_riff@{getid3\_riff}}
+
+
+Inheritance diagram for getid3\+\_\+riff\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+riff\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__riff_a6bb07e9a56503182929f4b8a36d48f31}{Parse\+RIFFAMV}} (\$startoffset, \$maxoffset)
+\item 
+\mbox{\hyperlink{classgetid3__riff_a08a69ec573f86f73d135be75ffbdc646}{Parse\+RIFF}} (\$startoffset, \$maxoffset)
+\item 
+\mbox{\hyperlink{classgetid3__riff_a4d17921639718985dca0b25e2d25ad70}{Parse\+RIFFdata}} (\&\$RIFFdata)
+\item 
+\mbox{\hyperlink{classgetid3__riff_a4e0be4b3e0ef8c6ac862f7766f430e32}{parse\+Wav\+Pack\+Header}} (\$Wav\+Pack\+Chunk\+Data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__riff_adc273d215e4941d258ec7a5e37da90c6}{parse\+Comments}} (\&\$RIFFinfo\+Array, \&\$Comments\+Target\+Array)
+\item 
+static \mbox{\hyperlink{classgetid3__riff_a9f59d3d8f3a769c6725c814198269d8f}{parse\+WAVEFORMATex}} (\$Wave\+Format\+Ex\+Data)
+\item 
+static \mbox{\hyperlink{classgetid3__riff_a71a805e2edcf09c940369e855ca27f29}{Parse\+BITMAPINFOHEADER}} (\$BITMAPINFOHEADER, \$little\+Endian=true)
+\item 
+static \mbox{\hyperlink{classgetid3__riff_aaa79689f26ff4dfdd18c27347fc27d76}{Parse\+DIVXTAG}} (\$DIVXTAG, \$raw=false)
+\item 
+static \mbox{\hyperlink{classgetid3__riff_ac347436b770037bc89cff215777f4e87}{wave\+SNDMtag\+Lookup}} (\$tagshortname)
+\item 
+static \mbox{\hyperlink{classgetid3__riff_abd12e25d58abeeef643eb1f8e6dc4cbc}{w\+Format\+Tag\+Lookup}} (\$w\+Format\+Tag)
+\item 
+static \mbox{\hyperlink{classgetid3__riff_a466c7d05dc5911fe0c115c3f9c325421}{fourcc\+Lookup}} (\$fourcc)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__riff_ab97dd40df90f4ce6f0fce9091e7c7872}\label{classgetid3__riff_ab97dd40df90f4ce6f0fce9091e7c7872} 
+{\bfseries \$container} = \textquotesingle{}riff\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__riff_a466c7d05dc5911fe0c115c3f9c325421}\index{getid3\_riff@{getid3\_riff}!fourccLookup@{fourccLookup}}
+\index{fourccLookup@{fourccLookup}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{fourccLookup()}{fourccLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_a466c7d05dc5911fe0c115c3f9c325421} 
+static fourcc\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$fourcc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$fourcc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+This is not a comment!
+
+swot \href{http://developer.apple.com/qa/snd/snd07.html}{\texttt{ http\+://developer.\+apple.\+com/qa/snd/snd07.\+html}} \+\_\+\+\_\+\+\_\+\+\_\+ No Codec (\+\_\+\+\_\+\+\_\+\+\_\+) \+\_\+\+BIT BI\+\_\+\+BITFIELDS (Raw RGB) \+\_\+\+JPG JPEG compressed \+\_\+\+PNG PNG compressed W3\+C/\+ISO/\+IEC (RFC-\/2083) \+\_\+\+RAW Full Frames (Uncompressed) \+\_\+\+RGB Raw RGB Bitmap \+\_\+\+RL4 RLE 4bpp RGB \+\_\+\+RL8 RLE 8bpp RGB 3IV1 3ivx MPEG-\/4 v1 3IV2 3ivx MPEG-\/4 v2 3IVX 3ivx MPEG-\/4 AASC Autodesk Animator ABYR Kensington ?ABYR? AEMI Array Microsystems Video\+ONE MPEG1-\/I Capture AFLC Autodesk Animator FLC AFLI Autodesk Animator FLI AMPG Array Microsystems Video\+ONE MPEG ANIM Intel RDX (ANIM) AP41 Angel\+Potion Definitive ASV1 Asus Video v1 ASV2 Asus Video v2 ASVX Asus Video 2.\+0 (audio) AUR2 Aura\+Vision Aura 2 Codec -\/ YUV 4\+:2\+:2 AURA Aura\+Vision Aura 1 Codec -\/ YUV 4\+:1\+:1 AVDJ Independent JPEG Group\textbackslash{}\textquotesingle{}s codec (AVDJ) AVRN Independent JPEG Group\textbackslash{}\textquotesingle{}s codec (AVRN) AYUV 4\+:4\+:4 YUV (AYUV) AZPR Quicktime Apple Video (AZPR) BGR Raw RGB32 BLZ0 Blizzard DivX MPEG-\/4 BTVC Conexant Composite Video BINK RAD Game Tools Bink Video BT20 Conexant Prosumer Video BTCV Conexant Composite Video Codec BW10 Data Translation Broadway MPEG Capture CC12 Intel YUV12 CDVC Canopus DV CFCC Digital Processing Systems DPS Perception CGDI Microsoft Office 97 Camcorder Video CHAM Winnov Caviara Champagne CJPG Creative Web\+Cam JPEG CLJR Cirrus Logic YUV 4\+:1\+:1 CMYK Common Data Format in Printing (Colorgraph) CPLA Weitek 4\+:2\+:0 YUV Planar CRAM Microsoft Video 1 (CRAM) cvid Radius Cinepak CVID Radius Cinepak CWLT Microsoft Color WLT DIB CYUV Creative Labs YUV CYUY ATI YUV D261 H.\+261 D263 H.\+263 DIB Device Independent Bitmap DIV1 FFmpeg Open\+DivX DIV2 Microsoft MPEG-\/4 v1/v2 DIV3 DivX ;-\/) MPEG-\/4 v3.\+x Low-\/\+Motion DIV4 DivX ;-\/) MPEG-\/4 v3.\+x Fast-\/\+Motion DIV5 DivX MPEG-\/4 v5.\+x DIV6 DivX ;-\/) (MS MPEG-\/4 v3.\+x) DIVX DivX MPEG-\/4 v4 (Open\+DivX / Project Mayo) divx DivX MPEG-\/4 DMB1 Matrox Rainbow Runner hardware MJPEG DMB2 Paradigm MJPEG DSVD ?DSVD? DUCK Duck True\+Motion 1.\+0 DPS0 DPS/\+Leitch Reality Motion JPEG DPSC DPS/\+Leitch PAR Motion JPEG DV25 Matrox DVCPRO codec DV50 Matrox DVCPRO50 codec DVC IEC 61834 and SMPTE 314M (DVC/\+DV Video) DVCP IEC 61834 and SMPTE 314M (DVC/\+DV Video) DVHD IEC Standard DV 1125 lines @ 30fps / 1250 lines @ 25fps DVMA Darim Vision DVMPEG (dummy for MPEG compressor) (www.\+darvision.\+com) DVSL IEC Standard DV compressed in SD (SDL) DVAN ?DVAN? DVE2 In\+Soft DVE-\/2 Videoconferencing dvsd IEC 61834 and SMPTE 314M DVC/\+DV Video DVSD IEC 61834 and SMPTE 314M DVC/\+DV Video DVX1 Lucent DVX1000\+SP Video Decoder DVX2 Lucent DVX2000S Video Decoder DVX3 Lucent DVX3000S Video Decoder DX50 DivX v5 DXT1 Microsoft DirectX Compressed Texture (DXT1) DXT2 Microsoft DirectX Compressed Texture (DXT2) DXT3 Microsoft DirectX Compressed Texture (DXT3) DXT4 Microsoft DirectX Compressed Texture (DXT4) DXT5 Microsoft DirectX Compressed Texture (DXT5) DXTC Microsoft DirectX Compressed Texture (DXTC) DXTn Microsoft DirectX Compressed Texture (DXTn) EM2V Etymonix MPEG-\/2 I-\/frame (www.\+etymonix.\+com) EKQ0 Elsa ?EKQ0? ELK0 Elsa ?ELK0? ESCP Eidos Escape ETV1 e\+Treppid Video ETV1 ETV2 e\+Treppid Video ETV2 ETVC e\+Treppid Video ETVC FLIC Autodesk FLI/\+FLC Animation FLV1 Sorenson Spark FLV4 On2 True\+Motion VP6 FRWT Darim Vision Forward Motion JPEG (www.\+darvision.\+com) FRWU Darim Vision Forward Uncompressed (www.\+darvision.\+com) FLJP D-\/\+Vision Field Encoded Motion JPEG FPS1 FRAPS v1 FRWA Soft\+Lab-\/\+Nsk Forward Motion JPEG w/ alpha channel FRWD Soft\+Lab-\/\+Nsk Forward Motion JPEG FVF1 Iterated Systems Fractal Video Frame GLZW Motion LZW (\href{mailto:gabest@freemail.hu}{\texttt{ gabest@freemail.\+hu}}) GPEG Motion JPEG (\href{mailto:gabest@freemail.hu}{\texttt{ gabest@freemail.\+hu}}) GWLT Microsoft Greyscale WLT DIB H260 Intel ITU H.\+260 Videoconferencing H261 Intel ITU H.\+261 Videoconferencing H262 Intel ITU H.\+262 Videoconferencing H263 Intel ITU H.\+263 Videoconferencing H264 Intel ITU H.\+264 Videoconferencing H265 Intel ITU H.\+265 Videoconferencing H266 Intel ITU H.\+266 Videoconferencing H267 Intel ITU H.\+267 Videoconferencing H268 Intel ITU H.\+268 Videoconferencing H269 Intel ITU H.\+269 Videoconferencing HFYU Huffman Lossless Codec HMCR Rendition Motion Compensation Format (HMCR) HMRR Rendition Motion Compensation Format (HMRR) I263 FFmpeg I263 decoder IF09 Indeo YVU9 ("{}\+YVU9 with additional delta-\/frame info after the U plane"{}) IUYV Interlaced version of UYVY (www.\+leadtools.\+com) IY41 Interlaced version of Y41P (www.\+leadtools.\+com) IYU1 12 bit format used in mode 2 of the IEEE 1394 Digital Camera 1.\+04 spec IEEE standard IYU2 24 bit format used in mode 2 of the IEEE 1394 Digital Camera 1.\+04 spec IEEE standard IYUV Planar YUV format (8-\/bpp Y plane, followed by 8-\/bpp 2×2 U and V planes) i263 Intel ITU H.\+263 Videoconferencing (i263) I420 Intel Indeo 4 IAN Intel Indeo 4 (RDX) ICLB In\+Soft CellB Videoconferencing IGOR Power DVD IJPG Intergraph JPEG ILVC Intel Layered Video ILVR ITU-\/T H.\+263+ IPDV I-\/O Data Device Giga AVI DV Codec IR21 Intel Indeo 2.\+1 IRAW Intel YUV Uncompressed IV30 Intel Indeo 3.\+0 IV31 Intel Indeo 3.\+1 IV32 Ligos Indeo 3.\+2 IV33 Ligos Indeo 3.\+3 IV34 Ligos Indeo 3.\+4 IV35 Ligos Indeo 3.\+5 IV36 Ligos Indeo 3.\+6 IV37 Ligos Indeo 3.\+7 IV38 Ligos Indeo 3.\+8 IV39 Ligos Indeo 3.\+9 IV40 Ligos Indeo Interactive 4.\+0 IV41 Ligos Indeo Interactive 4.\+1 IV42 Ligos Indeo Interactive 4.\+2 IV43 Ligos Indeo Interactive 4.\+3 IV44 Ligos Indeo Interactive 4.\+4 IV45 Ligos Indeo Interactive 4.\+5 IV46 Ligos Indeo Interactive 4.\+6 IV47 Ligos Indeo Interactive 4.\+7 IV48 Ligos Indeo Interactive 4.\+8 IV49 Ligos Indeo Interactive 4.\+9 IV50 Ligos Indeo Interactive 5.\+0 JBYR Kensington ?JBYR? JPEG Still Image JPEG DIB JPGL Pegasus Lossless Motion JPEG KMVC Team17 Software Karl Morton\textbackslash{}\textquotesingle{}s Video Codec LSVM Vianet Lighting Strike Vmail (Streaming) (www.\+vianet.\+com) LEAD LEAD Video Codec Ljpg LEAD MJPEG Codec MDVD Alex Micro\+DVD Video (hacked MS MPEG-\/4) (www.\+tiasoft.\+de) MJPA Morgan Motion JPEG (MJPA) (www.\+morgan-\/multimedia.\+com) MJPB Morgan Motion JPEG (MJPB) (www.\+morgan-\/multimedia.\+com) MMES Matrox MPEG-\/2 I-\/frame MP2v Microsoft S-\/\+Mpeg 4 version 1 (MP2v) MP42 Microsoft S-\/\+Mpeg 4 version 2 (MP42) MP43 Microsoft S-\/\+Mpeg 4 version 3 (MP43) MP4S Microsoft S-\/\+Mpeg 4 version 3 (MP4S) MP4V FFmpeg MPEG-\/4 MPG1 FFmpeg MPEG 1/2 MPG2 FFmpeg MPEG 1/2 MPG3 FFmpeg DivX ;-\/) (MS MPEG-\/4 v3) MPG4 Microsoft MPEG-\/4 MPGI Sigma Designs MPEG MPNG PNG images decoder MSS1 Microsoft Windows Screen Video MSZH LCL (Lossless Codec Library) (www.\+geocities.\+co.\+jp/\+Playtown-\/\+Denei/2837/\+LRC.htm) M261 Microsoft H.\+261 M263 Microsoft H.\+263 M4\+S2 Microsoft Fully Compliant MPEG-\/4 v2 simple profile (M4\+S2) m4s2 Microsoft Fully Compliant MPEG-\/4 v2 simple profile (m4s2) MC12 ATI Motion Compensation Format (MC12) MCAM ATI Motion Compensation Format (MCAM) MJ2C Morgan Multimedia Motion JPEG2000 m\+JPG IBM Motion JPEG w/ Huffman Tables MJPG Microsoft Motion JPEG DIB MP42 Microsoft MPEG-\/4 (low-\/motion) MP43 Microsoft MPEG-\/4 (fast-\/motion) MP4S Microsoft MPEG-\/4 (MP4S) mp4s Microsoft MPEG-\/4 (mp4s) MPEG Chromatic Research MPEG-\/1 Video I-\/\+Frame MPG4 Microsoft MPEG-\/4 Video High Speed Compressor MPGI Sigma Designs MPEG MRCA FAST Multimedia Martin Regen Codec MRLE Microsoft Run Length Encoding MSVC Microsoft Video 1 MTX1 Matrox ?MTX1? MTX2 Matrox ?MTX2? MTX3 Matrox ?MTX3? MTX4 Matrox ?MTX4? MTX5 Matrox ?MTX5? MTX6 Matrox ?MTX6? MTX7 Matrox ?MTX7? MTX8 Matrox ?MTX8? MTX9 Matrox ?MTX9? MV12 Motion Pixels Codec (old) MWV1 Aware Motion Wavelets n\+AVI SMR Codec (hack of Microsoft MPEG-\/4) (IRC \#shadowrealm) NT00 New\+Tek Light\+Wave HDTV YUV w/ Alpha (www.\+newtek.\+com) NUV1 Nuppel\+Video NTN1 Nogatech Video Compression 1 NVS0 n\+Vidia Ge\+Force Texture (NVS0) NVS1 n\+Vidia Ge\+Force Texture (NVS1) NVS2 n\+Vidia Ge\+Force Texture (NVS2) NVS3 n\+Vidia Ge\+Force Texture (NVS3) NVS4 n\+Vidia Ge\+Force Texture (NVS4) NVS5 n\+Vidia Ge\+Force Texture (NVS5) NVT0 n\+Vidia Ge\+Force Texture (NVT0) NVT1 n\+Vidia Ge\+Force Texture (NVT1) NVT2 n\+Vidia Ge\+Force Texture (NVT2) NVT3 n\+Vidia Ge\+Force Texture (NVT3) NVT4 n\+Vidia Ge\+Force Texture (NVT4) NVT5 n\+Vidia Ge\+Force Texture (NVT5) PIXL Miro\+XL, Pinnacle PCTV PDVC I-\/O Data Device Digital Video Capture DV codec PGVV Radius Video Vision PHMO IBM Photomotion PIM1 MPEG Realtime (Pinnacle Cards) PIM2 Pegasus Imaging ?PIM2? PIMJ Pegasus Imaging Lossless JPEG PVEZ Horizons Technology Power\+EZ PVMM Packet\+Video Corporation MPEG-\/4 PVW2 Pegasus Imaging Wavelet Compression Q1.\+0 Q-\/\+Team\textbackslash{}\textquotesingle{}s QPEG 1.\+0 (www.\+q-\/team.\+de) Q1.\+1 Q-\/\+Team\textbackslash{}\textquotesingle{}s QPEG 1.\+1 (www.\+q-\/team.\+de) QPEG Q-\/\+Team QPEG 1.\+0 qpeq Q-\/\+Team QPEG 1.\+1 RGB Raw BGR32 RGBA Raw RGB w/ Alpha RMP4 REALmagic MPEG-\/4 (unauthorized XVID copy) (www.\+sigmadesigns.\+com) ROQV Id RoQ File Video Decoder RPZA Quicktime Apple Video (RPZA) RUD0 Rududu video codec (\href{http://rududu.ifrance.com/rududu/}{\texttt{ http\+://rududu.\+ifrance.\+com/rududu/}}) RV10 Real\+Video 1.\+0 (aka Real\+Video 5.\+0) RV13 Real\+Video 1.\+0 (RV13) RV20 Real\+Video G2 RV30 Real\+Video 8 RV40 Real\+Video 9 RGBT Raw RGB w/ Transparency RLE Microsoft Run Length Encoder RLE4 Run Length Encoded (4bpp, 16-\/color) RLE8 Run Length Encoded (8bpp, 256-\/color) RT21 Intel Indeo Real\+Time Video 2.\+1 rv20 Real\+Video G2 rv30 Real\+Video 8 RVX Intel RDX (RVX ) SMC Apple Graphics (SMC ) SP54 Logitech Sunplus Sp54 Codec for Mustek GSmart Mini 2 SPIG Radius Spigot SVQ3 Sorenson Video 3 (Apple Quicktime 5) s422 Tekram Video\+Cap C210 YUV 4\+:2\+:2 SDCC Sun Communication Digital Camera Codec SFMC Crystal\+Net Surface Fitting Method SMSC Radius SMSC SMSD Radius SMSD smsv World\+Connect Wavelet Video SPIG Radius Spigot SPLC Splash Studios ACM Audio Codec (www.\+splashstudios.\+net) SQZ2 Microsoft VXTreme Video Codec V2 STVA ST Microelectronics CMOS Imager Data (Bayer) STVB ST Microelectronics CMOS Imager Data (Nudged Bayer) STVC ST Microelectronics CMOS Imager Data (Bunched) STVX ST Microelectronics CMOS Imager Data (Extended CODEC Data Format) STVY ST Microelectronics CMOS Imager Data (Extended CODEC Data Format with Correction Data) SV10 Sorenson Video R1 SVQ1 Sorenson Video T420 Toshiba YUV 4\+:2\+:0 TM2A Duck True\+Motion Archiver 2.\+0 (www.\+duck.\+com) TVJP Pinnacle/\+Truevision Targa 2000 board (TVJP) TVMJ Pinnacle/\+Truevision Targa 2000 board (TVMJ) TY0N Tecomac Low-\/\+Bit Rate Codec (www.\+tecomac.\+com) TY2C Trident Decompression Driver TLMS Tera\+Logic Motion Intraframe Codec (TLMS) TLST Tera\+Logic Motion Intraframe Codec (TLST) TM20 Duck True\+Motion 2.\+0 TM2X Duck True\+Motion 2X TMIC Tera\+Logic Motion Intraframe Codec (TMIC) TMOT Horizons Technology True\+Motion S tmot Horizons True\+Motion Video Compression TR20 Duck True\+Motion Real\+Time 2.\+0 TSCC Tech\+Smith Screen Capture Codec TV10 Tecomac Low-\/\+Bit Rate Codec TY2N Trident ?TY2N? U263 UB Video H.\+263/H.263+/H.263++ Decoder UMP4 UB Video MPEG 4 (www.\+ubvideo.\+com) UYNV Nvidia UYVY packed 4\+:2\+:2 UYVP Evans \& Sutherland YCb\+Cr 4\+:2\+:2 extended precision UCOD e\+Majix.\+com Clear\+Video ULTI IBM Ultimotion UYVY UYVY packed 4\+:2\+:2 V261 Lucent VX2000S VIFP VFAPI Reader Codec (www.\+yks.\+ne.\+jp/\texorpdfstring{$\sim$}{\string~}hori/) VIV1 FFmpeg H263+ decoder VIV2 Vivo H.\+263 VQC2 Vector-\/quantised codec 2 (research) \href{http://eprints.ecs.soton.ac.uk/archive/00001310/01/VTC97-js.pdf}{\texttt{ http\+://eprints.\+ecs.\+soton.\+ac.\+uk/archive/00001310/01/\+VTC97-\/js.\+pdf}}) VTLP Alaris Video\+Gram\+PiX VYU9 ATI YUV (VYU9) VYUY ATI YUV (VYUY) V261 Lucent VX2000S V422 Vitec Multimedia 24-\/bit YUV 4\+:2\+:2 Format V655 Vitec Multimedia 16-\/bit YUV 4\+:2\+:2 Format VCR1 ATI Video Codec 1 VCR2 ATI Video Codec 2 VCR3 ATI VCR 3.\+0 VCR4 ATI VCR 4.\+0 VCR5 ATI VCR 5.\+0 VCR6 ATI VCR 6.\+0 VCR7 ATI VCR 7.\+0 VCR8 ATI VCR 8.\+0 VCR9 ATI VCR 9.\+0 VDCT Vitec Multimedia Video Maker Pro DIB VDOM VDOnet VDOWave VDOW VDOnet VDOLive (H.\+263) VDTZ Darim Vison Video\+Tizer YUV VGPX Alaris Video\+Gram\+PiX VIDS Vitec Multimedia YUV 4\+:2\+:2 CCIR 601 for V422 VIVO Vivo H.\+263 v2.\+00 vivo Vivo H.\+263 VIXL Miro/\+Pinnacle Video XL VLV1 Video\+Logic/\+PURE Digital Videologic Capture VP30 On2 VP3.\+0 VP31 On2 VP3.\+1 VP6F On2 True\+Motion VP6 VX1K Lucent VX1000S Video Codec VX2K Lucent VX2000S Video Codec VXSP Lucent VX1000\+SP Video Codec WBVC Winbond W9960 WHAM Microsoft Video 1 (WHAM) WINX Winnov Software Compression WJPG Aver\+Media Winbond JPEG WMV1 Windows Media Video V7 WMV2 Windows Media Video V8 WMV3 Windows Media Video V9 WNV1 Winnov Hardware Compression XYZP Extended PAL format XYZ palette (www.\+riff.\+org) x263 Xirlink H.\+263 XLV0 Net\+XL Video Decoder XMPG Xing MPEG (I-\/\+Frame only) XVID XviD MPEG-\/4 (www.\+xvid.\+org) XXAN ?XXAN? YU92 Intel YUV (YU92) YUNV Nvidia Uncompressed YUV 4\+:2\+:2 YUVP Extended PAL format YUV palette (www.\+riff.\+org) Y211 YUV 2\+:1\+:1 Packed Y411 YUV 4\+:1\+:1 Packed Y41B Weitek YUV 4\+:1\+:1 Planar Y41P Brooktree PC1 YUV 4\+:1\+:1 Packed Y41T Brooktree PC1 YUV 4\+:1\+:1 with transparency Y42B Weitek YUV 4\+:2\+:2 Planar Y42T Brooktree UYUV 4\+:2\+:2 with transparency Y422 ADS Technologies Copy of UYVY used in Pyro Web\+Cam firewire camera Y800 Simple, single Y plane for monochrome images Y8 Grayscale video YC12 Intel YUV 12 codec YUV8 Winnov Caviar YUV8 YUV9 Intel YUV9 YUY2 Uncompressed YUV 4\+:2\+:2 YUYV Canopus YUV YV12 YVU12 Planar YVU9 Intel YVU9 Planar (8-\/bpp Y plane, followed by 8-\/bpp 4x4 U and V planes) YVYU YVYU 4\+:2\+:2 Packed ZLIB Lossless Codec Library zlib compression (www.\+geocities.\+co.\+jp/\+Playtown-\/\+Denei/2837/\+LRC.htm) ZPEG Metheus Video Zipper\Hypertarget{classgetid3__riff_a71a805e2edcf09c940369e855ca27f29}\index{getid3\_riff@{getid3\_riff}!ParseBITMAPINFOHEADER@{ParseBITMAPINFOHEADER}}
+\index{ParseBITMAPINFOHEADER@{ParseBITMAPINFOHEADER}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{ParseBITMAPINFOHEADER()}{ParseBITMAPINFOHEADER()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_a71a805e2edcf09c940369e855ca27f29} 
+static Parse\+BITMAPINFOHEADER (\begin{DoxyParamCaption}\item[{}]{\$\+BITMAPINFOHEADER}{, }\item[{}]{\$little\+Endian}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+BITMAPINFOHEADER} & \\
+\hline
+bool & {\em \$little\+Endian} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__riff_adc273d215e4941d258ec7a5e37da90c6}\index{getid3\_riff@{getid3\_riff}!parseComments@{parseComments}}
+\index{parseComments@{parseComments}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{parseComments()}{parseComments()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_adc273d215e4941d258ec7a5e37da90c6} 
+static parse\+Comments (\begin{DoxyParamCaption}\item[{\&}]{\$\+RIFFinfo\+Array}{, }\item[{\&}]{\$\+Comments\+Target\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$\+RIFFinfo\+Array} & \\
+\hline
+array & {\em \$\+Comments\+Target\+Array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__riff_aaa79689f26ff4dfdd18c27347fc27d76}\index{getid3\_riff@{getid3\_riff}!ParseDIVXTAG@{ParseDIVXTAG}}
+\index{ParseDIVXTAG@{ParseDIVXTAG}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{ParseDIVXTAG()}{ParseDIVXTAG()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_aaa79689f26ff4dfdd18c27347fc27d76} 
+static Parse\+DIVXTAG (\begin{DoxyParamCaption}\item[{}]{\$\+DIVXTAG}{, }\item[{}]{\$raw}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+DIVXTAG} & \\
+\hline
+bool & {\em \$raw} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__riff_a08a69ec573f86f73d135be75ffbdc646}\index{getid3\_riff@{getid3\_riff}!ParseRIFF@{ParseRIFF}}
+\index{ParseRIFF@{ParseRIFF}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{ParseRIFF()}{ParseRIFF()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_a08a69ec573f86f73d135be75ffbdc646} 
+Parse\+RIFF (\begin{DoxyParamCaption}\item[{}]{\$startoffset}{, }\item[{}]{\$maxoffset}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$startoffset} & \\
+\hline
+int & {\em \$maxoffset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classgetid3__exception}{getid3\+\_\+exception}} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classgetid3__riff_a6bb07e9a56503182929f4b8a36d48f31}\index{getid3\_riff@{getid3\_riff}!ParseRIFFAMV@{ParseRIFFAMV}}
+\index{ParseRIFFAMV@{ParseRIFFAMV}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{ParseRIFFAMV()}{ParseRIFFAMV()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_a6bb07e9a56503182929f4b8a36d48f31} 
+Parse\+RIFFAMV (\begin{DoxyParamCaption}\item[{}]{\$startoffset}{, }\item[{}]{\$maxoffset}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$startoffset} & \\
+\hline
+int & {\em \$maxoffset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em \doxylink{classgetid3__exception}{getid3\+\_\+exception}} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classgetid3__riff_a4d17921639718985dca0b25e2d25ad70}\index{getid3\_riff@{getid3\_riff}!ParseRIFFdata@{ParseRIFFdata}}
+\index{ParseRIFFdata@{ParseRIFFdata}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{ParseRIFFdata()}{ParseRIFFdata()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_a4d17921639718985dca0b25e2d25ad70} 
+Parse\+RIFFdata (\begin{DoxyParamCaption}\item[{\&}]{\$\+RIFFdata}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+RIFFdata} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__riff_a9f59d3d8f3a769c6725c814198269d8f}\index{getid3\_riff@{getid3\_riff}!parseWAVEFORMATex@{parseWAVEFORMATex}}
+\index{parseWAVEFORMATex@{parseWAVEFORMATex}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{parseWAVEFORMATex()}{parseWAVEFORMATex()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_a9f59d3d8f3a769c6725c814198269d8f} 
+static parse\+WAVEFORMATex (\begin{DoxyParamCaption}\item[{}]{\$\+Wave\+Format\+Ex\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+Wave\+Format\+Ex\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__riff_a4e0be4b3e0ef8c6ac862f7766f430e32}\index{getid3\_riff@{getid3\_riff}!parseWavPackHeader@{parseWavPackHeader}}
+\index{parseWavPackHeader@{parseWavPackHeader}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{parseWavPackHeader()}{parseWavPackHeader()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_a4e0be4b3e0ef8c6ac862f7766f430e32} 
+parse\+Wav\+Pack\+Header (\begin{DoxyParamCaption}\item[{}]{\$\+Wav\+Pack\+Chunk\+Data}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+Wav\+Pack\+Chunk\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__riff_ac347436b770037bc89cff215777f4e87}\index{getid3\_riff@{getid3\_riff}!waveSNDMtagLookup@{waveSNDMtagLookup}}
+\index{waveSNDMtagLookup@{waveSNDMtagLookup}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{waveSNDMtagLookup()}{waveSNDMtagLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_ac347436b770037bc89cff215777f4e87} 
+static wave\+SNDMtag\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$tagshortname}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tagshortname} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+This is not a comment!
+
+©kwd keywords ©\+BPM bpm ©trt tracktitle ©des description ©gen category ©fin featuredinstrument ©\+LID longid ©bex bwdescription ©pub publisher ©cdt cdtitle ©alb library ©com composer\Hypertarget{classgetid3__riff_abd12e25d58abeeef643eb1f8e6dc4cbc}\index{getid3\_riff@{getid3\_riff}!wFormatTagLookup@{wFormatTagLookup}}
+\index{wFormatTagLookup@{wFormatTagLookup}!getid3\_riff@{getid3\_riff}}
+\doxysubsubsection{\texorpdfstring{wFormatTagLookup()}{wFormatTagLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__riff_abd12e25d58abeeef643eb1f8e6dc4cbc} 
+static w\+Format\+Tag\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$w\+Format\+Tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$w\+Format\+Tag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+This is not a comment!
+
+0x0000 Microsoft Unknown Wave Format 0x0001 Pulse Code Modulation (PCM) 0x0002 Microsoft ADPCM 0x0003 IEEE Float 0x0004 Compaq Computer VSELP 0x0005 IBM CVSD 0x0006 Microsoft A-\/\+Law 0x0007 Microsoft mu-\/\+Law 0x0008 Microsoft DTS 0x0010 OKI ADPCM 0x0011 Intel DVI/\+IMA ADPCM 0x0012 Videologic Media\+Space ADPCM 0x0013 Sierra Semiconductor ADPCM 0x0014 Antex Electronics G.\+723 ADPCM 0x0015 DSP Solutions Digi\+STD 0x0016 DSP Solutions Digi\+FIX 0x0017 Dialogic OKI ADPCM 0x0018 Media\+Vision ADPCM 0x0019 Hewlett-\/\+Packard CU 0x0020 Yamaha ADPCM 0x0021 Speech Compression Sonarc 0x0022 DSP Group True\+Speech 0x0023 Echo Speech Echo\+SC1 0x0024 Audiofile AF36 0x0025 Audio Processing Technology APTX 0x0026 Audio\+File AF10 0x0027 Prosody 1612 0x0028 LRC 0x0030 Dolby AC2 0x0031 Microsoft GSM 6.\+10 0x0032 MSNAudio 0x0033 Antex Electronics ADPCME 0x0034 Control Resources VQLPC 0x0035 DSP Solutions Digi\+REAL 0x0036 DSP Solutions Digi\+ADPCM 0x0037 Control Resources CR10 0x0038 Natural Micro\+Systems VBXADPCM 0x0039 Crystal Semiconductor IMA ADPCM 0x003A Echo\+SC3 0x003B Rockwell ADPCM 0x003C Rockwell Digit LK 0x003D Xebec 0x0040 Antex Electronics G.\+721 ADPCM 0x0041 G.\+728 CELP 0x0042 MSG723 0x0050 MPEG Layer-\/2 or Layer-\/1 0x0052 RT24 0x0053 PAC 0x0055 MPEG Layer-\/3 0x0059 Lucent G.\+723 0x0060 Cirrus 0x0061 ESPCM 0x0062 Voxware 0x0063 Canopus Atrac 0x0064 G.\+726 ADPCM 0x0065 G.\+722 ADPCM 0x0066 DSAT 0x0067 DSAT Display 0x0069 Voxware Byte Aligned 0x0070 Voxware AC8 0x0071 Voxware AC10 0x0072 Voxware AC16 0x0073 Voxware AC20 0x0074 Voxware Meta\+Voice 0x0075 Voxware Meta\+Sound 0x0076 Voxware RT29\+HW 0x0077 Voxware VR12 0x0078 Voxware VR18 0x0079 Voxware TQ40 0x0080 Softsound 0x0081 Voxware TQ60 0x0082 MSRT24 0x0083 G.\+729A 0x0084 MVI MV12 0x0085 DF G.\+726 0x0086 DF GSM610 0x0088 ISIAudio 0x0089 Onlive 0x0091 SBC24 0x0092 Dolby AC3 SPDIF 0x0093 Media\+Sonic G.\+723 0x0094 Aculab PLC Prosody 8kbps 0x0097 Zy\+XEL ADPCM 0x0098 Philips LPCBB 0x0099 Packed 0x00\+FF AAC 0x0100 Rhetorex ADPCM 0x0101 IBM mu-\/law 0x0102 IBM A-\/law 0x0103 IBM AVC Adaptive Differential Pulse Code Modulation (ADPCM) 0x0111 Vivo G.\+723 0x0112 Vivo Siren 0x0123 Digital G.\+723 0x0125 Sanyo LD ADPCM 0x0130 Sipro Lab Telecom ACELP NET 0x0131 Sipro Lab Telecom ACELP 4800 0x0132 Sipro Lab Telecom ACELP 8V3 0x0133 Sipro Lab Telecom G.\+729 0x0134 Sipro Lab Telecom G.\+729A 0x0135 Sipro Lab Telecom Kelvin 0x0140 Windows Media Video V8 0x0150 Qualcomm Pure\+Voice 0x0151 Qualcomm Half\+Rate 0x0155 Ring Zero Systems TUB GSM 0x0160 Microsoft Audio 1 0x0161 Windows Media Audio V7 / V8 / V9 0x0162 Windows Media Audio Professional V9 0x0163 Windows Media Audio Lossless V9 0x0200 Creative Labs ADPCM 0x0202 Creative Labs Fastspeech8 0x0203 Creative Labs Fastspeech10 0x0210 UHER Informatic GmbH ADPCM 0x0220 Quarterdeck 0x0230 I-\/link Worldwide VC 0x0240 Aureal RAW Sport 0x0250 Interactive Products HSX 0x0251 Interactive Products RPELP 0x0260 Consistent Software CS2 0x0270 Sony SCX 0x0300 Fujitsu FM Towns Snd 0x0400 BTV Digital 0x0401 Intel Music Coder 0x0450 QDesign Music 0x0680 VME VMPCM 0x0681 AT\&T Labs TPC 0x08\+AE Clear\+Jump Lite\+Wave 0x1000 Olivetti GSM 0x1001 Olivetti ADPCM 0x1002 Olivetti CELP 0x1003 Olivetti SBC 0x1004 Olivetti OPR 0x1100 Lernout \& Hauspie Codec (0x1100) 0x1101 Lernout \& Hauspie CELP Codec (0x1101) 0x1102 Lernout \& Hauspie SBC Codec (0x1102) 0x1103 Lernout \& Hauspie SBC Codec (0x1103) 0x1104 Lernout \& Hauspie SBC Codec (0x1104) 0x1400 Norris 0x1401 AT\&T ISIAudio 0x1500 Soundspace Music Compression 0x181C Vox\+Ware RT24 Speech 0x1\+FC4 NCT Soft ALF2\+CD (www.\+nctsoft.\+com) 0x2000 Dolby AC3 0x2001 Dolby DTS 0x2002 WAVE\+\_\+\+FORMAT\+\_\+14\+\_\+4 0x2003 WAVE\+\_\+\+FORMAT\+\_\+28\+\_\+8 0x2004 WAVE\+\_\+\+FORMAT\+\_\+\+COOK 0x2005 WAVE\+\_\+\+FORMAT\+\_\+\+DNET 0x674F Ogg Vorbis 1 0x6750 Ogg Vorbis 2 0x6751 Ogg Vorbis 3 0x676F Ogg Vorbis 1+ 0x6770 Ogg Vorbis 2+ 0x6771 Ogg Vorbis 3+ 0x7\+A21 GSM-\/\+AMR (CBR, no SID) 0x7\+A22 GSM-\/\+AMR (VBR, including SID) 0x\+FFFE WAVE\+\_\+\+FORMAT\+\_\+\+EXTENSIBLE 0x\+FFFF WAVE\+\_\+\+FORMAT\+\_\+\+DEVELOPMENT
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+audio-\/video.\+riff.\+php\end{DoxyCompactItemize}

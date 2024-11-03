@@ -1,0 +1,174 @@
+\doxysection{Site\+Local\+Snippet\+Repository Class Reference}
+\hypertarget{class_app_1_1_repositories_1_1_site_local_snippet_repository}{}\label{class_app_1_1_repositories_1_1_site_local_snippet_repository}\index{SiteLocalSnippetRepository@{SiteLocalSnippetRepository}}
+
+
+Inheritance diagram for Site\+Local\+Snippet\+Repository\+:
+% FIG 0
+
+
+Collaboration diagram for Site\+Local\+Snippet\+Repository\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_local_snippet_repository_a32e0c427372491432dee7a9e91d8fba7}{load\+Global\+Snippet\+In\+Tenant}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_local_snippet_repository_a809cbe63610e756a8117bd243a25c740}{show}} (\$\mbox{\hyperlink{class_app_1_1_models_1_1_site_snippet}{Site\+Snippet}})
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_local_snippet_repository_af0fe8a36ae412ef737ee69c730c2b96b}{edit}} (\$\mbox{\hyperlink{class_app_1_1_models_1_1_site_snippet}{Site\+Snippet}})
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_local_snippet_repository_ab7b27a90191560dcef32126b0945db0d}{update}} (\$request)
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_local_snippet_repository_a4e9c2fc42555d6d5c43bd34508cc991d}{destroy}} (\$\mbox{\hyperlink{class_app_1_1_models_1_1_site_snippet}{Site\+Snippet}})
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_local_snippet_repository_a444f8a852c1f9d251598c31b01a2352d}{clone\+Snippet}} (\$request)
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_local_snippet_repository_a1e0f624b027cbcc852054c6db09091b4}{edit\+Snippet\+Name}} (\$request)
+\item 
+\mbox{\hyperlink{class_app_1_1_repositories_1_1_site_local_snippet_repository_a78f4805c12f9e1fa7e53974ed3b5a825}{tag\+Me}} (\$request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_repositories_1_1_site_local_snippet_repository_a444f8a852c1f9d251598c31b01a2352d}\index{SiteLocalSnippetRepository@{SiteLocalSnippetRepository}!cloneSnippet@{cloneSnippet}}
+\index{cloneSnippet@{cloneSnippet}!SiteLocalSnippetRepository@{SiteLocalSnippetRepository}}
+\doxysubsubsection{\texorpdfstring{cloneSnippet()}{cloneSnippet()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_local_snippet_repository_a444f8a852c1f9d251598c31b01a2352d} 
+clone\+Snippet (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})}
+
+Clone A Snippet 
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_local_snippet_interface_a444f8a852c1f9d251598c31b01a2352d}{Site\+Local\+Snippet\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_local_snippet_repository_a4e9c2fc42555d6d5c43bd34508cc991d}\index{SiteLocalSnippetRepository@{SiteLocalSnippetRepository}!destroy@{destroy}}
+\index{destroy@{destroy}!SiteLocalSnippetRepository@{SiteLocalSnippetRepository}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_local_snippet_repository_a4e9c2fc42555d6d5c43bd34508cc991d} 
+destroy (\begin{DoxyParamCaption}\item[{}]{\$\+Site\+Snippet}{}\end{DoxyParamCaption})}
+
+Remove the specified resource from storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$\+Site\+Snippet} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_local_snippet_interface_a4e9c2fc42555d6d5c43bd34508cc991d}{Site\+Local\+Snippet\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_local_snippet_repository_af0fe8a36ae412ef737ee69c730c2b96b}\index{SiteLocalSnippetRepository@{SiteLocalSnippetRepository}!edit@{edit}}
+\index{edit@{edit}!SiteLocalSnippetRepository@{SiteLocalSnippetRepository}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_local_snippet_repository_af0fe8a36ae412ef737ee69c730c2b96b} 
+edit (\begin{DoxyParamCaption}\item[{}]{\$\+Site\+Snippet}{}\end{DoxyParamCaption})}
+
+Show the form for editing the specified resource.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}type\mbox{]}} & \$\+Site\+Snippet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_local_snippet_interface_af0fe8a36ae412ef737ee69c730c2b96b}{Site\+Local\+Snippet\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_local_snippet_repository_a1e0f624b027cbcc852054c6db09091b4}\index{SiteLocalSnippetRepository@{SiteLocalSnippetRepository}!editSnippetName@{editSnippetName}}
+\index{editSnippetName@{editSnippetName}!SiteLocalSnippetRepository@{SiteLocalSnippetRepository}}
+\doxysubsubsection{\texorpdfstring{editSnippetName()}{editSnippetName()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_local_snippet_repository_a1e0f624b027cbcc852054c6db09091b4} 
+edit\+Snippet\+Name (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})}
+
+Edit Snippet Name 
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_local_snippet_interface_a1e0f624b027cbcc852054c6db09091b4}{Site\+Local\+Snippet\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_local_snippet_repository_a32e0c427372491432dee7a9e91d8fba7}\index{SiteLocalSnippetRepository@{SiteLocalSnippetRepository}!loadGlobalSnippetInTenant@{loadGlobalSnippetInTenant}}
+\index{loadGlobalSnippetInTenant@{loadGlobalSnippetInTenant}!SiteLocalSnippetRepository@{SiteLocalSnippetRepository}}
+\doxysubsubsection{\texorpdfstring{loadGlobalSnippetInTenant()}{loadGlobalSnippetInTenant()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_local_snippet_repository_a32e0c427372491432dee7a9e91d8fba7} 
+load\+Global\+Snippet\+In\+Tenant (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Load GLobal Snippet Inside Tenant
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_local_snippet_interface_a32e0c427372491432dee7a9e91d8fba7}{Site\+Local\+Snippet\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_local_snippet_repository_a809cbe63610e756a8117bd243a25c740}\index{SiteLocalSnippetRepository@{SiteLocalSnippetRepository}!show@{show}}
+\index{show@{show}!SiteLocalSnippetRepository@{SiteLocalSnippetRepository}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_local_snippet_repository_a809cbe63610e756a8117bd243a25c740} 
+show (\begin{DoxyParamCaption}\item[{}]{\$\+Site\+Snippet}{}\end{DoxyParamCaption})}
+
+Show the specified Local Snippet
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}type\mbox{]}} & \$\+Site\+Snippet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_local_snippet_interface_a809cbe63610e756a8117bd243a25c740}{Site\+Local\+Snippet\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_local_snippet_repository_a78f4805c12f9e1fa7e53974ed3b5a825}\index{SiteLocalSnippetRepository@{SiteLocalSnippetRepository}!tagMe@{tagMe}}
+\index{tagMe@{tagMe}!SiteLocalSnippetRepository@{SiteLocalSnippetRepository}}
+\doxysubsubsection{\texorpdfstring{tagMe()}{tagMe()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_local_snippet_repository_a78f4805c12f9e1fa7e53974ed3b5a825} 
+tag\+Me (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})}
+
+Tag the Snippet
+
+
+\begin{DoxyParams}[1]{Parameters}
+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_local_snippet_interface_a78f4805c12f9e1fa7e53974ed3b5a825}{Site\+Local\+Snippet\+Interface}}.
+
+\Hypertarget{class_app_1_1_repositories_1_1_site_local_snippet_repository_ab7b27a90191560dcef32126b0945db0d}\index{SiteLocalSnippetRepository@{SiteLocalSnippetRepository}!update@{update}}
+\index{update@{update}!SiteLocalSnippetRepository@{SiteLocalSnippetRepository}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_app_1_1_repositories_1_1_site_local_snippet_repository_ab7b27a90191560dcef32126b0945db0d} 
+update (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})}
+
+Update the specified resource in storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$request} & \\
+\hline
+object & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_app_1_1_repositories_1_1_interfaces_1_1_site_local_snippet_interface_ab7b27a90191560dcef32126b0945db0d}{Site\+Local\+Snippet\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Repositories/Site\+Local\+Snippet\+Repository.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+digraph "routes/domains"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_533417642d4c22e94ed6b0528ca3d24e {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="routes", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_533417642d4c22e94ed6b0528ca3d24e.html",tooltip=""]
+  subgraph clusterdir_2341c1c9a25f1871686d8d5f8ce69684 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_2341c1c9a25f1871686d8d5f8ce69684.html",tooltip=""]
+    dir_2341c1c9a25f1871686d8d5f8ce69684 [shape=plaintext, label="domains"];
+  dir_457992c34ad6aa804b2df361525e0908 [label="elancharitablegiving", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_457992c34ad6aa804b2df361525e0908.html",tooltip=""];
+  }
+  }
+}

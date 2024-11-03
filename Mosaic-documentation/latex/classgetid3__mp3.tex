@@ -1,0 +1,473 @@
+\doxysection{getid3\+\_\+mp3 Class Reference}
+\hypertarget{classgetid3__mp3}{}\label{classgetid3__mp3}\index{getid3\_mp3@{getid3\_mp3}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+
+
+Inheritance diagram for getid3\+\_\+mp3\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+mp3\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__mp3_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\item 
+\mbox{\hyperlink{classgetid3__mp3_a44e9e470e2af731ffeb1c936f4366991}{Guess\+Encoder\+Options}} ()
+\item 
+\mbox{\hyperlink{classgetid3__mp3_a96a68515a806e424d6292d8537eaec5f}{decode\+MPEGaudio\+Header}} (\$offset, \&\$info, \$recursivesearch=true, \$Scan\+As\+CBR=false, \$Fast\+MPEGheader\+Scan=false)
+\item 
+\mbox{\hyperlink{classgetid3__mp3_a435a3867f3e8901c3d6d03adc8051f13}{Recursive\+Frame\+Scanning}} (\&\$offset, \&\$nextframetestoffset, \$Scan\+As\+CBR)
+\item 
+\mbox{\hyperlink{classgetid3__mp3_a053235228af25e02feb08ec6194cfb33}{Free\+Format\+Frame\+Length}} (\$offset, \$deepscan=false)
+\item 
+\mbox{\hyperlink{classgetid3__mp3_a3a22ac46ecb7b1a0431ad91dc08d7929}{get\+Only\+MPEGaudio\+Info\+Brute\+Force}} ()
+\item 
+\mbox{\hyperlink{classgetid3__mp3_a129b549233cce6a61f55375eb063318d}{get\+Only\+MPEGaudio\+Info}} (\$avdataoffset, \$Bitrate\+Histogram=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_ae3b658d589500845b02e4b83319105c4}{MPEGaudio\+Version\+Array}} ()
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a20deda95a2fb446101b5131f2c2f365c}{MPEGaudio\+Layer\+Array}} ()
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a5dae63c3df36785be50f1fe1c825b30e}{MPEGaudio\+Bitrate\+Array}} ()
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a4ceda52cd609a0251a3c7b38b1eff64a}{MPEGaudio\+Frequency\+Array}} ()
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a580ec03689cd4262fb807b147d518784}{MPEGaudio\+Channel\+Mode\+Array}} ()
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a13d28a9b87b7e8411e8793d2a7191b5f}{MPEGaudio\+Mode\+Extension\+Array}} ()
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a3f1bc5be78e20920293f7d49ee1d57e8}{MPEGaudio\+Emphasis\+Array}} ()
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_af51bca7bc910740bd0d1a0de4ed4ee10}{MPEGaudio\+Header\+Bytes\+Valid}} (\$head4, \$allow\+Bitrate15=false)
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a57df7207c6c80f31e6b00eb2d9408f95}{MPEGaudio\+Header\+Valid}} (\$rawarray, \$echoerrors=false, \$allow\+Bitrate15=false)
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a193e33900fb834d3fa90ab0a26889e30}{MPEGaudio\+Header\+Decode}} (\$Header4\+Bytes)
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a58bf1275ba593167f1b9060f75e36982}{MPEGaudio\+Frame\+Length}} (\&\$bitrate, \&\$version, \&\$layer, \$padding, \&\$samplerate)
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_aad528e3e0c46f0460c09b72d1df4b174}{Closest\+Standard\+MP3\+Bitrate}} (\$bit\+\_\+rate)
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_ae243db7bc62d561694bf49642db66b2b}{Xing\+VBRid\+Offset}} (\$version, \$channelmode)
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a2f0263fae937935a2aad7a26cb07c953}{LAMEvbr\+Method\+Lookup}} (\$VBRmethod\+ID)
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_ac01583b69c86540f3df5ea468395d133}{LAMEmisc\+Stereo\+Mode\+Lookup}} (\$Stereo\+Mode\+ID)
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_ae4286a0844c120b324d92d077c6d1c0a}{LAMEmisc\+Source\+Sample\+Frequency\+Lookup}} (\$Source\+Sample\+Frequency\+ID)
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_a3c8a24ff6ee3fed7c0d1ce0cd10c65c6}{LAMEsurround\+Info\+Lookup}} (\$Surround\+Info\+ID)
+\item 
+static \mbox{\hyperlink{classgetid3__mp3_afdef0de99dbf02850db96cec5235a0c1}{LAMEpreset\+Used\+Lookup}} (\$LAMEtag)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__mp3_acd7127a55cb3561fa9c3f43c994eaa94}\label{classgetid3__mp3_acd7127a55cb3561fa9c3f43c994eaa94} 
+{\bfseries \$allow\+\_\+bruteforce} = false
+\item 
+\Hypertarget{classgetid3__mp3_a6240e722b3334266a9e010a72296afa8}\label{classgetid3__mp3_a6240e722b3334266a9e010a72296afa8} 
+{\bfseries \$mp3\+\_\+valid\+\_\+check\+\_\+frames} = 50
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__mp3_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_mp3@{getid3\_mp3}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__mp3_aad528e3e0c46f0460c09b72d1df4b174}\index{getid3\_mp3@{getid3\_mp3}!ClosestStandardMP3Bitrate@{ClosestStandardMP3Bitrate}}
+\index{ClosestStandardMP3Bitrate@{ClosestStandardMP3Bitrate}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{ClosestStandardMP3Bitrate()}{ClosestStandardMP3Bitrate()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_aad528e3e0c46f0460c09b72d1df4b174} 
+static Closest\+Standard\+MP3\+Bitrate (\begin{DoxyParamCaption}\item[{}]{\$bit\+\_\+rate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+float | int & {\em \$bit\+\_\+rate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a96a68515a806e424d6292d8537eaec5f}\index{getid3\_mp3@{getid3\_mp3}!decodeMPEGaudioHeader@{decodeMPEGaudioHeader}}
+\index{decodeMPEGaudioHeader@{decodeMPEGaudioHeader}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{decodeMPEGaudioHeader()}{decodeMPEGaudioHeader()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a96a68515a806e424d6292d8537eaec5f} 
+decode\+MPEGaudio\+Header (\begin{DoxyParamCaption}\item[{}]{\$offset}{, }\item[{\&}]{\$info}{, }\item[{}]{\$recursivesearch}{ = {\ttfamily true}, }\item[{}]{\$\+Scan\+As\+CBR}{ = {\ttfamily false}, }\item[{}]{\$\+Fast\+MPEGheader\+Scan}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & \\
+\hline
+array & {\em \$info} & \\
+\hline
+bool & {\em \$recursivesearch} & \\
+\hline
+bool & {\em \$\+Scan\+As\+CBR} & \\
+\hline
+bool & {\em \$\+Fast\+MPEGheader\+Scan} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a053235228af25e02feb08ec6194cfb33}\index{getid3\_mp3@{getid3\_mp3}!FreeFormatFrameLength@{FreeFormatFrameLength}}
+\index{FreeFormatFrameLength@{FreeFormatFrameLength}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{FreeFormatFrameLength()}{FreeFormatFrameLength()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a053235228af25e02feb08ec6194cfb33} 
+Free\+Format\+Frame\+Length (\begin{DoxyParamCaption}\item[{}]{\$offset}{, }\item[{}]{\$deepscan}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & \\
+\hline
+bool & {\em \$deepscan} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a129b549233cce6a61f55375eb063318d}\index{getid3\_mp3@{getid3\_mp3}!getOnlyMPEGaudioInfo@{getOnlyMPEGaudioInfo}}
+\index{getOnlyMPEGaudioInfo@{getOnlyMPEGaudioInfo}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{getOnlyMPEGaudioInfo()}{getOnlyMPEGaudioInfo()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a129b549233cce6a61f55375eb063318d} 
+get\+Only\+MPEGaudio\+Info (\begin{DoxyParamCaption}\item[{}]{\$avdataoffset}{, }\item[{}]{\$\+Bitrate\+Histogram}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$avdataoffset} & \\
+\hline
+bool & {\em \$\+Bitrate\+Histogram} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a3a22ac46ecb7b1a0431ad91dc08d7929}\index{getid3\_mp3@{getid3\_mp3}!getOnlyMPEGaudioInfoBruteForce@{getOnlyMPEGaudioInfoBruteForce}}
+\index{getOnlyMPEGaudioInfoBruteForce@{getOnlyMPEGaudioInfoBruteForce}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{getOnlyMPEGaudioInfoBruteForce()}{getOnlyMPEGaudioInfoBruteForce()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a3a22ac46ecb7b1a0431ad91dc08d7929} 
+get\+Only\+MPEGaudio\+Info\+Brute\+Force (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a44e9e470e2af731ffeb1c936f4366991}\index{getid3\_mp3@{getid3\_mp3}!GuessEncoderOptions@{GuessEncoderOptions}}
+\index{GuessEncoderOptions@{GuessEncoderOptions}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{GuessEncoderOptions()}{GuessEncoderOptions()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a44e9e470e2af731ffeb1c936f4366991} 
+Guess\+Encoder\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_ae4286a0844c120b324d92d077c6d1c0a}\index{getid3\_mp3@{getid3\_mp3}!LAMEmiscSourceSampleFrequencyLookup@{LAMEmiscSourceSampleFrequencyLookup}}
+\index{LAMEmiscSourceSampleFrequencyLookup@{LAMEmiscSourceSampleFrequencyLookup}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{LAMEmiscSourceSampleFrequencyLookup()}{LAMEmiscSourceSampleFrequencyLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_ae4286a0844c120b324d92d077c6d1c0a} 
+static LAMEmisc\+Source\+Sample\+Frequency\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$\+Source\+Sample\+Frequency\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$\+Source\+Sample\+Frequency\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_ac01583b69c86540f3df5ea468395d133}\index{getid3\_mp3@{getid3\_mp3}!LAMEmiscStereoModeLookup@{LAMEmiscStereoModeLookup}}
+\index{LAMEmiscStereoModeLookup@{LAMEmiscStereoModeLookup}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{LAMEmiscStereoModeLookup()}{LAMEmiscStereoModeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_ac01583b69c86540f3df5ea468395d133} 
+static LAMEmisc\+Stereo\+Mode\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$\+Stereo\+Mode\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$\+Stereo\+Mode\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_afdef0de99dbf02850db96cec5235a0c1}\index{getid3\_mp3@{getid3\_mp3}!LAMEpresetUsedLookup@{LAMEpresetUsedLookup}}
+\index{LAMEpresetUsedLookup@{LAMEpresetUsedLookup}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{LAMEpresetUsedLookup()}{LAMEpresetUsedLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_afdef0de99dbf02850db96cec5235a0c1} 
+static LAMEpreset\+Used\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$\+LAMEtag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$\+LAMEtag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a3c8a24ff6ee3fed7c0d1ce0cd10c65c6}\index{getid3\_mp3@{getid3\_mp3}!LAMEsurroundInfoLookup@{LAMEsurroundInfoLookup}}
+\index{LAMEsurroundInfoLookup@{LAMEsurroundInfoLookup}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{LAMEsurroundInfoLookup()}{LAMEsurroundInfoLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a3c8a24ff6ee3fed7c0d1ce0cd10c65c6} 
+static LAMEsurround\+Info\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$\+Surround\+Info\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$\+Surround\+Info\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a2f0263fae937935a2aad7a26cb07c953}\index{getid3\_mp3@{getid3\_mp3}!LAMEvbrMethodLookup@{LAMEvbrMethodLookup}}
+\index{LAMEvbrMethodLookup@{LAMEvbrMethodLookup}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{LAMEvbrMethodLookup()}{LAMEvbrMethodLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a2f0263fae937935a2aad7a26cb07c953} 
+static LAMEvbr\+Method\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$\+VBRmethod\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$\+VBRmethod\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a5dae63c3df36785be50f1fe1c825b30e}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioBitrateArray@{MPEGaudioBitrateArray}}
+\index{MPEGaudioBitrateArray@{MPEGaudioBitrateArray}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioBitrateArray()}{MPEGaudioBitrateArray()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a5dae63c3df36785be50f1fe1c825b30e} 
+static MPEGaudio\+Bitrate\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a580ec03689cd4262fb807b147d518784}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioChannelModeArray@{MPEGaudioChannelModeArray}}
+\index{MPEGaudioChannelModeArray@{MPEGaudioChannelModeArray}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioChannelModeArray()}{MPEGaudioChannelModeArray()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a580ec03689cd4262fb807b147d518784} 
+static MPEGaudio\+Channel\+Mode\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a3f1bc5be78e20920293f7d49ee1d57e8}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioEmphasisArray@{MPEGaudioEmphasisArray}}
+\index{MPEGaudioEmphasisArray@{MPEGaudioEmphasisArray}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioEmphasisArray()}{MPEGaudioEmphasisArray()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a3f1bc5be78e20920293f7d49ee1d57e8} 
+static MPEGaudio\+Emphasis\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a58bf1275ba593167f1b9060f75e36982}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioFrameLength@{MPEGaudioFrameLength}}
+\index{MPEGaudioFrameLength@{MPEGaudioFrameLength}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioFrameLength()}{MPEGaudioFrameLength()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a58bf1275ba593167f1b9060f75e36982} 
+static MPEGaudio\+Frame\+Length (\begin{DoxyParamCaption}\item[{\&}]{\$bitrate}{, }\item[{\&}]{\$version}{, }\item[{\&}]{\$layer}{, }\item[{}]{\$padding}{, }\item[{\&}]{\$samplerate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$bitrate} & \\
+\hline
+string & {\em \$version} & \\
+\hline
+string & {\em \$layer} & \\
+\hline
+bool & {\em \$padding} & \\
+\hline
+int & {\em \$samplerate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a4ceda52cd609a0251a3c7b38b1eff64a}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioFrequencyArray@{MPEGaudioFrequencyArray}}
+\index{MPEGaudioFrequencyArray@{MPEGaudioFrequencyArray}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioFrequencyArray()}{MPEGaudioFrequencyArray()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a4ceda52cd609a0251a3c7b38b1eff64a} 
+static MPEGaudio\+Frequency\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_af51bca7bc910740bd0d1a0de4ed4ee10}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioHeaderBytesValid@{MPEGaudioHeaderBytesValid}}
+\index{MPEGaudioHeaderBytesValid@{MPEGaudioHeaderBytesValid}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioHeaderBytesValid()}{MPEGaudioHeaderBytesValid()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_af51bca7bc910740bd0d1a0de4ed4ee10} 
+static MPEGaudio\+Header\+Bytes\+Valid (\begin{DoxyParamCaption}\item[{}]{\$head4}{, }\item[{}]{\$allow\+Bitrate15}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$head4} & \\
+\hline
+bool & {\em \$allow\+Bitrate15} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a193e33900fb834d3fa90ab0a26889e30}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioHeaderDecode@{MPEGaudioHeaderDecode}}
+\index{MPEGaudioHeaderDecode@{MPEGaudioHeaderDecode}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioHeaderDecode()}{MPEGaudioHeaderDecode()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a193e33900fb834d3fa90ab0a26889e30} 
+static MPEGaudio\+Header\+Decode (\begin{DoxyParamCaption}\item[{}]{\$\+Header4\+Bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+Header4\+Bytes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a57df7207c6c80f31e6b00eb2d9408f95}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioHeaderValid@{MPEGaudioHeaderValid}}
+\index{MPEGaudioHeaderValid@{MPEGaudioHeaderValid}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioHeaderValid()}{MPEGaudioHeaderValid()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a57df7207c6c80f31e6b00eb2d9408f95} 
+static MPEGaudio\+Header\+Valid (\begin{DoxyParamCaption}\item[{}]{\$rawarray}{, }\item[{}]{\$echoerrors}{ = {\ttfamily false}, }\item[{}]{\$allow\+Bitrate15}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$rawarray} & \\
+\hline
+bool & {\em \$echoerrors} & \\
+\hline
+bool & {\em \$allow\+Bitrate15} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a20deda95a2fb446101b5131f2c2f365c}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioLayerArray@{MPEGaudioLayerArray}}
+\index{MPEGaudioLayerArray@{MPEGaudioLayerArray}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioLayerArray()}{MPEGaudioLayerArray()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a20deda95a2fb446101b5131f2c2f365c} 
+static MPEGaudio\+Layer\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a13d28a9b87b7e8411e8793d2a7191b5f}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioModeExtensionArray@{MPEGaudioModeExtensionArray}}
+\index{MPEGaudioModeExtensionArray@{MPEGaudioModeExtensionArray}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioModeExtensionArray()}{MPEGaudioModeExtensionArray()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a13d28a9b87b7e8411e8793d2a7191b5f} 
+static MPEGaudio\+Mode\+Extension\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_ae3b658d589500845b02e4b83319105c4}\index{getid3\_mp3@{getid3\_mp3}!MPEGaudioVersionArray@{MPEGaudioVersionArray}}
+\index{MPEGaudioVersionArray@{MPEGaudioVersionArray}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{MPEGaudioVersionArray()}{MPEGaudioVersionArray()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_ae3b658d589500845b02e4b83319105c4} 
+static MPEGaudio\+Version\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_a435a3867f3e8901c3d6d03adc8051f13}\index{getid3\_mp3@{getid3\_mp3}!RecursiveFrameScanning@{RecursiveFrameScanning}}
+\index{RecursiveFrameScanning@{RecursiveFrameScanning}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{RecursiveFrameScanning()}{RecursiveFrameScanning()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_a435a3867f3e8901c3d6d03adc8051f13} 
+Recursive\+Frame\+Scanning (\begin{DoxyParamCaption}\item[{\&}]{\$offset}{, }\item[{\&}]{\$nextframetestoffset}{, }\item[{}]{\$\+Scan\+As\+CBR}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & \\
+\hline
+int & {\em \$nextframetestoffset} & \\
+\hline
+bool & {\em \$\+Scan\+As\+CBR} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__mp3_ae243db7bc62d561694bf49642db66b2b}\index{getid3\_mp3@{getid3\_mp3}!XingVBRidOffset@{XingVBRidOffset}}
+\index{XingVBRidOffset@{XingVBRidOffset}!getid3\_mp3@{getid3\_mp3}}
+\doxysubsubsection{\texorpdfstring{XingVBRidOffset()}{XingVBRidOffset()}}
+{\footnotesize\ttfamily \label{classgetid3__mp3_ae243db7bc62d561694bf49642db66b2b} 
+static Xing\+VBRid\+Offset (\begin{DoxyParamCaption}\item[{}]{\$version}{, }\item[{}]{\$channelmode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$version} & \\
+\hline
+string & {\em \$channelmode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+audio.\+mp3.\+php\end{DoxyCompactItemize}

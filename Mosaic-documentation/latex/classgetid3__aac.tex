@@ -1,0 +1,172 @@
+\doxysection{getid3\+\_\+aac Class Reference}
+\hypertarget{classgetid3__aac}{}\label{classgetid3__aac}\index{getid3\_aac@{getid3\_aac}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+
+
+Inheritance diagram for getid3\+\_\+aac\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+aac\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__aac_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\item 
+\mbox{\hyperlink{classgetid3__aac_a557a4ca0f6eb462d9c1f2f6a96515b6f}{get\+AACADIFheader\+Filepointer}} ()
+\item 
+\mbox{\hyperlink{classgetid3__aac_aa0bb068eac2530429c5eb323b5abca70}{get\+AACADTSheader\+Filepointer}} (\$Max\+Frames\+To\+Scan=1000000, \$Return\+Extended\+Info=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__aac_a6c3eefea8a22f5335141382efed039ab}{AACsample\+Rate\+Lookup}} (\$samplerateid)
+\item 
+static \mbox{\hyperlink{classgetid3__aac_a46c0a74949690b8e9eb77539598623da}{AACprofile\+Lookup}} (\$profileid, \$mpegversion)
+\item 
+static \mbox{\hyperlink{classgetid3__aac_ac8f9e5e402c92b0381f3000ebce81ad5}{AACchannel\+Count\+Calculate}} (\$program\+\_\+configs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__aac_ac8f9e5e402c92b0381f3000ebce81ad5}\index{getid3\_aac@{getid3\_aac}!AACchannelCountCalculate@{AACchannelCountCalculate}}
+\index{AACchannelCountCalculate@{AACchannelCountCalculate}!getid3\_aac@{getid3\_aac}}
+\doxysubsubsection{\texorpdfstring{AACchannelCountCalculate()}{AACchannelCountCalculate()}}
+{\footnotesize\ttfamily \label{classgetid3__aac_ac8f9e5e402c92b0381f3000ebce81ad5} 
+static AACchannel\+Count\+Calculate (\begin{DoxyParamCaption}\item[{}]{\$program\+\_\+configs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$program\+\_\+configs} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__aac_a46c0a74949690b8e9eb77539598623da}\index{getid3\_aac@{getid3\_aac}!AACprofileLookup@{AACprofileLookup}}
+\index{AACprofileLookup@{AACprofileLookup}!getid3\_aac@{getid3\_aac}}
+\doxysubsubsection{\texorpdfstring{AACprofileLookup()}{AACprofileLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__aac_a46c0a74949690b8e9eb77539598623da} 
+static AACprofile\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$profileid}{, }\item[{}]{\$mpegversion}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$profileid} & \\
+\hline
+int & {\em \$mpegversion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__aac_a6c3eefea8a22f5335141382efed039ab}\index{getid3\_aac@{getid3\_aac}!AACsampleRateLookup@{AACsampleRateLookup}}
+\index{AACsampleRateLookup@{AACsampleRateLookup}!getid3\_aac@{getid3\_aac}}
+\doxysubsubsection{\texorpdfstring{AACsampleRateLookup()}{AACsampleRateLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__aac_a6c3eefea8a22f5335141382efed039ab} 
+static AACsample\+Rate\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$samplerateid}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$samplerateid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__aac_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_aac@{getid3\_aac}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_aac@{getid3\_aac}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__aac_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__aac_a557a4ca0f6eb462d9c1f2f6a96515b6f}\index{getid3\_aac@{getid3\_aac}!getAACADIFheaderFilepointer@{getAACADIFheaderFilepointer}}
+\index{getAACADIFheaderFilepointer@{getAACADIFheaderFilepointer}!getid3\_aac@{getid3\_aac}}
+\doxysubsubsection{\texorpdfstring{getAACADIFheaderFilepointer()}{getAACADIFheaderFilepointer()}}
+{\footnotesize\ttfamily \label{classgetid3__aac_a557a4ca0f6eb462d9c1f2f6a96515b6f} 
+get\+AACADIFheader\+Filepointer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__aac_aa0bb068eac2530429c5eb323b5abca70}\index{getid3\_aac@{getid3\_aac}!getAACADTSheaderFilepointer@{getAACADTSheaderFilepointer}}
+\index{getAACADTSheaderFilepointer@{getAACADTSheaderFilepointer}!getid3\_aac@{getid3\_aac}}
+\doxysubsubsection{\texorpdfstring{getAACADTSheaderFilepointer()}{getAACADTSheaderFilepointer()}}
+{\footnotesize\ttfamily \label{classgetid3__aac_aa0bb068eac2530429c5eb323b5abca70} 
+get\+AACADTSheader\+Filepointer (\begin{DoxyParamCaption}\item[{}]{\$\+Max\+Frames\+To\+Scan}{ = {\ttfamily 1000000}, }\item[{}]{\$\+Return\+Extended\+Info}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$\+Max\+Frames\+To\+Scan} & \\
+\hline
+bool & {\em \$\+Return\+Extended\+Info} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+audio.\+aac.\+php\end{DoxyCompactItemize}

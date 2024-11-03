@@ -1,0 +1,15 @@
+---
+name: AE Listening Context
+description: Each AE listens for its key elements based on the structured output
+key_elements:
+  - element1
+  - element2
+  - element3
+confidence_threshold: 0.8
+actions:
+  - bring_to_team_for_processing
+  - bring_to_team_for_analysis
+team_tools:
+  - constructive_crewAI
+  - Mixtral_of_Agents
+---  

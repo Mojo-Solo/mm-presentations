@@ -1,0 +1,27 @@
+var classgetid3__quicktime =
+[
+    [ "Analyze", "classgetid3__quicktime.html#a3158626801c0cc1828626c64df3c93a9", null ],
+    [ "CopyToAppropriateCommentsSection", "classgetid3__quicktime.html#a2294e4778d3e6e544de62aa6209152f9", null ],
+    [ "LociString", "classgetid3__quicktime.html#a5e8ace43cd4fac2c459494deb3a07cfe", null ],
+    [ "MaybePascal2String", "classgetid3__quicktime.html#ad1b58dd367ba2da8e7b1097c2ea6d6c7", null ],
+    [ "NoNullString", "classgetid3__quicktime.html#a04a450dd5b950e8960eede5585616c99", null ],
+    [ "Pascal2String", "classgetid3__quicktime.html#af989733a7313114ac3f2a697aa736315", null ],
+    [ "quicktime_bookmark_time_scale", "classgetid3__quicktime.html#a24b0ebc47d8ce0144b877dc97c655b54", null ],
+    [ "quicktime_read_mp4_descr_length", "classgetid3__quicktime.html#a1377bddcbd08dd9d22b5387a65252cd9", null ],
+    [ "quicktime_time_to_sample_table", "classgetid3__quicktime.html#ad902d53402d12b88f0f28fd554f1b824", null ],
+    [ "QuicktimeAudioCodecLookup", "classgetid3__quicktime.html#a20ef1d4daaa4a93d937c32d32563747e", null ],
+    [ "QuicktimeColorNameLookup", "classgetid3__quicktime.html#af0090dff67e09dafd84629d0cdb78747", null ],
+    [ "QuicktimeContentRatingLookup", "classgetid3__quicktime.html#a35ead2a0584446f8cef2f09e5f01603e", null ],
+    [ "QuicktimeDCOMLookup", "classgetid3__quicktime.html#aa41c5ab7bda5ab88344632d9e3f351f5", null ],
+    [ "QuicktimeIODSaudioProfileName", "classgetid3__quicktime.html#ab94f3c4dec7ef1fe076d31ce6f5c88e5", null ],
+    [ "QuicktimeIODSvideoProfileName", "classgetid3__quicktime.html#aedea17921cd169e27e0f43a2236c9cb3", null ],
+    [ "QuicktimeLanguageLookup", "classgetid3__quicktime.html#ad839ff51093f157b8719af72f55c40b2", null ],
+    [ "QuicktimeParseAtom", "classgetid3__quicktime.html#ac61f0f9414a000495195a44bc6fc54a0", null ],
+    [ "QuicktimeParseContainerAtom", "classgetid3__quicktime.html#a26d85d7e9b6149f1fb55002a99cfff6f", null ],
+    [ "QuicktimeSTIKLookup", "classgetid3__quicktime.html#ae4e75cb9ac8e5bd868252a39fba9532f", null ],
+    [ "QuicktimeStoreAccountTypeLookup", "classgetid3__quicktime.html#ab693244d662c2c880bfd4afbc6f5a15f", null ],
+    [ "QuicktimeStoreFrontCodeLookup", "classgetid3__quicktime.html#a77df0d2541afd268eb274c5f0ab647c8", null ],
+    [ "QuicktimeVideoCodecLookup", "classgetid3__quicktime.html#ac6df809b10e59a19f535ecb1937e9608", null ],
+    [ "search_tag_by_key", "classgetid3__quicktime.html#af38d3702357f0297405ded977cf4a817", null ],
+    [ "search_tag_by_pair", "classgetid3__quicktime.html#a90c32f93ba461940b9cb5740d229e57f", null ]
+];

@@ -1,0 +1,12 @@
+digraph "resources/views/backend/site_super_admin/tenant_domain/pages/modals"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_dc8733d25649e5e531f3e34eabe4eb3e {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="pages", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_dc8733d25649e5e531f3e34eabe4eb3e.html",tooltip=""]
+  dir_13372f68ef2391fb2cc575cad5658b75 [label="modals", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_13372f68ef2391fb2cc575cad5658b75.html",tooltip=""];
+  }
+}

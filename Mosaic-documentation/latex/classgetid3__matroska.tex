@@ -1,0 +1,167 @@
+\doxysection{getid3\+\_\+matroska Class Reference}
+\hypertarget{classgetid3__matroska}{}\label{classgetid3__matroska}\index{getid3\_matroska@{getid3\_matroska}}
+
+
+Inheritance diagram for getid3\+\_\+matroska\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+matroska\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__matroska_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__matroska_aea4ce7ec7dac11471325173b468bb89e}{Target\+Type\+Value}} (\$target\+\_\+type)
+\item 
+static \mbox{\hyperlink{classgetid3__matroska_aa0da241ed103a494b7059f69568f2f09}{Block\+Lacing\+Type}} (\$lacingtype)
+\item 
+static \mbox{\hyperlink{classgetid3__matroska_a2870343154b7c5592cc46cc6a5c20847}{Codec\+IDto\+Common\+Name}} (\$codecid)
+\item 
+static \mbox{\hyperlink{classgetid3__matroska_ae91dc4866e3b81b4e4f5db9db0dedb56}{display\+Unit}} (\$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__matroska_a2f786967ad30b3f876717d59411e9fe5}\label{classgetid3__matroska_a2f786967ad30b3f876717d59411e9fe5} 
+{\bfseries \$hide\+\_\+clusters} = true
+\item 
+\Hypertarget{classgetid3__matroska_ab83a654770a540ca832957fc1a67a4c5}\label{classgetid3__matroska_ab83a654770a540ca832957fc1a67a4c5} 
+{\bfseries \$parse\+\_\+whole\+\_\+file} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@tutorial \href{http://www.matroska.org/technical/specs/index.html}{\texttt{ http\+://www.\+matroska.\+org/technical/specs/index.\+html}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Rewrite EBML parser to reduce it\textquotesingle{}s size and honor default element values 
+
+After rewrite implement stream size calculation, that will provide additional useful info and enable AAC/\+FLAC audio bitrate detection \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__matroska_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_matroska@{getid3\_matroska}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_matroska@{getid3\_matroska}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__matroska_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__matroska_aa0da241ed103a494b7059f69568f2f09}\index{getid3\_matroska@{getid3\_matroska}!BlockLacingType@{BlockLacingType}}
+\index{BlockLacingType@{BlockLacingType}!getid3\_matroska@{getid3\_matroska}}
+\doxysubsubsection{\texorpdfstring{BlockLacingType()}{BlockLacingType()}}
+{\footnotesize\ttfamily \label{classgetid3__matroska_aa0da241ed103a494b7059f69568f2f09} 
+static Block\+Lacing\+Type (\begin{DoxyParamCaption}\item[{}]{\$lacingtype}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$lacingtype} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__matroska_a2870343154b7c5592cc46cc6a5c20847}\index{getid3\_matroska@{getid3\_matroska}!CodecIDtoCommonName@{CodecIDtoCommonName}}
+\index{CodecIDtoCommonName@{CodecIDtoCommonName}!getid3\_matroska@{getid3\_matroska}}
+\doxysubsubsection{\texorpdfstring{CodecIDtoCommonName()}{CodecIDtoCommonName()}}
+{\footnotesize\ttfamily \label{classgetid3__matroska_a2870343154b7c5592cc46cc6a5c20847} 
+static Codec\+IDto\+Common\+Name (\begin{DoxyParamCaption}\item[{}]{\$codecid}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$codecid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__matroska_ae91dc4866e3b81b4e4f5db9db0dedb56}\index{getid3\_matroska@{getid3\_matroska}!displayUnit@{displayUnit}}
+\index{displayUnit@{displayUnit}!getid3\_matroska@{getid3\_matroska}}
+\doxysubsubsection{\texorpdfstring{displayUnit()}{displayUnit()}}
+{\footnotesize\ttfamily \label{classgetid3__matroska_ae91dc4866e3b81b4e4f5db9db0dedb56} 
+static display\+Unit (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__matroska_aea4ce7ec7dac11471325173b468bb89e}\index{getid3\_matroska@{getid3\_matroska}!TargetTypeValue@{TargetTypeValue}}
+\index{TargetTypeValue@{TargetTypeValue}!getid3\_matroska@{getid3\_matroska}}
+\doxysubsubsection{\texorpdfstring{TargetTypeValue()}{TargetTypeValue()}}
+{\footnotesize\ttfamily \label{classgetid3__matroska_aea4ce7ec7dac11471325173b468bb89e} 
+static Target\+Type\+Value (\begin{DoxyParamCaption}\item[{}]{\$target\+\_\+type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$target\+\_\+type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+audio-\/video.\+matroska.\+php\end{DoxyCompactItemize}

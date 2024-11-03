@@ -1,0 +1,216 @@
+\doxysection{getid3\+\_\+zip Class Reference}
+\hypertarget{classgetid3__zip}{}\label{classgetid3__zip}\index{getid3\_zip@{getid3\_zip}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+
+
+Inheritance diagram for getid3\+\_\+zip\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+zip\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__zip_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\item 
+\mbox{\hyperlink{classgetid3__zip_af862b8b97b4179b670cc214df392568a}{get\+ZIPHeader\+Filepointer\+Top\+Down}} ()
+\item 
+\mbox{\hyperlink{classgetid3__zip_a0bce6f2ce450b263bcb91bf4a0635b05}{get\+ZIPentries\+Filepointer}} ()
+\item 
+\mbox{\hyperlink{classgetid3__zip_aa4cd4c34a5bd76a8e0d5b5ced812711c}{ZIPparse\+Local\+File\+Header}} ()
+\item 
+\mbox{\hyperlink{classgetid3__zip_abd8e45f2cc37f6394ccab24eb6d2d283}{ZIPparse\+Central\+Directory}} ()
+\item 
+\mbox{\hyperlink{classgetid3__zip_a510adbf7946b422a639133c4bb1b3f35}{ZIPparse\+End\+Of\+Central\+Directory}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__zip_a4e6834b5433b30fe6c370fdf7b322466}{ZIPparse\+General\+Purpose\+Flags}} (\$flagbytes, \$compressionmethod)
+\item 
+static \mbox{\hyperlink{classgetid3__zip_a9e1276fdcb0876d164319b1076509bbf}{ZIPversion\+OSLookup}} (\$index)
+\item 
+static \mbox{\hyperlink{classgetid3__zip_af30228c06326dc701098767ea25cb294}{ZIPcompression\+Method\+Lookup}} (\$index)
+\item 
+static \mbox{\hyperlink{classgetid3__zip_a62856395be4a7ae1606b1124ec9bb692}{DOStime2\+UNIXtime}} (\$DOSdate, \$DOStime)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__zip_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_zip@{getid3\_zip}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_zip@{getid3\_zip}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__zip_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__zip_a62856395be4a7ae1606b1124ec9bb692}\index{getid3\_zip@{getid3\_zip}!DOStime2UNIXtime@{DOStime2UNIXtime}}
+\index{DOStime2UNIXtime@{DOStime2UNIXtime}!getid3\_zip@{getid3\_zip}}
+\doxysubsubsection{\texorpdfstring{DOStime2UNIXtime()}{DOStime2UNIXtime()}}
+{\footnotesize\ttfamily \label{classgetid3__zip_a62856395be4a7ae1606b1124ec9bb692} 
+static DOStime2\+UNIXtime (\begin{DoxyParamCaption}\item[{}]{\$\+DOSdate}{, }\item[{}]{\$\+DOStime}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$\+DOSdate} & \\
+\hline
+int & {\em \$\+DOStime} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__zip_a0bce6f2ce450b263bcb91bf4a0635b05}\index{getid3\_zip@{getid3\_zip}!getZIPentriesFilepointer@{getZIPentriesFilepointer}}
+\index{getZIPentriesFilepointer@{getZIPentriesFilepointer}!getid3\_zip@{getid3\_zip}}
+\doxysubsubsection{\texorpdfstring{getZIPentriesFilepointer()}{getZIPentriesFilepointer()}}
+{\footnotesize\ttfamily \label{classgetid3__zip_a0bce6f2ce450b263bcb91bf4a0635b05} 
+get\+ZIPentries\+Filepointer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__zip_af862b8b97b4179b670cc214df392568a}\index{getid3\_zip@{getid3\_zip}!getZIPHeaderFilepointerTopDown@{getZIPHeaderFilepointerTopDown}}
+\index{getZIPHeaderFilepointerTopDown@{getZIPHeaderFilepointerTopDown}!getid3\_zip@{getid3\_zip}}
+\doxysubsubsection{\texorpdfstring{getZIPHeaderFilepointerTopDown()}{getZIPHeaderFilepointerTopDown()}}
+{\footnotesize\ttfamily \label{classgetid3__zip_af862b8b97b4179b670cc214df392568a} 
+get\+ZIPHeader\+Filepointer\+Top\+Down (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__zip_af30228c06326dc701098767ea25cb294}\index{getid3\_zip@{getid3\_zip}!ZIPcompressionMethodLookup@{ZIPcompressionMethodLookup}}
+\index{ZIPcompressionMethodLookup@{ZIPcompressionMethodLookup}!getid3\_zip@{getid3\_zip}}
+\doxysubsubsection{\texorpdfstring{ZIPcompressionMethodLookup()}{ZIPcompressionMethodLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__zip_af30228c06326dc701098767ea25cb294} 
+static ZIPcompression\+Method\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__zip_abd8e45f2cc37f6394ccab24eb6d2d283}\index{getid3\_zip@{getid3\_zip}!ZIPparseCentralDirectory@{ZIPparseCentralDirectory}}
+\index{ZIPparseCentralDirectory@{ZIPparseCentralDirectory}!getid3\_zip@{getid3\_zip}}
+\doxysubsubsection{\texorpdfstring{ZIPparseCentralDirectory()}{ZIPparseCentralDirectory()}}
+{\footnotesize\ttfamily \label{classgetid3__zip_abd8e45f2cc37f6394ccab24eb6d2d283} 
+ZIPparse\+Central\+Directory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__zip_a510adbf7946b422a639133c4bb1b3f35}\index{getid3\_zip@{getid3\_zip}!ZIPparseEndOfCentralDirectory@{ZIPparseEndOfCentralDirectory}}
+\index{ZIPparseEndOfCentralDirectory@{ZIPparseEndOfCentralDirectory}!getid3\_zip@{getid3\_zip}}
+\doxysubsubsection{\texorpdfstring{ZIPparseEndOfCentralDirectory()}{ZIPparseEndOfCentralDirectory()}}
+{\footnotesize\ttfamily \label{classgetid3__zip_a510adbf7946b422a639133c4bb1b3f35} 
+ZIPparse\+End\+Of\+Central\+Directory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__zip_a4e6834b5433b30fe6c370fdf7b322466}\index{getid3\_zip@{getid3\_zip}!ZIPparseGeneralPurposeFlags@{ZIPparseGeneralPurposeFlags}}
+\index{ZIPparseGeneralPurposeFlags@{ZIPparseGeneralPurposeFlags}!getid3\_zip@{getid3\_zip}}
+\doxysubsubsection{\texorpdfstring{ZIPparseGeneralPurposeFlags()}{ZIPparseGeneralPurposeFlags()}}
+{\footnotesize\ttfamily \label{classgetid3__zip_a4e6834b5433b30fe6c370fdf7b322466} 
+static ZIPparse\+General\+Purpose\+Flags (\begin{DoxyParamCaption}\item[{}]{\$flagbytes}{, }\item[{}]{\$compressionmethod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flagbytes} & \\
+\hline
+int & {\em \$compressionmethod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__zip_aa4cd4c34a5bd76a8e0d5b5ced812711c}\index{getid3\_zip@{getid3\_zip}!ZIPparseLocalFileHeader@{ZIPparseLocalFileHeader}}
+\index{ZIPparseLocalFileHeader@{ZIPparseLocalFileHeader}!getid3\_zip@{getid3\_zip}}
+\doxysubsubsection{\texorpdfstring{ZIPparseLocalFileHeader()}{ZIPparseLocalFileHeader()}}
+{\footnotesize\ttfamily \label{classgetid3__zip_aa4cd4c34a5bd76a8e0d5b5ced812711c} 
+ZIPparse\+Local\+File\+Header (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__zip_a9e1276fdcb0876d164319b1076509bbf}\index{getid3\_zip@{getid3\_zip}!ZIPversionOSLookup@{ZIPversionOSLookup}}
+\index{ZIPversionOSLookup@{ZIPversionOSLookup}!getid3\_zip@{getid3\_zip}}
+\doxysubsubsection{\texorpdfstring{ZIPversionOSLookup()}{ZIPversionOSLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__zip_a9e1276fdcb0876d164319b1076509bbf} 
+static ZIPversion\+OSLookup (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+archive.\+zip.\+php\end{DoxyCompactItemize}

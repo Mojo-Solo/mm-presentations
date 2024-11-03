@@ -1,0 +1,335 @@
+\chapter{Simple\+Bar \texorpdfstring{$<$}{<}a href="{}https\+://www.\+npmjs.\+org/package/simplebar"{} \texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}img src="{}https\+://img.\+shields.\+io/npm/v/simplebar.\+svg?style=flat-\/square"{} alt="{}npm package"{}/\texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}/a\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}img src="{}http\+://img.\+badgesize.\+io/\+Grsmto/simplebar/master/packages/simplebar/src/simplebar.\+js?compression=gzip\&\&style=flat-\/square"{} alt="{}size-\/badge"{}/\texorpdfstring{$>$}{>}}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e}{}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e}\index{SimpleBar $<$a href="{}https://www.npmjs.org/package/simplebar"{} $>$$<$img src="{}https://img.shields.io/npm/v/simplebar.svg?style=flat-\/square"{} alt="{}npm package"{}/$>$$<$/a$>$ $<$img src="{}http://img.badgesize.io/Grsmto/simplebar/master/packages/simplebar/src/simplebar.js?compression=gzip\&\&style=flat-\/square"{} alt="{}size-\/badge"{}/$>$@{SimpleBar $<$a href=""https://www.npmjs.org/package/simplebar"" $>$$<$img src=""https://img.shields.io/npm/v/simplebar.svg?style=flat-\/square"" alt=""npm package""/$>$$<$/a$>$ $<$img src=""http://img.badgesize.io/Grsmto/simplebar/master/packages/simplebar/src/simplebar.js?compression=gzip\&\&style=flat-\/square"" alt=""size-\/badge""/$>$}}
+\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md225}%
+\Hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md225}%
+ \+:warning\+: Simple\+Bar v5 is here! There are some {\bfseries{breaking changes!}} Make sure to check out \href{https://github.com/Grsmto/simplebar/releases}{\texttt{ the changelog}} before updating.
+
+Simple\+Bar is a plugin that tries to solve a long time problem\+: how to get custom scrollbars for your web-\/app while keeping a good user experience? Simple\+Bar {\bfseries{does NOT implement a custom scroll behaviour}}. It keeps the {\bfseries{native}} {\ttfamily overflow\+: auto} scroll and {\bfseries{only}} replace the scrollbar visual appearance.
+
+Simple\+Bar is meant to be as easy to use as possible and lightweight. If you want something more advanced I recommend \href{https://github.com/KingSora}{\texttt{ King\+Sora}} \textquotesingle{}s \href{https://kingsora.github.io/OverlayScrollbars/}{\texttt{ Overlay Scrollbars}}.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md226}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md226}
+{\bfseries{-\/ Via npm}} {\ttfamily npm install simplebar -\/-\/save}
+
+{\bfseries{-\/ Via Yarn}} {\ttfamily yarn add simplebar}
+
+{\bfseries{-\/ Via {\ttfamily \texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}} tag}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<link}
+\DoxyCodeLine{\ \ rel="{}stylesheet"{}}
+\DoxyCodeLine{\ \ href="{}https://unpkg.com/simplebar@latest/dist/simplebar.css"{}}
+\DoxyCodeLine{/>}
+\DoxyCodeLine{<script\ src="{}https://unpkg.com/simplebar@latest/dist/simplebar.min.js"{}></script>}
+\DoxyCodeLine{<!-\/-\/\ or\ -\/-\/>}
+\DoxyCodeLine{<link}
+\DoxyCodeLine{\ \ rel="{}stylesheet"{}}
+\DoxyCodeLine{\ \ href="{}https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"{}}
+\DoxyCodeLine{/>}
+\DoxyCodeLine{<script\ src="{}https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"{}></script>}
+
+\end{DoxyCode}
+
+
+note\+: you should replace {\ttfamily @latest} to the latest version (ex {\ttfamily @2.\+4.\+3}), if you want to lock to a specific version. You can find the full list of modules available \href{https://unpkg.com/simplebar@latest/dist/}{\texttt{ there}}.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md227}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md227}
+Check out the \href{https://github.com/Grsmto/simplebar/blob/master/examples/react/src/App.js}{\texttt{ React}} and \href{https://github.com/Grsmto/simplebar/blob/master/examples/vue/src/App.vue}{\texttt{ Vue}} examples.
+
+If you are using Gatsby, please see \href{https://github.com/Grsmto/simplebar/issues/345}{\texttt{ \#345}}.
+
+If you are using a module loader (like Webpack) you first need to load Simple\+Bar\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{import\ 'simplebar';\ //\ or\ "{}import\ SimpleBar\ from\ 'simplebar';"{}\ if\ you\ want\ to\ use\ it\ manually.}
+\DoxyCodeLine{import\ 'simplebar/dist/simplebar.css';}
+
+\end{DoxyCode}
+
+
+Set {\ttfamily data-\/simplebar} on the element you want your custom scrollbar. You\textquotesingle{}re done.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<div\ data-\/simplebar></div>}
+
+\end{DoxyCode}
+
+
+{\bfseries{Don\textquotesingle{}t forget to import both css and js in your project!}}\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md228}{}\doxysubsection{\texorpdfstring{Noscript support}{Noscript support}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md228}
+To make sure your elements are scrollable when Java\+Script is disabled, it\textquotesingle{}s important to include this snippet in your {\ttfamily \texorpdfstring{$<$}{<}head\texorpdfstring{$>$}{>}} to reset scrolling\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<noscript>}
+\DoxyCodeLine{\ \ <style>}
+\DoxyCodeLine{\ \ \ \ /**}
+\DoxyCodeLine{\ \ \ \ *\ Reinstate\ scrolling\ for\ non-\/JS\ clients}
+\DoxyCodeLine{\ \ \ \ */}
+\DoxyCodeLine{\ \ \ \ .simplebar-\/content-\/wrapper\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ overflow:\ auto;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ </style>}
+\DoxyCodeLine{</noscript>}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md229}{}\doxysubsection{\texorpdfstring{\+:warning\+: Warning!}{\+:warning\+: Warning!}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md229}
+Simple\+Bar is {\bfseries{not intended to be used on the {\ttfamily body} element!}} I don\textquotesingle{}t recommend wrapping your entire web page inside a custom scroll as it will often badly affect the user experience (slower scroll performance compared to the native body scroll, no native scroll behaviours like click on track, etc.). Do it at your own risk! Simple\+Bar is meant to improve the experience of {\bfseries{internal web page scrolling}}; such as a chat box or a small scrolling area. {\bfseries{Please read the caveats section first to be aware of the limitations!}}\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md230}{}\doxysubsection{\texorpdfstring{Troubleshooting}{Troubleshooting}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md230}
+If you are experiencing issues when setting up Simple\+Bar, it is most likely because your styles are clashing with Simple\+Bar ones. Make sure the element you are setting Simple\+Bar on does not override any Simple\+Bar css properties! {\bfseries{We recommend to not style that element at all and use an inner element instead.}}\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md231}{}\doxysubsection{\texorpdfstring{Sponsors}{Sponsors}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md231}
+Thanks to Browser\+Stack for sponsoring open source projects and letting us test Simple\+Bar for free. \href{https://www.browserstack.com}{\texttt{  }}
+
+\DoxyHorRuler{0}
+
+
+
+\begin{DoxyEnumerate}
+\item Documentation
+\item Browsers support
+\item Demo
+\item How it works
+\item Caveats
+\item Changelog
+\item Credits
+\end{DoxyEnumerate}\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md233}{}\doxysection{\texorpdfstring{1. Documentation}{1. Documentation}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md233}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md234}{}\doxysubsection{\texorpdfstring{Other usages}{Other usages}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md234}
+You can start Simple\+Bar manually if you need to\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{new\ SimpleBar(document.getElementById('myElement'));}
+
+\end{DoxyCode}
+
+
+or
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Array.prototype.forEach.call(}
+\DoxyCodeLine{\ \ document.querySelectorAll('.myElements'),}
+\DoxyCodeLine{\ \ el\ =>\ new\ SimpleBar()}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+
+
+If you want to use j\+Query\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{new\ SimpleBar(\$('\#myElement')[0]);}
+
+\end{DoxyCode}
+
+
+or
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$('.myElements').each(element,\ new\ SimpleBar());}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md235}{}\doxysubsection{\texorpdfstring{Styling}{Styling}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md235}
+The default styling is applied with CSS. There is no "{}built-\/in"{} way to style the scrollbar, you just need to override the default CSS.
+
+Ex, to change the color of the scrollbar\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{.simplebar-\/scrollbar::before\ \{}
+\DoxyCodeLine{\ \ background-\/color:\ red;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md236}{}\doxysubsection{\texorpdfstring{Options}{Options}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md236}
+Options can be applied to the plugin during initialization\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{new\ SimpleBar(document.getElementById('myElement'),\ \{}
+\DoxyCodeLine{\ \ option1:\ value1,}
+\DoxyCodeLine{\ \ option2:\ value2}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+or using data-\/attributes\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<div\ data-\/simplebar\ data-\/simplebar-\/auto-\/hide="{}false"{}></div>}
+
+\end{DoxyCode}
+
+
+Available options are\+:\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md237}{}\doxysubsubsection{\texorpdfstring{auto\+Hide}{auto\+Hide}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md237}
+By default Simple\+Bar automatically hides the scrollbar if the user is not scrolling (it emulates Mac OSX Lion\textquotesingle{}s scrollbar). You can make the scrollbar always visible by setting the {\ttfamily auto\+Hide} option to {\ttfamily false}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{new\ SimpleBar(document.getElementById('myElement'),\ \{\ autoHide:\ false\ \});}
+
+\end{DoxyCode}
+
+
+Default value is {\ttfamily true}.
+
+You can also control the animation via CSS as it\textquotesingle{}s a simple CSS opacity transition.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md238}{}\doxysubsubsection{\texorpdfstring{class\+Names}{class\+Names}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md238}
+It is possible to change the default class names that Simple\+Bar uses. To get your own styles to work refer to {\ttfamily simplebar.\+css} to get an idea how to setup your css.
+
+
+\begin{DoxyItemize}
+\item {\ttfamily content} represents the wrapper for the content being scrolled.
+\item {\ttfamily scroll\+Content} represents the container containing the elements being scrolled.
+\item {\ttfamily scrollbar} defines the style of the scrollbar with which the user can interact to scroll the content.
+\item {\ttfamily track} styles the area surrounding the {\ttfamily scrollbar}.
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{classNames:\ \{}
+\DoxyCodeLine{\ \ //\ defaults}
+\DoxyCodeLine{\ \ content:\ 'simplebar-\/content',}
+\DoxyCodeLine{\ \ scrollContent:\ 'simplebar-\/scroll-\/content',}
+\DoxyCodeLine{\ \ scrollbar:\ 'simplebar-\/scrollbar',}
+\DoxyCodeLine{\ \ track:\ 'simplebar-\/track'}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md239}{}\doxysubsubsection{\texorpdfstring{force\+Visible}{force\+Visible}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md239}
+You can force the track to be visible (same behaviour as {\ttfamily overflow\+: scroll}) using the {\ttfamily force\+Visible} option\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{forceVisible:\ true|'x'|'y'\ (default\ to\ \`{}false`)}
+
+\end{DoxyCode}
+
+
+By default, Simple\+Bar behave like {\ttfamily overflow\+: auto}.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md240}{}\doxysubsubsection{\texorpdfstring{direction (RTL support)}{direction (RTL support)}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md240}
+You can activate RTL support by passing the {\ttfamily direction} option\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{direction:\ 'rtl'\ (default\ to\ \`{}ltr`)}
+
+\end{DoxyCode}
+
+
+You will need both `data-\/simplebar-\/direction=\textquotesingle{}rtl'{\ttfamily and a css rule with}direction\+: rtl\`{}.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md241}{}\doxysubsubsection{\texorpdfstring{timeout}{timeout}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md241}
+Define the delay until the scrollbar hides. Has no effect if {\ttfamily auto\+Hide} is {\ttfamily false}.
+
+Default value is {\ttfamily 1000}.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md242}{}\doxysubsubsection{\texorpdfstring{click\+On\+Track}{click\+On\+Track}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md242}
+Controls the click on track behaviour.
+
+Default to {\ttfamily true}.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md243}{}\doxysubsubsection{\texorpdfstring{scrollbar\+Min\+Size / scrollbar\+Max\+Size}{scrollbar\+Min\+Size / scrollbar\+Max\+Size}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md243}
+Controls the min and max size of the scrollbar in {\ttfamily px}.
+
+Default for {\ttfamily scrollbar\+Min\+Size} is {\ttfamily 25}. Default for {\ttfamily scrollbar\+Max\+Size} is {\ttfamily 0} (no max size).\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md244}{}\doxysubsection{\texorpdfstring{Apply scroll vertically only}{Apply scroll vertically only}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md244}
+Simply define in css {\ttfamily overflow-\/x\+: hidden} on your element.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md245}{}\doxysubsection{\texorpdfstring{Notifying the plugin of content changes}{Notifying the plugin of content changes}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md245}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md246}{}\doxysubsubsection{\texorpdfstring{Note\+: you shouldn\textquotesingle{}t need to use these functions as Simple\+Bar takes care of that automatically. This is for advanced usage only.}{Note\+: you shouldn\textquotesingle{}t need to use these functions as Simple\+Bar takes care of that automatically. This is for advanced usage only.}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md246}
+If later on you dynamically modify your content, for instance changing its height or width, or adding or removing content, you should recalculate the scrollbars like so\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ simpleBar\ =\ new\ SimpleBar(document.getElementById('myElement'));}
+\DoxyCodeLine{simpleBar.recalculate();}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md247}{}\doxysubsection{\texorpdfstring{Trigger programmatical scrolling}{Trigger programmatical scrolling}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md247}
+If you want to access to the original scroll element, you can retrieve it via a getter\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ simpleBar\ =\ new\ SimpleBar(document.getElementById('myElement'));}
+\DoxyCodeLine{simpleBar.getScrollElement();}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md248}{}\doxysubsection{\texorpdfstring{Subscribe to {\ttfamily scroll} event}{Subscribe to {\ttfamily scroll} event}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md248}
+You can subscribe to the {\ttfamily scroll} event, just like you do with native scrolling elements\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ simpleBar\ =\ new\ SimpleBar(document.getElementById('myElement'));}
+\DoxyCodeLine{simpleBar.getScrollElement().addEventListener('scroll',\ function(...));}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md249}{}\doxysubsection{\texorpdfstring{Add content dynamically}{Add content dynamically}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md249}
+You can retrieve the element containing data like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ simpleBar\ =\ new\ SimpleBar(document.getElementById('myElement'));}
+\DoxyCodeLine{simpleBar.getContentElement();}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md250}{}\doxysubsection{\texorpdfstring{Disable Mutation Observer (core package only)}{Disable Mutation Observer (core package only)}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md250}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SimpleBar.removeObserver();}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md251}{}\doxysubsection{\texorpdfstring{Retrieve Simple\+Bar instance from data-\/simplebar nodes}{Retrieve Simple\+Bar instance from data-\/simplebar nodes}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md251}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SimpleBar.instances.get(document.querySelector('[data-\/simplebar]']))}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md252}{}\doxysubsection{\texorpdfstring{Unmount/destroy}{Unmount/destroy}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md252}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ simpleBar\ =\ new\ SimpleBar(document.getElementById('myElement'));}
+\DoxyCodeLine{}
+\DoxyCodeLine{simpleBar.unMount()}
+
+\end{DoxyCode}
+
+
+\+:warning\+: {\bfseries{Calling this function will not restore the default scrollbar!}}
+
+A common usecase is to only want Simple\+Bar on desktop/wider screens, but instead of trying to mount/unmount the plugin based on screen size, you should instead simply never mount it in the first place.
+
+For example if you want it only on desktop you can first test for screen size using {\ttfamily match\+Media}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{if\ (window.matchMedia('(minwidth:\ 600px)')\ \{}
+\DoxyCodeLine{\ \ new\ SimpleBar(..)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md253}{}\doxysubsection{\texorpdfstring{Non-\/\+JS fallback}{Non-\/\+JS fallback}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md253}
+Simple\+Bar hides the browser\textquotesingle{}s default scrollbars, which obviously is undesirable if the user has Java\+Script disabled. To restore the browser\textquotesingle{}s scrollbars you can include the following {\ttfamily noscript} element in your document\textquotesingle{}s {\ttfamily head}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<noscript>}
+\DoxyCodeLine{\ \ <style>}
+\DoxyCodeLine{\ \ \ \ [data-\/simplebar]\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ overflow:\ auto;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ </style>}
+\DoxyCodeLine{</noscript>}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md254}{}\doxysection{\texorpdfstring{2. Browsers support}{2. Browsers support}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md254}
+Simple\+Bar has been tested on the following browsers\+: Chrome, Firefox, Safari, Edge, IE11.
+
+Notice\+: IE10 doesn\textquotesingle{}t support {\ttfamily Mutation\+Observer} so you will still need to instantiate Simple\+Bar manually and call {\ttfamily recalculate()} as needed (or you can just use a polyfill for {\ttfamily Mutation\+Observer}).
+
+If you want to apply Simple\+Bar on an SVG element on IE11, you will need a \href{https://github.com/eligrey/classList.js/blob/master/classList.js}{\texttt{ polyfill for {\ttfamily class\+List}}}.
+
+IE9 is not supported anymore (because we use {\ttfamily translate3d} to position the scrollbar) so please use Simple\+Bar v1 if you really need it.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md255}{}\doxysection{\texorpdfstring{3. Demo}{3. Demo}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md255}
+\href{https://grsmto.github.io/simplebar/}{\texttt{ https\+://grsmto.\+github.\+io/simplebar/}}\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md256}{}\doxysection{\texorpdfstring{4. How it works}{4. How it works}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md256}
+Simple\+Bar only does one thing\+: replace the browser\textquotesingle{}s default scrollbars with a custom CSS-\/styled scrollbar without sacrificing performance. Unlike most other plugins, Simple\+Bar doesn\textquotesingle{}t mimic scroll behaviour with Javascript, which typically causes jank and strange scrolling behaviour. You keep the awesomeness of native scrolling… with a custom scrollbar! Design your scrollbar how you like, with CSS, across all browsers.
+
+For the most part Simple\+Bar uses the browser\textquotesingle{}s native scrolling functionality, but replaces the conventional scrollbar with a custom CSS-\/styled scrollbar. The plugin listens for scroll events and redraws the custom scrollbar accordingly.
+
+Key to this technique is hiding the native browser scrollbar. The scrollable element is made slightly wider/taller than its containing element, effectively hiding the scrollbar from view.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md257}{}\doxysection{\texorpdfstring{5. Caveats}{5. Caveats}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md257}
+
+\begin{DoxyItemize}
+\item Simple\+Bar can\textquotesingle{}t be used on the {\ttfamily \texorpdfstring{$<$}{<}body\texorpdfstring{$>$}{>}}, {\ttfamily \texorpdfstring{$<$}{<}textarea\texorpdfstring{$>$}{>}}, {\ttfamily \texorpdfstring{$<$}{<}table\texorpdfstring{$>$}{>}} or {\ttfamily \texorpdfstring{$<$}{<}select\texorpdfstring{$>$}{>}} elements. {\ttfamily \texorpdfstring{$<$}{<}iframe\texorpdfstring{$>$}{>}} should be working (depends of your usecase). If you are looking to support these, I suggest taking a look at \href{https://kingsora.github.io/OverlayScrollbars}{\texttt{ Over\+Lay\+Scrollbars}}.
+\item Simple\+Bar doesn\textquotesingle{}t currently support {\ttfamily overflow\+: visible}. Which means any children of your scrolling div will be clipped (like with {\ttfamily overflow\+: hidden}).
+\end{DoxyItemize}
+
+Please take a look at \href{https://kingsora.github.io/OverlayScrollbars/\#!faq}{\texttt{ this comparison table}} to see what Simple\+Bar does compare to others.\hypertarget{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md258}{}\doxysubsection{\texorpdfstring{Community plugins}{Community plugins}}\label{md_public_2_muse_2assets_2vendor_2simplebar_2_r_e_a_d_m_e_autotoc_md258}
+{\bfseries{Ruby On Rails}} To include Simple\+Bar in the Ruby On Rails asset pipeline, use the \href{https://github.com/thutterer/simplebar-rails}{\texttt{ simplebar-\/rails}} gem.
+
+{\bfseries{Ember.\+js}} To use Simple\+Bar with the Ember.\+js framework, use the \href{https://github.com/fpauser/ember-simplebar}{\texttt{ ember-\/simplebars}} addon. 

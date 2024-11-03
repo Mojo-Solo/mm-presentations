@@ -1,0 +1,493 @@
+\doxysection{getid3\+\_\+quicktime Class Reference}
+\hypertarget{classgetid3__quicktime}{}\label{classgetid3__quicktime}\index{getid3\_quicktime@{getid3\_quicktime}}
+
+
+Inheritance diagram for getid3\+\_\+quicktime\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+quicktime\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_ac61f0f9414a000495195a44bc6fc54a0}{Quicktime\+Parse\+Atom}} (\$atomname, \$atomsize, \$atom\+\_\+data, \$baseoffset, \&\$atom\+Hierarchy, \$Parse\+All\+Possible\+Atoms)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a26d85d7e9b6149f1fb55002a99cfff6f}{Quicktime\+Parse\+Container\+Atom}} (\$atom\+\_\+data, \$baseoffset, \&\$atom\+Hierarchy, \$Parse\+All\+Possible\+Atoms)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a1377bddcbd08dd9d22b5387a65252cd9}{quicktime\+\_\+read\+\_\+mp4\+\_\+descr\+\_\+length}} (\$data, \&\$offset)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_ad839ff51093f157b8719af72f55c40b2}{Quicktime\+Language\+Lookup}} (\$languageid)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_ac6df809b10e59a19f535ecb1937e9608}{Quicktime\+Video\+Codec\+Lookup}} (\$codecid)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a20ef1d4daaa4a93d937c32d32563747e}{Quicktime\+Audio\+Codec\+Lookup}} (\$codecid)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_aa41c5ab7bda5ab88344632d9e3f351f5}{Quicktime\+DCOMLookup}} (\$compressionid)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_af0090dff67e09dafd84629d0cdb78747}{Quicktime\+Color\+Name\+Lookup}} (\$colordepthid)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_ae4e75cb9ac8e5bd868252a39fba9532f}{Quicktime\+STIKLookup}} (\$stik)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_ab94f3c4dec7ef1fe076d31ce6f5c88e5}{Quicktime\+IODSaudio\+Profile\+Name}} (\$audio\+\_\+profile\+\_\+id)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_aedea17921cd169e27e0f43a2236c9cb3}{Quicktime\+IODSvideo\+Profile\+Name}} (\$video\+\_\+profile\+\_\+id)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a35ead2a0584446f8cef2f09e5f01603e}{Quicktime\+Content\+Rating\+Lookup}} (\$rtng)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_ab693244d662c2c880bfd4afbc6f5a15f}{Quicktime\+Store\+Account\+Type\+Lookup}} (\$akid)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a77df0d2541afd268eb274c5f0ab647c8}{Quicktime\+Store\+Front\+Code\+Lookup}} (\$sfid)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a2294e4778d3e6e544de62aa6209152f9}{Copy\+To\+Appropriate\+Comments\+Section}} (\$keyname, \$data, \$boxname=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a5e8ace43cd4fac2c459494deb3a07cfe}{Loci\+String}} (\$lstring, \&\$count)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a04a450dd5b950e8960eede5585616c99}{No\+Null\+String}} (\$nullterminatedstring)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_af989733a7313114ac3f2a697aa736315}{Pascal2\+String}} (\$pascalstring)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_ad1b58dd367ba2da8e7b1097c2ea6d6c7}{Maybe\+Pascal2\+String}} (\$pascalstring)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_af38d3702357f0297405ded977cf4a817}{search\+\_\+tag\+\_\+by\+\_\+key}} (\$info, \$tag, \$history, \&\$result)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a90c32f93ba461940b9cb5740d229e57f}{search\+\_\+tag\+\_\+by\+\_\+pair}} (\$info, \$k, \$v, \$history, \&\$result)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_ad902d53402d12b88f0f28fd554f1b824}{quicktime\+\_\+time\+\_\+to\+\_\+sample\+\_\+table}} (\$info)
+\item 
+\mbox{\hyperlink{classgetid3__quicktime_a24b0ebc47d8ce0144b877dc97c655b54}{quicktime\+\_\+bookmark\+\_\+time\+\_\+scale}} (\$info)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__quicktime_aebe04d8f8e157793b1783c377e4d0f58}\label{classgetid3__quicktime_aebe04d8f8e157793b1783c377e4d0f58} 
+{\bfseries \$\+Return\+Atom\+Data} = true
+\item 
+\Hypertarget{classgetid3__quicktime_a4515536f420f8ef5a2d3c57c2268ab3e}\label{classgetid3__quicktime_a4515536f420f8ef5a2d3c57c2268ab3e} 
+{\bfseries \$\+Parse\+All\+Possible\+Atoms} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__quicktime_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_quicktime@{getid3\_quicktime}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__quicktime_a2294e4778d3e6e544de62aa6209152f9}\index{getid3\_quicktime@{getid3\_quicktime}!CopyToAppropriateCommentsSection@{CopyToAppropriateCommentsSection}}
+\index{CopyToAppropriateCommentsSection@{CopyToAppropriateCommentsSection}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{CopyToAppropriateCommentsSection()}{CopyToAppropriateCommentsSection()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a2294e4778d3e6e544de62aa6209152f9} 
+Copy\+To\+Appropriate\+Comments\+Section (\begin{DoxyParamCaption}\item[{}]{\$keyname}{, }\item[{}]{\$data}{, }\item[{}]{\$boxname}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$keyname} & \\
+\hline
+string | array & {\em \$data} & \\
+\hline
+string & {\em \$boxname} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_a5e8ace43cd4fac2c459494deb3a07cfe}\index{getid3\_quicktime@{getid3\_quicktime}!LociString@{LociString}}
+\index{LociString@{LociString}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{LociString()}{LociString()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a5e8ace43cd4fac2c459494deb3a07cfe} 
+Loci\+String (\begin{DoxyParamCaption}\item[{}]{\$lstring}{, }\item[{\&}]{\$count}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$lstring} & \\
+\hline
+int & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_ad1b58dd367ba2da8e7b1097c2ea6d6c7}\index{getid3\_quicktime@{getid3\_quicktime}!MaybePascal2String@{MaybePascal2String}}
+\index{MaybePascal2String@{MaybePascal2String}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{MaybePascal2String()}{MaybePascal2String()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_ad1b58dd367ba2da8e7b1097c2ea6d6c7} 
+Maybe\+Pascal2\+String (\begin{DoxyParamCaption}\item[{}]{\$pascalstring}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pascalstring} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_a04a450dd5b950e8960eede5585616c99}\index{getid3\_quicktime@{getid3\_quicktime}!NoNullString@{NoNullString}}
+\index{NoNullString@{NoNullString}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{NoNullString()}{NoNullString()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a04a450dd5b950e8960eede5585616c99} 
+No\+Null\+String (\begin{DoxyParamCaption}\item[{}]{\$nullterminatedstring}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$nullterminatedstring} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_af989733a7313114ac3f2a697aa736315}\index{getid3\_quicktime@{getid3\_quicktime}!Pascal2String@{Pascal2String}}
+\index{Pascal2String@{Pascal2String}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{Pascal2String()}{Pascal2String()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_af989733a7313114ac3f2a697aa736315} 
+Pascal2\+String (\begin{DoxyParamCaption}\item[{}]{\$pascalstring}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pascalstring} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_a24b0ebc47d8ce0144b877dc97c655b54}\index{getid3\_quicktime@{getid3\_quicktime}!quicktime\_bookmark\_time\_scale@{quicktime\_bookmark\_time\_scale}}
+\index{quicktime\_bookmark\_time\_scale@{quicktime\_bookmark\_time\_scale}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{quicktime\_bookmark\_time\_scale()}{quicktime\_bookmark\_time\_scale()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a24b0ebc47d8ce0144b877dc97c655b54} 
+quicktime\+\_\+bookmark\+\_\+time\+\_\+scale (\begin{DoxyParamCaption}\item[{}]{\$info}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_a1377bddcbd08dd9d22b5387a65252cd9}\index{getid3\_quicktime@{getid3\_quicktime}!quicktime\_read\_mp4\_descr\_length@{quicktime\_read\_mp4\_descr\_length}}
+\index{quicktime\_read\_mp4\_descr\_length@{quicktime\_read\_mp4\_descr\_length}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{quicktime\_read\_mp4\_descr\_length()}{quicktime\_read\_mp4\_descr\_length()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a1377bddcbd08dd9d22b5387a65252cd9} 
+quicktime\+\_\+read\+\_\+mp4\+\_\+descr\+\_\+length (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{\&}]{\$offset}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+int & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_ad902d53402d12b88f0f28fd554f1b824}\index{getid3\_quicktime@{getid3\_quicktime}!quicktime\_time\_to\_sample\_table@{quicktime\_time\_to\_sample\_table}}
+\index{quicktime\_time\_to\_sample\_table@{quicktime\_time\_to\_sample\_table}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{quicktime\_time\_to\_sample\_table()}{quicktime\_time\_to\_sample\_table()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_ad902d53402d12b88f0f28fd554f1b824} 
+quicktime\+\_\+time\+\_\+to\+\_\+sample\+\_\+table (\begin{DoxyParamCaption}\item[{}]{\$info}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_a20ef1d4daaa4a93d937c32d32563747e}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeAudioCodecLookup@{QuicktimeAudioCodecLookup}}
+\index{QuicktimeAudioCodecLookup@{QuicktimeAudioCodecLookup}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeAudioCodecLookup()}{QuicktimeAudioCodecLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a20ef1d4daaa4a93d937c32d32563747e} 
+Quicktime\+Audio\+Codec\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$codecid}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$codecid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_af0090dff67e09dafd84629d0cdb78747}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeColorNameLookup@{QuicktimeColorNameLookup}}
+\index{QuicktimeColorNameLookup@{QuicktimeColorNameLookup}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeColorNameLookup()}{QuicktimeColorNameLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_af0090dff67e09dafd84629d0cdb78747} 
+Quicktime\+Color\+Name\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$colordepthid}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$colordepthid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_a35ead2a0584446f8cef2f09e5f01603e}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeContentRatingLookup@{QuicktimeContentRatingLookup}}
+\index{QuicktimeContentRatingLookup@{QuicktimeContentRatingLookup}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeContentRatingLookup()}{QuicktimeContentRatingLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a35ead2a0584446f8cef2f09e5f01603e} 
+Quicktime\+Content\+Rating\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$rtng}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rtng} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_aa41c5ab7bda5ab88344632d9e3f351f5}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeDCOMLookup@{QuicktimeDCOMLookup}}
+\index{QuicktimeDCOMLookup@{QuicktimeDCOMLookup}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeDCOMLookup()}{QuicktimeDCOMLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_aa41c5ab7bda5ab88344632d9e3f351f5} 
+Quicktime\+DCOMLookup (\begin{DoxyParamCaption}\item[{}]{\$compressionid}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$compressionid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_ab94f3c4dec7ef1fe076d31ce6f5c88e5}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeIODSaudioProfileName@{QuicktimeIODSaudioProfileName}}
+\index{QuicktimeIODSaudioProfileName@{QuicktimeIODSaudioProfileName}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeIODSaudioProfileName()}{QuicktimeIODSaudioProfileName()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_ab94f3c4dec7ef1fe076d31ce6f5c88e5} 
+Quicktime\+IODSaudio\+Profile\+Name (\begin{DoxyParamCaption}\item[{}]{\$audio\+\_\+profile\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$audio\+\_\+profile\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_aedea17921cd169e27e0f43a2236c9cb3}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeIODSvideoProfileName@{QuicktimeIODSvideoProfileName}}
+\index{QuicktimeIODSvideoProfileName@{QuicktimeIODSvideoProfileName}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeIODSvideoProfileName()}{QuicktimeIODSvideoProfileName()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_aedea17921cd169e27e0f43a2236c9cb3} 
+Quicktime\+IODSvideo\+Profile\+Name (\begin{DoxyParamCaption}\item[{}]{\$video\+\_\+profile\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$video\+\_\+profile\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_ad839ff51093f157b8719af72f55c40b2}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeLanguageLookup@{QuicktimeLanguageLookup}}
+\index{QuicktimeLanguageLookup@{QuicktimeLanguageLookup}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeLanguageLookup()}{QuicktimeLanguageLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_ad839ff51093f157b8719af72f55c40b2} 
+Quicktime\+Language\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$languageid}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$languageid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_ac61f0f9414a000495195a44bc6fc54a0}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeParseAtom@{QuicktimeParseAtom}}
+\index{QuicktimeParseAtom@{QuicktimeParseAtom}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeParseAtom()}{QuicktimeParseAtom()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_ac61f0f9414a000495195a44bc6fc54a0} 
+Quicktime\+Parse\+Atom (\begin{DoxyParamCaption}\item[{}]{\$atomname}{, }\item[{}]{\$atomsize}{, }\item[{}]{\$atom\+\_\+data}{, }\item[{}]{\$baseoffset}{, }\item[{\&}]{\$atom\+Hierarchy}{, }\item[{}]{\$\+Parse\+All\+Possible\+Atoms}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$atomname} & \\
+\hline
+int & {\em \$atomsize} & \\
+\hline
+string & {\em \$atom\+\_\+data} & \\
+\hline
+int & {\em \$baseoffset} & \\
+\hline
+array & {\em \$atom\+Hierarchy} & \\
+\hline
+bool & {\em \$\+Parse\+All\+Possible\+Atoms} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_a26d85d7e9b6149f1fb55002a99cfff6f}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeParseContainerAtom@{QuicktimeParseContainerAtom}}
+\index{QuicktimeParseContainerAtom@{QuicktimeParseContainerAtom}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeParseContainerAtom()}{QuicktimeParseContainerAtom()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a26d85d7e9b6149f1fb55002a99cfff6f} 
+Quicktime\+Parse\+Container\+Atom (\begin{DoxyParamCaption}\item[{}]{\$atom\+\_\+data}{, }\item[{}]{\$baseoffset}{, }\item[{\&}]{\$atom\+Hierarchy}{, }\item[{}]{\$\+Parse\+All\+Possible\+Atoms}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$atom\+\_\+data} & \\
+\hline
+int & {\em \$baseoffset} & \\
+\hline
+array & {\em \$atom\+Hierarchy} & \\
+\hline
+bool & {\em \$\+Parse\+All\+Possible\+Atoms} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_ae4e75cb9ac8e5bd868252a39fba9532f}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeSTIKLookup@{QuicktimeSTIKLookup}}
+\index{QuicktimeSTIKLookup@{QuicktimeSTIKLookup}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeSTIKLookup()}{QuicktimeSTIKLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_ae4e75cb9ac8e5bd868252a39fba9532f} 
+Quicktime\+STIKLookup (\begin{DoxyParamCaption}\item[{}]{\$stik}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$stik} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_ab693244d662c2c880bfd4afbc6f5a15f}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeStoreAccountTypeLookup@{QuicktimeStoreAccountTypeLookup}}
+\index{QuicktimeStoreAccountTypeLookup@{QuicktimeStoreAccountTypeLookup}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeStoreAccountTypeLookup()}{QuicktimeStoreAccountTypeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_ab693244d662c2c880bfd4afbc6f5a15f} 
+Quicktime\+Store\+Account\+Type\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$akid}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$akid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_a77df0d2541afd268eb274c5f0ab647c8}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeStoreFrontCodeLookup@{QuicktimeStoreFrontCodeLookup}}
+\index{QuicktimeStoreFrontCodeLookup@{QuicktimeStoreFrontCodeLookup}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeStoreFrontCodeLookup()}{QuicktimeStoreFrontCodeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a77df0d2541afd268eb274c5f0ab647c8} 
+Quicktime\+Store\+Front\+Code\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$sfid}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$sfid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_ac6df809b10e59a19f535ecb1937e9608}\index{getid3\_quicktime@{getid3\_quicktime}!QuicktimeVideoCodecLookup@{QuicktimeVideoCodecLookup}}
+\index{QuicktimeVideoCodecLookup@{QuicktimeVideoCodecLookup}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{QuicktimeVideoCodecLookup()}{QuicktimeVideoCodecLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_ac6df809b10e59a19f535ecb1937e9608} 
+Quicktime\+Video\+Codec\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$codecid}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$codecid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__quicktime_af38d3702357f0297405ded977cf4a817}\index{getid3\_quicktime@{getid3\_quicktime}!search\_tag\_by\_key@{search\_tag\_by\_key}}
+\index{search\_tag\_by\_key@{search\_tag\_by\_key}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{search\_tag\_by\_key()}{search\_tag\_by\_key()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_af38d3702357f0297405ded977cf4a817} 
+search\+\_\+tag\+\_\+by\+\_\+key (\begin{DoxyParamCaption}\item[{}]{\$info}{, }\item[{}]{\$tag}{, }\item[{}]{\$history}{, }\item[{\&}]{\$result}{}\end{DoxyParamCaption})}
+
+Helper functions for m4b audiobook chapters code by Steffen Hartmann 2015-\/Nov-\/08.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \\
+\hline
+string & {\em \$tag} & \\
+\hline
+string & {\em \$history} & \\
+\hline
+array & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgetid3__quicktime_a90c32f93ba461940b9cb5740d229e57f}\index{getid3\_quicktime@{getid3\_quicktime}!search\_tag\_by\_pair@{search\_tag\_by\_pair}}
+\index{search\_tag\_by\_pair@{search\_tag\_by\_pair}!getid3\_quicktime@{getid3\_quicktime}}
+\doxysubsubsection{\texorpdfstring{search\_tag\_by\_pair()}{search\_tag\_by\_pair()}}
+{\footnotesize\ttfamily \label{classgetid3__quicktime_a90c32f93ba461940b9cb5740d229e57f} 
+search\+\_\+tag\+\_\+by\+\_\+pair (\begin{DoxyParamCaption}\item[{}]{\$info}{, }\item[{}]{\$k}{, }\item[{}]{\$v}{, }\item[{}]{\$history}{, }\item[{\&}]{\$result}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \\
+\hline
+string & {\em \$k} & \\
+\hline
+string & {\em \$v} & \\
+\hline
+string & {\em \$history} & \\
+\hline
+array & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+audio-\/video.\+quicktime.\+php\end{DoxyCompactItemize}

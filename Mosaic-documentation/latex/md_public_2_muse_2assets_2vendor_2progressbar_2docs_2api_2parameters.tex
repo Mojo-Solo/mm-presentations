@@ -1,0 +1,109 @@
+\chapter{Easing}
+\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters}{}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters}\index{Easing@{Easing}}
+\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters_autotoc_md167}%
+\Hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters_autotoc_md167}%
+ Easing functions \href{https://github.com/jeremyckahn/shifty/blob/master/src/shifty.formulas.js}{\texttt{ provided with {\itshape shifty} are supported}}.
+
+A few basic easing options\+:
+
+
+\begin{DoxyItemize}
+\item `\textquotesingle{}linear'{\ttfamily  \texorpdfstring{$\ast$}{*}}\textquotesingle{}ease\+In\textquotesingle{}{\ttfamily  \texorpdfstring{$\ast$}{*}}\textquotesingle{}ease\+Out\textquotesingle{}{\ttfamily  \texorpdfstring{$\ast$}{*}}\textquotesingle{}ease\+In\+Out\textquotesingle{}\`{}
+\end{DoxyItemize}
+
+You can also provide an custom easing function.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters_autotoc_md168}{}\doxysection{\texorpdfstring{\{custom-\/animations\} Custom animations}{\{custom-\/animations\} Custom animations}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters_autotoc_md168}
+See \href{https://kimmobrunfeldt.github.io/progressbar.js\#example-custom-animation}{\texttt{ example in demo page}}.
+
+Customizing animations is possible with the help of {\ttfamily from}, {\ttfamily to} and {\ttfamily step} parameters. Tweening engine changes defined values over time and calls step function for each animation\textquotesingle{}s frame.
+
+!!! note There\textquotesingle{}s a big difference between passing the {\ttfamily from} and {\ttfamily to} parameters in initialization of progress bar compared to passing in {\ttfamily .animate()} call. Here\textquotesingle{}s example code and illustrations to explain the difference\+:
+
+{\bfseries{Pass in initialization}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ bar\ =\ new\ ProgressBar.Line('\#container',\ \{}
+\DoxyCodeLine{\ \ \ \ from:\ \{\ color:\ '\#000\ '\},}
+\DoxyCodeLine{\ \ \ \ to:\ \{\ color:\ '\#888\ '\},}
+\DoxyCodeLine{\ \ \ \ step:\ function(state,\ bar,\ attachment)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ bar.path.setAttribute('stroke',\ state.color);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+
+
+{\bfseries{Pass in {\ttfamily .animate()} call}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ bar\ =\ new\ ProgressBar.Line('\#container',\ \{}
+\DoxyCodeLine{\ \ \ \ step:\ function(state,\ bar,\ attachment)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ bar.path.setAttribute('stroke',\ state.color);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ opts\ =\ \{}
+\DoxyCodeLine{\ \ \ \ from:\ \{\ color:\ '\#000\ '\},}
+\DoxyCodeLine{\ \ \ \ to:\ \{\ color:\ '\#888'\}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{bar.animate(0.5,\ opts);}
+
+\end{DoxyCode}
+
+
+\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters_autotoc_md169}{}\doxysubsection{\texorpdfstring{{\ttfamily from} parameter}{{\ttfamily from} parameter}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters_autotoc_md169}
+Object containing values which should be tweened.
+
+These values represent the starting values of the animation. Default\+: {\ttfamily \{\}}.
+
+For example
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ //\ Start\ from\ thin\ gray\ line}
+\DoxyCodeLine{\ \ \ \ width:\ 0.1,}
+\DoxyCodeLine{\ \ \ \ color:\ '\#eee'}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Thanks to shifty, you can tween values in formats like {\ttfamily translate\+X(45px)}, {\ttfamily rgb(0,255,0)} and {\ttfamily \#fff}. See all supported string formats from \href{http://jeremyckahn.github.io/shifty/dist/doc/modules/Tweenable.token.html}{\texttt{ shifty\textquotesingle{}s documentation}}
+
+Easing defined as option for animation applies to all of the specified values.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters_autotoc_md170}{}\doxysubsection{\texorpdfstring{{\ttfamily to} parameter}{{\ttfamily to} parameter}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters_autotoc_md170}
+Object containing values which should be tweened. These represent the final values after animation is done. Default\+: {\ttfamily \{\}}.
+
+For example
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ //\ Finish\ to\ thick\ black\ line}
+\DoxyCodeLine{\ \ \ \ width:\ 1,}
+\DoxyCodeLine{\ \ \ \ color:\ '\#000'}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+{\itshape Signature must match {\ttfamily from}}\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters_autotoc_md171}{}\doxysubsection{\texorpdfstring{{\ttfamily step} parameter}{{\ttfamily step} parameter}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2parameters_autotoc_md171}
+Function called for each animation step. Tweened values, a reference to the path or shape, and an attachment are passed as parameters. Attachment can be reference to any object you need to modify within step function. Default\+: {\ttfamily function() \{\}}.
+
+!!! warning This function is called multiple times per second. To make sure animations run smoothly, keep it minimal.
+
+For example
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{function(state,\ shape,\ attachment)\ \{}
+\DoxyCodeLine{\ \ \ \ shape.path.setAttribute('stroke-\/width',\ state.width);}
+\DoxyCodeLine{\ \ \ \ shape.path.setAttribute('stroke',\ state.color);}
+\DoxyCodeLine{\ \ \ \ attachment.text.innerHTML\ =\ shape.value()\ *\ 100;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 

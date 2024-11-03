@@ -1,0 +1,265 @@
+\doxysection{getid3\+\_\+cue Class Reference}
+\hypertarget{classgetid3__cue}{}\label{classgetid3__cue}\index{getid3\_cue@{getid3\_cue}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+
+
+Inheritance diagram for getid3\+\_\+cue\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+cue\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__cue_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\item 
+\mbox{\hyperlink{classgetid3__cue_a153032eb65e8650bfd393b0e615561b3}{read\+Cue\+Sheet\+Filename}} (\$filename)
+\item 
+\mbox{\hyperlink{classgetid3__cue_a26e125107c2e05b64aac71e82c094ebc}{read\+Cue\+Sheet}} (\&\$filedata)
+\item 
+\mbox{\hyperlink{classgetid3__cue_a29974a065776be3ace20b480b5c768c4}{parse\+Cue\+Sheet}} (\$file)
+\item 
+\mbox{\hyperlink{classgetid3__cue_a58009381f7f4d3b23919b54340e621cb}{parse\+Comment}} (\$line, \$track\+\_\+on)
+\item 
+\mbox{\hyperlink{classgetid3__cue_a089b24627239e4c4a4442d50604fb426}{parse\+File}} (\$line)
+\item 
+\mbox{\hyperlink{classgetid3__cue_a74f16320f2e6a5793e39fb172d86eebb}{parse\+Flags}} (\$line, \$track\+\_\+on)
+\item 
+\mbox{\hyperlink{classgetid3__cue_a309d17840ff73b2d263f17622c9bf0f8}{parse\+Garbage}} (\$line, \$track\+\_\+on)
+\item 
+\mbox{\hyperlink{classgetid3__cue_aa8b9bb77be489e6e5e9ee6d1deca4ff6}{parse\+Index}} (\$line, \$track\+\_\+on)
+\item 
+\mbox{\hyperlink{classgetid3__cue_a70f9e379bd341cbe2998acf6c2149692}{parse\+String}} (\$line, \$track\+\_\+on)
+\item 
+\mbox{\hyperlink{classgetid3__cue_a599623cc69c1fa177b0058f1eda9dffa}{parse\+Track}} (\$line, \$track\+\_\+on)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__cue_ac580a89e0e729bc437e0aa306c41f57d}\label{classgetid3__cue_ac580a89e0e729bc437e0aa306c41f57d} 
+{\bfseries \$cuesheet} = array()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+A Cue\+Sheet class used to open and parse cuesheets. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__cue_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_cue@{getid3\_cue}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__cue_a58009381f7f4d3b23919b54340e621cb}\index{getid3\_cue@{getid3\_cue}!parseComment@{parseComment}}
+\index{parseComment@{parseComment}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{parseComment()}{parseComment()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_a58009381f7f4d3b23919b54340e621cb} 
+parse\+Comment (\begin{DoxyParamCaption}\item[{}]{\$line}{, }\item[{}]{\$track\+\_\+on}{}\end{DoxyParamCaption})}
+
+Parses the REM command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & -\/ The line in the cue file that contains the TRACK command. \\
+\hline
+integer & {\em \$track\+\_\+on} & -\/ The track currently processing. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgetid3__cue_a29974a065776be3ace20b480b5c768c4}\index{getid3\_cue@{getid3\_cue}!parseCueSheet@{parseCueSheet}}
+\index{parseCueSheet@{parseCueSheet}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{parseCueSheet()}{parseCueSheet()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_a29974a065776be3ace20b480b5c768c4} 
+parse\+Cue\+Sheet (\begin{DoxyParamCaption}\item[{}]{\$file}{}\end{DoxyParamCaption})}
+
+Parses the cue sheet array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$file} & -\/ The cuesheet as an array of each line. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgetid3__cue_a089b24627239e4c4a4442d50604fb426}\index{getid3\_cue@{getid3\_cue}!parseFile@{parseFile}}
+\index{parseFile@{parseFile}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{parseFile()}{parseFile()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_a089b24627239e4c4a4442d50604fb426} 
+parse\+File (\begin{DoxyParamCaption}\item[{}]{\$line}{}\end{DoxyParamCaption})}
+
+Parses the FILE command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & -\/ The line in the cue file that contains the FILE command.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array -\/ Array of FILENAME and TYPE of file.. 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__cue_a74f16320f2e6a5793e39fb172d86eebb}\index{getid3\_cue@{getid3\_cue}!parseFlags@{parseFlags}}
+\index{parseFlags@{parseFlags}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{parseFlags()}{parseFlags()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_a74f16320f2e6a5793e39fb172d86eebb} 
+parse\+Flags (\begin{DoxyParamCaption}\item[{}]{\$line}{, }\item[{}]{\$track\+\_\+on}{}\end{DoxyParamCaption})}
+
+Parses the FLAG command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & -\/ The line in the cue file that contains the TRACK command. \\
+\hline
+integer & {\em \$track\+\_\+on} & -\/ The track currently processing. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgetid3__cue_a309d17840ff73b2d263f17622c9bf0f8}\index{getid3\_cue@{getid3\_cue}!parseGarbage@{parseGarbage}}
+\index{parseGarbage@{parseGarbage}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{parseGarbage()}{parseGarbage()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_a309d17840ff73b2d263f17622c9bf0f8} 
+parse\+Garbage (\begin{DoxyParamCaption}\item[{}]{\$line}{, }\item[{}]{\$track\+\_\+on}{}\end{DoxyParamCaption})}
+
+Collect any unidentified data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & -\/ The line in the cue file that contains the TRACK command. \\
+\hline
+integer & {\em \$track\+\_\+on} & -\/ The track currently processing. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgetid3__cue_aa8b9bb77be489e6e5e9ee6d1deca4ff6}\index{getid3\_cue@{getid3\_cue}!parseIndex@{parseIndex}}
+\index{parseIndex@{parseIndex}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{parseIndex()}{parseIndex()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_aa8b9bb77be489e6e5e9ee6d1deca4ff6} 
+parse\+Index (\begin{DoxyParamCaption}\item[{}]{\$line}{, }\item[{}]{\$track\+\_\+on}{}\end{DoxyParamCaption})}
+
+Parses the INDEX command of a TRACK.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & -\/ The line in the cue file that contains the TRACK command. \\
+\hline
+integer & {\em \$track\+\_\+on} & -\/ The track currently processing. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgetid3__cue_a70f9e379bd341cbe2998acf6c2149692}\index{getid3\_cue@{getid3\_cue}!parseString@{parseString}}
+\index{parseString@{parseString}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{parseString()}{parseString()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_a70f9e379bd341cbe2998acf6c2149692} 
+parse\+String (\begin{DoxyParamCaption}\item[{}]{\$line}{, }\item[{}]{\$track\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & \\
+\hline
+int & {\em \$track\+\_\+on} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgetid3__cue_a599623cc69c1fa177b0058f1eda9dffa}\index{getid3\_cue@{getid3\_cue}!parseTrack@{parseTrack}}
+\index{parseTrack@{parseTrack}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{parseTrack()}{parseTrack()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_a599623cc69c1fa177b0058f1eda9dffa} 
+parse\+Track (\begin{DoxyParamCaption}\item[{}]{\$line}{, }\item[{}]{\$track\+\_\+on}{}\end{DoxyParamCaption})}
+
+Parses the TRACK command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & -\/ The line in the cue file that contains the TRACK command. \\
+\hline
+integer & {\em \$track\+\_\+on} & -\/ The track currently processing. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgetid3__cue_a26e125107c2e05b64aac71e82c094ebc}\index{getid3\_cue@{getid3\_cue}!readCueSheet@{readCueSheet}}
+\index{readCueSheet@{readCueSheet}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{readCueSheet()}{readCueSheet()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_a26e125107c2e05b64aac71e82c094ebc} 
+read\+Cue\+Sheet (\begin{DoxyParamCaption}\item[{\&}]{\$filedata}{}\end{DoxyParamCaption})}
+
+Parses a cue sheet file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filedata} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__cue_a153032eb65e8650bfd393b0e615561b3}\index{getid3\_cue@{getid3\_cue}!readCueSheetFilename@{readCueSheetFilename}}
+\index{readCueSheetFilename@{readCueSheetFilename}!getid3\_cue@{getid3\_cue}}
+\doxysubsubsection{\texorpdfstring{readCueSheetFilename()}{readCueSheetFilename()}}
+{\footnotesize\ttfamily \label{classgetid3__cue_a153032eb65e8650bfd393b0e615561b3} 
+read\+Cue\+Sheet\+Filename (\begin{DoxyParamCaption}\item[{}]{\$filename}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+misc.\+cue.\+php\end{DoxyCompactItemize}

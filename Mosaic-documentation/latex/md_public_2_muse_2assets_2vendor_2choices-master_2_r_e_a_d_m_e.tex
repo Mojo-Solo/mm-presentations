@@ -1,0 +1,963 @@
+\chapter{Choices.\+js \texorpdfstring{$<$}{<}a href="{}https\+://github.\+com/jshjohnson/\+Choices/actions"{} \texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}img src="{}https\+://github.\+com/jshjohnson/\+Choices/workflows/\+Build\%20and\%20test/badge.\+svg"{} alt="{}\+Actions Status"{}/\texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}/a\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}a href="{}https\+://github.\+com/jshjohnson/\+Choices/actions"{} \texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}img src="{}https\+://github.\+com/jshjohnson/\+Choices/workflows/\+Bundle\%20size\%20checks/badge.\+svg"{} alt="{}\+Actions Status"{}/\texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}/a\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}a href="{}https\+://www.\+npmjs.\+com/package/choices.\+js"{} \texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}img src="{}https\+://img.\+shields.\+io/npm/v/choices.\+js.\+svg"{} alt="{}npm"{}/\texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}/a\texorpdfstring{$>$}{>}}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e}{}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e}\index{Choices.js $<$a href="{}https://github.com/jshjohnson/Choices/actions"{} $>$$<$img src="{}https://github.com/jshjohnson/Choices/workflows/Build\%20and\%20test/badge.svg"{} alt="{}Actions Status"{}/$>$$<$/a$>$ $<$a href="{}https://github.com/jshjohnson/Choices/actions"{} $>$$<$img src="{}https://github.com/jshjohnson/Choices/workflows/Bundle\%20size\%20checks/badge.svg"{} alt="{}Actions Status"{}/$>$$<$/a$>$ $<$a href="{}https://www.npmjs.com/package/choices.js"{} $>$$<$img src="{}https://img.shields.io/npm/v/choices.js.svg"{} alt="{}npm"{}/$>$$<$/a$>$@{Choices.js $<$a href=""https://github.com/jshjohnson/Choices/actions"" $>$$<$img src=""https://github.com/jshjohnson/Choices/workflows/Build\%20and\%20test/badge.svg"" alt=""Actions Status""/$>$$<$/a$>$ $<$a href=""https://github.com/jshjohnson/Choices/actions"" $>$$<$img src=""https://github.com/jshjohnson/Choices/workflows/Bundle\%20size\%20checks/badge.svg"" alt=""Actions Status""/$>$$<$/a$>$ $<$a href=""https://www.npmjs.com/package/choices.js"" $>$$<$img src=""https://img.shields.io/npm/v/choices.js.svg"" alt=""npm""/$>$$<$/a$>$}}
+\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md70}%
+\Hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md70}%
+ \DoxyHorRuler{0}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md72}{}\doxysubsection{\texorpdfstring{I\textquotesingle{}m looking for active maintainers for this project as I no longer have the time to support it. Please get in touch if you\textquotesingle{}re interested 👍}{I\textquotesingle{}m looking for active maintainers for this project as I no longer have the time to support it. Please get in touch if you\textquotesingle{}re interested 👍}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md72}
+\DoxyHorRuler{0}
+
+
+A vanilla, lightweight (\texorpdfstring{$\sim$}{\string~}19kb gzipped 🎉), configurable select box/text input plugin. Similar to Select2 and Selectize but without the j\+Query dependency.
+
+\href{https://joshuajohnson.co.uk/Choices/}{\texttt{ Demo}}\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md74}{}\doxysection{\texorpdfstring{TL;DR}{TL;DR}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md74}
+
+\begin{DoxyItemize}
+\item Lightweight
+\item No j\+Query dependency
+\item Configurable sorting
+\item Flexible styling
+\item Fast search/filtering
+\item Clean API
+\item Right-\/to-\/left support
+\item Custom templates
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md76}{}\doxysubsection{\texorpdfstring{Interested in writing your own ES6 Java\+Script plugins? Check out \href{https://ES6.io/friend/JOHNSON}{\texttt{ ES6.\+io}} for great tutorials! 💪🏼}{Interested in writing your own ES6 Java\+Script plugins? Check out \href{https://ES6.io/friend/JOHNSON}{\texttt{ ES6.\+io}} for great tutorials! 💪🏼}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md76}
+\DoxyHorRuler{0}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md78}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md78}
+With \href{https://www.npmjs.com/package/choices.js}{\texttt{ NPM}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ install\ choices.js}
+
+\end{DoxyCode}
+
+
+With \href{https://yarnpkg.com/}{\texttt{ Yarn}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{yarn\ add\ choices.js}
+
+\end{DoxyCode}
+
+
+From a \href{https://www.jsdelivr.com/package/npm/choices.js}{\texttt{ CDN}}\+:
+
+{\bfseries{Note\+:}} There is sometimes a delay before the latest version of Choices is reflected on the CDN.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<!-\/-\/\ Include\ base\ CSS\ (optional)\ -\/-\/>}
+\DoxyCodeLine{<link}
+\DoxyCodeLine{\ \ rel="{}stylesheet"{}}
+\DoxyCodeLine{\ \ href="{}https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"{}}
+\DoxyCodeLine{/>}
+\DoxyCodeLine{<!-\/-\/\ Or\ versioned\ -\/-\/>}
+\DoxyCodeLine{<link}
+\DoxyCodeLine{\ \ rel="{}stylesheet"{}}
+\DoxyCodeLine{\ \ href="{}https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/base.min.css"{}}
+\DoxyCodeLine{/>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<!-\/-\/\ Include\ Choices\ CSS\ -\/-\/>}
+\DoxyCodeLine{<link}
+\DoxyCodeLine{\ \ rel="{}stylesheet"{}}
+\DoxyCodeLine{\ \ href="{}https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"{}}
+\DoxyCodeLine{/>}
+\DoxyCodeLine{<!-\/-\/\ Or\ versioned\ -\/-\/>}
+\DoxyCodeLine{<link}
+\DoxyCodeLine{\ \ rel="{}stylesheet"{}}
+\DoxyCodeLine{\ \ href="{}https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"{}}
+\DoxyCodeLine{/>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<!-\/-\/\ Include\ Choices\ JavaScript\ (latest)\ -\/-\/>}
+\DoxyCodeLine{<script\ src="{}https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"{}></script>}
+\DoxyCodeLine{<!-\/-\/\ Or\ versioned\ -\/-\/>}
+\DoxyCodeLine{<script\ src="{}https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"{}></script>}
+
+\end{DoxyCode}
+
+
+Or include Choices directly\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<!-\/-\/\ Include\ base\ CSS\ (optional)\ -\/-\/>}
+\DoxyCodeLine{<link\ rel="{}stylesheet"{}\ href="{}public/assets/styles/base.min.css"{}\ />}
+\DoxyCodeLine{<!-\/-\/\ Include\ Choices\ CSS\ -\/-\/>}
+\DoxyCodeLine{<link\ rel="{}stylesheet"{}\ href="{}public/assets/styles/choices.min.css"{}\ />}
+\DoxyCodeLine{<!-\/-\/\ Include\ Choices\ JavaScript\ -\/-\/>}
+\DoxyCodeLine{<script\ src="{}/public/assets/scripts/choices.min.js"{}></script>}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md79}{}\doxysection{\texorpdfstring{Setup}{Setup}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md79}
+{\bfseries{Note\+:}} If you pass a selector which targets multiple elements, the first matching element will be used. Versions prior to 8.\+x.\+x would return multiple Choices instances.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ Pass\ single\ element}
+\DoxyCodeLine{const\ element\ =\ document.querySelector('.js-\/choice');}
+\DoxyCodeLine{const\ choices\ =\ new\ Choices(element);}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ Pass\ reference}
+\DoxyCodeLine{const\ choices\ =\ new\ Choices('[data-\/trigger]');}
+\DoxyCodeLine{const\ choices\ =\ new\ Choices('.js-\/choice');}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ Pass\ jQuery\ element}
+\DoxyCodeLine{const\ choices\ =\ new\ Choices(\$('.js-\/choice')[0]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ Passing\ options\ (with\ default\ options)}
+\DoxyCodeLine{const\ choices\ =\ new\ Choices(element,\ \{}
+\DoxyCodeLine{\ \ silent:\ false,}
+\DoxyCodeLine{\ \ items:\ [],}
+\DoxyCodeLine{\ \ choices:\ [],}
+\DoxyCodeLine{\ \ renderChoiceLimit:\ -\/1,}
+\DoxyCodeLine{\ \ maxItemCount:\ -\/1,}
+\DoxyCodeLine{\ \ addItems:\ true,}
+\DoxyCodeLine{\ \ addItemFilter:\ null,}
+\DoxyCodeLine{\ \ removeItems:\ true,}
+\DoxyCodeLine{\ \ removeItemButton:\ false,}
+\DoxyCodeLine{\ \ editItems:\ false,}
+\DoxyCodeLine{\ \ duplicateItemsAllowed:\ true,}
+\DoxyCodeLine{\ \ delimiter:\ ',',}
+\DoxyCodeLine{\ \ paste:\ true,}
+\DoxyCodeLine{\ \ searchEnabled:\ true,}
+\DoxyCodeLine{\ \ searchChoices:\ true,}
+\DoxyCodeLine{\ \ searchFloor:\ 1,}
+\DoxyCodeLine{\ \ searchResultLimit:\ 4,}
+\DoxyCodeLine{\ \ searchFields:\ ['label',\ 'value'],}
+\DoxyCodeLine{\ \ position:\ 'auto',}
+\DoxyCodeLine{\ \ resetScrollPosition:\ true,}
+\DoxyCodeLine{\ \ shouldSort:\ true,}
+\DoxyCodeLine{\ \ shouldSortItems:\ false,}
+\DoxyCodeLine{\ \ sorter:\ ()\ =>\ \{...\},}
+\DoxyCodeLine{\ \ placeholder:\ true,}
+\DoxyCodeLine{\ \ placeholderValue:\ null,}
+\DoxyCodeLine{\ \ searchPlaceholderValue:\ null,}
+\DoxyCodeLine{\ \ prependValue:\ null,}
+\DoxyCodeLine{\ \ appendValue:\ null,}
+\DoxyCodeLine{\ \ renderSelectedChoices:\ 'auto',}
+\DoxyCodeLine{\ \ loadingText:\ 'Loading...',}
+\DoxyCodeLine{\ \ noResultsText:\ 'No\ results\ found',}
+\DoxyCodeLine{\ \ noChoicesText:\ 'No\ choices\ to\ choose\ from',}
+\DoxyCodeLine{\ \ itemSelectText:\ 'Press\ to\ select',}
+\DoxyCodeLine{\ \ addItemText:\ (value)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ return\ \`{}Press\ Enter\ to\ add\ <b>"{}\$\{value\}"{}</b>`;}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ maxItemText:\ (maxItemCount)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ return\ \`{}Only\ \$\{maxItemCount\}\ values\ can\ be\ added`;}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ valueComparer:\ (value1,\ value2)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ return\ value1\ ===\ value2;}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ classNames:\ \{}
+\DoxyCodeLine{\ \ \ \ containerOuter:\ 'choices',}
+\DoxyCodeLine{\ \ \ \ containerInner:\ 'choices\_\_inner',}
+\DoxyCodeLine{\ \ \ \ input:\ 'choices\_\_input',}
+\DoxyCodeLine{\ \ \ \ inputCloned:\ 'choices\_\_input-\/-\/cloned',}
+\DoxyCodeLine{\ \ \ \ list:\ 'choices\_\_list',}
+\DoxyCodeLine{\ \ \ \ listItems:\ 'choices\_\_list-\/-\/multiple',}
+\DoxyCodeLine{\ \ \ \ listSingle:\ 'choices\_\_list-\/-\/single',}
+\DoxyCodeLine{\ \ \ \ listDropdown:\ 'choices\_\_list-\/-\/dropdown',}
+\DoxyCodeLine{\ \ \ \ item:\ 'choices\_\_item',}
+\DoxyCodeLine{\ \ \ \ itemSelectable:\ 'choices\_\_item-\/-\/selectable',}
+\DoxyCodeLine{\ \ \ \ itemDisabled:\ 'choices\_\_item-\/-\/disabled',}
+\DoxyCodeLine{\ \ \ \ itemChoice:\ 'choices\_\_item-\/-\/choice',}
+\DoxyCodeLine{\ \ \ \ placeholder:\ 'choices\_\_placeholder',}
+\DoxyCodeLine{\ \ \ \ group:\ 'choices\_\_group',}
+\DoxyCodeLine{\ \ \ \ groupHeading:\ 'choices\_\_heading',}
+\DoxyCodeLine{\ \ \ \ button:\ 'choices\_\_button',}
+\DoxyCodeLine{\ \ \ \ activeState:\ 'is-\/active',}
+\DoxyCodeLine{\ \ \ \ focusState:\ 'is-\/focused',}
+\DoxyCodeLine{\ \ \ \ openState:\ 'is-\/open',}
+\DoxyCodeLine{\ \ \ \ disabledState:\ 'is-\/disabled',}
+\DoxyCodeLine{\ \ \ \ highlightedState:\ 'is-\/highlighted',}
+\DoxyCodeLine{\ \ \ \ selectedState:\ 'is-\/selected',}
+\DoxyCodeLine{\ \ \ \ flippedState:\ 'is-\/flipped',}
+\DoxyCodeLine{\ \ \ \ loadingState:\ 'is-\/loading',}
+\DoxyCodeLine{\ \ \ \ noResults:\ 'has-\/no-\/results',}
+\DoxyCodeLine{\ \ \ \ noChoices:\ 'has-\/no-\/choices'}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ //\ Choices\ uses\ the\ great\ Fuse\ library\ for\ searching.\ You}
+\DoxyCodeLine{\ \ //\ can\ find\ more\ options\ here:\ https://github.com/krisk/Fuse\#options}
+\DoxyCodeLine{\ \ fuseOptions:\ \{}
+\DoxyCodeLine{\ \ \ \ include:\ 'score'}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ callbackOnInit:\ null,}
+\DoxyCodeLine{\ \ callbackOnCreateTemplates:\ null}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md80}{}\doxysection{\texorpdfstring{Terminology}{Terminology}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md80}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Word   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Definition    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Word   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Definition    }\\\cline{1-2}
+\endhead
+Choice   &A choice is a value a user can select. A choice would be equivalent to the {\ttfamily \texorpdfstring{$<$}{<}option\texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}/option\texorpdfstring{$>$}{>}} element within a select input.    \\\cline{1-2}
+Group   &A group is a collection of choices. A group should be seen as equivalent to a {\ttfamily \texorpdfstring{$<$}{<}optgroup\texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}/optgroup\texorpdfstring{$>$}{>}} element within a select input.    \\\cline{1-2}
+Item   &An item is an inputted value (text input) or a selected choice (select element). In the context of a select element, an item is equivalent to a selected option element\+: {\ttfamily \texorpdfstring{$<$}{<}option value="{}\+Hello"{} selected\texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}/option\texorpdfstring{$>$}{>}} whereas in the context of a text input an item is equivalent to {\ttfamily \texorpdfstring{$<$}{<}input type="{}text"{} value="{}\+Hello"{}\texorpdfstring{$>$}{>}}   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md81}{}\doxysection{\texorpdfstring{Configuration options}{Configuration options}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md81}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md82}{}\doxysubsection{\texorpdfstring{silent}{silent}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md82}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily false}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/single}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Optionally suppress console errors and warnings.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md83}{}\doxysubsection{\texorpdfstring{items}{items}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md83}
+{\bfseries{Type\+:}} {\ttfamily Array} {\bfseries{Default\+:}} {\ttfamily \mbox{[}\mbox{]}}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} Add pre-\/selected items (see terminology) to text input.
+
+Pass an array of strings\+:
+
+`\mbox{[}\textquotesingle{}value 1', \textquotesingle{}value 2\textquotesingle{}, \textquotesingle{}value 3\textquotesingle{}\mbox{]}\`{}
+
+Pass an array of objects\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[\{}
+\DoxyCodeLine{\ \ value:\ 'Value\ 1',}
+\DoxyCodeLine{\ \ label:\ 'Label\ 1',}
+\DoxyCodeLine{\ \ id:\ 1}
+\DoxyCodeLine{\},}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ value:\ 'Value\ 2',}
+\DoxyCodeLine{\ \ label:\ 'Label\ 2',}
+\DoxyCodeLine{\ \ id:\ 2,}
+\DoxyCodeLine{\ \ customProperties:\ \{}
+\DoxyCodeLine{\ \ \ \ random:\ 'I\ am\ a\ custom\ property'}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}]}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md84}{}\doxysubsection{\texorpdfstring{choices}{choices}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md84}
+{\bfseries{Type\+:}} {\ttfamily Array} {\bfseries{Default\+:}} {\ttfamily \mbox{[}\mbox{]}}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Add choices (see terminology) to select input.
+
+Pass an array of objects\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[\{}
+\DoxyCodeLine{\ \ value:\ 'Option\ 1',}
+\DoxyCodeLine{\ \ label:\ 'Option\ 1',}
+\DoxyCodeLine{\ \ selected:\ true,}
+\DoxyCodeLine{\ \ disabled:\ false,}
+\DoxyCodeLine{\},}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ value:\ 'Option\ 2',}
+\DoxyCodeLine{\ \ label:\ 'Option\ 2',}
+\DoxyCodeLine{\ \ selected:\ false,}
+\DoxyCodeLine{\ \ disabled:\ true,}
+\DoxyCodeLine{\ \ customProperties:\ \{}
+\DoxyCodeLine{\ \ \ \ description:\ 'Custom\ description\ about\ Option\ 2',}
+\DoxyCodeLine{\ \ \ \ random:\ 'Another\ random\ custom\ property'}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\}]}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md85}{}\doxysubsection{\texorpdfstring{render\+Choice\+Limit}{render\+Choice\+Limit}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md85}
+{\bfseries{Type\+:}} {\ttfamily Number} {\bfseries{Default\+:}} {\ttfamily -\/1}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} The amount of choices to be rendered within the dropdown list ("{}-\/1"{} indicates no limit). This is useful if you have a lot of choices where it is easier for a user to use the search area to find a choice.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md86}{}\doxysubsection{\texorpdfstring{max\+Item\+Count}{max\+Item\+Count}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md86}
+{\bfseries{Type\+:}} {\ttfamily Number} {\bfseries{Default\+:}} {\ttfamily -\/1}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} The amount of items a user can input/select ("{}-\/1"{} indicates no limit).\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md87}{}\doxysubsection{\texorpdfstring{add\+Items}{add\+Items}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md87}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily true}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} Whether a user can add items.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md88}{}\doxysubsection{\texorpdfstring{remove\+Items}{remove\+Items}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md88}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily true}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Whether a user can remove items.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md89}{}\doxysubsection{\texorpdfstring{remove\+Item\+Button}{remove\+Item\+Button}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md89}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily false}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Whether each item should have a remove button.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md90}{}\doxysubsection{\texorpdfstring{edit\+Items}{edit\+Items}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md90}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily false}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} Whether a user can edit items. An item\textquotesingle{}s value can be edited by pressing the backspace.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md91}{}\doxysubsection{\texorpdfstring{duplicate\+Items\+Allowed}{duplicate\+Items\+Allowed}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md91}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily true}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Whether duplicate inputted/chosen items are allowed\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md92}{}\doxysubsection{\texorpdfstring{delimiter}{delimiter}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md92}
+{\bfseries{Type\+:}} {\ttfamily String} {\bfseries{Default\+:}} {\ttfamily ,}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} What divides each value. The default delimiter separates each value with a comma\+: {\ttfamily "{}\+Value 1, Value 2, Value 3"{}}.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md93}{}\doxysubsection{\texorpdfstring{paste}{paste}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md93}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily true}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Whether a user can paste into the input.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md94}{}\doxysubsection{\texorpdfstring{search\+Enabled}{search\+Enabled}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md94}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily true}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}
+
+{\bfseries{Usage\+:}} Whether a search area should be shown. {\bfseries{Note\+:}} Multiple select boxes will {\itshape always} show search areas.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md95}{}\doxysubsection{\texorpdfstring{search\+Choices}{search\+Choices}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md95}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily true}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}
+
+{\bfseries{Usage\+:}} Whether choices should be filtered by input or not. If {\ttfamily false}, the search event will still emit, but choices will not be filtered.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md96}{}\doxysubsection{\texorpdfstring{search\+Fields}{search\+Fields}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md96}
+{\bfseries{Type\+:}} {\ttfamily Array/\+String} {\bfseries{Default\+:}} `\mbox{[}\textquotesingle{}label', \textquotesingle{}value\textquotesingle{}\mbox{]}\`{}
+
+{\bfseries{Input types affected\+:}}{\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Specify which fields should be used when a user is searching. If you have added custom properties to your choices, you can add these values thus\+: `\mbox{[}\textquotesingle{}label', \textquotesingle{}value\textquotesingle{}, \textquotesingle{}custom\+Properties.\+example\textquotesingle{}\mbox{]}\`{}.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md97}{}\doxysubsection{\texorpdfstring{search\+Floor}{search\+Floor}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md97}
+{\bfseries{Type\+:}} {\ttfamily Number} {\bfseries{Default\+:}} {\ttfamily 1}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} The minimum length a search value should be before choices are searched.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md98}{}\doxysubsection{\texorpdfstring{search\+Result\+Limit\+: 4,}{search\+Result\+Limit\+: 4,}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md98}
+{\bfseries{Type\+:}} {\ttfamily Number} {\bfseries{Default\+:}} {\ttfamily 4}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} The maximum amount of search results to show.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md99}{}\doxysubsection{\texorpdfstring{position}{position}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md99}
+{\bfseries{Type\+:}} {\ttfamily String} {\bfseries{Default\+:}} {\ttfamily auto}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Whether the dropdown should appear above ({\ttfamily top}) or below ({\ttfamily bottom}) the input. By default, if there is not enough space within the window the dropdown will appear above the input, otherwise below it.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md100}{}\doxysubsection{\texorpdfstring{reset\+Scroll\+Position}{reset\+Scroll\+Position}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md100}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily true}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Whether the scroll position should reset after adding an item.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md101}{}\doxysubsection{\texorpdfstring{add\+Item\+Filter}{add\+Item\+Filter}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md101}
+{\bfseries{Type\+:}} {\ttfamily string \texorpdfstring{$\vert$}{|} Reg\+Exp \texorpdfstring{$\vert$}{|} Function} {\bfseries{Default\+:}} {\ttfamily null}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} A Reg\+Exp or string (will be passed to Reg\+Exp constructor internally) or filter function that will need to return {\ttfamily true} for a user to successfully add an item.
+
+{\bfseries{Example\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ Only\ adds\ items\ matching\ the\ text\ test}
+\DoxyCodeLine{new\ Choices(element,\ \{}
+\DoxyCodeLine{\ \ addItemFilter:\ (value)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ return\ ['orange',\ 'apple',\ 'banana'].includes(value);}
+\DoxyCodeLine{\ \ \};}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ only\ items\ ending\ to\ \`{}-\/red`}
+\DoxyCodeLine{new\ Choices(element,\ \{}
+\DoxyCodeLine{\ \ addItemFilter:\ '-\/red\$';}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md102}{}\doxysubsection{\texorpdfstring{should\+Sort}{should\+Sort}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md102}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily true}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Whether choices and groups should be sorted. If false, choices/groups will appear in the order they were given.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md103}{}\doxysubsection{\texorpdfstring{should\+Sort\+Items}{should\+Sort\+Items}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md103}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily false}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Whether items should be sorted. If false, items will appear in the order they were selected.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md104}{}\doxysubsection{\texorpdfstring{sorter}{sorter}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md104}
+{\bfseries{Type\+:}} {\ttfamily Function} {\bfseries{Default\+:}} sort\+By\+Alpha
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} The function that will sort choices and items before they are displayed (unless a user is searching). By default choices and items are sorted by alphabetical order.
+
+{\bfseries{Example\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ Sorting\ via\ length\ of\ label\ from\ largest\ to\ smallest}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element,\ \{}
+\DoxyCodeLine{\ \ sorter:\ function(a,\ b)\ \{}
+\DoxyCodeLine{\ \ \ \ return\ b.label.length\ -\/\ a.label.length;}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md105}{}\doxysubsection{\texorpdfstring{placeholder}{placeholder}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md105}
+{\bfseries{Type\+:}} {\ttfamily Boolean} {\bfseries{Default\+:}} {\ttfamily true}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} Whether the input should show a placeholder. Used in conjunction with {\ttfamily placeholder\+Value}. If {\ttfamily placeholder} is set to true and no value is passed to {\ttfamily placeholder\+Value}, the passed input\textquotesingle{}s placeholder attribute will be used as the placeholder value.
+
+{\bfseries{Note\+:}} For select boxes, the recommended way of adding a placeholder is as follows\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<select>}
+\DoxyCodeLine{\ \ <option\ value="{}"{}>This\ is\ a\ placeholder</option>}
+\DoxyCodeLine{\ \ <option>...</option>}
+\DoxyCodeLine{\ \ <option>...</option>}
+\DoxyCodeLine{\ \ <option>...</option>}
+\DoxyCodeLine{</select>}
+
+\end{DoxyCode}
+
+
+For backward compatibility, {\ttfamily \texorpdfstring{$<$}{<}option placeholder\texorpdfstring{$>$}{>}This is a placeholder\texorpdfstring{$<$}{<}/option\texorpdfstring{$>$}{>}} is also supported.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md106}{}\doxysubsection{\texorpdfstring{placeholder\+Value}{placeholder\+Value}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md106}
+{\bfseries{Type\+:}} {\ttfamily String} {\bfseries{Default\+:}} {\ttfamily null}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} The value of the inputs placeholder.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md107}{}\doxysubsection{\texorpdfstring{search\+Placeholder\+Value}{search\+Placeholder\+Value}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md107}
+{\bfseries{Type\+:}} {\ttfamily String} {\bfseries{Default\+:}} {\ttfamily null}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}
+
+{\bfseries{Usage\+:}} The value of the search inputs placeholder.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md108}{}\doxysubsection{\texorpdfstring{prepend\+Value}{prepend\+Value}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md108}
+{\bfseries{Type\+:}} {\ttfamily String} {\bfseries{Default\+:}} {\ttfamily null}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Prepend a value to each item added/selected.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md109}{}\doxysubsection{\texorpdfstring{append\+Value}{append\+Value}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md109}
+{\bfseries{Type\+:}} {\ttfamily String} {\bfseries{Default\+:}} {\ttfamily null}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Append a value to each item added/selected.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md110}{}\doxysubsection{\texorpdfstring{render\+Selected\+Choices}{render\+Selected\+Choices}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md110}
+{\bfseries{Type\+:}} {\ttfamily String} {\bfseries{Default\+:}} {\ttfamily auto}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Whether selected choices should be removed from the list. By default choices are removed when they are selected in multiple select box. To always render choices pass {\ttfamily always}.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md111}{}\doxysubsection{\texorpdfstring{loading\+Text}{loading\+Text}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md111}
+{\bfseries{Type\+:}} {\ttfamily String} {\bfseries{Default\+:}} {\ttfamily Loading...}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} The text that is shown whilst choices are being populated via AJAX.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md112}{}\doxysubsection{\texorpdfstring{no\+Results\+Text}{no\+Results\+Text}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md112}
+{\bfseries{Type\+:}} {\ttfamily String/\+Function} {\bfseries{Default\+:}} {\ttfamily No results found}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} The text that is shown when a user\textquotesingle{}s search has returned no results. Optionally pass a function returning a string.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md113}{}\doxysubsection{\texorpdfstring{no\+Choices\+Text}{no\+Choices\+Text}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md113}
+{\bfseries{Type\+:}} {\ttfamily String/\+Function} {\bfseries{Default\+:}} {\ttfamily No choices to choose from}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} The text that is shown when a user has selected all possible choices. Optionally pass a function returning a string.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md114}{}\doxysubsection{\texorpdfstring{item\+Select\+Text}{item\+Select\+Text}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md114}
+{\bfseries{Type\+:}} {\ttfamily String} {\bfseries{Default\+:}} {\ttfamily Press to select}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/multiple}, {\ttfamily select-\/one}
+
+{\bfseries{Usage\+:}} The text that is shown when a user hovers over a selectable choice.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md115}{}\doxysubsection{\texorpdfstring{add\+Item\+Text}{add\+Item\+Text}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md115}
+{\bfseries{Type\+:}} {\ttfamily String/\+Function} {\bfseries{Default\+:}} {\ttfamily Press Enter to add "{}\$\{value\}"{}}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} The text that is shown when a user has inputted a new item but has not pressed the enter key. To access the current input value, pass a function with a {\ttfamily value} argument (see the \href{https://github.com/jshjohnson/Choices\#setup}{\texttt{ default config}} for an example), otherwise pass a string.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md116}{}\doxysubsection{\texorpdfstring{max\+Item\+Text}{max\+Item\+Text}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md116}
+{\bfseries{Type\+:}} {\ttfamily String/\+Function} {\bfseries{Default\+:}} {\ttfamily Only \$\{max\+Item\+Count\} values can be added}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} The text that is shown when a user has focus on the input but has already reached the \href{https://github.com/jshjohnson/Choices\#maxitemcount}{\texttt{ max item count}}. To access the max item count, pass a function with a {\ttfamily max\+Item\+Count} argument (see the \href{https://github.com/jshjohnson/Choices\#setup}{\texttt{ default config}} for an example), otherwise pass a string.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md117}{}\doxysubsection{\texorpdfstring{value\+Comparer}{value\+Comparer}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md117}
+{\bfseries{Type\+:}} {\ttfamily Function} {\bfseries{Default\+:}} {\ttfamily strict equality}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} A custom compare function used when finding choices by value (using {\ttfamily set\+Choice\+By\+Value}).
+
+{\bfseries{Example\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element,\ \{}
+\DoxyCodeLine{\ \ valueComparer:\ (a,\ b)\ =>\ value.trim()\ ===\ b.trim(),}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md118}{}\doxysubsection{\texorpdfstring{class\+Names}{class\+Names}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md118}
+{\bfseries{Type\+:}} {\ttfamily Object} {\bfseries{Default\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{classNames:\ \{}
+\DoxyCodeLine{\ \ containerOuter:\ 'choices',}
+\DoxyCodeLine{\ \ containerInner:\ 'choices\_\_inner',}
+\DoxyCodeLine{\ \ input:\ 'choices\_\_input',}
+\DoxyCodeLine{\ \ inputCloned:\ 'choices\_\_input-\/-\/cloned',}
+\DoxyCodeLine{\ \ list:\ 'choices\_\_list',}
+\DoxyCodeLine{\ \ listItems:\ 'choices\_\_list-\/-\/multiple',}
+\DoxyCodeLine{\ \ listSingle:\ 'choices\_\_list-\/-\/single',}
+\DoxyCodeLine{\ \ listDropdown:\ 'choices\_\_list-\/-\/dropdown',}
+\DoxyCodeLine{\ \ item:\ 'choices\_\_item',}
+\DoxyCodeLine{\ \ itemSelectable:\ 'choices\_\_item-\/-\/selectable',}
+\DoxyCodeLine{\ \ itemDisabled:\ 'choices\_\_item-\/-\/disabled',}
+\DoxyCodeLine{\ \ itemOption:\ 'choices\_\_item-\/-\/choice',}
+\DoxyCodeLine{\ \ group:\ 'choices\_\_group',}
+\DoxyCodeLine{\ \ groupHeading\ :\ 'choices\_\_heading',}
+\DoxyCodeLine{\ \ button:\ 'choices\_\_button',}
+\DoxyCodeLine{\ \ activeState:\ 'is-\/active',}
+\DoxyCodeLine{\ \ focusState:\ 'is-\/focused',}
+\DoxyCodeLine{\ \ openState:\ 'is-\/open',}
+\DoxyCodeLine{\ \ disabledState:\ 'is-\/disabled',}
+\DoxyCodeLine{\ \ highlightedState:\ 'is-\/highlighted',}
+\DoxyCodeLine{\ \ selectedState:\ 'is-\/selected',}
+\DoxyCodeLine{\ \ flippedState:\ 'is-\/flipped',}
+\DoxyCodeLine{\ \ selectedState:\ 'is-\/highlighted',}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Classes added to HTML generated by Choices. By default classnames follow the \href{http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/}{\texttt{ BEM}} notation.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md119}{}\doxysection{\texorpdfstring{Callbacks}{Callbacks}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md119}
+{\bfseries{Note\+:}} For each callback, {\ttfamily this} refers to the current instance of Choices. This can be useful if you need access to methods ({\ttfamily this.\+disable()}) or the config object ({\ttfamily this.\+config}).\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md120}{}\doxysubsection{\texorpdfstring{callback\+On\+Init}{callback\+On\+Init}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md120}
+{\bfseries{Type\+:}} {\ttfamily Function} {\bfseries{Default\+:}} {\ttfamily null}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Function to run once Choices initialises.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md121}{}\doxysubsection{\texorpdfstring{callback\+On\+Create\+Templates}{callback\+On\+Create\+Templates}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md121}
+{\bfseries{Type\+:}} {\ttfamily Function} {\bfseries{Default\+:}} {\ttfamily null} {\bfseries{Arguments\+:}} {\ttfamily template}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Function to run on template creation. Through this callback it is possible to provide custom templates for the various components of Choices (see terminology). For Choices to work with custom templates, it is important you maintain the various data attributes defined \href{https://github.com/jshjohnson/Choices/blob/master/src/scripts/templates.js}{\texttt{ here}}. If you want just extend a little original template then you may use {\ttfamily Choices.\+defaults.\+templates} to get access to original template function.
+
+{\bfseries{Example\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element,\ \{}
+\DoxyCodeLine{\ \ callbackOnCreateTemplates:\ ()\ =>\ (\{}
+\DoxyCodeLine{\ \ \ \ input:\ (...args)\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ Object.assign(Choices.defaults.templates.input.call(this,\ ...args),\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ type:\ 'email',}
+\DoxyCodeLine{\ \ \ \ \ \ \}),}
+\DoxyCodeLine{\ \ \}),}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+or more complex\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element,\ \{}
+\DoxyCodeLine{\ \ callbackOnCreateTemplates:\ function(template)\ \{}
+\DoxyCodeLine{\ \ \ \ return\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ item:\ (classNames,\ data)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ return\ template(`}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ <div\ class="{}\$\{classNames.item\}\ \$\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ data.highlighted}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ?\ classNames.highlightedState}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ :\ classNames.itemSelectable}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \$\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ data.placeholder\ ?\ classNames.placeholder\ :\ ''}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}"{}\ data-\/item\ data-\/id="{}\$\{data.id\}"{}\ data-\/value="{}\$\{data.value\}"{}\ \$\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ data.active\ ?\ 'aria-\/selected="{}true"{}'\ :\ ''}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \$\{data.disabled\ ?\ 'aria-\/disabled="{}true"{}'\ :\ ''\}>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ <span>\&bigstar;</span>\ \$\{data.label\}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ </div>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \`{});}
+\DoxyCodeLine{\ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ choice:\ (classNames,\ data)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ return\ template(`}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ <div\ class="{}\$\{classNames.item\}\ \$\{classNames.itemChoice\}\ \$\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ data.disabled\ ?\ classNames.itemDisabled\ :\ classNames.itemSelectable}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}"{}\ data-\/select-\/text="{}\$\{this.config.itemSelectText\}"{}\ data-\/choice\ \$\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ data.disabled}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ?\ 'data-\/choice-\/disabled\ aria-\/disabled="{}true"{}'}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ :\ 'data-\/choice-\/selectable'}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ data-\/id="{}\$\{data.id\}"{}\ data-\/value="{}\$\{data.value\}"{}\ \$\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ data.groupId\ >\ 0\ ?\ 'role="{}treeitem"{}'\ :\ 'role="{}option"{}'}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ <span>\&bigstar;</span>\ \$\{data.label\}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ </div>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \`{});}
+\DoxyCodeLine{\ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md122}{}\doxysection{\texorpdfstring{Events}{Events}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md122}
+{\bfseries{Note\+:}} Events fired by Choices behave the same as standard events. Each event is triggered on the element passed to Choices (accessible via {\ttfamily this.\+passed\+Element}. Arguments are accessible within the {\ttfamily event.\+detail} object.
+
+{\bfseries{Example\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ element\ =\ document.getElementById('example');}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element);}
+\DoxyCodeLine{}
+\DoxyCodeLine{element.addEventListener(}
+\DoxyCodeLine{\ \ 'addItem',}
+\DoxyCodeLine{\ \ function(event)\ \{}
+\DoxyCodeLine{\ \ \ \ //\ do\ something\ creative\ here...}
+\DoxyCodeLine{\ \ \ \ console.log(event.detail.id);}
+\DoxyCodeLine{\ \ \ \ console.log(event.detail.value);}
+\DoxyCodeLine{\ \ \ \ console.log(event.detail.label);}
+\DoxyCodeLine{\ \ \ \ console.log(event.detail.customProperties);}
+\DoxyCodeLine{\ \ \ \ console.log(event.detail.groupValue);}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ false,}
+\DoxyCodeLine{);}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ or}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(document.getElementById('example'));}
+\DoxyCodeLine{}
+\DoxyCodeLine{example.passedElement.element.addEventListener(}
+\DoxyCodeLine{\ \ 'addItem',}
+\DoxyCodeLine{\ \ function(event)\ \{}
+\DoxyCodeLine{\ \ \ \ //\ do\ something\ creative\ here...}
+\DoxyCodeLine{\ \ \ \ console.log(event.detail.id);}
+\DoxyCodeLine{\ \ \ \ console.log(event.detail.value);}
+\DoxyCodeLine{\ \ \ \ console.log(event.detail.label);}
+\DoxyCodeLine{\ \ \ \ console.log(event.detail.customProperties);}
+\DoxyCodeLine{\ \ \ \ console.log(event.detail.groupValue);}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ false,}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md123}{}\doxysubsection{\texorpdfstring{add\+Item}{add\+Item}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md123}
+{\bfseries{Payload\+:}} {\ttfamily id, value, label, custom\+Properties, group\+Value, key\+Code}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Triggered each time an item is added (programmatically or by the user).\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md124}{}\doxysubsection{\texorpdfstring{remove\+Item}{remove\+Item}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md124}
+{\bfseries{Payload\+:}} {\ttfamily id, value, label, custom\+Properties, group\+Value}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Triggered each time an item is removed (programmatically or by the user).\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md125}{}\doxysubsection{\texorpdfstring{highlight\+Item}{highlight\+Item}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md125}
+{\bfseries{Payload\+:}} {\ttfamily id, value, label, group\+Value}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Triggered each time an item is highlighted.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md126}{}\doxysubsection{\texorpdfstring{unhighlight\+Item}{unhighlight\+Item}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md126}
+{\bfseries{Payload\+:}} {\ttfamily id, value, label, group\+Value}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Triggered each time an item is unhighlighted.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md127}{}\doxysubsection{\texorpdfstring{choice}{choice}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md127}
+{\bfseries{Payload\+:}} {\ttfamily choice}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Triggered each time a choice is selected {\bfseries{by a user}}, regardless if it changes the value of the input. {\ttfamily choice} is a Choice object here (see terminology or typings file)\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md128}{}\doxysubsection{\texorpdfstring{change}{change}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md128}
+{\bfseries{Payload\+:}} {\ttfamily value}
+
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Triggered each time an item is added/removed {\bfseries{by a user}}.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md129}{}\doxysubsection{\texorpdfstring{search}{search}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md129}
+{\bfseries{Payload\+:}} {\ttfamily value}, {\ttfamily result\+Count}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Triggered when a user types into an input to search choices.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md130}{}\doxysubsection{\texorpdfstring{show\+Dropdown}{show\+Dropdown}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md130}
+{\bfseries{Payload\+:}} -\/
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Triggered when the dropdown is shown.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md131}{}\doxysubsection{\texorpdfstring{hide\+Dropdown}{hide\+Dropdown}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md131}
+{\bfseries{Payload\+:}} -\/
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Triggered when the dropdown is hidden.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md132}{}\doxysubsection{\texorpdfstring{highlight\+Choice}{highlight\+Choice}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md132}
+{\bfseries{Payload\+:}} {\ttfamily el}
+
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Triggered when a choice from the dropdown is highlighted. The {\ttfamily el} argument is choices.\+passed\+Element object that was affected.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md133}{}\doxysection{\texorpdfstring{Methods}{Methods}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md133}
+Methods can be called either directly or by chaining\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ Calling\ a\ method\ by\ chaining}
+\DoxyCodeLine{const\ choices\ =\ new\ Choices(element,\ \{}
+\DoxyCodeLine{\ \ addItems:\ false,}
+\DoxyCodeLine{\ \ removeItems:\ false,}
+\DoxyCodeLine{\})}
+\DoxyCodeLine{\ \ .setValue(['Set\ value\ 1',\ 'Set\ value\ 2'])}
+\DoxyCodeLine{\ \ .disable();}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ Calling\ a\ method\ directly}
+\DoxyCodeLine{const\ choices\ =\ new\ Choices(element,\ \{}
+\DoxyCodeLine{\ \ addItems:\ false,}
+\DoxyCodeLine{\ \ removeItems:\ false,}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{choices.setValue(['Set\ value\ 1',\ 'Set\ value\ 2']);}
+\DoxyCodeLine{choices.disable();}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md134}{}\doxysubsection{\texorpdfstring{destroy();}{destroy();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md134}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}, {\ttfamily select-\/one}
+
+{\bfseries{Usage\+:}} Kills the instance of Choices, removes all event listeners and returns passed input to its initial state.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md135}{}\doxysubsection{\texorpdfstring{init();}{init();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md135}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}, {\ttfamily select-\/one}
+
+{\bfseries{Usage\+:}} Creates a new instance of Choices, adds event listeners, creates templates and renders a Choices element to the DOM.
+
+{\bfseries{Note\+:}} This is called implicitly when a new instance of Choices is created. This would be used after a Choices instance had already been destroyed (using {\ttfamily destroy()}).\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md136}{}\doxysubsection{\texorpdfstring{highlight\+All();}{highlight\+All();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md136}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Highlight each chosen item (selected items can be removed).\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md137}{}\doxysubsection{\texorpdfstring{unhighlight\+All();}{unhighlight\+All();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md137}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Un-\/highlight each chosen item.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md138}{}\doxysubsection{\texorpdfstring{remove\+Active\+Items\+By\+Value(value);}{remove\+Active\+Items\+By\+Value(value);}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md138}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Remove each item by a given value.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md139}{}\doxysubsection{\texorpdfstring{remove\+Active\+Items(excluded\+Id);}{remove\+Active\+Items(excluded\+Id);}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md139}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Remove each selectable item.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md140}{}\doxysubsection{\texorpdfstring{remove\+Highlighted\+Items();}{remove\+Highlighted\+Items();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md140}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Remove each item the user has selected.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md141}{}\doxysubsection{\texorpdfstring{show\+Dropdown();}{show\+Dropdown();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md141}
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Show option list dropdown (only affects select inputs).\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md142}{}\doxysubsection{\texorpdfstring{hide\+Dropdown();}{hide\+Dropdown();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md142}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Hide option list dropdown (only affects select inputs).\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md143}{}\doxysubsection{\texorpdfstring{set\+Choices(choices, value, label, replace\+Choices);}{set\+Choices(choices, value, label, replace\+Choices);}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md143}
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Set choices of select input via an array of objects (or function that returns array of object or promise of it), a value field name and a label field name.
+
+This behaves the similar as passing items via the {\ttfamily choices} option but can be called after initialising Choices. This can also be used to add groups of choices (see example 3); Optionally pass a true {\ttfamily replace\+Choices} value to remove any existing choices. Optionally pass a {\ttfamily custom\+Properties} object to add additional data to your choices (useful when searching/filtering etc). Passing an empty array as the first parameter, and a true {\ttfamily replace\+Choices} is the same as calling {\ttfamily clear\+Choices} (see below).
+
+{\bfseries{Example 1\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element);}
+\DoxyCodeLine{}
+\DoxyCodeLine{example.setChoices(}
+\DoxyCodeLine{\ \ [}
+\DoxyCodeLine{\ \ \ \ \{\ value:\ 'One',\ label:\ 'Label\ One',\ disabled:\ true\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ value:\ 'Two',\ label:\ 'Label\ Two',\ selected:\ true\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ value:\ 'Three',\ label:\ 'Label\ Three'\ \},}
+\DoxyCodeLine{\ \ ],}
+\DoxyCodeLine{\ \ 'value',}
+\DoxyCodeLine{\ \ 'label',}
+\DoxyCodeLine{\ \ false,}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+
+
+{\bfseries{Example 2\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element);}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ Passing\ a\ function\ that\ returns\ Promise\ of\ choices}
+\DoxyCodeLine{example.setChoices(async\ ()\ =>\ \{}
+\DoxyCodeLine{\ \ try\ \{}
+\DoxyCodeLine{\ \ \ \ const\ items\ =\ await\ fetch('/items');}
+\DoxyCodeLine{\ \ \ \ return\ items.json();}
+\DoxyCodeLine{\ \ \}\ catch\ (err)\ \{}
+\DoxyCodeLine{\ \ \ \ console.error(err);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+{\bfseries{Example 3\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element);}
+\DoxyCodeLine{}
+\DoxyCodeLine{example.setChoices(}
+\DoxyCodeLine{\ \ [}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ label:\ 'Group\ one',}
+\DoxyCodeLine{\ \ \ \ \ \ id:\ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ disabled:\ false,}
+\DoxyCodeLine{\ \ \ \ \ \ choices:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ value:\ 'Child\ One',\ label:\ 'Child\ One',\ selected:\ true\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ value:\ 'Child\ Two',\ label:\ 'Child\ Two',\ disabled:\ true\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ value:\ 'Child\ Three',\ label:\ 'Child\ Three'\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ label:\ 'Group\ two',}
+\DoxyCodeLine{\ \ \ \ \ \ id:\ 2,}
+\DoxyCodeLine{\ \ \ \ \ \ disabled:\ false,}
+\DoxyCodeLine{\ \ \ \ \ \ choices:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ value:\ 'Child\ Four',\ label:\ 'Child\ Four',\ disabled:\ true\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ value:\ 'Child\ Five',\ label:\ 'Child\ Five'\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ value:\ 'Child\ Six',}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ label:\ 'Child\ Six',}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ customProperties:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ description:\ 'Custom\ description\ about\ child\ six',}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ random:\ 'Another\ random\ custom\ property',}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ ],}
+\DoxyCodeLine{\ \ 'value',}
+\DoxyCodeLine{\ \ 'label',}
+\DoxyCodeLine{\ \ false,}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md144}{}\doxysubsection{\texorpdfstring{clear\+Choices();}{clear\+Choices();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md144}
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Clear all choices from select\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md145}{}\doxysubsection{\texorpdfstring{get\+Value(value\+Only)}{get\+Value(value\+Only)}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md145}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Get value(s) of input (i.\+e. inputted items (text) or selected choices (select)). Optionally pass an argument of {\ttfamily true} to only return values rather than value objects.
+
+{\bfseries{Example\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element);}
+\DoxyCodeLine{const\ values\ =\ example.getValue(true);\ //\ returns\ ['value\ 1',\ 'value\ 2'];}
+\DoxyCodeLine{const\ valueArray\ =\ example.getValue();\ //\ returns\ [\{\ active:\ true,\ choiceId:\ 1,\ highlighted:\ false,\ id:\ 1,\ label:\ 'Label\ 1',\ value:\ 'Value\ 1'\},\ \ \{\ active:\ true,\ choiceId:\ 2,\ highlighted:\ false,\ id:\ 2,\ label:\ 'Label\ 2',\ value:\ 'Value\ 2'\}];}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md146}{}\doxysubsection{\texorpdfstring{set\+Value(items);}{set\+Value(items);}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md146}
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} Set value of input based on an array of objects or strings. This behaves exactly the same as passing items via the {\ttfamily items} option but can be called after initialising Choices.
+
+{\bfseries{Example\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element);}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ via\ an\ array\ of\ objects}
+\DoxyCodeLine{example.setValue([}
+\DoxyCodeLine{\ \ \{\ value:\ 'One',\ label:\ 'Label\ One'\ \},}
+\DoxyCodeLine{\ \ \{\ value:\ 'Two',\ label:\ 'Label\ Two'\ \},}
+\DoxyCodeLine{\ \ \{\ value:\ 'Three',\ label:\ 'Label\ Three'\ \},}
+\DoxyCodeLine{]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ or\ via\ an\ array\ of\ strings}
+\DoxyCodeLine{example.setValue(['Four',\ 'Five',\ 'Six']);}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md147}{}\doxysubsection{\texorpdfstring{set\+Choice\+By\+Value(value);}{set\+Choice\+By\+Value(value);}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md147}
+{\bfseries{Input types affected\+:}} {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Set value of input based on existing Choice. {\ttfamily value} can be either a single string or an array of strings
+
+{\bfseries{Example\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ example\ =\ new\ Choices(element,\ \{}
+\DoxyCodeLine{\ \ choices:\ [}
+\DoxyCodeLine{\ \ \ \ \{\ value:\ 'One',\ label:\ 'Label\ One'\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ value:\ 'Two',\ label:\ 'Label\ Two',\ disabled:\ true\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ value:\ 'Three',\ label:\ 'Label\ Three'\ \},}
+\DoxyCodeLine{\ \ ],}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{example.setChoiceByValue('Two');\ //\ Choice\ with\ value\ of\ 'Two'\ has\ now\ been\ selected.}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md148}{}\doxysubsection{\texorpdfstring{clear\+Store();}{clear\+Store();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md148}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Removes all items, choices and groups. Use with caution.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md149}{}\doxysubsection{\texorpdfstring{clear\+Input();}{clear\+Input();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md149}
+{\bfseries{Input types affected\+:}} {\ttfamily text}
+
+{\bfseries{Usage\+:}} Clear input of any user inputted text.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md150}{}\doxysubsection{\texorpdfstring{disable();}{disable();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md150}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Disables input from accepting new value/selecting further choices.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md151}{}\doxysubsection{\texorpdfstring{enable();}{enable();}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md151}
+{\bfseries{Input types affected\+:}} {\ttfamily text}, {\ttfamily select-\/one}, {\ttfamily select-\/multiple}
+
+{\bfseries{Usage\+:}} Enables input to accept new values/select further choices.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md152}{}\doxysection{\texorpdfstring{Browser compatibility}{Browser compatibility}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md152}
+Choices is compiled using \href{https://babeljs.io/}{\texttt{ Babel}} targeting browsers \href{https://github.com/jshjohnson/Choices/blob/master/.browserslistrc}{\texttt{ with more than 1\% of global usage}} and expecting that features \href{https://github.com/jshjohnson/Choices/blob/master/.eslintrc.json\#L62}{\texttt{ listed below}} are available or polyfilled in browser. You may see exact list of target browsers by running {\ttfamily npx browserslist} withing this repository folder. If you need to support a browser that does not have one of the features listed below, I suggest including a polyfill from the very good \href{https://polyfill.io/v3/}{\texttt{ polyfill.\+io}}\+:
+
+{\bfseries{Polyfill example used for the demo\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<script\ src="{}https://cdn.polyfill.io/v3/polyfill.min.js?features=Array.from\%2Ces5\%2Ces6\%2CSymbol\%2CSymbol.iterator\%2CDOMTokenList\%2CObject.assign\%2CCustomEvent\%2CElement.prototype.classList\%2CElement.prototype.closest\%2CElement.prototype.dataset\%2CArray.prototype.find\%2CArray.prototype.includes"{}></script>}
+
+\end{DoxyCode}
+
+
+{\bfseries{Features used in Choices\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Array.from}
+\DoxyCodeLine{Array.prototype.find}
+\DoxyCodeLine{Array.prototype.includes}
+\DoxyCodeLine{Symbol}
+\DoxyCodeLine{Symbol.iterator}
+\DoxyCodeLine{DOMTokenList}
+\DoxyCodeLine{Object.assign}
+\DoxyCodeLine{CustomEvent}
+\DoxyCodeLine{Element.prototype.classList}
+\DoxyCodeLine{Element.prototype.closest}
+\DoxyCodeLine{Element.prototype.dataset}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md153}{}\doxysection{\texorpdfstring{Development}{Development}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md153}
+To setup a local environment\+: clone this repo, navigate into its directory in a terminal window and run the following command\+:
+
+{\ttfamily npm install}\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md154}{}\doxysubsection{\texorpdfstring{NPM tasks}{NPM tasks}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md154}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Task   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Usage    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Task   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Usage    }\\\cline{1-2}
+\endhead
+{\ttfamily npm run start}   &Fire up local server for development    \\\cline{1-2}
+{\ttfamily npm run test\+:unit}   &Run sequence of tests once    \\\cline{1-2}
+{\ttfamily npm run test\+:unit\+:watch}   &Fire up test server and re-\/test on file change    \\\cline{1-2}
+{\ttfamily npm run test\+:e2e}   &Run sequence of e2e tests (with local server)    \\\cline{1-2}
+{\ttfamily npm run test}   &Run both unit and e2e tests    \\\cline{1-2}
+{\ttfamily npm run cypress\+:open}   &Run Cypress e2e tests (GUI)    \\\cline{1-2}
+{\ttfamily npm run cypress\+:run}   &Run Cypress e2e tests (CLI)    \\\cline{1-2}
+{\ttfamily npm run js\+:build}   &Compile Choices to an uglified Java\+Script file    \\\cline{1-2}
+{\ttfamily npm run css\+:watch}   &Watch SCSS files for changes. On a change, run build process    \\\cline{1-2}
+{\ttfamily npm run css\+:build}   &Compile, minify and prefix SCSS files to CSS   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md155}{}\doxysection{\texorpdfstring{License}{License}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md155}
+MIT License\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md156}{}\doxysection{\texorpdfstring{Web component}{Web component}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md156}
+Want to use Choices as a web component? You\textquotesingle{}re in luck. Adidas have built one for their design system which can be found \href{https://github.com/adidas/choicesjs-stencil}{\texttt{ here}}.\hypertarget{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md157}{}\doxysection{\texorpdfstring{Misc}{Misc}}\label{md_public_2_muse_2assets_2vendor_2choices-master_2_r_e_a_d_m_e_autotoc_md157}
+Thanks to \href{https://github.com/mikefrancis/}{\texttt{ @mikefrancis}} for \href{https://twitter.com/_mikefrancis/status/701797835826667520}{\texttt{ sending me on a hunt}} for a non-\/j\+Query solution for select boxes that eventually led to this being built! 

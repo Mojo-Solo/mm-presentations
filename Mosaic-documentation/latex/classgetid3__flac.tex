@@ -1,0 +1,182 @@
+\doxysection{getid3\+\_\+flac Class Reference}
+\hypertarget{classgetid3__flac}{}\label{classgetid3__flac}\index{getid3\_flac@{getid3\_flac}}
+
+
+Inheritance diagram for getid3\+\_\+flac\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+flac\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__flac_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\item 
+\mbox{\hyperlink{classgetid3__flac_acc98fb4e5444d41484c365f0b4ae7211}{parse\+METAdata}} ()
+\item 
+\mbox{\hyperlink{classgetid3__flac_a5d8bec06138a48c96d7b7533f39eb109}{parse\+PICTURE}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__flac_a57bb478c4a7a5ecab1a26397c8f316c6}{parse\+STREAMINFOdata}} (\$Block\+Data)
+\item 
+static \mbox{\hyperlink{classgetid3__flac_a386aa6c475aab1a5c979f118acbafecf}{meta\+Block\+Type\+Lookup}} (\$blocktype)
+\item 
+static \mbox{\hyperlink{classgetid3__flac_a93395665d16ba775bf17f1e579524e9d}{application\+IDLookup}} (\$applicationid)
+\item 
+static \mbox{\hyperlink{classgetid3__flac_ab9456a51ae1ccbe1a2b2a7cf0df8dd15}{picture\+Type\+Lookup}} (\$type\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__flac_ada3d6928bfb3a7a6d298fbeb27500f5d}\label{classgetid3__flac_ada3d6928bfb3a7a6d298fbeb27500f5d} 
+const {\bfseries syncword} = \textquotesingle{}f\+LaC\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@tutorial \href{http://flac.sourceforge.net/format.html}{\texttt{ http\+://flac.\+sourceforge.\+net/format.\+html}} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__flac_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_flac@{getid3\_flac}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_flac@{getid3\_flac}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__flac_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__flac_a93395665d16ba775bf17f1e579524e9d}\index{getid3\_flac@{getid3\_flac}!applicationIDLookup@{applicationIDLookup}}
+\index{applicationIDLookup@{applicationIDLookup}!getid3\_flac@{getid3\_flac}}
+\doxysubsubsection{\texorpdfstring{applicationIDLookup()}{applicationIDLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__flac_a93395665d16ba775bf17f1e579524e9d} 
+static application\+IDLookup (\begin{DoxyParamCaption}\item[{}]{\$applicationid}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$applicationid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__flac_a386aa6c475aab1a5c979f118acbafecf}\index{getid3\_flac@{getid3\_flac}!metaBlockTypeLookup@{metaBlockTypeLookup}}
+\index{metaBlockTypeLookup@{metaBlockTypeLookup}!getid3\_flac@{getid3\_flac}}
+\doxysubsubsection{\texorpdfstring{metaBlockTypeLookup()}{metaBlockTypeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__flac_a386aa6c475aab1a5c979f118acbafecf} 
+static meta\+Block\+Type\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$blocktype}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$blocktype} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__flac_acc98fb4e5444d41484c365f0b4ae7211}\index{getid3\_flac@{getid3\_flac}!parseMETAdata@{parseMETAdata}}
+\index{parseMETAdata@{parseMETAdata}!getid3\_flac@{getid3\_flac}}
+\doxysubsubsection{\texorpdfstring{parseMETAdata()}{parseMETAdata()}}
+{\footnotesize\ttfamily \label{classgetid3__flac_acc98fb4e5444d41484c365f0b4ae7211} 
+parse\+METAdata (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__flac_a5d8bec06138a48c96d7b7533f39eb109}\index{getid3\_flac@{getid3\_flac}!parsePICTURE@{parsePICTURE}}
+\index{parsePICTURE@{parsePICTURE}!getid3\_flac@{getid3\_flac}}
+\doxysubsubsection{\texorpdfstring{parsePICTURE()}{parsePICTURE()}}
+{\footnotesize\ttfamily \label{classgetid3__flac_a5d8bec06138a48c96d7b7533f39eb109} 
+parse\+PICTURE (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Parse METADATA\+\_\+\+BLOCK\+\_\+\+PICTURE flac structure and extract attachment External usage\+: audio.\+ogg
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__flac_a57bb478c4a7a5ecab1a26397c8f316c6}\index{getid3\_flac@{getid3\_flac}!parseSTREAMINFOdata@{parseSTREAMINFOdata}}
+\index{parseSTREAMINFOdata@{parseSTREAMINFOdata}!getid3\_flac@{getid3\_flac}}
+\doxysubsubsection{\texorpdfstring{parseSTREAMINFOdata()}{parseSTREAMINFOdata()}}
+{\footnotesize\ttfamily \label{classgetid3__flac_a57bb478c4a7a5ecab1a26397c8f316c6} 
+static parse\+STREAMINFOdata (\begin{DoxyParamCaption}\item[{}]{\$\+Block\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+Block\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__flac_ab9456a51ae1ccbe1a2b2a7cf0df8dd15}\index{getid3\_flac@{getid3\_flac}!pictureTypeLookup@{pictureTypeLookup}}
+\index{pictureTypeLookup@{pictureTypeLookup}!getid3\_flac@{getid3\_flac}}
+\doxysubsubsection{\texorpdfstring{pictureTypeLookup()}{pictureTypeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__flac_ab9456a51ae1ccbe1a2b2a7cf0df8dd15} 
+static picture\+Type\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$type\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+audio.\+flac.\+php\end{DoxyCompactItemize}

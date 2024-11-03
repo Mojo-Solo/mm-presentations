@@ -1,0 +1,107 @@
+\doxysection{Route\+Service\+Provider Class Reference}
+\hypertarget{class_app_1_1_providers_1_1_route_service_provider}{}\label{class_app_1_1_providers_1_1_route_service_provider}\index{RouteServiceProvider@{RouteServiceProvider}}
+
+
+Inheritance diagram for Route\+Service\+Provider\+:
+% FIG 0
+
+
+Collaboration diagram for Route\+Service\+Provider\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_providers_1_1_route_service_provider_a8814ea4b5beba763c570b4818980814e}{boot}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_providers_1_1_route_service_provider_a7f35c814c022f4191d359b5dc139d35b}{map}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_1_1_providers_1_1_route_service_provider_ad5937d1b8a0dcaa1c2ffdca45ec67bf2}\label{class_app_1_1_providers_1_1_route_service_provider_ad5937d1b8a0dcaa1c2ffdca45ec67bf2} 
+const {\bfseries HOME} = \textquotesingle{}/\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_providers_1_1_route_service_provider_ac887962db9a9a8f344572bd205a02165}{map\+Web\+Routes}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_providers_1_1_route_service_provider_a5abba9c3cc53b86976150ef37c9cc591}{map\+Site\+Routes}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_providers_1_1_route_service_provider_ad400e7ca0cea76b9680eeb68b55ea0e0}{map\+Api\+Routes}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_1_1_providers_1_1_route_service_provider_a3825c9b9060c2d6ef594385997cd60aa}\label{class_app_1_1_providers_1_1_route_service_provider_a3825c9b9060c2d6ef594385997cd60aa} 
+{\bfseries \$namespace} = \textquotesingle{}App\textbackslash{}\+Http\textbackslash{}\+Controllers\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_providers_1_1_route_service_provider_a8814ea4b5beba763c570b4818980814e}\index{RouteServiceProvider@{RouteServiceProvider}!boot@{boot}}
+\index{boot@{boot}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{boot()}{boot()}}
+{\footnotesize\ttfamily \label{class_app_1_1_providers_1_1_route_service_provider_a8814ea4b5beba763c570b4818980814e} 
+boot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Define your route model bindings, pattern filters, etc.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_providers_1_1_route_service_provider_a7f35c814c022f4191d359b5dc139d35b}\index{RouteServiceProvider@{RouteServiceProvider}!map@{map}}
+\index{map@{map}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{class_app_1_1_providers_1_1_route_service_provider_a7f35c814c022f4191d359b5dc139d35b} 
+map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Define the routes for the application.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_providers_1_1_route_service_provider_ad400e7ca0cea76b9680eeb68b55ea0e0}\index{RouteServiceProvider@{RouteServiceProvider}!mapApiRoutes@{mapApiRoutes}}
+\index{mapApiRoutes@{mapApiRoutes}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{mapApiRoutes()}{mapApiRoutes()}}
+{\footnotesize\ttfamily \label{class_app_1_1_providers_1_1_route_service_provider_ad400e7ca0cea76b9680eeb68b55ea0e0} 
+map\+Api\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Define the "{}api"{} routes for the application.
+
+These routes are typically stateless.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_providers_1_1_route_service_provider_a5abba9c3cc53b86976150ef37c9cc591}\index{RouteServiceProvider@{RouteServiceProvider}!mapSiteRoutes@{mapSiteRoutes}}
+\index{mapSiteRoutes@{mapSiteRoutes}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{mapSiteRoutes()}{mapSiteRoutes()}}
+{\footnotesize\ttfamily \label{class_app_1_1_providers_1_1_route_service_provider_a5abba9c3cc53b86976150ef37c9cc591} 
+map\+Site\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Define the "{}web"{} routes for the application.
+
+These routes all receive session state, CSRF protection, etc.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_providers_1_1_route_service_provider_ac887962db9a9a8f344572bd205a02165}\index{RouteServiceProvider@{RouteServiceProvider}!mapWebRoutes@{mapWebRoutes}}
+\index{mapWebRoutes@{mapWebRoutes}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{mapWebRoutes()}{mapWebRoutes()}}
+{\footnotesize\ttfamily \label{class_app_1_1_providers_1_1_route_service_provider_ac887962db9a9a8f344572bd205a02165} 
+map\+Web\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Define the "{}web"{} routes for the application.
+
+These routes all receive session state, CSRF protection, etc.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Providers/Route\+Service\+Provider.\+php\end{DoxyCompactItemize}

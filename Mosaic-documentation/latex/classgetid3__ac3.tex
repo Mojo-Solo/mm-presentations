@@ -1,0 +1,313 @@
+\doxysection{getid3\+\_\+ac3 Class Reference}
+\hypertarget{classgetid3__ac3}{}\label{classgetid3__ac3}\index{getid3\_ac3@{getid3\_ac3}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+
+
+Inheritance diagram for getid3\+\_\+ac3\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+ac3\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__ac3_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_a799291770e7f12f28769774244e01085}{sample\+Rate\+Code\+Lookup}} (\$fscod)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_a141968de985375bacdc73ace58e4bff4}{sample\+Rate\+Code\+Lookup2}} (\$fscod2)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_a5ef9467015efd946d9342b0a5ac77d74}{service\+Type\+Lookup}} (\$bsmod, \$acmod)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_aa9b69afc70e9ea79f5c19708e1865f4b}{audio\+Coding\+Mode\+Lookup}} (\$acmod)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_ad3f6201e1bf31eebebb03e0bf453029c}{center\+Mix\+Level\+Lookup}} (\$cmixlev)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_a95497c582eff0043b4952f8c54c33170}{surround\+Mix\+Level\+Lookup}} (\$surmixlev)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_a90cff4fcea5517ba3231bdfda574af03}{dolby\+Surround\+Mode\+Lookup}} (\$dsurmod)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_abc211966018781d07d6b519dade23705}{channels\+Enabled\+Lookup}} (\$acmod, \$lfeon)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_ad8fc6f9fd3207feb9f402a3f2366c6dc}{heavy\+Compression}} (\$compre)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_a42d761d07a25bbbe5171171a13d1aee5}{room\+Type\+Lookup}} (\$roomtyp)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_a2540b103885b1d8bd330d11468f4f965}{frame\+Size\+Lookup}} (\$frmsizecod, \$fscod)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_a906f34c91657a277c5c513a81e22b3da}{bitrate\+Lookup}} (\$frmsizecod)
+\item 
+static \mbox{\hyperlink{classgetid3__ac3_ab62cd58de6e0797c92c920c161bb4b5d}{blocks\+Per\+Sync\+Frame}} (\$numblkscod)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgetid3__ac3_ada3d6928bfb3a7a6d298fbeb27500f5d}\label{classgetid3__ac3_ada3d6928bfb3a7a6d298fbeb27500f5d} 
+const {\bfseries syncword} = 0x0\+B77
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__ac3_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_ac3@{getid3\_ac3}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+AH
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__ac3_aa9b69afc70e9ea79f5c19708e1865f4b}\index{getid3\_ac3@{getid3\_ac3}!audioCodingModeLookup@{audioCodingModeLookup}}
+\index{audioCodingModeLookup@{audioCodingModeLookup}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{audioCodingModeLookup()}{audioCodingModeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_aa9b69afc70e9ea79f5c19708e1865f4b} 
+static audio\+Coding\+Mode\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$acmod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$acmod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_a906f34c91657a277c5c513a81e22b3da}\index{getid3\_ac3@{getid3\_ac3}!bitrateLookup@{bitrateLookup}}
+\index{bitrateLookup@{bitrateLookup}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{bitrateLookup()}{bitrateLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_a906f34c91657a277c5c513a81e22b3da} 
+static bitrate\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$frmsizecod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$frmsizecod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_ab62cd58de6e0797c92c920c161bb4b5d}\index{getid3\_ac3@{getid3\_ac3}!blocksPerSyncFrame@{blocksPerSyncFrame}}
+\index{blocksPerSyncFrame@{blocksPerSyncFrame}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{blocksPerSyncFrame()}{blocksPerSyncFrame()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_ab62cd58de6e0797c92c920c161bb4b5d} 
+static blocks\+Per\+Sync\+Frame (\begin{DoxyParamCaption}\item[{}]{\$numblkscod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$numblkscod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_ad3f6201e1bf31eebebb03e0bf453029c}\index{getid3\_ac3@{getid3\_ac3}!centerMixLevelLookup@{centerMixLevelLookup}}
+\index{centerMixLevelLookup@{centerMixLevelLookup}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{centerMixLevelLookup()}{centerMixLevelLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_ad3f6201e1bf31eebebb03e0bf453029c} 
+static center\+Mix\+Level\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$cmixlev}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$cmixlev} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_abc211966018781d07d6b519dade23705}\index{getid3\_ac3@{getid3\_ac3}!channelsEnabledLookup@{channelsEnabledLookup}}
+\index{channelsEnabledLookup@{channelsEnabledLookup}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{channelsEnabledLookup()}{channelsEnabledLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_abc211966018781d07d6b519dade23705} 
+static channels\+Enabled\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$acmod}{, }\item[{}]{\$lfeon}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$acmod} & \\
+\hline
+bool & {\em \$lfeon} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_a90cff4fcea5517ba3231bdfda574af03}\index{getid3\_ac3@{getid3\_ac3}!dolbySurroundModeLookup@{dolbySurroundModeLookup}}
+\index{dolbySurroundModeLookup@{dolbySurroundModeLookup}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{dolbySurroundModeLookup()}{dolbySurroundModeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_a90cff4fcea5517ba3231bdfda574af03} 
+static dolby\+Surround\+Mode\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$dsurmod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$dsurmod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_a2540b103885b1d8bd330d11468f4f965}\index{getid3\_ac3@{getid3\_ac3}!frameSizeLookup@{frameSizeLookup}}
+\index{frameSizeLookup@{frameSizeLookup}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{frameSizeLookup()}{frameSizeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_a2540b103885b1d8bd330d11468f4f965} 
+static frame\+Size\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$frmsizecod}{, }\item[{}]{\$fscod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$frmsizecod} & \\
+\hline
+int & {\em \$fscod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_ad8fc6f9fd3207feb9f402a3f2366c6dc}\index{getid3\_ac3@{getid3\_ac3}!heavyCompression@{heavyCompression}}
+\index{heavyCompression@{heavyCompression}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{heavyCompression()}{heavyCompression()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_ad8fc6f9fd3207feb9f402a3f2366c6dc} 
+static heavy\+Compression (\begin{DoxyParamCaption}\item[{}]{\$compre}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$compre} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_a42d761d07a25bbbe5171171a13d1aee5}\index{getid3\_ac3@{getid3\_ac3}!roomTypeLookup@{roomTypeLookup}}
+\index{roomTypeLookup@{roomTypeLookup}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{roomTypeLookup()}{roomTypeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_a42d761d07a25bbbe5171171a13d1aee5} 
+static room\+Type\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$roomtyp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$roomtyp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_a799291770e7f12f28769774244e01085}\index{getid3\_ac3@{getid3\_ac3}!sampleRateCodeLookup@{sampleRateCodeLookup}}
+\index{sampleRateCodeLookup@{sampleRateCodeLookup}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{sampleRateCodeLookup()}{sampleRateCodeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_a799291770e7f12f28769774244e01085} 
+static sample\+Rate\+Code\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$fscod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$fscod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_a141968de985375bacdc73ace58e4bff4}\index{getid3\_ac3@{getid3\_ac3}!sampleRateCodeLookup2@{sampleRateCodeLookup2}}
+\index{sampleRateCodeLookup2@{sampleRateCodeLookup2}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{sampleRateCodeLookup2()}{sampleRateCodeLookup2()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_a141968de985375bacdc73ace58e4bff4} 
+static sample\+Rate\+Code\+Lookup2 (\begin{DoxyParamCaption}\item[{}]{\$fscod2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$fscod2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_a5ef9467015efd946d9342b0a5ac77d74}\index{getid3\_ac3@{getid3\_ac3}!serviceTypeLookup@{serviceTypeLookup}}
+\index{serviceTypeLookup@{serviceTypeLookup}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{serviceTypeLookup()}{serviceTypeLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_a5ef9467015efd946d9342b0a5ac77d74} 
+static service\+Type\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$bsmod}{, }\item[{}]{\$acmod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$bsmod} & \\
+\hline
+int & {\em \$acmod} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__ac3_a95497c582eff0043b4952f8c54c33170}\index{getid3\_ac3@{getid3\_ac3}!surroundMixLevelLookup@{surroundMixLevelLookup}}
+\index{surroundMixLevelLookup@{surroundMixLevelLookup}!getid3\_ac3@{getid3\_ac3}}
+\doxysubsubsection{\texorpdfstring{surroundMixLevelLookup()}{surroundMixLevelLookup()}}
+{\footnotesize\ttfamily \label{classgetid3__ac3_a95497c582eff0043b4952f8c54c33170} 
+static surround\+Mix\+Level\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$surmixlev}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$surmixlev} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+audio.\+ac3.\+php\end{DoxyCompactItemize}

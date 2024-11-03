@@ -1,0 +1,137 @@
+\doxysection{AVCSequence\+Parameter\+Set\+Reader Class Reference}
+\hypertarget{class_a_v_c_sequence_parameter_set_reader}{}\label{class_a_v_c_sequence_parameter_set_reader}\index{AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_v_c_sequence_parameter_set_reader_aca4ee42e10f8acc4aa59039992f4cef5}{\+\_\+\+\_\+construct}} (\$sps)
+\item 
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_acff345d7b7fc409c9a50e1c076a6e6ac}\label{class_a_v_c_sequence_parameter_set_reader_acff345d7b7fc409c9a50e1c076a6e6ac} 
+{\bfseries read\+Data} ()
+\item 
+\mbox{\hyperlink{class_a_v_c_sequence_parameter_set_reader_ac76496dce324347979f55564a2b334d7}{skip\+Bits}} (\$bits)
+\item 
+\mbox{\hyperlink{class_a_v_c_sequence_parameter_set_reader_a9dc79bb5f2efcc564217454d3901b3b0}{get\+Bit}} ()
+\item 
+\mbox{\hyperlink{class_a_v_c_sequence_parameter_set_reader_a8338a50e18ad8a2eca4fa25151f9e9d0}{get\+Bits}} (\$bits)
+\item 
+\mbox{\hyperlink{class_a_v_c_sequence_parameter_set_reader_a80b6520d0d89b2acfa4cd3e42d952834}{exp\+Golomb\+Ue}} ()
+\item 
+\mbox{\hyperlink{class_a_v_c_sequence_parameter_set_reader_a1209662dfa962a46c0e2dcc099921047}{exp\+Golomb\+Se}} ()
+\item 
+\mbox{\hyperlink{class_a_v_c_sequence_parameter_set_reader_ae7fba4c8be1972cf80dc1a95f390df23}{get\+Width}} ()
+\item 
+\mbox{\hyperlink{class_a_v_c_sequence_parameter_set_reader_aa725283ffc599b3f6563cada4cbeb2c7}{get\+Height}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_ac795a2b0aca6df75cf878b736b80f8de}\label{class_a_v_c_sequence_parameter_set_reader_ac795a2b0aca6df75cf878b736b80f8de} 
+{\bfseries \$sps}
+\item 
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_a50a00e7de77365e00b117e73aa82fb9b}\label{class_a_v_c_sequence_parameter_set_reader_a50a00e7de77365e00b117e73aa82fb9b} 
+{\bfseries \$start} = 0
+\item 
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_a39083b6f3f8e3fed0d341108aa521430}\label{class_a_v_c_sequence_parameter_set_reader_a39083b6f3f8e3fed0d341108aa521430} 
+{\bfseries \$current\+Bytes} = 0
+\item 
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_a04bd8d305229acda08418a21bb62183e}\label{class_a_v_c_sequence_parameter_set_reader_a04bd8d305229acda08418a21bb62183e} 
+{\bfseries \$current\+Bits} = 0
+\item 
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_a5795120b4b324bc4ca83f1e6fdce7d57}\label{class_a_v_c_sequence_parameter_set_reader_a5795120b4b324bc4ca83f1e6fdce7d57} 
+{\bfseries \$width}
+\item 
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_a2c265bba1724371bb03e6901297c30b2}\label{class_a_v_c_sequence_parameter_set_reader_a2c265bba1724371bb03e6901297c30b2} 
+{\bfseries \$height}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_aca4ee42e10f8acc4aa59039992f4cef5}\index{AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_a_v_c_sequence_parameter_set_reader_aca4ee42e10f8acc4aa59039992f4cef5} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$sps}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sps} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_a1209662dfa962a46c0e2dcc099921047}\index{AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}!expGolombSe@{expGolombSe}}
+\index{expGolombSe@{expGolombSe}!AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}}
+\doxysubsubsection{\texorpdfstring{expGolombSe()}{expGolombSe()}}
+{\footnotesize\ttfamily \label{class_a_v_c_sequence_parameter_set_reader_a1209662dfa962a46c0e2dcc099921047} 
+exp\+Golomb\+Se (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_a80b6520d0d89b2acfa4cd3e42d952834}\index{AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}!expGolombUe@{expGolombUe}}
+\index{expGolombUe@{expGolombUe}!AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}}
+\doxysubsubsection{\texorpdfstring{expGolombUe()}{expGolombUe()}}
+{\footnotesize\ttfamily \label{class_a_v_c_sequence_parameter_set_reader_a80b6520d0d89b2acfa4cd3e42d952834} 
+exp\+Golomb\+Ue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_a9dc79bb5f2efcc564217454d3901b3b0}\index{AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}!getBit@{getBit}}
+\index{getBit@{getBit}!AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}}
+\doxysubsubsection{\texorpdfstring{getBit()}{getBit()}}
+{\footnotesize\ttfamily \label{class_a_v_c_sequence_parameter_set_reader_a9dc79bb5f2efcc564217454d3901b3b0} 
+get\+Bit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_a8338a50e18ad8a2eca4fa25151f9e9d0}\index{AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}!getBits@{getBits}}
+\index{getBits@{getBits}!AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}}
+\doxysubsubsection{\texorpdfstring{getBits()}{getBits()}}
+{\footnotesize\ttfamily \label{class_a_v_c_sequence_parameter_set_reader_a8338a50e18ad8a2eca4fa25151f9e9d0} 
+get\+Bits (\begin{DoxyParamCaption}\item[{}]{\$bits}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$bits} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_aa725283ffc599b3f6563cada4cbeb2c7}\index{AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily \label{class_a_v_c_sequence_parameter_set_reader_aa725283ffc599b3f6563cada4cbeb2c7} 
+get\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_ae7fba4c8be1972cf80dc1a95f390df23}\index{AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily \label{class_a_v_c_sequence_parameter_set_reader_ae7fba4c8be1972cf80dc1a95f390df23} 
+get\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_a_v_c_sequence_parameter_set_reader_ac76496dce324347979f55564a2b334d7}\index{AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}!skipBits@{skipBits}}
+\index{skipBits@{skipBits}!AVCSequenceParameterSetReader@{AVCSequenceParameterSetReader}}
+\doxysubsubsection{\texorpdfstring{skipBits()}{skipBits()}}
+{\footnotesize\ttfamily \label{class_a_v_c_sequence_parameter_set_reader_ac76496dce324347979f55564a2b334d7} 
+skip\+Bits (\begin{DoxyParamCaption}\item[{}]{\$bits}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$bits} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+audio-\/video.\+flv.\+php\end{DoxyCompactItemize}

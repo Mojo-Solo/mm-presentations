@@ -1,0 +1,325 @@
+\chapter{README}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e}{}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e}\index{README@{README}}
+\href{http://michalsnik.github.io/aos/}{\texttt{ }}
+
+\href{https://npmjs.org/package/aos}{\texttt{ }} \href{https://npmjs.org/package/aos}{\texttt{ }} \href{https://travis-ci.org/michalsnik/aos}{\texttt{ }} \href{https://gitter.im/michalsnik/aos?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge}{\texttt{ }}
+
+\href{https://twitter.com/michalsnik}{\texttt{ }} \href{https://twitter.com/home?status=AOS\%20-\%20Animate\%20on\%20Scroll\%20library\%0Ahttps\%3A//github.com/michalsnik/aos}{\texttt{ }}
+
+Small library to animate elements on your page as you scroll.
+
+You may say it\textquotesingle{}s like WOWJS, yeah -\/ you\textquotesingle{}re right, effect is similar to WOWJS, but I had a different idea how to make such a plugin, so here it is. CSS3 driven scroll animation library.
+
+AOS allows you to animate elements as you scroll down, and up. If you scroll back to top, elements will animate to it\textquotesingle{}s previous state and are ready to animate again if you scroll down.
+
+👉 To get a better understanding how this actually works, I encourage you to check \href{https://css-tricks.com/aos-css-driven-scroll-animation-library/}{\texttt{ my post on CSS-\/tricks}}.
+
+\DoxyHorRuler{0}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{🚀 \href{http://michalsnik.github.io/aos/}{\texttt{ Demo}}}{🚀 \href{http://michalsnik.github.io/aos/}{\texttt{ Demo}}}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md22}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md23}{}\doxysubsubsection{\texorpdfstring{🌟 Codepen Examples}{🌟 Codepen Examples}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md23}
+
+\begin{DoxyItemize}
+\item \href{http://codepen.io/michalsnik/pen/WxNdvq}{\texttt{ Different build in animations}}
+\item \href{http://codepen.io/michalsnik/pen/jrOYVO}{\texttt{ With anchor setting in use}}
+\item \href{http://codepen.io/michalsnik/pen/EyxoNm}{\texttt{ With anchor-\/placement and different easing}}
+\item \href{http://codepen.io/michalsnik/pen/WxvNvE}{\texttt{ With simple custom animations}}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md25}{}\doxysubsection{\texorpdfstring{❗ Attention}{❗ Attention}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md25}
+From version {\ttfamily 2.\+0.\+0} attributes {\ttfamily aos} are no longer supported, always use {\ttfamily data-\/aos}.\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md26}{}\doxysubsection{\texorpdfstring{⚙ Setup}{⚙ Setup}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md26}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{Install AOS}{Install AOS}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md27}
+
+\begin{DoxyItemize}
+\item Using {\ttfamily bower}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{bower\ install\ aos\ -\/-\/save}
+
+\end{DoxyCode}
+
+\item Using {\ttfamily npm}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ install\ aos\ -\/-\/save}
+
+\end{DoxyCode}
+
+\item Direct download -\/\texorpdfstring{$>$}{>} \href{https://github.com/michalsnik/aos/archive/master.zip}{\texttt{ click here}}
+\end{DoxyItemize}\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md28}{}\doxysubsubsection{\texorpdfstring{Link styles}{Link styles}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md28}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<link\ rel="{}stylesheet"{}\ href="{}bower\_components/aos/dist/aos.css"{}\ />}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md29}{}\doxysubsubsection{\texorpdfstring{Add scripts}{Add scripts}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md29}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<script\ src="{}bower\_components/aos/dist/aos.js"{}></script>}
+
+\end{DoxyCode}
+
+
+AOS from version {\ttfamily 1.\+2.\+0} is available as UMD module, so you can use it as AMD, Global, Node or ES6 module.\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{Init AOS}{Init AOS}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md30}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<script>}
+\DoxyCodeLine{\ \ AOS.init();}
+\DoxyCodeLine{</script>}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md31}{}\doxysubsection{\texorpdfstring{🤔 How to use it?}{🤔 How to use it?}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md31}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md32}{}\doxysubsubsection{\texorpdfstring{Basic usage}{Basic usage}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md32}
+All you have to do is to add {\ttfamily data-\/aos} attribute to html element, like so\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<div\ data-\/aos="{}animation\_name"{}>}
+
+\end{DoxyCode}
+
+
+Script will trigger "{}animation\+\_\+name"{} animation on this element, if you scroll to it.
+
+\href{https://github.com/michalsnik/aos\#-animations}{\texttt{ Down below}} is a list of all available animations for now \+:)\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md33}{}\doxysubsubsection{\texorpdfstring{🔥 Advanced settings}{🔥 Advanced settings}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md33}
+These settings can be set both on certain elements, or as default while initializing script (in options object without {\ttfamily data-\/} part).
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Attribute   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Example value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Default value    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Attribute   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Example value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Default value    }\\\cline{1-4}
+\endhead
+\texorpdfstring{$\ast$}{*}{\ttfamily data-\/aos-\/offset}\texorpdfstring{$\ast$}{*}   &Change offset to trigger animations sooner or later (px)   &200   &120    \\\cline{1-4}
+\texorpdfstring{$\ast$}{*}{\ttfamily data-\/aos-\/duration}\texorpdfstring{$\ast$}{*}   &\texorpdfstring{$\ast$}{*}\+Duration of animation (ms)   &600   &400    \\\cline{1-4}
+\texorpdfstring{$\ast$}{*}{\ttfamily data-\/aos-\/easing}\texorpdfstring{$\ast$}{*}   &Choose timing function to ease elements in different ways   &ease-\/in-\/sine   &ease    \\\cline{1-4}
+\texorpdfstring{$\ast$}{*}{\ttfamily data-\/aos-\/delay}\texorpdfstring{$\ast$}{*}   &Delay animation (ms)   &300   &0    \\\cline{1-4}
+\texorpdfstring{$\ast$}{*}{\ttfamily data-\/aos-\/anchor}\texorpdfstring{$\ast$}{*}   &Anchor element, whose offset will be counted to trigger animation instead of actual elements offset   &\#selector   &null    \\\cline{1-4}
+\texorpdfstring{$\ast$}{*}{\ttfamily data-\/aos-\/anchor-\/placement}\texorpdfstring{$\ast$}{*}   &Anchor placement -\/ which one position of element on the screen should trigger animation   &top-\/center   &top-\/bottom    \\\cline{1-4}
+\texorpdfstring{$\ast$}{*}{\ttfamily data-\/aos-\/once}\texorpdfstring{$\ast$}{*}   &Choose wheter animation should fire once, or every time you scroll up/down to element   &true   &false   \\\cline{1-4}
+\end{longtabu}
+
+
+\texorpdfstring{$\ast$}{*}\+Duration accept values from 50 to 3000, with step 50ms, it\textquotesingle{}s because duration of animation is handled by css, and to not make css longer than it is already I created implementations only in this range. I think this should be good for almost all cases.
+
+If not, you may write simple CSS on your page that will add another duration option value available, for example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{body[data-\/aos-\/duration='4000']\ [data-\/aos],\ [data-\/aos][data-\/aos][data-\/aos-\/duration='4000']\{}
+\DoxyCodeLine{\ \ transition-\/duration:\ 4000ms;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+This code will add 4000ms duration available for you to set on AOS elements, or to set as global duration while initializing AOS script.
+
+Notice that double {\ttfamily \mbox{[}data-\/aos\mbox{]}\mbox{[}data-\/aos\mbox{]}} -\/ it\textquotesingle{}s not a mistake, it is a trick, to make individual settings more important than global, without need to write ugly "{}!important"{} there \+:)
+
+{\ttfamily data-\/aos-\/anchor-\/placement} -\/ You can set different placement option on each element, the principle is pretty simple, each anchor-\/placement option contains two words i.\+e. {\ttfamily top-\/center}. This means that animation will be triggered when {\ttfamily top} of element will reach {\ttfamily center} of the window. {\ttfamily bottom-\/top} means that animation will be triggered when {\ttfamily bottom} of an element reach {\ttfamily top} of the window, and so on. Down below you can find list of all anchor-\/placement options.\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md34}{}\doxysubsubsubsection{\texorpdfstring{Examples\+:}{Examples\+:}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md34}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<div\ data-\/aos="{}fade-\/zoom-\/in"{}\ data-\/aos-\/offset="{}200"{}\ data-\/aos-\/easing="{}ease-\/in-\/sine"{}\ data-\/aos-\/duration="{}600"{}>}
+
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<div\ data-\/aos="{}flip-\/left"{}\ data-\/aos-\/delay="{}100"{}\ data-\/aos-\/anchor="{}.example-\/selector"{}>}
+
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<div\ data-\/aos="{}fade-\/up"{}\ data-\/aos-\/anchor-\/placement="{}top-\/center"{}>}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md35}{}\doxysubsubsubsection{\texorpdfstring{API}{API}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md35}
+AOS object is exposed as a global variable, for now there are three methods available\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily init} -\/ initialize AOS
+\item {\ttfamily refresh} -\/ recalculate all offsets and positions of elements (called on window resize)
+\item {\ttfamily refresh\+Hard} -\/ reinit array with AOS elements and trigger {\ttfamily refresh} (called on DOM changes that are related to {\ttfamily aos} elements)
+\end{DoxyItemize}
+
+Example execution\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{AOS.refresh();}
+
+\end{DoxyCode}
+
+
+By default AOS is watching for DOM changes and if there are any new elements loaded asynchronously or when something is removed from DOM it calls {\ttfamily refresh\+Hard} automatically. In browsers that don\textquotesingle{}t support {\ttfamily Mutation\+Observer} like IE you might need to call {\ttfamily AOS.\+refresh\+Hard()} by yourself.
+
+{\ttfamily refresh} method is called on window resize and so on, as it doesn\textquotesingle{}t require to build new store with AOS elements and should be as light as possible.\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md36}{}\doxysubsubsection{\texorpdfstring{Global settings}{Global settings}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md36}
+If you don\textquotesingle{}t want to change setting for each element separately, you can change it globally.
+
+To do this, pass options object to {\ttfamily init()} function, like so\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<script>}
+\DoxyCodeLine{\ \ AOS.init(\{}
+\DoxyCodeLine{\ \ \ \ offset:\ 200,}
+\DoxyCodeLine{\ \ \ \ duration:\ 600,}
+\DoxyCodeLine{\ \ \ \ easing:\ 'ease-\/in-\/sine',}
+\DoxyCodeLine{\ \ \ \ delay:\ 100,}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{</script>}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md37}{}\doxysubsubsubsection{\texorpdfstring{Additional configuration}{Additional configuration}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md37}
+These settings can be set only in options object while initializing AOS.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Setting   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Example value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Default value    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Setting   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Example value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Default value    }\\\cline{1-4}
+\endhead
+\texorpdfstring{$\ast$}{*}{\ttfamily disable}\texorpdfstring{$\ast$}{*}   &Condition when AOS should be disabled   &mobile   &false    \\\cline{1-4}
+\texorpdfstring{$\ast$}{*}{\ttfamily start\+Event}\texorpdfstring{$\ast$}{*}   &Name of event, on which AOS should be initialized   &example\+Event   &DOMContent\+Loaded   \\\cline{1-4}
+\end{longtabu}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md38}{}\doxysubsubsubsubsection{\texorpdfstring{Disabling AOS}{Disabling AOS}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md38}
+If you want to disable AOS on certain device or under any statement you can set {\ttfamily disable} option. Like so\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<script>}
+\DoxyCodeLine{\ \ AOS.init(\{}
+\DoxyCodeLine{\ \ \ \ disable:\ 'mobile'}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{</script>}
+
+\end{DoxyCode}
+
+
+There are several options that you can use to fit AOS perfectly into your project, you can pass one of three device types\+: {\ttfamily mobile} (phones and tablets), {\ttfamily phone} or {\ttfamily tablet}. This will disable AOS on those certains devices. But if you want make your own condition, simple type your statement instead of device type name\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{disable:\ window.innerWidth\ <\ 1024}
+
+\end{DoxyCode}
+
+
+There is also posibility to pass a {\ttfamily function}, which should at the end return {\ttfamily true} or {\ttfamily false}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{disable:\ function\ ()\ \{}
+\DoxyCodeLine{\ \ var\ maxWidth\ =\ 1024;}
+\DoxyCodeLine{\ \ return\ window.innerWidth\ <\ maxWidth;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md39}{}\doxysubsubsubsubsection{\texorpdfstring{Start event}{Start event}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md39}
+If you don\textquotesingle{}t want to initialize AOS on {\ttfamily DOMContent\+Loaded} event, you can pass your own event name and trigger it whenever you want. AOS is listening for this event on {\ttfamily document} element.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<script>}
+\DoxyCodeLine{\ \ AOS.init(\{}
+\DoxyCodeLine{\ \ \ \ startEvent:\ 'someCoolEvent'}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{</script>}
+
+\end{DoxyCode}
+
+
+{\bfseries{Important note\+:}} If you set `start\+Event\+: \textquotesingle{}load'{\ttfamily it will add event listener on}window{\ttfamily instead of}document\`{}.\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md40}{}\doxysubsubsection{\texorpdfstring{👻 Animations}{👻 Animations}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md40}
+There are serveral predefined animations you can use already\+:
+
+
+\begin{DoxyItemize}
+\item Fade animations\+:
+\begin{DoxyItemize}
+\item fade
+\item fade-\/up
+\item fade-\/down
+\item fade-\/left
+\item fade-\/right
+\item fade-\/up-\/right
+\item fade-\/up-\/left
+\item fade-\/down-\/right
+\item fade-\/down-\/left
+\end{DoxyItemize}
+\item Flip animations\+:
+\begin{DoxyItemize}
+\item flip-\/up
+\item flip-\/down
+\item flip-\/left
+\item flip-\/right
+\end{DoxyItemize}
+\item Slide animations\+:
+\begin{DoxyItemize}
+\item slide-\/up
+\item slide-\/down
+\item slide-\/left
+\item slide-\/right
+\end{DoxyItemize}
+\item Zoom animations\+:
+\begin{DoxyItemize}
+\item zoom-\/in
+\item zoom-\/in-\/up
+\item zoom-\/in-\/down
+\item zoom-\/in-\/left
+\item zoom-\/in-\/right
+\item zoom-\/out
+\item zoom-\/out-\/up
+\item zoom-\/out-\/down
+\item zoom-\/out-\/left
+\item zoom-\/out-\/right
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md41}{}\doxysubsubsection{\texorpdfstring{Anchor placement\+:}{Anchor placement\+:}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md41}
+
+\begin{DoxyItemize}
+\item top-\/bottom
+\item top-\/center
+\item top-\/top
+\item center-\/bottom
+\item center-\/center
+\item center-\/top
+\item bottom-\/bottom
+\item bottom-\/center
+\item bottom-\/top
+\end{DoxyItemize}\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md42}{}\doxysubsubsection{\texorpdfstring{Easing functions\+:}{Easing functions\+:}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md42}
+You can choose one of these timing function to animate elements nicely\+:
+
+
+\begin{DoxyItemize}
+\item linear
+\item ease
+\item ease-\/in
+\item ease-\/out
+\item ease-\/in-\/out
+\item ease-\/in-\/back
+\item ease-\/out-\/back
+\item ease-\/in-\/out-\/back
+\item ease-\/in-\/sine
+\item ease-\/out-\/sine
+\item ease-\/in-\/out-\/sine
+\item ease-\/in-\/quad
+\item ease-\/out-\/quad
+\item ease-\/in-\/out-\/quad
+\item ease-\/in-\/cubic
+\item ease-\/out-\/cubic
+\item ease-\/in-\/out-\/cubic
+\item ease-\/in-\/quart
+\item ease-\/out-\/quart
+\item ease-\/in-\/out-\/quart
+\end{DoxyItemize}\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md43}{}\doxysubsection{\texorpdfstring{✌️ \protect\doxysectlink{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g}{Contributing}{0}}{✌️ {Contributing}}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md43}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md44}{}\doxysubsection{\texorpdfstring{📝 Changelog}{📝 Changelog}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md44}
+\hypertarget{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md45}{}\doxysubsection{\texorpdfstring{❔\+Questions}{❔\+Questions}}\label{md_public_2_muse_2assets_2vendor_2aos_2_r_e_a_d_m_e_autotoc_md45}
+If you have any questions, ideas or whatsoever, please check \doxysectlink{md_public_2_muse_2assets_2vendor_2aos_2_c_o_n_t_r_i_b_u_t_i_n_g}{AOS contribution guide}{0} and don\textquotesingle{}t hesitate to create new issues. 

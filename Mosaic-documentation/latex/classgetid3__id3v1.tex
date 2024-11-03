@@ -1,0 +1,205 @@
+\doxysection{getid3\+\_\+id3v1 Class Reference}
+\hypertarget{classgetid3__id3v1}{}\label{classgetid3__id3v1}\index{getid3\_id3v1@{getid3\_id3v1}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+
+
+Inheritance diagram for getid3\+\_\+id3v1\+:
+% FIG 0
+
+
+Collaboration diagram for getid3\+\_\+id3v1\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__id3v1_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_a949d9d2b0ffda0b7eb0b38fa641f7850}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classget_i_d3}{get\+ID3}} \$getid3, \$call\+\_\+module=null)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a5e9967c8790288d216e710aa302ab730}{Analyze\+String}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a7e5d97fcf1477f5dbab77befcf84fbf0}{set\+String\+Mode}} (\$string)
+\item 
+\mbox{\hyperlink{classgetid3__handler_aa4af974d7fab2ead56c1169156847953}{save\+Attachment}} (\$name, \$offset, \$length, \$image\+\_\+mime=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgetid3__id3v1_ac9fd8a90b5d4d3067f5811ceff8612dd}{cutfield}} (\$str)
+\item 
+static \mbox{\hyperlink{classgetid3__id3v1_af7a29649887ce51f07ffcff0e71cbc4f}{Array\+Of\+Genres}} (\$allow\+SCMPXextended=false)
+\item 
+static \mbox{\hyperlink{classgetid3__id3v1_ab0a352114f1412ba543903e9e597e50e}{Lookup\+Genre\+Name}} (\$genreid, \$allow\+SCMPXextended=true)
+\item 
+static \mbox{\hyperlink{classgetid3__id3v1_acd2dc20d34e8467a9d06223cac9866b0}{Lookup\+Genre\+ID}} (\$genre, \$allow\+SCMPXextended=false)
+\item 
+static \mbox{\hyperlink{classgetid3__id3v1_a54e5804a36fd89b8e7abd776260fbecb}{Standardise\+ID3v1\+Genre\+Name}} (\$Original\+Genre)
+\item 
+static \mbox{\hyperlink{classgetid3__id3v1_ad46622994998c7e6417696a3587f2d17}{Generate\+ID3v1\+Tag}} (\$title, \$artist, \$album, \$year, \$genreid, \$comment, \$track=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetid3__handler_aae5813010acec168823283ed5d15d46c}{ftell}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a82974a114cc1e6e25696fdb587adde04}{fread}} (\$bytes)
+\item 
+\mbox{\hyperlink{classgetid3__handler_adaff7c3b9d075fad5baca35553c8ce4a}{fseek}} (\$bytes, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{classgetid3__handler_af26f0e3b0bc7fca8b71cd971f0a901e7}{fgets}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a8d8b23f618074ec2bb4c9ee47da24d31}{feof}} ()
+\item 
+\mbox{\hyperlink{classgetid3__handler_a89137c7f150fc9f2332cebdf4d2833e9}{is\+Dependency\+For}} (\$module)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ad91135aed5e5c945db0569002fe28b3f}{error}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_ac2c356d6d66ded4a988f4386c63ba7ad}{warning}} (\$text)
+\item 
+\mbox{\hyperlink{classgetid3__handler_a25c46aba7f686e90313a9bcc873f877b}{notice}} (\$text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgetid3__handler}{getid3\+\_\+handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$getid3}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+flag} = false
+\item 
+{\bfseries \$data\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$data\+\_\+string\+\_\+position} = 0
+\item 
+{\bfseries \$data\+\_\+string\+\_\+length} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgetid3__id3v1_a3158626801c0cc1828626c64df3c93a9}\index{getid3\_id3v1@{getid3\_id3v1}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!getid3\_id3v1@{getid3\_id3v1}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \label{classgetid3__id3v1_a3158626801c0cc1828626c64df3c93a9} 
+Analyze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classgetid3__handler_a3158626801c0cc1828626c64df3c93a9}{getid3\+\_\+handler}}.
+
+\Hypertarget{classgetid3__id3v1_af7a29649887ce51f07ffcff0e71cbc4f}\index{getid3\_id3v1@{getid3\_id3v1}!ArrayOfGenres@{ArrayOfGenres}}
+\index{ArrayOfGenres@{ArrayOfGenres}!getid3\_id3v1@{getid3\_id3v1}}
+\doxysubsubsection{\texorpdfstring{ArrayOfGenres()}{ArrayOfGenres()}}
+{\footnotesize\ttfamily \label{classgetid3__id3v1_af7a29649887ce51f07ffcff0e71cbc4f} 
+static Array\+Of\+Genres (\begin{DoxyParamCaption}\item[{}]{\$allow\+SCMPXextended}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$allow\+SCMPXextended} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__id3v1_ac9fd8a90b5d4d3067f5811ceff8612dd}\index{getid3\_id3v1@{getid3\_id3v1}!cutfield@{cutfield}}
+\index{cutfield@{cutfield}!getid3\_id3v1@{getid3\_id3v1}}
+\doxysubsubsection{\texorpdfstring{cutfield()}{cutfield()}}
+{\footnotesize\ttfamily \label{classgetid3__id3v1_ac9fd8a90b5d4d3067f5811ceff8612dd} 
+static cutfield (\begin{DoxyParamCaption}\item[{}]{\$str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__id3v1_ad46622994998c7e6417696a3587f2d17}\index{getid3\_id3v1@{getid3\_id3v1}!GenerateID3v1Tag@{GenerateID3v1Tag}}
+\index{GenerateID3v1Tag@{GenerateID3v1Tag}!getid3\_id3v1@{getid3\_id3v1}}
+\doxysubsubsection{\texorpdfstring{GenerateID3v1Tag()}{GenerateID3v1Tag()}}
+{\footnotesize\ttfamily \label{classgetid3__id3v1_ad46622994998c7e6417696a3587f2d17} 
+static Generate\+ID3v1\+Tag (\begin{DoxyParamCaption}\item[{}]{\$title}{, }\item[{}]{\$artist}{, }\item[{}]{\$album}{, }\item[{}]{\$year}{, }\item[{}]{\$genreid}{, }\item[{}]{\$comment}{, }\item[{}]{\$track}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$title} & \\
+\hline
+string & {\em \$artist} & \\
+\hline
+string & {\em \$album} & \\
+\hline
+string & {\em \$year} & \\
+\hline
+int & {\em \$genreid} & \\
+\hline
+string & {\em \$comment} & \\
+\hline
+int | string & {\em \$track} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__id3v1_acd2dc20d34e8467a9d06223cac9866b0}\index{getid3\_id3v1@{getid3\_id3v1}!LookupGenreID@{LookupGenreID}}
+\index{LookupGenreID@{LookupGenreID}!getid3\_id3v1@{getid3\_id3v1}}
+\doxysubsubsection{\texorpdfstring{LookupGenreID()}{LookupGenreID()}}
+{\footnotesize\ttfamily \label{classgetid3__id3v1_acd2dc20d34e8467a9d06223cac9866b0} 
+static Lookup\+Genre\+ID (\begin{DoxyParamCaption}\item[{}]{\$genre}{, }\item[{}]{\$allow\+SCMPXextended}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$genre} & \\
+\hline
+bool & {\em \$allow\+SCMPXextended} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__id3v1_ab0a352114f1412ba543903e9e597e50e}\index{getid3\_id3v1@{getid3\_id3v1}!LookupGenreName@{LookupGenreName}}
+\index{LookupGenreName@{LookupGenreName}!getid3\_id3v1@{getid3\_id3v1}}
+\doxysubsubsection{\texorpdfstring{LookupGenreName()}{LookupGenreName()}}
+{\footnotesize\ttfamily \label{classgetid3__id3v1_ab0a352114f1412ba543903e9e597e50e} 
+static Lookup\+Genre\+Name (\begin{DoxyParamCaption}\item[{}]{\$genreid}{, }\item[{}]{\$allow\+SCMPXextended}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$genreid} & \\
+\hline
+bool & {\em \$allow\+SCMPXextended} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{classgetid3__id3v1_a54e5804a36fd89b8e7abd776260fbecb}\index{getid3\_id3v1@{getid3\_id3v1}!StandardiseID3v1GenreName@{StandardiseID3v1GenreName}}
+\index{StandardiseID3v1GenreName@{StandardiseID3v1GenreName}!getid3\_id3v1@{getid3\_id3v1}}
+\doxysubsubsection{\texorpdfstring{StandardiseID3v1GenreName()}{StandardiseID3v1GenreName()}}
+{\footnotesize\ttfamily \label{classgetid3__id3v1_a54e5804a36fd89b8e7abd776260fbecb} 
+static Standardise\+ID3v1\+Genre\+Name (\begin{DoxyParamCaption}\item[{}]{\$\+Original\+Genre}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+Original\+Genre} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+tag.\+id3v1.\+php\end{DoxyCompactItemize}

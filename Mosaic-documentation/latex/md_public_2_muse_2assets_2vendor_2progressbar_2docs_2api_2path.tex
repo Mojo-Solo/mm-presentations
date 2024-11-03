@@ -1,0 +1,156 @@
+\chapter{new Path(path, \mbox{[}\texorpdfstring{$<$}{<}em\texorpdfstring{$>$}{>}options\texorpdfstring{$<$}{<}/em\texorpdfstring{$>$}{>}\mbox{]})}
+\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path}{}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path}\index{new Path(path, \mbox{[}$<$em$>$options$<$/em$>$\mbox{]})@{new Path(path, [$<$em$>$options$<$/em$>$])}}
+\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md172}%
+\Hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md172}%
+ Custom shaped progress bar. You can create arbitrary shaped progress bars by passing a SVG path created with e.\+g. Adobe Illustrator. It\textquotesingle{}s on caller\textquotesingle{}s responsibility to append SVG to DOM.
+
+!!! note \begin{DoxyVerb}Remember to add e.g. `stroke="1"` and `fill-opacity="0"` attributes for the SVG path.
+They will reveal the true shape of the path.
+\end{DoxyVerb}
+ {\bfseries{Example}}
+
+Assuming there was SVG object with heart shaped path in HTML
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<svg\ xmlns="{}http://www.w3.org/2000/svg"{}\ version="{}1.1"{}\ x="{}0px"{}\ y="{}0px"{}\ viewBox="{}0\ 0\ 100\ 100"{}>}
+\DoxyCodeLine{\ \ \ \ <path\ fill-\/opacity="{}0"{}\ stroke-\/width="{}0.5"{}\ stroke="{}\#f4f4f4"{}\ d="{}M81.495,13.923c-\/11.368-\/5.261-\/26.234-\/0.311-\/31.489,11.032C44.74,13.612,29.879,8.657,18.511,13.923\ \ C6.402,19.539,0.613,33.883,10.175,50.804c6.792,12.04,18.826,21.111,39.831,37.379c20.993-\/16.268,33.033-\/25.344,39.819-\/37.379\ \ C99.387,33.883,93.598,19.539,81.495,13.923z"{}/>}
+\DoxyCodeLine{\ \ \ \ <path\ id="{}heart-\/path"{}\ fill-\/opacity="{}0"{}\ stroke-\/width="{}0.6"{}\ stroke="{}\#555"{}\ d="{}M81.495,13.923c-\/11.368-\/5.261-\/26.234-\/0.311-\/31.489,11.032C44.74,13.612,29.879,8.657,18.511,13.923\ \ C6.402,19.539,0.613,33.883,10.175,50.804c6.792,12.04,18.826,21.111,39.831,37.379c20.993-\/16.268,33.033-\/25.344,39.819-\/37.379\ \ C99.387,33.883,93.598,19.539,81.495,13.923z"{}/>}
+\DoxyCodeLine{</svg>}
+
+\end{DoxyCode}
+
+
+Initialization would be this easy
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ svgPath\ =\ document.getElementById('heart-\/path');}
+\DoxyCodeLine{var\ path\ =\ new\ ProgressBar.Path(svgPath,\ \{}
+\DoxyCodeLine{\ \ \ \ duration:\ 300}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+{\bfseries{Working with embedded SVG}}
+
+If the SVG was not inline in the HTML but instead in, say, an {\ttfamily \texorpdfstring{$<$}{<}object\texorpdfstring{$>$}{>}} tag, we\textquotesingle{}d have to take extra steps to wait until it has loaded and then access it differently since it\textquotesingle{}s in a separate DOM tree. Given e.\+g.\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<object\ id="{}heart"{}\ type="{}image/svg+xml"{}\ data="{}heart.svg"{}>No\ SVG\ support\ :(</object>}
+
+\end{DoxyCode}
+
+
+we could do
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ heart\ =\ document.getElementById('heart');}
+\DoxyCodeLine{heart.addEventListener('load',\ function()\ \{}
+\DoxyCodeLine{var\ path\ =\ new\ ProgressBar.Path(heartObject.contentDocument.querySelector('\#heart-\/path'),\ \{}
+\DoxyCodeLine{\ \ \ \ duration:\ 300}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+{\bfseries{Parameters}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily path} \href{https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths}{\texttt{ SVG Path}} object or plain selector string. For example `\$(\textquotesingle{}svg \texorpdfstring{$>$}{>} path\+:first-\/child')\mbox{[}0\mbox{]}{\ttfamily . \texorpdfstring{$\ast$}{*}}options\`{} Animation options.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ //\ Duration\ for\ animation\ in\ milliseconds}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 800}
+\DoxyCodeLine{\ \ \ \ duration:\ 1200,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Delay\ for\ animation\ in\ milliseconds}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 0}
+\DoxyCodeLine{\ \ \ \ delay:\ 100,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Easing\ for\ animation.\ See\ \#easing\ section.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 'linear'}
+\DoxyCodeLine{\ \ \ \ easing:\ 'easeIn',}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Attachment\ which\ can\ be\ any\ object}
+\DoxyCodeLine{\ \ \ \ //\ you\ need\ to\ modify\ within\ the\ step\ function.}
+\DoxyCodeLine{\ \ \ \ //\ Passed\ as\ a\ parameter\ to\ step\ function.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ undefined}
+\DoxyCodeLine{\ \ \ \ attachment:\ document.querySelector('\#container\ >\ svg'),}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ See\ \#custom-\/animations\ section}
+\DoxyCodeLine{\ \ \ \ from:\ \{\ color:\ '\#eee'\ \},}
+\DoxyCodeLine{\ \ \ \ to:\ \{\ color:\ '\#000'\ \},}
+\DoxyCodeLine{\ \ \ \ step:\ function(state,\ path,\ attachment)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Do\ any\ modifications\ to\ attachment\ and/or\ path\ attributes}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md173}{}\doxysection{\texorpdfstring{.path}{.path}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md173}
+Reference to \href{https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path}{\texttt{ SVG path}} which presents the actual progress bar.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md174}{}\doxysection{\texorpdfstring{.animate(progress, \mbox{[}{\itshape options}\mbox{]}, \mbox{[}{\itshape cb}\mbox{]})}{.animate(progress, \mbox{[}{\itshape options}\mbox{]}, \mbox{[}{\itshape cb}\mbox{]})}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md174}
+Animates drawing of path.
+
+{\bfseries{Example}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{path.animate(0.3,\ \{}
+\DoxyCodeLine{\ \ \ \ duration:\ 800}
+\DoxyCodeLine{\},\ function()\ \{}
+\DoxyCodeLine{\ \ \ \ console.log('Animation\ has\ finished');}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+{\bfseries{Parameters}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily progress} progress from 0 to 1.
+\item {\ttfamily options} Animation options. These options override the defaults given in initialization.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ //\ Duration\ for\ animation\ in\ milliseconds}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 800}
+\DoxyCodeLine{\ \ \ \ duration:\ 1200,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Delay\ for\ animation\ in\ milliseconds}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 0}
+\DoxyCodeLine{\ \ \ \ delay:\ 100,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Easing\ for\ animation.\ See\ \#easing\ section.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ 'linear'}
+\DoxyCodeLine{\ \ \ \ easing:\ 'easeOut',}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ Attachment\ which\ can\ be\ any\ object}
+\DoxyCodeLine{\ \ \ \ //\ you\ need\ to\ modify\ within\ the\ step\ function.}
+\DoxyCodeLine{\ \ \ \ //\ Passed\ as\ a\ parameter\ to\ step\ function.}
+\DoxyCodeLine{\ \ \ \ //\ Default:\ undefined}
+\DoxyCodeLine{\ \ \ \ attachment:\ document.querySelector('\#container\ >\ svg'),}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ //\ See\ \#custom-\/animations\ section}
+\DoxyCodeLine{\ \ \ \ from:\ \{\ color:\ '\#eee'\ \},}
+\DoxyCodeLine{\ \ \ \ to:\ \{\ color:\ '\#000'\ \},}
+\DoxyCodeLine{\ \ \ \ step:\ function(state,\ path,\ attachment)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ //\ Do\ any\ modifications\ to\ attachment\ and/or\ path\ attributes}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\item {\ttfamily cb} Callback function which is called after transition ends.
+\end{DoxyItemize}\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md175}{}\doxysection{\texorpdfstring{.set(progress)}{.set(progress)}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md175}
+Set progress instantly without animation. Clears all transitions for path.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md176}{}\doxysection{\texorpdfstring{.stop()}{.stop()}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md176}
+Stops animation to its current position.\hypertarget{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md177}{}\doxysection{\texorpdfstring{.value()}{.value()}}\label{md_public_2_muse_2assets_2vendor_2progressbar_2docs_2api_2path_autotoc_md177}
+Returns current shown progress from 0 to 1. This value changes when animation is running. 

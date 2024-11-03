@@ -1,0 +1,12 @@
+digraph "app/Http/Livewire/SiteForm"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_ac60c537f4aeab95076a2ea8ff47a98a {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="Livewire", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_ac60c537f4aeab95076a2ea8ff47a98a.html",tooltip=""]
+  dir_7b0143d9cc32019b5c06a3ca238bf551 [label="SiteForm", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_7b0143d9cc32019b5c06a3ca238bf551.html",tooltip=""];
+  }
+}

@@ -1,0 +1,133 @@
+\doxysection{Image\+\_\+\+XMP Class Reference}
+\hypertarget{class_image___x_m_p}{}\label{class_image___x_m_p}\index{Image\_XMP@{Image\_XMP}}
+
+
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} //  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_image___x_m_p_a7b37efab7473a1effc29f8be2421f6e3}{is\+Valid}} ()
+\item 
+\mbox{\hyperlink{class_image___x_m_p_a625f836d635fba4c3d470a6756739d5f}{get\+All\+Tags}} ()
+\item 
+\mbox{\hyperlink{class_image___x_m_p_a988deda5c0e82b1296579f0d8c3c5094}{\+\_\+get\+\_\+jpeg\+\_\+header\+\_\+data}} (\$filename)
+\item 
+\mbox{\hyperlink{class_image___x_m_p_a09300a9125cc360c75fa93a7e7b63fe6}{\+\_\+get\+\_\+\+XMP\+\_\+text}} (\$filename)
+\item 
+\mbox{\hyperlink{class_image___x_m_p_adda9a4070d2784db49064eb9831c3de5}{read\+\_\+\+XMP\+\_\+array\+\_\+from\+\_\+text}} (\$xmltext)
+\item 
+\mbox{\hyperlink{class_image___x_m_p_a57e73bb8bdec3edbae46e8473178123d}{\+\_\+\+\_\+construct}} (\$s\+Filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_image___x_m_p_ab1d95d300f40af35f78a4824a0a81264}\label{class_image___x_m_p_ab1d95d300f40af35f78a4824a0a81264} 
+{\bfseries \$\+\_\+s\+Filename} = null
+\item 
+\Hypertarget{class_image___x_m_p_afab7e71c11a5a93afce64d566517d44a}\label{class_image___x_m_p_afab7e71c11a5a93afce64d566517d44a} 
+{\bfseries \$\+\_\+a\+XMP} = array()
+\item 
+\Hypertarget{class_image___x_m_p_aa5be81609524ceaf1a58eb35ccf8dc67}\label{class_image___x_m_p_aa5be81609524ceaf1a58eb35ccf8dc67} 
+{\bfseries \$\+\_\+b\+XMPParse} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classget_i_d3}{get\+ID3()} by James Heinrich \href{mailto:info@getid3.org}{\texttt{ info@getid3.\+org}} // 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_image___x_m_p_a57e73bb8bdec3edbae46e8473178123d}\index{Image\_XMP@{Image\_XMP}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Image\_XMP@{Image\_XMP}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_image___x_m_p_a57e73bb8bdec3edbae46e8473178123d} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$s\+Filename}{}\end{DoxyParamCaption})}
+
+Constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$s\+Filename} & -\/ Name of the image file to access and extract XMP information from. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_image___x_m_p_a988deda5c0e82b1296579f0d8c3c5094}\index{Image\_XMP@{Image\_XMP}!\_get\_jpeg\_header\_data@{\_get\_jpeg\_header\_data}}
+\index{\_get\_jpeg\_header\_data@{\_get\_jpeg\_header\_data}!Image\_XMP@{Image\_XMP}}
+\doxysubsubsection{\texorpdfstring{\_get\_jpeg\_header\_data()}{\_get\_jpeg\_header\_data()}}
+{\footnotesize\ttfamily \label{class_image___x_m_p_a988deda5c0e82b1296579f0d8c3c5094} 
+\+\_\+get\+\_\+jpeg\+\_\+header\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$filename}{}\end{DoxyParamCaption})}
+
+Reads all the JPEG header segments from an JPEG image file into an array
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & -\/ the filename of the JPEG file to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false \$headerdata -\/ Array of JPEG header segments, FALSE -\/ if headers could not be read 
+\end{DoxyReturn}
+\Hypertarget{class_image___x_m_p_a09300a9125cc360c75fa93a7e7b63fe6}\index{Image\_XMP@{Image\_XMP}!\_get\_XMP\_text@{\_get\_XMP\_text}}
+\index{\_get\_XMP\_text@{\_get\_XMP\_text}!Image\_XMP@{Image\_XMP}}
+\doxysubsubsection{\texorpdfstring{\_get\_XMP\_text()}{\_get\_XMP\_text()}}
+{\footnotesize\ttfamily \label{class_image___x_m_p_a09300a9125cc360c75fa93a7e7b63fe6} 
+\+\_\+get\+\_\+\+XMP\+\_\+text (\begin{DoxyParamCaption}\item[{}]{\$filename}{}\end{DoxyParamCaption})}
+
+Retrieves XMP information from an APP1 JPEG segment and returns the raw XML text as a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & -\/ the filename of the JPEG file to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false \$xmp\+\_\+data -\/ the string of raw XML text, FALSE -\/ if an APP 1 XMP segment could not be found, or if an error occurred 
+\end{DoxyReturn}
+\Hypertarget{class_image___x_m_p_a625f836d635fba4c3d470a6756739d5f}\index{Image\_XMP@{Image\_XMP}!getAllTags@{getAllTags}}
+\index{getAllTags@{getAllTags}!Image\_XMP@{Image\_XMP}}
+\doxysubsubsection{\texorpdfstring{getAllTags()}{getAllTags()}}
+{\footnotesize\ttfamily \label{class_image___x_m_p_a625f836d635fba4c3d470a6756739d5f} 
+get\+All\+Tags (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a copy of all XMP tags extracted from the image
+
+\begin{DoxyReturn}{Returns}
+array -\/ An array of XMP fields as it extracted by the XMPparse() function 
+\end{DoxyReturn}
+\Hypertarget{class_image___x_m_p_a7b37efab7473a1effc29f8be2421f6e3}\index{Image\_XMP@{Image\_XMP}!isValid@{isValid}}
+\index{isValid@{isValid}!Image\_XMP@{Image\_XMP}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily \label{class_image___x_m_p_a7b37efab7473a1effc29f8be2421f6e3} 
+is\+Valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the status of XMP parsing during instantiation
+
+You\textquotesingle{}ll normally want to call this method before trying to get XMP fields.
+
+\begin{DoxyReturn}{Returns}
+boolean Returns true if an APP1 segment was found to contain XMP metadata. 
+\end{DoxyReturn}
+\Hypertarget{class_image___x_m_p_adda9a4070d2784db49064eb9831c3de5}\index{Image\_XMP@{Image\_XMP}!read\_XMP\_array\_from\_text@{read\_XMP\_array\_from\_text}}
+\index{read\_XMP\_array\_from\_text@{read\_XMP\_array\_from\_text}!Image\_XMP@{Image\_XMP}}
+\doxysubsubsection{\texorpdfstring{read\_XMP\_array\_from\_text()}{read\_XMP\_array\_from\_text()}}
+{\footnotesize\ttfamily \label{class_image___x_m_p_adda9a4070d2784db49064eb9831c3de5} 
+read\+\_\+\+XMP\+\_\+array\+\_\+from\+\_\+text (\begin{DoxyParamCaption}\item[{}]{\$xmltext}{}\end{DoxyParamCaption})}
+
+Parses a string containing XMP data (XML), and returns an array which contains all the XMP (XML) information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$xmltext} & -\/ a string containing the XMP data (XML) to be parsed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false \$xmp\+\_\+array -\/ an array containing all xmp details retrieved, FALSE -\/ couldn\textquotesingle{}t parse the XMP data. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Services/\+Libraries/get\+ID3/getid3/module.\+tag.\+xmp.\+php\end{DoxyCompactItemize}

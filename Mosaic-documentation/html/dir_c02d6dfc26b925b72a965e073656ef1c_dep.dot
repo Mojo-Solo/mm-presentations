@@ -1,0 +1,12 @@
+digraph "resources/views/backend/site_super_admin/tenant_domain/site_groups/major_groups/modals"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_bfc146528725ef72edf58d7f4dcf068c {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="major_groups", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_bfc146528725ef72edf58d7f4dcf068c.html",tooltip=""]
+  dir_c02d6dfc26b925b72a965e073656ef1c [label="modals", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_c02d6dfc26b925b72a965e073656ef1c.html",tooltip=""];
+  }
+}
