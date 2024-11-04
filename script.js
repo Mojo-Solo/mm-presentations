@@ -52,4 +52,67 @@ document.addEventListener('DOMContentLoaded', () => {
         // Append marker to the timeline
         fractalTimeline.appendChild(marker);
     });
+
+    // Get the record button element
+    const recordButton = document.getElementById('recordButton');
+
+    let isRecording = false;
+
+    // Event Listener for Record Button
+    recordButton.addEventListener('click', () => {
+        // Toggle recording state
+        isRecording = !isRecording;
+        recordButton.classList.toggle('recording', isRecording);
+
+        if (isRecording) {
+            console.log('Recording started...');
+            // Start recording logic here
+        } else {
+            console.log('Recording stopped.');
+            // Stop recording logic here
+        }
+    });
+
+    // Blueprint Executor Commands
+    function executeCommand(command) {
+        switch(command) {
+            case '/help':
+                displayHelp();
+                break;
+            case '/execute 1':
+                executeTask(1);
+                break;
+            case '/execute 3':
+                executeTask(3);
+                break;
+            case '/execute 9':
+                executeTask(9);
+                break;
+            // Add cases for other fractal steps
+            default:
+                console.log('Unknown command');
+        }
+    }
+
+    function displayHelp() {
+        // Logic to stop time and help you focus
+        alert("🛑 Time Stopped 🛑\nLet's take a deep breath and focus on the current task.");
+        // Additional focus aids can be implemented here
+    }
+
+    function executeTask(step) {
+        console.log(`Executing task at step ${step}`);
+        // Implement specific tasks corresponding to the fractal steps
+    }
+
+    // Event Listener for Command Input
+    document.addEventListener('keydown', (e) => {
+        if (e.key === '/') {
+            // Simulate stopping time and prompting for a command
+            const command = prompt("Enter a command (e.g., /help, /execute 1):");
+            if (command) {
+                executeCommand(command);
+            }
+        }
+    });
 });
